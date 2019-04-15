@@ -1,0 +1,18 @@
+[
+  {
+    "SkillName": "Test",
+    "SkillImage": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 5,
+    "Damage": 10
+  },
+  {
+    "SkillName": "Test2",
+    "SkillImage": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 2,
+    "Damage": 5
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "EquipName" : "Test",
+    "EquipDescription" : "TestWeapon",
+    "EquipImagePath" : "Image/HP",
+    "EquipRating" : "Common",
+    "EquipType" : "Weapon",
+    "Artifact" : -1,
+    "Type": 1,
+    "Weight": 2.5,
+    "AttackSpeed": 1.2,
+    "Speed" : 0,
+    "Stats": [
+      {
+        "HP" :  50
+      },
+      {
+        "Power" : 10
+      }
+    ]
+  },
+  {
+    "EquipName": "Test1",
+    "EquipDescription": "TestSuit",
+    "EquipImagePath": "Image/MP",
+    "EquipRating": "Rare",
+    "EquipType": "Suit",
+    "Artifact": 0,
+    "Type": 0,
+    "Weight": 0,
+    "AttackSpeed": 0,
+    "Speed": 1.2,
+    "Stats": [
+      {
+        "HP": 50
+      },
+      {
+        "Speed": 10 
+      },
+      {
+        "MP": 2
+      }
+    ]
+  },
+  {
+    "EquipName": "Test2",
+    "EquipDescription": "TestAccessories",
+    "EquipImagePath": null,
+    "EquipRating": "Unique",
+    "EquipType": "Accessories",
+    "Artifact": 0,
+    "Type": 0,
+    "Weight": 0,
+    "AttackSpeed": 0,
+    "Speed": 0,
+    "Stats": [
+      {
+        "MP": 50
+      },
+      {
+        "CriticalPercent": 10
+      },
+      {
+        "CriticalDamage": 10
+      }
+    ]
+  }
+]
