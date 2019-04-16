@@ -45,12 +45,12 @@ public class InventoryManager : MonoBehaviour
     {
         itemDatabase = ItemDatabase.Instance;
 
-        //AddItem(itemDatabase.Equipments[0]);
-        //AddItem(itemDatabase.Equipments[1]);
-        //AddItem(itemDatabase.Equipments[1]);
-        //AddItem(itemDatabase.Equipments[2]);
-        //AddItem(itemDatabase.Equipments[2]);
-        //AddItem(itemDatabase.Equipments[2]);
+        AddItem(itemDatabase.Equipments[0]);
+        AddItem(itemDatabase.Equipments[1]);
+        AddItem(itemDatabase.Equipments[1]);
+        AddItem(itemDatabase.Equipments[2]);
+        AddItem(itemDatabase.Equipments[2]);
+        AddItem(itemDatabase.Equipments[2]);
     }
 
     public void OpenInventory()

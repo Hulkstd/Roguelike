@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StstInfo : MonoBehaviour
+public class StatInfo : MonoBehaviour
 {
     private void OnEnable()
     {
