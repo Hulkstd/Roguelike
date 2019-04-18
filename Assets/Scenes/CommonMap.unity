@@ -113,7 +113,11 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1646208175
+=======
+--- !u!1 &460704693
+>>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
 =======
 --- !u!1 &460704693
 >>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
@@ -124,6 +128,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 1646208178}
   - component: {fileID: 1646208177}
@@ -137,11 +142,19 @@ GameObject:
   m_Layer: 0
   m_Name: Tilemap
 >>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
+=======
+  - component: {fileID: 460704694}
+  - component: {fileID: 460704696}
+  - component: {fileID: 460704695}
+  m_Layer: 0
+  m_Name: Tilemap
+>>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!81 &1646208176
 AudioListener:
@@ -197,14 +210,20 @@ Camera:
 =======
 --- !u!4 &460704694
 >>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
+=======
+--- !u!4 &460704694
+>>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1646208175}
 =======
+=======
+>>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
   m_GameObject: {fileID: 460704693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -414,6 +433,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107057571}
+<<<<<<< HEAD
+>>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
+=======
 >>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
@@ -422,6 +444,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &4237460225184728629
 PrefabInstance:
@@ -492,5 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a756f7e568df32a42b13738ab1fbd1e5, type: 3}
+=======
+>>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
 =======
 >>>>>>> a3d6b82cf039f73b8743e9d6331602291a9836f9
