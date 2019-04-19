@@ -90,14 +90,15 @@ public class CreateMap : MonoBehaviour
             IsPrevLarge = IsLarge;
             IsLarge = GetLarge();
 
-            if (GetInstallMap(direction, IsLarge) > 0)
-            {
-                SetGragh(direction, IsLarge, SetMap(Maps.Dequeue(), direction, true, IsLarge));
-            }
             if ((Gragh[GraghI + 1, GraghJ] && Gragh[GraghI, GraghJ + 1] && Gragh[GraghI, GraghJ - 1] && Gragh[GraghI - 1, GraghJ]) || IsPrevLarge)
             {
                 SetMapPos();
             }
+            if (GetInstallMap(direction, IsLarge) > 0)
+            {
+                SetGragh(direction, IsLarge, SetMap(Maps.Dequeue(), direction, true, IsLarge));
+            }
+            
         }
     }
 
@@ -387,11 +388,11 @@ public class CreateMap : MonoBehaviour
         switch (direction)
         {
             case Direction.Top:
-                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, 10) : new Vector3(9f, 10) : new Vector3(0, 10);
+                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, 15) : new Vector3(9f, 15) : new Vector3(0, 10);
             case Direction.Right:
                 return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(27f, -5f) : new Vector3(27f, 5f) : new Vector3(18f, 0);
             case Direction.Buttom:
-                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, -10f) : new Vector3(9f, -10f) : new Vector3(0, -10);
+                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, -15f) : new Vector3(9f, -10f) : new Vector3(0, -10);
             case Direction.Left:
                 return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-27f, -5f) : new Vector3(-27f, 5f) : new Vector3(-18f, 0);
             default:
