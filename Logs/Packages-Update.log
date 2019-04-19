@@ -42,7 +42,11 @@ The following packages were added:
   com.unity.modules.wind@1.0.0
   com.unity.modules.xr@1.0.0
 
+<<<<<<< HEAD
+=== Thu Apr 18 21:12:48 2019
+=======
 === Thu Apr 18 18:57:10 2019
+>>>>>>> 361de4327af70aa7e67e68fa8d7a5fc4bac13eb8
 
 Packages were changed.
 Update Mode: updateDependencies
