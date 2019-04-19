@@ -272,10 +272,10 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Top:
-                    if (!(Gragh[GraghI - 1, GraghJ].localPosition == transform.localPosition &&
+                    if (Gragh[GraghI - 1, GraghJ].localPosition == transform.localPosition &&
                         Gragh[GraghI - 1, GraghJ - 1].localPosition == transform.localPosition &&
                         Gragh[GraghI - 2, GraghJ - 1].localPosition == transform.localPosition &&
-                        Gragh[GraghI - 2, GraghJ].localPosition == transform.localPosition))
+                        Gragh[GraghI - 2, GraghJ].localPosition == transform.localPosition)
                     {
                         return 1;
                     }
@@ -342,19 +342,19 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Stand:
-                    if (!(Gragh[GraghI, GraghJ] == transform)) return 1;
+                    if (Gragh[GraghI, GraghJ] == transform) return 1;
                     break;
                 case Direction.Top:
-                    if (!(Gragh[GraghI - 1, GraghJ] == transform)) return 1;
+                    if (Gragh[GraghI - 1, GraghJ] == transform) return 1;
                     break;
                 case Direction.Right:
-                    if (!(Gragh[GraghI, GraghJ + 1] == transform)) return 1;
+                    if (Gragh[GraghI, GraghJ + 1] == transform) return 1;
                     break;
                 case Direction.Buttom:
-                    if (!(Gragh[GraghI + 1, GraghJ] == transform)) return 1;
+                    if (Gragh[GraghI + 1, GraghJ] == transform) return 1;
                     break;
                 case Direction.Left:
-                    if (!(Gragh[GraghI, GraghJ - 1] == transform)) return 1;
+                    if (Gragh[GraghI, GraghJ - 1] == transform) return 1;
                     break;
             }
         }
