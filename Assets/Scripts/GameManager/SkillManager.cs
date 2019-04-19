@@ -13,7 +13,7 @@ public class SkillManager : MonoBehaviour
     public SkillObject Skill4;
     public SkillFunc   Attack;
 
-    public void Start()
+    void Awake()
     {
         Instance = this;
     }
