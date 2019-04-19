@@ -4,9 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Weapon
-  - Suit
-  - Accessories
+  - Fly
+  - Spider
+  - Fire_Spider
+  - Spider_House
+  - Worm
+  - Elite Boss_1
+  - Boss_1
+  - Boss
+  - Elite Boss
+  - Water
+  - Web
   layers:
   - Default
   - TransparentFX
