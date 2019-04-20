@@ -15,6 +15,7 @@ TagManager:
   - Elite Boss
   - Water
   - Web
+  - InMonsterMap
   layers:
   - Default
   - TransparentFX
