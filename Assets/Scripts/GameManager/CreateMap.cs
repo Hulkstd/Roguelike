@@ -17,40 +17,41 @@ public class CreateMap : MonoBehaviour
     private int GraghI, GraghJ;
     private List<MapCode> list = new List<MapCode>(); // 랜덤으로 쉽게 넣기위한 리스트
     private Vector3 LastMapPos;
-    private int RoomCount;
+    private static int RoomFloor;
+    private static string Tag = "InMonsterMap";
+    private Queue<MapCode> Maps = new Queue<MapCode>();
+    private bool IsPrevLarge;
 #endregion
 
 #region InputValues
     [SerializeField]
     private static int StageNum;
-    [SerializeField]
-    private Queue<MapCode> Maps = new Queue<MapCode>();
 #endregion
 
 #region Resourse
-    private Transform[] ModernMapsBasic = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Basic");
-    private Transform[] ModernMapsLarge = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Large");
-    private Transform[] ShopMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Shop");
-    private Transform[] HealSpotMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/HealSpot");
-    private Transform[] BossMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Boss");
+    private Transform[] ModernMapsBasic;
+    private Transform[] ModernMapsLarge;
+    private Transform[] ShopMaps;
+    private Transform[] HealSpotMaps;
+    private Transform[] BossMaps;
 #endregion
 
 #region SetFunctions
     private void SetQueue()
     {
-        RoomCount = StageNum * 9;
+        RoomFloor = StageNum * 9;
 
-        Gragh = new Transform[RoomCount * 4, RoomCount * 4];
+        Gragh = new Transform[RoomFloor * 4, RoomFloor * 4];
 
-        for (int i = 0; i < RoomCount * 4; ++i)
+        for (int i = 0; i < RoomFloor * 4; ++i)
         {
-            for (int j = 0; j < RoomCount * 4; ++j)
+            for (int j = 0; j < RoomFloor * 4; ++j)
             {
                 Gragh[i, j] = transform;
             }
         }
 
-        for (int i = 0; i < RoomCount - 4; ++i)
+        for (int i = 0; i < RoomFloor - 4; ++i)
         {
             list.Add(MapCode.Modern);
         }
@@ -59,8 +60,11 @@ public class CreateMap : MonoBehaviour
         list.Add(MapCode.HealSpot);
 
         Maps.Enqueue(MapCode.Modern);
+    
         while (list.Count > 0)
         {
+            int temp = (int)Time.time * list.Count;
+            Random.InitState(temp);
             int random = Random.Range(0, list.Count - 1);
             Maps.Enqueue(list[random]);
             list.RemoveAt(random);
@@ -73,8 +77,8 @@ public class CreateMap : MonoBehaviour
         Direction direction;
         bool IsLarge;
 
-        GraghI = RoomCount * 2 - 1;
-        GraghJ = RoomCount * 2 - 1;
+        GraghI = RoomFloor * 2 - 1;
+        GraghJ = RoomFloor * 2 - 1;
 
         IsLarge = false;
         LastMapPos = transform.position;
@@ -83,17 +87,18 @@ public class CreateMap : MonoBehaviour
         while (Maps.Count > 0)
         {
             direction = GetDirection(Random.Range(1, 4));
+            IsPrevLarge = IsLarge;
             IsLarge = GetLarge();
-            if (GetInstallMap(direction, IsLarge))
-                SetGragh(direction, IsLarge, SetMap(Maps.Dequeue(), direction, true, IsLarge));
-            else
+
+            if ((Gragh[GraghI + 1, GraghJ] && Gragh[GraghI, GraghJ + 1] && Gragh[GraghI, GraghJ - 1] && Gragh[GraghI - 1, GraghJ]) || IsPrevLarge)
             {
-                if (Gragh[GraghI + 1, GraghJ] && Gragh[GraghI, GraghJ + 1] && Gragh[GraghI, GraghJ - 1] && Gragh[GraghI - 1, GraghJ])
-                {
-                    SetMapPos();
-                }
-                continue;
+                SetMapPos();
             }
+            if (GetInstallMap(direction, IsLarge) > 0)
+            {
+                SetGragh(direction, IsLarge, SetMap(Maps.Dequeue(), direction, true, IsLarge));
+            }
+            
         }
     }
 
@@ -130,21 +135,24 @@ public class CreateMap : MonoBehaviour
             obj.localPosition = GetMapPos(direction, IsLarge);
         else
             obj.localPosition = GetMapPos(direction, true);
-
+        obj.tag = Tag;
         obj.SetParent(transform);
         return obj;
     }
 
     private void SetMapPos()
     {
-        for (int i = 0; i < RoomCount * 4; ++i)
+        Transform trans = transform;
+
+        for (int i = 0; i < RoomFloor * 4; ++i)
         {
-            for (int j = 0; j < RoomCount * 4; ++j)
+            for (int j = 0; j < RoomFloor * 4; ++j)
             {
                 if (!Gragh[i, j])
                 {
                     GraghI = i;
                     GraghJ = j;
+                    LastMapPos = new Vector3(trans.localPosition.y - 10 * RoomFloor * 2 - 1 - GraghI, trans.localPosition.x - 18 * RoomFloor * 2 - 1 - GraghJ);
                     return;
                 }
             }
@@ -158,14 +166,14 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Top:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
                         Gragh[--GraghI, GraghJ] = trans;
                         Gragh[GraghI, --GraghJ] = trans;
                         Gragh[--GraghI, GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
                     }
-                    else if(GetInstallMap(direction, IsLarge))
+                    else if(GetInstallMap(direction, IsLarge) == 2)
                     {
                         Gragh[--GraghI, GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
@@ -174,30 +182,30 @@ public class CreateMap : MonoBehaviour
                     }
                     break;
                 case Direction.Right:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
-                        Gragh[GraghI, ++GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
                         Gragh[++GraghI, GraghJ] = trans;
-                        Gragh[GraghI, --GraghJ] = trans;
-                    }
-                    else if (GetInstallMap(direction, IsLarge))
-                    {
-                        Gragh[GraghI, ++GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
                         Gragh[--GraghI, GraghJ] = trans;
-                        Gragh[GraghI, --GraghJ] = trans;
+                    }
+                    else if (GetInstallMap(direction, IsLarge) == 2)
+                    {
+                        Gragh[GraghI, ++GraghJ] = trans;
+                        Gragh[--GraghI, GraghJ] = trans;
+                        Gragh[GraghI, ++GraghJ] = trans;
+                        Gragh[--GraghI, GraghJ] = trans;
                     }
                     break;
                 case Direction.Buttom:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
                         Gragh[++GraghI, GraghJ] = trans;
                         Gragh[GraghI, --GraghJ] = trans;
                         Gragh[++GraghI, GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
                     }
-                    else if (GetInstallMap(direction, IsLarge))
+                    else if (GetInstallMap(direction, IsLarge) == 2)
                     {
                         Gragh[++GraghI, GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
@@ -206,19 +214,19 @@ public class CreateMap : MonoBehaviour
                     }
                     break;
                 case Direction.Left:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
-                        Gragh[GraghI, --GraghJ] = trans;
-                        Gragh[GraghI, --GraghJ] = trans;
-                        Gragh[--GraghI, GraghJ] = trans;
-                        Gragh[GraghI, ++GraghJ] = trans;
-                    }
-                    else if (GetInstallMap(direction, IsLarge))
-                    {
-                        Gragh[GraghI, --GraghJ] = trans;
                         Gragh[GraghI, --GraghJ] = trans;
                         Gragh[++GraghI, GraghJ] = trans;
-                        Gragh[GraghI, ++GraghJ] = trans;
+                        Gragh[GraghI, --GraghJ] = trans;
+                        Gragh[--GraghI, GraghJ] = trans;
+                    }
+                    else if (GetInstallMap(direction, IsLarge) == 2)
+                    {
+                        Gragh[GraghI, --GraghJ] = trans;
+                        Gragh[--GraghI, GraghJ] = trans;
+                        Gragh[GraghI, --GraghJ] = trans;
+                        Gragh[++GraghI, GraghJ] = trans;
                     }
                     break;
             }
@@ -228,31 +236,31 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Stand:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
                         Gragh[GraghI, GraghJ] = trans;
                     }
                     break;
                 case Direction.Top:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
                         Gragh[--GraghI, GraghJ] = trans;
                     }
                     break;
                 case Direction.Right:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
                         Gragh[GraghI, ++GraghJ] = trans;
                     }
                     break;
                 case Direction.Buttom:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
                         Gragh[++GraghI, GraghJ] = trans;
                     }
                     break;
                 case Direction.Left:
-                    if (GetInstallMap(direction, IsLarge))
+                    if (GetInstallMap(direction, IsLarge) == 1)
                     {
                         Gragh[GraghI, --GraghJ] = trans;
                     }
@@ -264,26 +272,26 @@ public class CreateMap : MonoBehaviour
 
 #region GetFuntions
 
-    private bool GetInstallMap(Direction direction, bool IsLarge)
+    private int GetInstallMap(Direction direction, bool IsLarge)
     {
         if (IsLarge)
         {
             switch (direction)
             {
                 case Direction.Top:
-                    if (!(Gragh[GraghI - 1, GraghJ].localPosition == transform.localPosition &&
+                    if (Gragh[GraghI - 1, GraghJ].localPosition == transform.localPosition &&
                         Gragh[GraghI - 1, GraghJ - 1].localPosition == transform.localPosition &&
                         Gragh[GraghI - 2, GraghJ - 1].localPosition == transform.localPosition &&
-                        Gragh[GraghI - 2, GraghJ].localPosition == transform.localPosition))
+                        Gragh[GraghI - 2, GraghJ].localPosition == transform.localPosition)
                     {
-                        return true;
+                        return 1;
                     }
                     else if (Gragh[GraghI - 1, GraghJ].localPosition == transform.localPosition &&
                             Gragh[GraghI - 1, GraghJ + 1].localPosition == transform.localPosition &&
                             Gragh[GraghI - 2, GraghJ + 1].localPosition == transform.localPosition &&
                             Gragh[GraghI - 2, GraghJ].localPosition == transform.localPosition)
                     {
-                        return true;
+                        return 2;
                     }
                     break;
                 case Direction.Right:
@@ -292,14 +300,14 @@ public class CreateMap : MonoBehaviour
                         Gragh[GraghI + 1, GraghJ + 2].localPosition == transform.localPosition &&
                         Gragh[GraghI + 1, GraghJ + 1].localPosition == transform.localPosition)
                     {
-                        return true;
+                        return 1;
                     }
                     else if (Gragh[GraghI, GraghJ + 1].localPosition == transform.localPosition &&
                         Gragh[GraghI, GraghJ + 2].localPosition == transform.localPosition &&
                         Gragh[GraghI - 1, GraghJ + 2].localPosition == transform.localPosition &&
                         Gragh[GraghI - 1, GraghJ + 1].localPosition == transform.localPosition)
                     {
-                        return false;
+                        return 2;
                     }
                     break;
                 case Direction.Buttom:
@@ -308,14 +316,14 @@ public class CreateMap : MonoBehaviour
                         Gragh[GraghI + 2, GraghJ - 1].localPosition == transform.localPosition &&
                         Gragh[GraghI + 2, GraghJ].localPosition == transform.localPosition)
                     {
-                        return true;
+                        return 1;
                     }
                     else if (Gragh[GraghI + 1, GraghJ].localPosition == transform.localPosition &&
                         Gragh[GraghI + 1, GraghJ + 1].localPosition == transform.localPosition &&
                         Gragh[GraghI + 2, GraghJ + 1].localPosition == transform.localPosition &&
                         Gragh[GraghI + 2, GraghJ].localPosition == transform.localPosition)
                     {
-                        return true;
+                        return 2;
                     }
                     break;
                 case Direction.Left:
@@ -324,14 +332,14 @@ public class CreateMap : MonoBehaviour
                         Gragh[GraghI - 1, GraghJ - 2].localPosition == transform.localPosition &&
                         Gragh[GraghI - 1, GraghJ - 1].localPosition == transform.localPosition)
                     {
-                        return true;
+                        return 1;
                     }
                     else if (Gragh[GraghI, GraghJ - 1].localPosition == transform.localPosition &&
                         Gragh[GraghI, GraghJ - 2].localPosition == transform.localPosition &&
                         Gragh[GraghI + 1, GraghJ - 2].localPosition == transform.localPosition &&
                         Gragh[GraghI + 1, GraghJ - 1].localPosition == transform.localPosition)
                     {
-                        return true;
+                        return 2;
                     }
                     break;
             }
@@ -341,23 +349,23 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Stand:
-                    if (!(Gragh[GraghI, GraghJ] == transform)) return true;
+                    if (Gragh[GraghI, GraghJ] == transform) return 1;
                     break;
                 case Direction.Top:
-                    if (!(Gragh[GraghI - 1, GraghJ] == transform)) return true;
+                    if (Gragh[GraghI - 1, GraghJ] == transform) return 1;
                     break;
                 case Direction.Right:
-                    if (!(Gragh[GraghI, GraghJ + 1] == transform)) return true;
+                    if (Gragh[GraghI, GraghJ + 1] == transform) return 1;
                     break;
                 case Direction.Buttom:
-                    if (!(Gragh[GraghI + 1, GraghJ] == transform)) return true;
+                    if (Gragh[GraghI + 1, GraghJ] == transform) return 1;
                     break;
                 case Direction.Left:
-                    if (!(Gragh[GraghI, GraghJ - 1] == transform)) return true;
+                    if (Gragh[GraghI, GraghJ - 1] == transform) return 1;
                     break;
             }
         }
-        return false;
+        return 0;
     }
 
     private Direction GetDirection(int num)
@@ -380,13 +388,13 @@ public class CreateMap : MonoBehaviour
         switch (direction)
         {
             case Direction.Top:
-                return IsLarge ? new Vector3(-8.9f, 15) : new Vector3(0, 10);
+                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, 15) : new Vector3(9f, 15) : new Vector3(0, 10);
             case Direction.Right:
-                return IsLarge ? new Vector3(26.7f, -5) : new Vector3(17.8f, 0);
+                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(27f, -5f) : new Vector3(27f, 5f) : new Vector3(18f, 0);
             case Direction.Buttom:
-                return IsLarge ? new Vector3(-8.9f, -15) : new Vector3(0, -10);
+                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, -15f) : new Vector3(9f, -10f) : new Vector3(0, -10);
             case Direction.Left:
-                return IsLarge ? new Vector3(-26.7f, -5) : new Vector3(-17.8f, 0);
+                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-27f, -5f) : new Vector3(-27f, 5f) : new Vector3(-18f, 0);
             default:
                 return new Vector3(0, 0);
         }
@@ -416,13 +424,13 @@ public class CreateMap : MonoBehaviour
                 Debug.Log("GetMapPosError");
                 return ReturnVector;
         }
-
+        LastMapPos = ReturnVector;
         return ReturnVector;
     }
 
     private bool GetLarge()
     {
-        switch (Random.Range(1, 5))
+        switch (Random.Range(1, 10))
         {
             case 1:
                 return true;
@@ -436,11 +444,29 @@ public class CreateMap : MonoBehaviour
         return Gragh;
     }
 
-#endregion
+    public static int GetRoomFloor()
+    {
+        return RoomFloor;
+    }
+
+    public static string GetTag()
+    {
+        return Tag;
+    }
+
+    #endregion
 
     private void Awake()
     {
         Instance = this;
+        StageNum = 1;
+        ModernMapsBasic = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Basic");
+        ModernMapsLarge = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Large");
+        ShopMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Shop");
+        HealSpotMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/HealSpot");
+        BossMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Boss");
+        SetQueue();
+        SetFloor();
     }
 
 }
