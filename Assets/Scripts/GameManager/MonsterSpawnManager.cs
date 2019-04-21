@@ -6,11 +6,13 @@ public class MonsterSpawnManager : MonoBehaviour
 {
     public static MonsterSpawnManager Instance { get; private set; }
 
-    private Transform[,] Gragh = CreateMap.GetGragh();
+    private Transform[,] Gragh;
     private string MonsterPath = @"Monsters/";
+    private string objName = "Monster";
 
     private void SetMonster()
     {
+        Gragh = CreateMap.GetGragh();
         Transform Monsters;
         Transform Child;
 
@@ -26,9 +28,9 @@ public class MonsterSpawnManager : MonoBehaviour
                     {
                         Child = Monsters.GetChild(k);
                         if (Child) {
-                            Transform instance = Instantiate(Resources.Load<Transform>(MonsterPath + Child.tag));
-                            instance.localPosition = Child.localPosition;
-                            instance.localScale = Child.lossyScale;
+                            Transform Monster = Instantiate(Resources.Load<Transform>(MonsterPath + Child.tag));
+                            Monster.localPosition = Child.localPosition;
+                            Monster.localScale = Child.lossyScale;
                         }
                     }
                 }
@@ -41,9 +43,10 @@ public class MonsterSpawnManager : MonoBehaviour
         Transform Monsters = trans;
         for (int i = 0; i < trans.childCount; ++i)
         { 
-            if (trans.GetChild(i).CompareTag("Monsters"))
+            if (trans.GetChild(i).name == objName)
             {
                 Monsters = trans.GetChild(i);
+                break;
             }
         }
         return Monsters;
@@ -52,5 +55,10 @@ public class MonsterSpawnManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        SetMonster();
     }
 }
