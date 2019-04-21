@@ -21,6 +21,11 @@ public class CreateMap : MonoBehaviour
     private static string Tag = "InMonsterMap";
     private Queue<MapCode> Maps = new Queue<MapCode>();
     private bool IsPrevLarge;
+    private Vector3[] PrevLargeAddLargeVectors = { new Vector3(0f, 20f), new Vector3(36f, 0f), new Vector3(0f, -20f), new Vector3(-36f, 0f) };
+    private Vector3[] PrevLargeAddBasicVectors = { new Vector3(9, 15), new Vector3(27f, 5), new Vector3(9, -15), new Vector3(-27f, 5) };
+    private Vector3[] AddLargeVectorsType1 = { new Vector3(-9f, 15), new Vector3(27f, -5f), new Vector3(-9f, -15f), new Vector3(-27f, -5f) };
+    private Vector3[] AddLargeVectorsType2 = { new Vector3(9f, 15), new Vector3(27f, 5f), new Vector3(9f, -10f), new Vector3(-27f, 5f) };
+    private Vector3[] AddBasicVectors = { new Vector3(0, 10), new Vector3(18f, 0), new Vector3(0, -10), new Vector3(-18f, 0) };
 #endregion
 
 #region InputValues
@@ -63,8 +68,7 @@ public class CreateMap : MonoBehaviour
     
         while (list.Count > 0)
         {
-            int temp = (int)Time.time * list.Count;
-            Random.InitState(temp);
+            Random.InitState((int)Time.time * list.Count);
             int random = Random.Range(0, list.Count - 1);
             Maps.Enqueue(list[random]);
             list.RemoveAt(random);
@@ -76,26 +80,33 @@ public class CreateMap : MonoBehaviour
     {
         Direction direction;
         bool IsLarge;
+        MapCode IsMapCode;
 
         GraghI = RoomFloor * 2 - 1;
         GraghJ = RoomFloor * 2 - 1;
 
         IsLarge = false;
         LastMapPos = transform.position;
-        Gragh[GraghI, GraghJ] = SetMap(Maps.Dequeue(), GetDirection(0), false, IsLarge);
+        IsMapCode = Maps.Dequeue();
+        Gragh[GraghI, GraghJ] = SetMap(IsMapCode, GetDirection(0), false, IsLarge);
 
         while (Maps.Count > 0)
         {
+            Random.InitState((int)Time.time + Maps.Count);
             direction = GetDirection(Random.Range(1, 4));
             IsPrevLarge = IsLarge;
             IsLarge = GetLarge();
+            IsMapCode = Maps.Peek();
 
-            if ((Gragh[GraghI + 1, GraghJ] && Gragh[GraghI, GraghJ + 1] && Gragh[GraghI, GraghJ - 1] && Gragh[GraghI - 1, GraghJ]) || IsPrevLarge)
+            if (IsMapCode == MapCode.HealSpot || IsMapCode == MapCode.Shop)
+                IsLarge = false;
+
+            if ((Gragh[GraghI + 1, GraghJ] && Gragh[GraghI, GraghJ + 1] && Gragh[GraghI, GraghJ - 1] && Gragh[GraghI - 1, GraghJ]))
             {
                 SetMapPos();
             }
             if (GetInstallMap(direction, IsLarge) > 0)
-            {
+            {                
                 SetGragh(direction, IsLarge, SetMap(Maps.Dequeue(), direction, true, IsLarge));
             }
             
@@ -117,10 +128,12 @@ public class CreateMap : MonoBehaviour
                 obj = Instantiate(BossMaps[Random.Range(0, BossMaps.Length - 1)]);
                 break;
             case MapCode.Shop:
+                IsLarge = false;
                 InMonster = false;
                 obj = Instantiate(ShopMaps[Random.Range(0, ShopMaps.Length - 1)]);
                 break;
             case MapCode.HealSpot:
+                IsLarge = false;
                 InMonster = false;
                 obj = Instantiate(HealSpotMaps[Random.Range(0, HealSpotMaps.Length - 1)]);
                 break;
@@ -132,10 +145,17 @@ public class CreateMap : MonoBehaviour
                 return transform;
         }
         if (Code != MapCode.Boss)
+        {
             obj.localPosition = GetMapPos(direction, IsLarge);
+        }
         else
+        {
             obj.localPosition = GetMapPos(direction, true);
-        obj.tag = Tag;
+        }
+        if (InMonster)
+        {
+            obj.tag = Tag;
+        }
         obj.SetParent(transform);
         return obj;
     }
@@ -385,31 +405,50 @@ public class CreateMap : MonoBehaviour
 
     private Vector3 GetAddPos(Direction direction, bool IsLarge)
     {
-        switch (direction)
+        if (IsPrevLarge)
         {
-            case Direction.Top:
-                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, 15) : new Vector3(9f, 15) : new Vector3(0, 10);
-            case Direction.Right:
-                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(27f, -5f) : new Vector3(27f, 5f) : new Vector3(18f, 0);
-            case Direction.Buttom:
-                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-9f, -15f) : new Vector3(9f, -10f) : new Vector3(0, -10);
-            case Direction.Left:
-                return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? new Vector3(-27f, -5f) : new Vector3(-27f, 5f) : new Vector3(-18f, 0);
-            default:
-                return new Vector3(0, 0);
+            switch (direction)
+            {
+                case Direction.Top:
+                    return IsLarge ? PrevLargeAddLargeVectors[0] : PrevLargeAddBasicVectors[0];
+                case Direction.Right:
+                    return IsLarge ? PrevLargeAddLargeVectors[1] : PrevLargeAddBasicVectors[1];
+                case Direction.Buttom:
+                    return IsLarge ? PrevLargeAddLargeVectors[2] : PrevLargeAddBasicVectors[1];
+                case Direction.Left:
+                    return IsLarge ? PrevLargeAddLargeVectors[3] : PrevLargeAddBasicVectors[1];
+                default:
+                    return new Vector3(0, 0);
+            }
+        }
+        else
+        {
+            switch (direction)
+            {
+                case Direction.Top:
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[0] : AddLargeVectorsType2[0] : AddBasicVectors[0];
+                case Direction.Right:
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[1] : AddLargeVectorsType2[1] : AddBasicVectors[1];
+                case Direction.Buttom:
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[2] : AddLargeVectorsType2[2] : AddBasicVectors[2];
+                case Direction.Left:
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[3] : AddLargeVectorsType2[3] : AddBasicVectors[3];
+                default:
+                    return new Vector3(0, 0);
+            }
         }
     }
-    
+
     private Vector3 GetMapPos(Direction direction, bool IsLarge)
     {
-        Vector3 ReturnVector = LastMapPos;        
+        Vector3 ReturnVector = LastMapPos;
 
         switch (direction)
         {
             case Direction.Stand:
                 break;
             case Direction.Top:
-                 ReturnVector = LastMapPos + GetAddPos(direction, IsLarge);
+                ReturnVector = LastMapPos + GetAddPos(direction, IsLarge);
                 break;
             case Direction.Right:
                 ReturnVector = LastMapPos + GetAddPos(direction, IsLarge);
@@ -424,12 +463,15 @@ public class CreateMap : MonoBehaviour
                 Debug.Log("GetMapPosError");
                 return ReturnVector;
         }
+
         LastMapPos = ReturnVector;
         return ReturnVector;
     }
 
     private bool GetLarge()
     {
+        //Random.InitState((int)Time.time + Maps.Count);
+
         switch (Random.Range(1, 10))
         {
             case 1:
