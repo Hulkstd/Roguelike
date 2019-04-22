@@ -16,6 +16,7 @@ TagManager:
   - Water
   - Web
   - InMonsterMap
+  - HealSpot
   layers:
   - Default
   - TransparentFX
