@@ -26,6 +26,7 @@ public class CreateMap : MonoBehaviour
     private Vector3[] AddLargeVectorsType1 = { new Vector3(-9f, 15), new Vector3(27f, -5f), new Vector3(-9f, -15f), new Vector3(-27f, -5f) };
     private Vector3[] AddLargeVectorsType2 = { new Vector3(9f, 15), new Vector3(27f, 5f), new Vector3(9f, -10f), new Vector3(-27f, 5f) };
     private Vector3[] AddBasicVectors = { new Vector3(0, 10), new Vector3(18f, 0), new Vector3(0, -10), new Vector3(-18f, 0) };
+    public static bool IsRoading;
 #endregion
 
 #region InputValues
@@ -42,8 +43,19 @@ public class CreateMap : MonoBehaviour
 #endregion
 
 #region SetFunctions
+    private void SetFolder()
+    {
+        IsRoading = true;
+        ModernMapsBasic = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Basic");
+        ModernMapsLarge = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Large");
+        ShopMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Shop");
+        HealSpotMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/HealSpot");
+        BossMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Boss");
+    }
+
     private void SetQueue()
     {
+        Random.InitState((int)Time.time * list.Count);
         RoomFloor = StageNum * 9;
 
         Gragh = new Transform[RoomFloor * 4, RoomFloor * 4];
@@ -68,7 +80,7 @@ public class CreateMap : MonoBehaviour
     
         while (list.Count > 0)
         {
-            Random.InitState((int)Time.time * list.Count);
+            //Random.InitState((int)Time.time * list.Count);
             int random = Random.Range(0, list.Count - 1);
             Maps.Enqueue(list[random]);
             list.RemoveAt(random);
@@ -92,7 +104,7 @@ public class CreateMap : MonoBehaviour
 
         while (Maps.Count > 0)
         {
-            Random.InitState((int)Time.time + Maps.Count);
+            //Random.InitState((int)Time.time + Maps.Count);
             direction = GetDirection(Random.Range(1, 4));
             IsPrevLarge = IsLarge;
             IsLarge = GetLarge();
@@ -100,6 +112,8 @@ public class CreateMap : MonoBehaviour
 
             if (IsMapCode == MapCode.HealSpot || IsMapCode == MapCode.Shop)
                 IsLarge = false;
+            else if (IsMapCode == MapCode.Elite)
+                IsLarge = true;
 
             if ((Gragh[GraghI + 1, GraghJ] && Gragh[GraghI, GraghJ + 1] && Gragh[GraghI, GraghJ - 1] && Gragh[GraghI - 1, GraghJ]))
             {
@@ -111,6 +125,7 @@ public class CreateMap : MonoBehaviour
             }
             
         }
+        IsRoading = false;
     }
 
     private Transform SetMap(MapCode Code, Direction direction, bool InMonster, bool IsLarge)
@@ -122,18 +137,16 @@ public class CreateMap : MonoBehaviour
         {
             case MapCode.Modern:
                 if (!InMonster) obj = Instantiate(ModernMapsBasic[0]); // 0번째를 몬스터 없는 처음 시작맵으로 설정해주세요
-                else obj = Instantiate(IsLarge ? ModernMapsLarge[Random.Range(0, ModernMapsLarge.Length - 1)] : ModernMapsBasic[Random.Range(0, ModernMapsBasic.Length - 1)]);
+                else obj = Instantiate(IsLarge ? ModernMapsLarge[Random.Range(0, ModernMapsLarge.Length - 1)] : ModernMapsBasic[Random.Range(1, ModernMapsBasic.Length - 1)]);
                 break;
             case MapCode.Elite:
                 obj = Instantiate(BossMaps[Random.Range(0, BossMaps.Length - 1)]);
                 break;
             case MapCode.Shop:
-                IsLarge = false;
                 InMonster = false;
                 obj = Instantiate(ShopMaps[Random.Range(0, ShopMaps.Length - 1)]);
                 break;
             case MapCode.HealSpot:
-                IsLarge = false;
                 InMonster = false;
                 obj = Instantiate(HealSpotMaps[Random.Range(0, HealSpotMaps.Length - 1)]);
                 break;
@@ -502,11 +515,7 @@ public class CreateMap : MonoBehaviour
     {
         Instance = this;
         StageNum = 1;
-        ModernMapsBasic = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Basic");
-        ModernMapsLarge = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Large");
-        ShopMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Shop");
-        HealSpotMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/HealSpot");
-        BossMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Boss");
+        SetFolder();
         SetQueue();
         SetFloor();
     }
