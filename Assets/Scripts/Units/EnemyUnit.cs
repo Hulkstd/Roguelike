@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 // Name, Strength, fixed Strength, Shiled, Hazard level, Defense (or defensive power), Defensive form, movement speed (or moving velocity), DropItem, Attack Pattern
+[RequireComponent (typeof(Rigidbody2D))]
+[RequireComponent (typeof(Seeker))]
 public class EnemyUnit : MonoBehaviour
 {
     public delegate void DropItemFunc();
-    public delegate void AttackPattern(ref bool IsinFunction);
+    public delegate void AttackPattern(Transform Me, Transform Player, ref bool IsinFunction);
 
     public string Name;
     public int Strength;
@@ -14,13 +17,18 @@ public class EnemyUnit : MonoBehaviour
     public int Shield;
     public int HazardLevel;
     public int DefensivePower;
-    public DefensiveForm[] Forms;
+    public int NWayBulletCount;
     public float MovementSpeed;
+    public float JumpSpeed;
+    public float DashSpeed;
+    public float PlayerRange = 2.0f;
+    public DefensiveForm[] Forms;
     public DropItemFunc[] DropItems;
     public AttackPattern[] AttackPatterns;
+    public Transform Player; // 나중에 움직이는 코드로 바꿔.
+    public bool IsinFunction;
 
     private Coroutine RandomPatternCo;
-    private bool IsinFunction;
     private int OneHandMinDamage = 500, TwoHandMinDamage = 500;
     private Dictionary<DefensiveForm, int> GetDamage = new Dictionary<DefensiveForm, int>()
     {
@@ -64,7 +72,10 @@ public class EnemyUnit : MonoBehaviour
             {
                 yield return new WaitForFixedUpdate();
             }
-            AttackPatterns[Random.Range(0, AttackPatterns.Length)](ref IsinFunction);
+
+            yield return new WaitForSeconds(2.0f);
+
+            AttackPatterns[Random.Range(0, AttackPatterns.Length)](transform, Player, ref IsinFunction);
         }
     }
 

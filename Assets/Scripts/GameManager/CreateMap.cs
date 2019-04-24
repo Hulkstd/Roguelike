@@ -21,11 +21,14 @@ public class CreateMap : MonoBehaviour
     private static string Tag = "InMonsterMap";
     private Queue<MapCode> Maps = new Queue<MapCode>();
     private bool IsPrevLarge;
-    private Vector3[] PrevLargeAddLargeVectors = { new Vector3(0f, 20f), new Vector3(36f, 0f), new Vector3(0f, -20f), new Vector3(-36f, 0f) };
-    private Vector3[] PrevLargeAddBasicVectors = { new Vector3(9, 15), new Vector3(27f, 5), new Vector3(9, -15), new Vector3(-27f, 5) };
-    private Vector3[] AddLargeVectorsType1 = { new Vector3(-9f, 15), new Vector3(27f, -5f), new Vector3(-9f, -15f), new Vector3(-27f, -5f) };
-    private Vector3[] AddLargeVectorsType2 = { new Vector3(9f, 15), new Vector3(27f, 5f), new Vector3(9f, -10f), new Vector3(-27f, 5f) };
-    private Vector3[] AddBasicVectors = { new Vector3(0, 10), new Vector3(18f, 0), new Vector3(0, -10), new Vector3(-18f, 0) };
+    // Top Right Buttom Left -------------------------------------------------------
+    public static readonly Vector3[] PrevLargeAddLargeVectors = { new Vector3(0f, 20f), new Vector3(36f, 0f), new Vector3(0f, -20f), new Vector3(-36f, 0f) };
+    public static readonly Vector3[] PrevLargeAddBasicVectors = { new Vector3(9, 15), new Vector3(27f, 5), new Vector3(9, -15), new Vector3(-27f, 5) };
+    public static readonly Vector3[] AddLargeVectorsType1 = { new Vector3(-9f, 15), new Vector3(27f, -5f), new Vector3(-9f, -15f), new Vector3(-27f, -5f) };
+    public static readonly Vector3[] AddLargeVectorsType2 = { new Vector3(9f, 15), new Vector3(27f, 5f), new Vector3(9f, -10f), new Vector3(-27f, 5f) };
+    public static readonly Vector3[] AddBasicVectors = { new Vector3(0, 10), new Vector3(18f, 0), new Vector3(0, -10), new Vector3(-18f, 0) };
+    // ----------------------------------------------------------------------------
+    public static readonly float MapDistance = 3f;
     public static bool IsRoading;
 #endregion
 
@@ -55,7 +58,7 @@ public class CreateMap : MonoBehaviour
 
     private void SetQueue()
     {
-        Random.InitState((int)Time.time * list.Count);
+        //Random.InitState((int)Time.time * list.Count);
         RoomFloor = StageNum * 9;
 
         Gragh = new Transform[RoomFloor * 4, RoomFloor * 4];
@@ -423,13 +426,13 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Top:
-                    return IsLarge ? PrevLargeAddLargeVectors[0] : PrevLargeAddBasicVectors[0];
+                    return IsLarge ? PrevLargeAddLargeVectors[0] + new Vector3(0, MapDistance) : PrevLargeAddBasicVectors[0] + new Vector3(0, MapDistance);
                 case Direction.Right:
-                    return IsLarge ? PrevLargeAddLargeVectors[1] : PrevLargeAddBasicVectors[1];
+                    return IsLarge ? PrevLargeAddLargeVectors[1] + new Vector3(MapDistance, 0) : PrevLargeAddBasicVectors[1] + new Vector3(MapDistance, 0);
                 case Direction.Buttom:
-                    return IsLarge ? PrevLargeAddLargeVectors[2] : PrevLargeAddBasicVectors[1];
+                    return IsLarge ? PrevLargeAddLargeVectors[2] + new Vector3(0, -MapDistance) : PrevLargeAddBasicVectors[1] + new Vector3(0, -MapDistance);
                 case Direction.Left:
-                    return IsLarge ? PrevLargeAddLargeVectors[3] : PrevLargeAddBasicVectors[1];
+                    return IsLarge ? PrevLargeAddLargeVectors[3] + new Vector3(-MapDistance, 0) : PrevLargeAddBasicVectors[1] + new Vector3(-MapDistance, 0);
                 default:
                     return new Vector3(0, 0);
             }
@@ -439,13 +442,17 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Top:
-                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[0] : AddLargeVectorsType2[0] : AddBasicVectors[0];
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[0] + new Vector3(0, MapDistance) : 
+                        AddLargeVectorsType2[0] + new Vector3(0, MapDistance) : AddBasicVectors[0] + new Vector3(0, MapDistance);
                 case Direction.Right:
-                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[1] : AddLargeVectorsType2[1] : AddBasicVectors[1];
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[1] + new Vector3(MapDistance, 0) : 
+                        AddLargeVectorsType2[1] + new Vector3(MapDistance, 0) : AddBasicVectors[1] + new Vector3(MapDistance, 0);
                 case Direction.Buttom:
-                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[2] : AddLargeVectorsType2[2] : AddBasicVectors[2];
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[2] + new Vector3(0, -MapDistance) : 
+                        AddLargeVectorsType2[2] + new Vector3(0, -MapDistance) : AddBasicVectors[2] + new Vector3(0, -MapDistance);
                 case Direction.Left:
-                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[3] : AddLargeVectorsType2[3] : AddBasicVectors[3];
+                    return IsLarge ? GetInstallMap(direction, IsLarge) == 1 ? AddLargeVectorsType1[3] + new Vector3(-MapDistance, 0) : 
+                        AddLargeVectorsType2[3] + new Vector3(-MapDistance, 0) : AddBasicVectors[3] + new Vector3(-MapDistance, 0);
                 default:
                     return new Vector3(0, 0);
             }
