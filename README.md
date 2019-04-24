@@ -6,7 +6,7 @@
 
 - 장르 : 로그라이크
 
-- 스토리 : md파일 참조
+- 스토리 : [md파일 참조](https://github.com/Hulkstd/STAC_Roguelike/blob/master/%EC%8A%A4%ED%86%A0%EB%A6%AC.md)
 
 - 게임 제작기간 : 4월 8일 ~
 

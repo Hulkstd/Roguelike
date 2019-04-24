@@ -6,11 +6,11 @@ public class MonsterSpawnManager : MonoBehaviour
 {
     public static MonsterSpawnManager Instance { get; private set; }
 
-    private Transform[,] Gragh;
-    private string MonsterPath = @"Monsters/";
-    private string objName = "Monster";
+    private static Transform[,] Gragh;
+    private static string MonsterPath = @"Monsters/";
+    private static string objName = "Monster";
 
-    private void SetMonster()
+    private static void SetMonster()
     {
         Gragh = CreateMap.GetGragh();
         Transform Monsters;
@@ -20,17 +20,19 @@ public class MonsterSpawnManager : MonoBehaviour
         {
             for (int j  = 0; j < CreateMap.GetRoomFloor() * 4; ++i)
             {
-                if (Gragh[i, j].position != new Vector3(0, 0) && Gragh[i, j].CompareTag(CreateMap.GetTag()))
-                {
-                    Monsters = GetMonsters(Gragh[i, j]);
-
-                    for (int k = 0; k < Monsters.childCount; ++k)
+                if (Gragh[i, j]) {
+                    if (Gragh[i, j].CompareTag(CreateMap.GetTag()))
                     {
-                        Child = Monsters.GetChild(k);
-                        if (Child) {
-                            Transform Monster = Instantiate(Resources.Load<Transform>(MonsterPath + Child.tag));
-                            Monster.localPosition = Child.localPosition;
-                            Monster.localScale = Child.lossyScale;
+                        Monsters = GetMonsters(Gragh[i, j]);
+
+                        for (int k = 0; k < Monsters.childCount; ++k)
+                        {
+                            Child = Monsters.GetChild(k);
+                            if (Child) {
+                                Transform Monster = Instantiate(Resources.Load<Transform>(MonsterPath + Child.tag));
+                                Monster.localPosition = Child.localPosition;
+                                Monster.localScale = Child.lossyScale;
+                            }
                         }
                     }
                 }
@@ -38,7 +40,7 @@ public class MonsterSpawnManager : MonoBehaviour
         }
     }
 
-    private Transform GetMonsters(Transform trans)
+    private static Transform GetMonsters(Transform trans)
     {
         Transform Monsters = trans;
         for (int i = 0; i < trans.childCount; ++i)
@@ -57,8 +59,4 @@ public class MonsterSpawnManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-        SetMonster();
-    }
 }
