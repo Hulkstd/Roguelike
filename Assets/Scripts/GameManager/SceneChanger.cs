@@ -29,7 +29,17 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Loading");
 
-        SceneManager.LoadSceneAsync(SceneName);
+        AsyncOperation async = SceneManager.LoadSceneAsync(SceneName);
+
+        yield return new WaitUntil(() => 
+        {
+            if(async.isDone)
+            {
+                return CreateMap.IsRoading;
+            }
+
+            return false;
+        });
 
         yield return null;
     }
