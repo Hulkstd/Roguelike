@@ -17,14 +17,35 @@ public class LoadingText : MonoBehaviour
     {
         while(true)
         {
-            text.text = "Loading .";
-            yield return new WaitForSeconds(1.0f);
+            if(CreateMap.Instance != null)
+            {
+                text.text = "Creating Map .";
+                yield return new WaitForSeconds(1.0f);
 
-            text.text = "Loading . .";
-            yield return new WaitForSeconds(1.0f);
+                text.text = "Creating Map . .";
+                yield return new WaitForSeconds(1.0f);
 
-            text.text = "Loading . . .";
-            yield return new WaitForSeconds(1.0f);
+                text.text = "Creating Map . . .";
+                yield return new WaitForSeconds(1.0f);
+
+                if(CreateMap.IsRoading)
+                {
+                    break;
+                }
+            }
+            else
+            {
+                text.text = "Loading .";
+                yield return new WaitForSeconds(1.0f);
+
+                text.text = "Loading . .";
+                yield return new WaitForSeconds(1.0f);
+
+                text.text = "Loading . . .";
+                yield return new WaitForSeconds(1.0f);
+            }
+
         }
+
     }
 }
