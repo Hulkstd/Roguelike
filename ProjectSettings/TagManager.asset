@@ -17,6 +17,7 @@ TagManager:
   - Web
   - InMonsterMap
   - HealSpot
+  - MapCreator
   layers:
   - Default
   - TransparentFX
