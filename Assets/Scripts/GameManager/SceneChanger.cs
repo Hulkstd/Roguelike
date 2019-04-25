@@ -13,6 +13,7 @@ public class SceneChanger : MonoBehaviour
     #region Functions
 
     #region Public
+
     public void SceneChangeWithLoadingScene(string SceneName)
     {
         StartCoroutine(ChangeScene(SceneName));
@@ -22,9 +23,11 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(SceneName);
     }
+
     #endregion
 
     #region Private
+
     private IEnumerator ChangeScene(string SceneName)
     {
         SceneManager.LoadScene("Loading");
@@ -43,6 +46,7 @@ public class SceneChanger : MonoBehaviour
 
         yield return null;
     }
+
     #endregion
 
     #endregion
