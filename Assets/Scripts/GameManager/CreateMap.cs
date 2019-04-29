@@ -495,7 +495,7 @@ public class CreateMap : MonoBehaviour
 
     private static Vector3 GetAddPos(Direction direction, bool IsLarge)
     {
-        return IsPrevMapLarge ? (IsLarge ? new Vector3(42, 0) : new Vector3(30f, 0f)) : (IsLarge ? LargeVector : BasicVector);
+        return IsPrevMapLarge ? (IsLarge ? new Vector3(39f, 0f) : new Vector3(30f, 0f)) : (IsLarge ? LargeVector : BasicVector);
     }
 
     private static Vector3 GetMapPos(Direction direction, bool IsLarge)
