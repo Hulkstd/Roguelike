@@ -18,6 +18,8 @@ TagManager:
   - InMonsterMap
   - HealSpot
   - MapCreator
+  - BasicTransform
+  - Door
   layers:
   - Default
   - TransparentFX
