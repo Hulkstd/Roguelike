@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,11 +9,11 @@ public class CreateMap : MonoBehaviour
 #region Enums
     private enum MapCode { Modern = 0, Elite = 1, Shop = 2, HealSpot = 3, Boss = 4 } // 2~4는 하나씩만 1은 2개까지만 맵 구별 방법
     private enum Direction { Stand = 0, Top = 1, Right = 2, Buttom = 3, Left = 4 } // 맵 설치 방향
-    #endregion
+#endregion
 
 #region MapCreateSurportValues
     private static Transform[,] Gragh;
-    private static int GraghI, GraghJ;
+    private static int GraghI, GraghJ; // now position
     private static List<MapCode> MapCodes = new List<MapCode>(); // 랜덤으로 쉽게 넣기위한 리스트
     private static Transform LastMapTransForm;
     private static int RoomFloor;
@@ -24,6 +23,8 @@ public class CreateMap : MonoBehaviour
     // Top Right Buttom Left -------------------------------------------------------
     public readonly static Vector3 LargeVector = new Vector3(30, 0);
     public readonly static Vector3 BasicVector = new Vector3(21, 0);
+    public readonly static Vector3 PrevLarge_LargeVector = new Vector3(39f, 0f);
+    public readonly static Vector3 PrevLarge_BasicVector = new Vector3(30f, 0f);
     // ----------------------------------------------------------------------------
     public static readonly float MapDistance = 3f;
     public static bool IsRoading;
@@ -60,7 +61,7 @@ public class CreateMap : MonoBehaviour
     public static void SetQueue()
     {
         System.Random rand = new System.Random();
-        UnityEngine.Random.InitState(rand.Next(int.MinValue, int.MaxValue));
+        Random.InitState(rand.Next(int.MinValue, int.MaxValue));
         RoomFloor = StageNum * 9;
 
         Gragh = new Transform[RoomFloor * 4 + 2, RoomFloor * 4 + 2];
@@ -85,7 +86,7 @@ public class CreateMap : MonoBehaviour
 
         while (MapCodes.Count > 0)
         {
-            int random = UnityEngine.Random.Range(0, MapCodes.Count);
+            int random = Random.Range(0, MapCodes.Count);
             Maps.Enqueue(MapCodes[random]);
             MapCodes.RemoveAt(random);
         }
@@ -98,8 +99,8 @@ public class CreateMap : MonoBehaviour
         bool IsLarge;
         MapCode IsMapCode;
 
-        GraghI = RoomFloor * 2 + 1;
-        GraghJ = RoomFloor * 2 + 1;
+        GraghI = RoomFloor * 2;
+        GraghJ = RoomFloor * 2;
 
         IsLarge = false;
         LastMapTransForm = MapCreator;
@@ -109,7 +110,7 @@ public class CreateMap : MonoBehaviour
 
         while (Maps.Count > 0)
         {
-            direction = GetDirection(UnityEngine.Random.Range(1, 5));
+            direction = GetDirection(Random.Range(1, 5));
             IsLarge = GetLarge();
             IsMapCode = Maps.Peek();
 
@@ -146,22 +147,22 @@ public class CreateMap : MonoBehaviour
         {
             case MapCode.Modern:
                 if (!InMonster) obj = Instantiate(ModernMapsBasic[0]); // 0번째를 몬스터 없는 처음 시작맵으로 설정해주세요
-                else obj = Instantiate(IsLarge ? ModernMapsLarge[UnityEngine.Random.Range(0, ModernMapsLarge.Length)] :
-                    ModernMapsBasic[UnityEngine.Random.Range(1, ModernMapsBasic.Length)]);
+                else obj = Instantiate(IsLarge ? ModernMapsLarge[Random.Range(0, ModernMapsLarge.Length)] :
+                    ModernMapsBasic[Random.Range(1, ModernMapsBasic.Length)]);
                 break;
             case MapCode.Elite:
-                obj = Instantiate(BossMaps[UnityEngine.Random.Range(0, BossMaps.Length)]);
+                obj = Instantiate(BossMaps[Random.Range(0, BossMaps.Length)]);
                 break;
             case MapCode.Shop:
                 InMonster = false;
-                obj = Instantiate(ShopMaps[UnityEngine.Random.Range(0, ShopMaps.Length)]);
+                obj = Instantiate(ShopMaps[Random.Range(0, ShopMaps.Length)]);
                 break;
             case MapCode.HealSpot:
                 InMonster = false;
-                obj = Instantiate(HealSpotMaps[UnityEngine.Random.Range(0, HealSpotMaps.Length)]);
+                obj = Instantiate(HealSpotMaps[Random.Range(0, HealSpotMaps.Length)]);
                 break;
             case MapCode.Boss:
-                obj = Instantiate(BossMaps[UnityEngine.Random.Range(0, BossMaps.Length)]);
+                obj = Instantiate(BossMaps[Random.Range(0, BossMaps.Length)]);
                 break;
             default:
                 Debug.Log("SetMaps error");
@@ -215,8 +216,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[--GraghI, GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
 
-                        GraghI += UnityEngine.Random.Range(0, 2);
-                        GraghJ -= UnityEngine.Random.Range(0, 2);
+                        GraghI += Random.Range(0, 2);
+                        GraghJ -= Random.Range(0, 2);
                         Debug.Log("Top1");
 
                     }
@@ -227,8 +228,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[--GraghI, GraghJ] = trans;
                         Gragh[GraghI, --GraghJ] = trans;
 
-                        GraghI += UnityEngine.Random.Range(0, 2);
-                        GraghJ += UnityEngine.Random.Range(0, 2);
+                        GraghI += Random.Range(0, 2);
+                        GraghJ += Random.Range(0, 2);
                         Debug.Log("Top2");
                     }
                     // i - 2 j
@@ -241,8 +242,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[GraghI, ++GraghJ] = trans;
                         Gragh[--GraghI, GraghJ] = trans;
 
-                        GraghI += UnityEngine.Random.Range(0, 2);
-                        GraghJ -= UnityEngine.Random.Range(0, 2);
+                        GraghI += Random.Range(0, 2);
+                        GraghJ -= Random.Range(0, 2);
                         Debug.Log("Right1");
                     }
                     else if (GetInstallMap(direction, IsLarge) == 2)
@@ -252,8 +253,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[GraghI, ++GraghJ] = trans;
                         Gragh[++GraghI, GraghJ] = trans;
 
-                        GraghI += UnityEngine.Random.Range(0, 2);
-                        GraghJ -= UnityEngine.Random.Range(0, 2);
+                        GraghI += Random.Range(0, 2);
+                        GraghJ -= Random.Range(0, 2);
                         Debug.Log("Right2");
                     }
                     // i j + 2
@@ -266,8 +267,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[++GraghI, GraghJ] = trans;
                         Gragh[GraghI, ++GraghJ] = trans;
 
-                        GraghI -= UnityEngine.Random.Range(0, 2);
-                        GraghJ -= UnityEngine.Random.Range(0, 2);
+                        GraghI -= Random.Range(0, 2);
+                        GraghJ -= Random.Range(0, 2);
                         Debug.Log("Buttom1");
                     }
                     else if (GetInstallMap(direction, IsLarge) == 2)
@@ -277,8 +278,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[++GraghI, GraghJ] = trans;
                         Gragh[GraghI, --GraghJ] = trans;
 
-                        GraghI -= UnityEngine.Random.Range(0, 2);
-                        GraghJ += UnityEngine.Random.Range(0, 2);
+                        GraghI -= Random.Range(0, 2);
+                        GraghJ += Random.Range(0, 2);
                         Debug.Log("Buttom2");
                     }
                     // i + 2 j
@@ -291,8 +292,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[GraghI, --GraghJ] = trans;
                         Gragh[--GraghI, GraghJ] = trans;
 
-                        GraghI += UnityEngine.Random.Range(0, 2);
-                        GraghJ += UnityEngine.Random.Range(0, 2);
+                        GraghI += Random.Range(0, 2);
+                        GraghJ += Random.Range(0, 2);
                         Debug.Log("Left1");
                     }
                     else if (GetInstallMap(direction, IsLarge) == 2)
@@ -302,8 +303,8 @@ public class CreateMap : MonoBehaviour
                         Gragh[GraghI, --GraghJ] = trans;
                         Gragh[++GraghI, GraghJ] = trans;
 
-                        GraghI -= UnityEngine.Random.Range(0, 2);
-                        GraghJ += UnityEngine.Random.Range(0, 2);
+                        GraghI -= Random.Range(0, 2);
+                        GraghJ += Random.Range(0, 2);
                         Debug.Log("Left2");
                     }
                     // i j - 2
@@ -495,7 +496,7 @@ public class CreateMap : MonoBehaviour
 
     private static Vector3 GetAddPos(Direction direction, bool IsLarge)
     {
-        return IsPrevMapLarge ? (IsLarge ? new Vector3(39f, 0f) : new Vector3(30f, 0f)) : (IsLarge ? LargeVector : BasicVector);
+        return IsPrevMapLarge ? (IsLarge ? PrevLarge_LargeVector : PrevLarge_BasicVector) : (IsLarge ? LargeVector : BasicVector);
     }
 
     private static Vector3 GetMapPos(Direction direction, bool IsLarge)
@@ -525,7 +526,7 @@ public class CreateMap : MonoBehaviour
 
     private static bool GetLarge()
     {
-        switch (UnityEngine.Random.Range(0, 10))
+        switch (Random.Range(0, 10))
         {
             case 0:
                 return true;
@@ -551,7 +552,7 @@ public class CreateMap : MonoBehaviour
 
     public static Transform GetStartMapTransform()
     {
-        return Gragh[RoomFloor * 2 + 1, RoomFloor * 2 + 1];
+        return Gragh[RoomFloor * 2, RoomFloor * 2];
     }
 
 #endregion
@@ -563,6 +564,7 @@ public class CreateMap : MonoBehaviour
         SetFolder();
         SetQueue();
         SetFloor();
+        MonsterSpawnManager.SetMonster();
     }
 
     private void Update()
@@ -577,6 +579,7 @@ public class CreateMap : MonoBehaviour
             SetFolder();
             SetQueue();
             SetFloor();
+            MonsterSpawnManager.SetMonster();
         }
     }
 
