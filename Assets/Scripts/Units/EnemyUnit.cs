@@ -22,10 +22,11 @@ public class EnemyUnit : MonoBehaviour
     public float JumpSpeed;
     public float DashSpeed;
     public float PlayerRange = 2.0f;
+    public GameObject WarningPoint;
     public DefensiveForm[] Forms;
     public DropItemFunc[] DropItems;
     public AttackPattern[] AttackPatterns;
-    public Transform Player; // 나중에 움직이는 코드로 바꿔.
+    public Transform Player; // 나중에 움직이는 스크립트로 바꿔.
     public bool IsinFunction;
 
     private Coroutine RandomPatternCo;

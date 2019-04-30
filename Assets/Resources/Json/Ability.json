@@ -1,0 +1,11 @@
+[
+  {
+    "AbilityName": "Test",
+    "AbilityDescription": "Test Ability",
+    "Stats": [
+      { "HP": 5 },
+      { "MP": 10 }
+    ],
+    "AbilityImage" : "/Image/Abilities/Test.png"
+  } 
+]

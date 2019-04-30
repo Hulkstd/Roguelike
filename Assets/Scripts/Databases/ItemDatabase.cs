@@ -75,6 +75,7 @@ public class EquipmentsObject
 }
 
 [System.Serializable]
+[SerializeField]
 public class Stat
 {
     public Stat(string Name, int Amount)
@@ -127,37 +128,31 @@ public class Stat
                 {
                     return HP;
                 }
-                break;
 
             case "MP":
                 {
                     return MP;
                 }
-                break;
 
             case "Speed":
                 {
                     return Speed;
                 }
-                break;
 
             case "Power":
                 {
                     return Power;
                 }
-                break;
 
             case "CriticalPercent":
                 {
                     return CriticalPercent;
                 }
-                break;
 
             case "CriticalDamage":
                 {
                     return CriticalDamage;
                 }
-                break;
 
             default:
                 {
