@@ -1,18 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OptionCanvas : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Dropdown GraphicsDropdown;
+    public UnityEngine.Audio.AudioMixer MasterVolume;
+
+    public void SetMainMixer(float volume)
     {
-        
+        MasterVolume.SetFloat("Volume", volume);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetQuality(int qualityIndex)
     {
-        
+        QualitySettings.SetQualityLevel(qualityIndex);
+    }
+
+    public void Exit()
+    {
+        gameObject.SetActive(false);
     }
 }

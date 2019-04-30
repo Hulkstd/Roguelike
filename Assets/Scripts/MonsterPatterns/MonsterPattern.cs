@@ -55,12 +55,24 @@ public class MonsterPattern : MonoBehaviour
 
     public virtual void RangeOnPlayer(Transform Me, Transform Player, ref bool IsinFunction) // 태형 
     {
-        
+        EnemyUnit enemyUnit = Me.GetComponent<EnemyUnit>();
+
+        Vector3 ShootPosition = Player.transform.position;
+
+        enemyUnit.WarningPoint.transform.position = Player.transform.position;
+
+        enemyUnit.WarningPoint.transform.localScale = new Vector3(enemyUnit.PlayerRange, enemyUnit.PlayerRange);
     } 
 
     public virtual void RangeOnMyself(Transform Me, Transform Player, ref bool IsinFunction) // 태형
     {
+        EnemyUnit enemyUnit = Me.GetComponent<EnemyUnit>();
 
+        float Range = (Me.position - Player.position).magnitude;
+
+        enemyUnit.WarningPoint.transform.position = Me.transform.position;
+
+        enemyUnit.WarningPoint.transform.localScale = new Vector3(Range, Range);
     }
 
     public virtual void N_WayBullet(Transform Me, Transform Player, ref bool IsinFunction) // 재호 진우
