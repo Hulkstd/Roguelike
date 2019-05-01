@@ -11,7 +11,7 @@ public class CreateMap : MonoBehaviour
     private enum Direction { Stand = 0, Top = 1, Right = 2, Buttom = 3, Left = 4 } // 맵 설치 방향
 #endregion
 
-#region MapCreateSurportValues
+#region MapCreateSurpportValues
     private static Transform[,] Gragh;
     private static int GraghI, GraghJ; // now position
     private static List<MapCode> MapCodes = new List<MapCode>(); // 랜덤으로 쉽게 넣기위한 리스트
@@ -560,10 +560,15 @@ public class CreateMap : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void MakeMap()
+    {
         StageNum = 1;
         SetFolder();
         SetQueue();
         SetFloor();
+        MinimapManager.Instance.MakeMiniMap();
         MonsterSpawnManager.SetMonster();
     }
 
