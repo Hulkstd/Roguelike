@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GraghType = System.Collections.Generic.List<System.Collections.Generic.List<CreateMap.ListParam>>;
+using GraphType = System.Collections.Generic.List<System.Collections.Generic.List<CreateMap.ListParam>>;
 
 public class CreateMap : MonoBehaviour
 {
@@ -12,7 +12,6 @@ public class CreateMap : MonoBehaviour
     private enum Direction { Stand = 0, Top = 1, Right = 2, Buttom = 3, Left = 4 } // 맵 설치 방향
     #endregion
 
-<<<<<<< HEAD
     public class ListParam : System.IEquatable<ListParam>, System.IComparable<ListParam>
     {
         public int i;
@@ -37,12 +36,7 @@ public class CreateMap : MonoBehaviour
     }
 
     #region MapCreateSurportValues
-    private static GraghType Gragh = new GraghType();
-//    private static Transform[,] Gragh;
-=======
-#region MapCreateSurpportValues
-    private static Transform[,] Gragh;
->>>>>>> 1209e0b89328061edb836a3ecc4d7ce617faed72
+    private static GraphType Graph = new GraphType();
     private static int GraghI, GraghJ; // now position
     private static List<MapCode> MapCodes = new List<MapCode>(); // 랜덤으로 쉽게 넣기위한 리스트
     private static Transform LastMapTransForm;
@@ -90,7 +84,7 @@ public class CreateMap : MonoBehaviour
 
     public static void SetQueue()
     {
-        Gragh.Clear();
+        Graph.Clear();
         System.Random rand = new System.Random();
         Random.InitState(rand.Next(int.MinValue, int.MaxValue));
         RoomFloor = StageNum * 9;
@@ -108,7 +102,7 @@ public class CreateMap : MonoBehaviour
 
         for (int i = 0; i < (RoomFloor + 1) * 4 + 1; ++i)
         {
-            Gragh.Add(new List<ListParam>());
+            Graph.Add(new List<ListParam>());
         }
 
         for (int i = 0; i < RoomFloor - 4; ++i)
@@ -141,14 +135,14 @@ public class CreateMap : MonoBehaviour
         bool IsLarge;
         MapCode IsMapCode;
 
-        GraghI = (Gragh.Count - 1) / 2;
-        GraghJ = (Gragh.Count - 1) / 2;
+        GraghI = (Graph.Count - 1) / 2;
+        GraghJ = (Graph.Count - 1) / 2;
 
         IsLarge = false;
         LastMapTransForm = MapCreator;
         IsMapCode = Maps.Dequeue();
 
-        Gragh[GraghI].Add(new ListParam(GraghI, GraghJ, SetMap(IsMapCode, GetDirection(0), false, IsLarge)));
+        Graph[GraghI].Add(new ListParam(GraghI, GraghJ, SetMap(IsMapCode, GetDirection(0), false, IsLarge)));
         IsPrevMapLarge = false;
 
         while (Maps.Count > 0)
@@ -378,8 +372,8 @@ public class CreateMap : MonoBehaviour
     private static void SetListParam(int i, int j, Transform trans)
     {
         Debug.Log("i=" + i + "\n" + "j=" + j + "\n");
-        Gragh[i].Add(new ListParam(i, j , trans));
-        Gragh[i].Sort();
+        Graph[i].Add(new ListParam(i, j , trans));
+        Graph[i].Sort();
     }
 
     #endregion
@@ -558,23 +552,23 @@ public class CreateMap : MonoBehaviour
 
     private static ListParam GetListParam(int i, int j)
     {
-        if (i >= Gragh.Count || i < 0)
+        if (i >= Graph.Count || i < 0)
             return null;
 
-        for (int k = 0; k < Gragh[i].Count; ++k)
+        for (int k = 0; k < Graph[i].Count; ++k)
         {
-            if (Gragh[i][k].j == j)
+            if (Graph[i][k].j == j)
             {
-                return Gragh[i][k];
+                return Graph[i][k];
             }
         }
 
         return null;
     }
 
-    public static GraghType GetGragh()
+    public static GraphType GetGragh()
     {
-        return Gragh;
+        return Graph;
     }
 
     public static int GetRoomFloor()
@@ -589,7 +583,13 @@ public class CreateMap : MonoBehaviour
 
     public static Transform GetStartMapTransform()
     {
-        return Gragh[RoomFloor * 2][RoomFloor * 2].trans;
+        return Graph[RoomFloor * 2][RoomFloor * 2].trans;
+    }
+
+    public static void GetStartPosition(out int x, out int y)
+    {
+        x = (Graph.Count - 1) / 2;
+        y = (Graph.Count - 1) / 2;
     }
 
     #endregion
@@ -607,9 +607,9 @@ public class CreateMap : MonoBehaviour
             for (int j = 0; j < (RoomFloor + 1) * 4 + 1; ++j)
             {
 
-                if (Gragh[i].Count > 0 && Count < Gragh[i].Count)
+                if (Graph[i].Count > 0 && Count < Graph[i].Count)
                 {
-                    if (Gragh[i][Count].j == j)
+                    if (Graph[i][Count].j == j)
                     {
                         CopyGragh[i, j] = 1;
                         Count++;
@@ -641,6 +641,41 @@ public class CreateMap : MonoBehaviour
 
     }
 
+    public static Transform[,] GetTransformGragh()
+    {
+        int Count = 0;
+
+        Transform[,] CopyGraph = new Transform[(RoomFloor + 1) * 4 + 1, (RoomFloor + 1) * 4 + 1];
+
+
+        for (int i = 0; i < (RoomFloor + 1) * 4 + 1; ++i)
+        {
+            Count = 0;
+
+            for (int j = 0; j < (RoomFloor + 1) * 4 + 1; ++j)
+            {
+                if (Graph[i].Count > 0 && Count < Graph[i].Count)
+                {
+                    if (Graph[i][Count].j == j)
+                    {
+                        CopyGraph[i, j] = Graph[i][Count].trans;
+                        Count++;
+                    }
+                    else
+                    {
+                        CopyGraph[i, j] = null;
+                    }
+                }
+                else
+                {
+                    CopyGraph[i, j] = null;
+                }
+            }
+        }
+
+        return CopyGraph;
+    }
+
     private void Awake()
     {
         Instance = this;
@@ -654,7 +689,7 @@ public class CreateMap : MonoBehaviour
         SetFloor();
         MinimapManager.Instance.MakeMiniMap();
         MonsterSpawnManager.SetMonster();
-        PrintGragh();
+        //PrintGragh();
         IsRoading = false;
     }
 
