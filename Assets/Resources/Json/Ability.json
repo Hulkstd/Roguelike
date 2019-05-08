@@ -6,6 +6,15 @@
       { "HP": 5 },
       { "MP": 10 }
     ],
-    "AbilityImage" : "/Image/Abilities/Test.png"
-  } 
+    "AbilityImage": "/Image/Abilities/Test.png"
+  },
+  {
+    "AbilityName": "Healthy Body",
+    "AbilityDescription": "Be healthy.",
+    "Stats": [
+      { "HP": 10 },
+      { "Power": 5 }
+    ],
+    "AbilityImage":  "/Image/Abilities/Test.png"
+  }
 ]

@@ -152,6 +152,18 @@ public class AbilityManager : MonoBehaviour
             SelectedNodes[PageNum].NodeNameList = new List<string>();
         }
 
+        for (int i = 0; i < AbilityButtonGroup[CurrentPageNum - 1].childCount; i++)
+        {
+            //Button button = AbilityButtonGroup[CurrentPageNum - 1].GetChild(i).GetComponent<Button>();
+            PressedButton pressedButton = AbilityButtonGroup[CurrentPageNum - 1].GetChild(i).gameObject.AddComponent<PressedButton>();
+
+            pressedButton.RequiredHoldTime = 1;
+            pressedButton.OnClick = new UnityEngine.Events.UnityEvent();
+            pressedButton.OnClick.AddListener(() => { SelectNode(pressedButton.gameObject); });
+            pressedButton.OnLongClick = new UnityEngine.Events.UnityEvent();
+            pressedButton.OnLongClick.AddListener(() => { ShowAbilityInfo(pressedButton.transform.GetChild(0).gameObject); });
+        }
+
         foreach (KeyValuePair<NodeToNode, UILineRenderer> keyValue in FromTo)
         {
             List<GameObject> a = new List<GameObject>();
@@ -211,19 +223,13 @@ public class AbilityManager : MonoBehaviour
                 if (item.name != str)
                 {
                     item.GetComponent<Button>().interactable = false;
-                    item.GetComponent<Button>().onClick.RemoveAllListeners();
+                    item.GetComponent<PressedButton>().OnClick.RemoveAllListeners();
+                    item.GetComponent<PressedButton>().OnLongClick.RemoveAllListeners();
                 }
             });
 
             GetOutofHere:;
         });
-
-        for (int i = 0; i < AbilityButtonGroup[CurrentPageNum - 1].childCount; i++)
-        {
-            Button button = AbilityButtonGroup[CurrentPageNum - 1].GetChild(i).GetComponent<Button>();
-
-            button.onClick.AddListener(() => { SelectNode(button.gameObject); });
-        }
     }
 
     private CFromTo GetFromTo(int pageNum)
@@ -246,6 +252,11 @@ public class AbilityManager : MonoBehaviour
 
     #region Button Function
 
+    public void ShowAbilityInfo(GameObject Info)
+    {
+        Info.SetActive(true);
+    }
+
     public void SelectNode(GameObject to)
     {
         List<GameObject> list = ToFrom.GetValue(to);
@@ -259,35 +270,45 @@ public class AbilityManager : MonoBehaviour
 
         SelectedNodes[CurrentPageNum].NodeNameList.ForEach((item) =>
         {
-            list.ForEach((from) =>
+            if (list != null)
             {
-                if(item == from.name)
+                list.ForEach((from) =>
                 {
-                    flag = true;
-                    fromitem = from;
-                }
-            });
+                    if (item == from.name)
+                    {
+                        flag = true;
+                        fromitem = from;
+                    }
+                });
+            }
         });
 
         if(flag)
         {
             SelectedNodes[CurrentPageNum].NodeNameList.Add(to.name);
+            //if(fromitem != null && SelectedNodes[CurrentPageNum].NodeNameList.Contains(fromitem.name)) SelectedNodes[CurrentPageNum].NodeNameList.Remove(fromitem.name);
             to.gameObject.GetComponent<Button>().image.color = Color.white;
             to.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
-            GetFromTo(CurrentPageNum).GetValue(fromitem, to).color = Color.white;
+            if(GetFromTo(CurrentPageNum).GetValue(fromitem, to) != null)
+                GetFromTo(CurrentPageNum).GetValue(fromitem, to).color = Color.white;
 
             list = FromToList.GetValue(fromitem);
 
-            list.ForEach((item) =>
+            if (list != null)
             {
-                if (item != to)
+
+                list.ForEach((item) =>
                 {
-                    item.GetComponent<Button>().interactable = false;
-                    item.GetComponent<Button>().onClick.RemoveAllListeners();
-                }
-            });
+                    if (item != to)
+                    {
+                        item.GetComponent<Button>().interactable = false;
+                        item.GetComponent<Button>().onClick.RemoveAllListeners();
+                    }
+                });
+            }
         }
 
+        to.transform.GetChild(0).gameObject.SetActive(false);
         SaveSelectedNode();
     }
 

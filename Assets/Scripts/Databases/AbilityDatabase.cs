@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using System.ComponentModel;
 
 public class AbilityDatabase : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class AbilityInfo
         this.AbilityImage = Resources.Load<Sprite>(AbilityImage);
     }
 
-    public int TryGetStat(string Stat)
+    public int TryGetStat(StatType Stat)
     {
         int value = 0;
 
@@ -49,4 +50,11 @@ public class AbilityInfo
 
         return value;
     }
+}
+
+public enum AbilityName : int
+{
+    Test = 0,
+    HealthyBody = 1,
+    None = -1
 }
