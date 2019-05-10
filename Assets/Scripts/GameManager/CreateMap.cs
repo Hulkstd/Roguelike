@@ -12,7 +12,6 @@ public class CreateMap : MonoBehaviour
     private enum Direction { Stand = 0, Top = 1, Right = 2, Buttom = 3, Left = 4 } // 맵 설치 방향
     #endregion
 
-<<<<<<< HEAD
     public class ListParam : System.IEquatable<ListParam>, System.IComparable<ListParam>
     {
         public int i;
@@ -38,11 +37,6 @@ public class CreateMap : MonoBehaviour
 
     #region MapCreateSurportValues
     private static GraghType Gragh = new GraghType();
-//    private static Transform[,] Gragh;
-=======
-#region MapCreateSurpportValues
-    private static Transform[,] Gragh;
->>>>>>> 1209e0b89328061edb836a3ecc4d7ce617faed72
     private static int GraghI, GraghJ; // now position
     private static List<MapCode> MapCodes = new List<MapCode>(); // 랜덤으로 쉽게 넣기위한 리스트
     private static Transform LastMapTransForm;

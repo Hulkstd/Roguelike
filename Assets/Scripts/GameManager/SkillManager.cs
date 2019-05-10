@@ -6,6 +6,7 @@ public class SkillManager : MonoBehaviour
 {
     public static SkillManager Instance { get; private set; }
 
+    public static int UseSkillNumber;
     public delegate bool SkillFunc();
     public SkillObject Skill1;
     public SkillObject Skill2;
@@ -20,11 +21,12 @@ public class SkillManager : MonoBehaviour
 
     public void UseSkill(int Num)
     {
+        UseSkillNumber = Num - 1;
         switch(Num)
         {
             case 1:
-                {
-                    Skill1.Skill();
+                { 
+                    Skill1.Skill();   
                 }
                 break;
             case 2:
