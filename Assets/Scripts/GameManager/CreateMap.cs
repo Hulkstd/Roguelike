@@ -36,11 +36,7 @@ public class CreateMap : MonoBehaviour
     }
 
     #region MapCreateSurportValues
-<<<<<<< HEAD
-    private static GraghType Gragh = new GraghType();
-=======
     private static GraphType Graph = new GraphType();
->>>>>>> f37625f8898b443b9f6bd457c7e79c7a9f2d4b86
     private static int GraghI, GraghJ; // now position
     private static List<MapCode> MapCodes = new List<MapCode>(); // 랜덤으로 쉽게 넣기위한 리스트
     private static Transform LastMapTransForm;
