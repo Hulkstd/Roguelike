@@ -61,7 +61,7 @@ public class EquipmentsObject
         this.Stats = Stats;
     }
 
-    public int TryGetStat(string Stat)
+    public int TryGetStat(StatType Stat)
     {
         int value = 0;
 
@@ -120,36 +120,36 @@ public class Stat
         }
     }
 
-    public int GetStat(string statName)
+    public int GetStat(StatType type)
     {
-        switch (statName)
+        switch (type)
         {
-            case "HP":
+            case StatType.HP:
                 {
                     return HP;
                 }
 
-            case "MP":
+            case StatType.MP:
                 {
                     return MP;
                 }
 
-            case "Speed":
+            case StatType.Speed:
                 {
                     return Speed;
                 }
 
-            case "Power":
+            case StatType.Power:
                 {
                     return Power;
                 }
 
-            case "CriticalPercent":
+            case StatType.CriticalPercent:
                 {
                     return CriticalPercent;
                 }
 
-            case "CriticalDamage":
+            case StatType.CriticalDamage:
                 {
                     return CriticalDamage;
                 }
@@ -189,5 +189,16 @@ public enum WeaponType : short
 {
     OneHand = 1,
     TwoHand = 2,
+    None = -1
+}
+
+public enum StatType : short
+{
+    HP = 1,
+    MP = 2,
+    Speed = 3,
+    Power = 4,
+    CriticalPercent = 5,
+    CriticalDamage = 6,
     None = -1
 }

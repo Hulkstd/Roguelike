@@ -181,7 +181,7 @@ public class InventoryManager : MonoBehaviour
         HP.text = $"HP : { statManager.HPStat * statManager.StatperHP + 30 /*기본*/ }";
         MP.text = $"MP : { statManager.MPStat * statManager.StatperMP + 22 /*기본*/ }";
         DF.text = $"DF : { statManager.HPStat * statManager.StatperHP + 0  /*기본*/ }";
-        AD.text = $"AD : { (EquipmentImages[0] ? EquipmentImages[0].GetComponent<ItemMove>().Item.TryGetStat("Power") : 0) }";
+        AD.text = $"AD : { (EquipmentImages[0] ? EquipmentImages[0].GetComponent<ItemMove>().Item.TryGetStat(StatType.Power) : 0) }";
         AS.text = $"AS : { (EquipmentImages[0] ? EquipmentImages[0].GetComponent<ItemMove>().Item.AttackSpeed : 1) }";
         PO.text = $"PO : { statManager.PowerStat * statManager.StatperPower + 3  /*기본*/ }";
         SP.text = $"SP : { statManager.SpeedStat * statManager.StatperSpeed + (EquipmentImages[1] ? EquipmentImages[1].GetComponent<ItemMove>().Item.Speed : 0)+ 1 /*기본*/ }";

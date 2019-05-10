@@ -1,7 +1,6 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using RotaryHeart.Lib.SerializableDictionary;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class AbilityManager : MonoBehaviour
 {
     public static AbilityManager Instance { get; private set; }
 
-    #region Class
+    #region Enum and Class
 
     [System.Serializable]
     public class NodeToNode
@@ -47,7 +46,7 @@ public class AbilityManager : MonoBehaviour
         }
     }
     [System.Serializable]
-    public class CToFrom : Dictionary<GameObject, List<GameObject>>
+    public class MatchGameObjectAndList : Dictionary<GameObject, List<GameObject>>
     {
         public List<GameObject> GetValue(GameObject To)
         {
@@ -64,19 +63,31 @@ public class AbilityManager : MonoBehaviour
     [System.Serializable]
     public class SelectedNode
     {
-        public List<string> SelectedNodes;
+        public List<string> NodeNameList;
     }
 
     #endregion
+     
+    #region Variable
 
-    public CFromTo FromTo;
-    public CToFrom ToFrom;
-    public CToFrom FromToList;
+    public CFromTo Page1FromTo;
+    public CFromTo Page2FromTo;
+    [HideInInspector]
+    public MatchGameObjectAndList ToFrom;
+    [HideInInspector]
+    public MatchGameObjectAndList FromToList;
     public string FilePath;
+    public int CurrentPageNum;
 
-    private SelectedNode SelectedNodes;
+    private SelectedNode[] SelectedNodes;
     [SerializeField]
-    private Transform Buttons;
+    private Transform[] AbilityButtonGroup;
+    [SerializeField]
+    private Transform[] PageTransforms;
+
+    #endregion
+
+    #region Start Setting
 
     void Awake()
     {
@@ -86,22 +97,78 @@ public class AbilityManager : MonoBehaviour
     void Start()
     {
         FilePath = Application.dataPath + FilePath;
+        SelectedNodes = new SelectedNode[1];
+        ToFrom = new MatchGameObjectAndList();
+        FromToList = new MatchGameObjectAndList();
 
-        if(System.IO.File.Exists(FilePath))
+        LoadPage(1);
+    }
+
+    #endregion
+
+    #region Functions
+
+    #region Save and Load Node
+
+    public void SaveSelectedNode()
+    {
+        BinarySerialize(SelectedNodes[CurrentPageNum], FilePath + CurrentPageNum.ToString() + ".dll");
+    }
+
+    public SelectedNode LoadSelectedNode()
+    {
+        return BinaryDeserialize(FilePath + CurrentPageNum.ToString() + ".dll");
+    }
+
+    #endregion
+
+    #region Load Page
+
+    private void LoadPage(int PageNum)
+    {
+        CurrentPageNum = PageNum;
+
+        CFromTo FromTo = GetFromTo(PageNum);
+        ToFrom.Clear();
+        FromToList.Clear();
+
+        if (System.IO.File.Exists(FilePath + CurrentPageNum.ToString() + ".dll"))
         {
-            SelectedNodes = BinaryDeserialize(FilePath);
+            if (SelectedNodes.Length <= CurrentPageNum)
+            {
+                Array.Resize(ref SelectedNodes, CurrentPageNum + 1);
+            }
+
+            SelectedNodes[PageNum] = LoadSelectedNode();
         }
         else
         {
-            SelectedNodes = new SelectedNode();
-            SelectedNodes.SelectedNodes = new List<string>();
+            if(SelectedNodes.Length <= CurrentPageNum)
+            {
+                Array.Resize(ref SelectedNodes, CurrentPageNum + 1);
+            }
+
+            SelectedNodes[PageNum] = new SelectedNode();
+            SelectedNodes[PageNum].NodeNameList = new List<string>();
         }
 
-        foreach(KeyValuePair<NodeToNode, UILineRenderer> keyValue in FromTo)
+        for (int i = 0; i < AbilityButtonGroup[CurrentPageNum - 1].childCount; i++)
+        {
+            //Button button = AbilityButtonGroup[CurrentPageNum - 1].GetChild(i).GetComponent<Button>();
+            PressedButton pressedButton = AbilityButtonGroup[CurrentPageNum - 1].GetChild(i).gameObject.AddComponent<PressedButton>();
+
+            pressedButton.RequiredHoldTime = 1;
+            pressedButton.OnClick = new UnityEngine.Events.UnityEvent();
+            pressedButton.OnClick.AddListener(() => { SelectNode(pressedButton.gameObject); });
+            pressedButton.OnLongClick = new UnityEngine.Events.UnityEvent();
+            pressedButton.OnLongClick.AddListener(() => { ShowAbilityInfo(pressedButton.transform.GetChild(0).gameObject); });
+        }
+
+        foreach (KeyValuePair<NodeToNode, UILineRenderer> keyValue in FromTo)
         {
             List<GameObject> a = new List<GameObject>();
 
-            if(!ToFrom.TryGetValue(keyValue.Key.To, out a))
+            if (!ToFrom.TryGetValue(keyValue.Key.To, out a))
             {
                 ToFrom.Add(keyValue.Key.To, new List<GameObject>() { keyValue.Key.From });
             }
@@ -121,10 +188,10 @@ public class AbilityManager : MonoBehaviour
 
             keyValue.Key.To.GetComponent<Button>().image.color = Color.gray;
             keyValue.Key.From.GetComponent<Button>().image.color = Color.gray;
-            if(keyValue.Value != null) keyValue.Value.color = Color.gray;
+            if (keyValue.Value != null) keyValue.Value.color = Color.gray;
         }
 
-        SelectedNodes.SelectedNodes.ForEach(str =>
+        SelectedNodes[PageNum].NodeNameList.ForEach(str =>
         {
             KeyValuePair<NodeToNode, UILineRenderer> keyValue = FromTo.GetKeyValuePairUsingString(str);
             if (keyValue.Key != null && keyValue.Value != null)
@@ -133,50 +200,61 @@ public class AbilityManager : MonoBehaviour
                 keyValue.Key.To.GetComponent<Button>().image.color = Color.white;
                 keyValue.Value.color = Color.white;
             }
-            else if(keyValue.Key != null && keyValue.Value == null)
+            else if (keyValue.Key != null && keyValue.Value == null)
             {
                 keyValue.Key.To.GetComponent<Button>().image.color = Color.white;
             }
         });
 
-        SelectedNodes.SelectedNodes.ForEach((str) =>
+        SelectedNodes[PageNum].NodeNameList.ForEach((str) =>
         {
             NodeToNode node = FromTo.GetKeyValuePairUsingString(str).Key;
 
+            if (node == null)
+                goto GetOutofHere;
+
             List<GameObject> list = FromToList.GetValue(node.From);
 
-            list.ForEach((item) =>
-            {
-                if (item.name != str)
-                {
-                    item.GetComponent<Button>().interactable = false;
-                    item.GetComponent<Button>().onClick.RemoveAllListeners();
-                }
-            });
-
-            list = FromToList.GetValue(node.To);
+            if (list == null)
+                goto GetOutofHere;
 
             list.ForEach((item) =>
             {
                 if (item.name != str)
                 {
                     item.GetComponent<Button>().interactable = false;
-                    item.GetComponent<Button>().onClick.RemoveAllListeners();
+                    item.GetComponent<PressedButton>().OnClick.RemoveAllListeners();
+                    item.GetComponent<PressedButton>().OnLongClick.RemoveAllListeners();
                 }
             });
+
+            GetOutofHere:;
         });
-
-        for (int i = 0; i < Buttons.childCount; i++)
-        {
-            Button button = Buttons.GetChild(i).GetComponent<Button>();
-
-            button.onClick.AddListener(() => { SelectNode(button.gameObject); });
-        }
     }
 
-    public void SaveSelectedNode()
+    private CFromTo GetFromTo(int pageNum)
     {
-        BinarySerialize(SelectedNodes, FilePath);
+        switch(pageNum)
+        {
+            case 1:
+                return Page1FromTo;
+
+            case 2:
+                return Page2FromTo;
+        }
+
+        return null;
+    }
+
+    #endregion
+
+    #endregion
+
+    #region Button Function
+
+    public void ShowAbilityInfo(GameObject Info)
+    {
+        Info.SetActive(true);
     }
 
     public void SelectNode(GameObject to)
@@ -185,44 +263,64 @@ public class AbilityManager : MonoBehaviour
         bool flag = false;
         GameObject fromitem = null;
 
-        if(ToFrom.GetValue(to) == null)
+        if (ToFrom.GetValue(to) == null)
         {
             flag = true;
         }
 
-        SelectedNodes.SelectedNodes.ForEach((item) =>
+        SelectedNodes[CurrentPageNum].NodeNameList.ForEach((item) =>
         {
-            list.ForEach((from) =>
+            if (list != null)
             {
-                if(item == from.name)
+                list.ForEach((from) =>
                 {
-                    flag = true;
-                    fromitem = from;
-                }
-            });
+                    if (item == from.name)
+                    {
+                        flag = true;
+                        fromitem = from;
+                    }
+                });
+            }
         });
 
         if(flag)
         {
-            SelectedNodes.SelectedNodes.Add(to.name);
+            SelectedNodes[CurrentPageNum].NodeNameList.Add(to.name);
+            //if(fromitem != null && SelectedNodes[CurrentPageNum].NodeNameList.Contains(fromitem.name)) SelectedNodes[CurrentPageNum].NodeNameList.Remove(fromitem.name);
             to.gameObject.GetComponent<Button>().image.color = Color.white;
             to.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
-            FromTo.GetValue(fromitem, to).color = Color.white;
+            if(GetFromTo(CurrentPageNum).GetValue(fromitem, to) != null)
+                GetFromTo(CurrentPageNum).GetValue(fromitem, to).color = Color.white;
 
             list = FromToList.GetValue(fromitem);
 
-            list.ForEach((item) =>
+            if (list != null)
             {
-                if (item != to)
+
+                list.ForEach((item) =>
                 {
-                    item.GetComponent<Button>().interactable = false;
-                    item.GetComponent<Button>().onClick.RemoveAllListeners();
-                }
-            });
+                    if (item != to)
+                    {
+                        item.GetComponent<Button>().interactable = false;
+                        item.GetComponent<Button>().onClick.RemoveAllListeners();
+                    }
+                });
+            }
         }
 
-        BinarySerialize(SelectedNodes, FilePath);
+        to.transform.GetChild(0).gameObject.SetActive(false);
+        SaveSelectedNode();
     }
+
+    public void ChangePage(int PageNum)
+    {
+        PageTransforms[CurrentPageNum - 1].gameObject.SetActive(false);
+        PageTransforms[PageNum - 1].gameObject.SetActive(true);
+
+        LoadPage(PageNum);
+    }
+
+    #endregion
 
     #region BinaryFormmater
 
