@@ -82,35 +82,36 @@ public class EnemyUnit : MonoBehaviour
 
     public void DamagedByUnit(Collider collider)
     {
-        //BaseWeapon baseWeapon = collider.GetComponent<BaseWeapon>();
+        BaseWeapon baseWeapon = collider.GetComponent<BaseWeapon>();
 
-        //WeaponType type = baseWeapon.EquipData.WeaponType;
+        WeaponType type = baseWeapon.EquipData.WeaponType;
 
-        //int Damage = 0;
+        int Damage = 0;
 
-        //switch(type)
-        //{
-        //    case WeaponType.OneHand:
-        //        {
-        //            Damage = baseWeapon.TryGetStat("Power");
+        switch (type)
+        {
+            case WeaponType.OneHand:
+                {
+                    Damage = baseWeapon.EquipData.TryGetStat(StatType.Power);
 
-        //            Damage = Damage * OneHandMinDamage / 100;
-        //        }
-        //        break;
+                    Damage = Damage * OneHandMinDamage / 100;
+                }
+                break;
 
-        //    case WeaponType.TwoHand:
-        //        {
-        //            Damage = baseWeapon.TryGetStat("Power");
+            case WeaponType.TwoHand:
+                {
+                    Damage = baseWeapon.EquipData.TryGetStat(StatType.Power);
 
-        //            Damage = Damage * TwoHandMinDamage / 100;
-        //        }
-        //        break;
-        //}
+                    Damage = Damage * TwoHandMinDamage / 100;
+                }
+                break;
+        }
 
-        //Strength -= Mathf.Clamp(Damage, 1, FixedStrength);
+        Strength -= Mathf.Clamp(Damage, 1, FixedStrength);
     }
 }
 
+[System.Serializable]
 public enum DefensiveForm : short
 {
     Shield = 1,

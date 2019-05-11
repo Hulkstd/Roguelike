@@ -161,6 +161,34 @@ public class Stat
         }
     }
 
+    public static Stat operator +(Stat stat, List<Stat> stats)
+    {
+        foreach(Stat s in stats)
+        {
+            stat.HP += s.HP;
+            stat.MP += s.MP;
+            stat.Power += s.Power;
+            stat.Speed += s.Speed;
+            stat.CriticalPercent += s.CriticalPercent;
+            stat.CriticalDamage += s.CriticalDamage;
+        }
+
+        return stat;
+    }
+
+    public static Stat operator +(Stat stat1, Stat stat2)
+    {
+
+        stat1.HP += stat2.HP;
+        stat1.MP += stat2.MP;
+        stat1.Power += stat2.Power;
+        stat1.Speed += stat2.Speed;
+        stat1.CriticalPercent += stat2.CriticalPercent;
+        stat1.CriticalDamage += stat2.CriticalDamage;
+
+        return stat1;
+    }
+
     public int HP;
     public int MP;
     public int Speed;
@@ -201,4 +229,11 @@ public enum StatType : short
     CriticalPercent = 5,
     CriticalDamage = 6,
     None = -1
+}
+
+public enum EquipmentItemNumber : short
+{
+    Test = 0,
+    Test1 = 1,
+    Test2 = 2,
 }

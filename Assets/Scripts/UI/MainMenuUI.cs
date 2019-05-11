@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class MainMenuUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private SceneChanger SceneChangerInstance
     {
-        
+        get
+        {
+            return SceneChanger.Instance;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject OptionTransform;
+
+    public void EnterToGame()
     {
-        
+        SceneChangerInstance.SceneChange("StageSelectScene");
+    }
+
+    public void OpenOption()
+    {
+        OptionTransform.SetActive(true);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

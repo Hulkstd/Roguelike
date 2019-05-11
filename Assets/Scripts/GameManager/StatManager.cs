@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class StatManager : MonoBehaviour
 {
@@ -13,7 +12,21 @@ public class StatManager : MonoBehaviour
     public int PowerStat = 0;
     public int CriticalPercent = 0;
     public int CriticalDamage = 0;
-    public int RemainingStats = 0;
+    private int remainingStats = 0;
+    public int RemainingStats
+    {
+        get
+        {
+            return remainingStats;
+        }
+
+        set
+        {
+            remainingStats = value;
+
+            BinarySerialize(remainingStats);
+        }
+    }
 
     public int StatperHP = 3;
     public int StatperMP = 2;
@@ -22,163 +35,86 @@ public class StatManager : MonoBehaviour
     public float StatperCriticalPercent = 0.5f;
     public float StatperCriticalDamage = 0.05f;
 
-    [SerializeField]
-    private Animator animator;
-    [SerializeField]
-    private Image AskApply;
-    [SerializeField]
-    private Text HPDesc;
-    [SerializeField]
-    private Text HPCount;
-    [SerializeField]
-    private Text MPDesc;
-    [SerializeField]
-    private Text MPCount;
-    [SerializeField]
-    private Text SpeedDesc;
-    [SerializeField]
-    private Text SpeedCount;
-    [SerializeField]
-    private Text PowerDesc;
-    [SerializeField]
-    private Text PowerCount;
-    [SerializeField]
-    private Text RemainingStatsText;
-    private int[] UpgradeStat = new int[4];
+    private AbilityManager AbilityManagerInstance
+    {
+        get
+        {
+            return AbilityManager.Instance;
+        }
+    }
+    private InventoryManager InventoryManagerInstance
+    {
+        get
+        {
+            return InventoryManager.Instance;
+        }
+    }
 
     private void Awake()
     {
         Instance = this;
     }
 
-    void Update()
+    private void Start()
     {
-        HPDesc.text = ("HP + " + ((HPStat + UpgradeStat[0]) * StatperHP).ToString());
-        MPDesc.text = ("MP + " + ((MPStat + UpgradeStat[1]) * StatperMP).ToString());
-        SpeedDesc.text = ("SPEED + " + ((SpeedStat + UpgradeStat[2]) * StatperSpeed).ToString());
-        PowerDesc.text = ("POWER + " + ((PowerStat + UpgradeStat[3]) * StatperPower).ToString());
-
-        HPCount.text = "+ " + UpgradeStat[0];
-        MPCount.text = "+ " + UpgradeStat[1];
-        SpeedCount.text = "+ " + UpgradeStat[2];
-        PowerCount.text = "+ " + UpgradeStat[3];
-        RemainingStatsText.text = "Remaining Stats : " + RemainingStats;
-    }
-
-    public void ShowWindow()
-    {
-        animator.SetBool("Open StatWindow", true);
-    }
-
-    public void PlusStat(string Stat)
-    {
-        if (RemainingStats == 0)
-            return;
-
-        switch(Stat)
+        if (System.IO.File.Exists(Application.dataPath + "skadmstmxptfid.dll"))
         {
-            case "HP":
-                {
-                    UpgradeStat[0]++;
-                }
-                break;
-
-            case "MP":
-                {
-                    UpgradeStat[1]++;
-                }
-                break;
-
-            case "Speed":
-                {
-                    UpgradeStat[2]++;
-                }
-                break;
-
-            case "Power":
-                {
-                    UpgradeStat[3]++;
-                }
-                break;
+            remainingStats = BinaryDeserialize();
         }
-
-        RemainingStats--;
-    }
-
-    public void MinusStat(string Stat)
-    {
-        if (RemainingStats == 0)
-            return;
-
-        switch (Stat)
+        else
         {
-            case "HP":
-                {
-                    if(UpgradeStat[0] == 0)
-                    {
-                        return;
-                    }
-
-                    UpgradeStat[0]--;
-                }
-                break;
-
-            case "MP":
-                {
-                    if (UpgradeStat[1] == 0)
-                    {
-                        return;
-                    }
-
-                    UpgradeStat[1]--;
-                }
-                break;
-
-            case "Speed":
-                {
-                    if (UpgradeStat[2] == 0)
-                    {
-                        return;
-                    }
-
-                    UpgradeStat[2]--;
-                }
-                break;
-
-            case "Power":
-                {
-                    if (UpgradeStat[3] == 0)
-                    {
-                        return;
-                    }
-
-                    UpgradeStat[3]--;
-                }
-                break;
+            RemainingStats = 0;
         }
-
-        RemainingStats++;
     }
 
-    public void Apply()
+    private void Update()
     {
-        AskApply.gameObject.SetActive(true);
+        ApplyStats();
     }
 
-    public void AskApplyYes()
+    public void ApplyStats()
     {
-        animator.SetBool("Open StatWindow", false);
+        StatManager statManager = StatManager.Instance;
 
-        HPStat += UpgradeStat[0];
-        MPStat += UpgradeStat[1];
-        SpeedStat += UpgradeStat[2];
-        PowerStat += UpgradeStat[3];
-        UpgradeStat[0] = UpgradeStat[1] = UpgradeStat[2] = UpgradeStat[3] = 0;
-        AskApply.gameObject.SetActive(false);
+        statManager.HPStat = 0;
+        statManager.MPStat = 0;
+        statManager.SpeedStat = 0;
+        statManager.PowerStat = 0;
+        statManager.CriticalDamage = 0;
+        statManager.CriticalPercent = 0;
+
+        statManager += AbilityManagerInstance.AbilityStat;
+        statManager += InventoryManagerInstance.GetAllEquipmentStatSum();
     }
 
-    public void AskApplyNo()
+    public static StatManager operator +(StatManager statManager, Stat stat)
     {
-        AskApply.gameObject.SetActive(false);
+        statManager.HPStat += stat.HP;
+        statManager.MPStat += stat.MP;
+        statManager.PowerStat += stat.Power;
+        statManager.SpeedStat += stat.Speed;
+        statManager.CriticalPercent += stat.CriticalPercent;
+        statManager.CriticalDamage += stat.CriticalDamage;
+
+        return statManager;
+    }
+
+    private void BinarySerialize(int RemainingStat)
+    {
+        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        FileStream fileStream = new FileStream(Application.dataPath + "skadmstmxptfid.dll", FileMode.Create);
+        binaryFormatter.Serialize(fileStream, RemainingStat);
+        fileStream.Close();
+    }
+
+    private int BinaryDeserialize()
+    {
+        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        FileStream fileStream = new FileStream(Application.dataPath + "skadmstmxptfid.dll", FileMode.Open);
+
+        int stat = (int)binaryFormatter.Deserialize(fileStream);
+        fileStream.Close();
+
+        return stat;
     }
 }

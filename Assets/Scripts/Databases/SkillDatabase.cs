@@ -11,6 +11,11 @@ public class SkillDatabase : MonoBehaviour
     [SerializeField]
     public List<SkillObject> Skills;
 
+    void Awake()
+    {
+        Instance = this;
+    }
+
     public void BuildDatabase()
     {
         Skills = JsonConvert.DeserializeObject<List<SkillObject>>(Resources.Load<TextAsset>("Json/Skill").ToString());
@@ -26,7 +31,7 @@ public class SkillObject
         this.SkillImage = Resources.Load<Sprite>(SkillImagePath);
         this.Animator = Resources.Load<Animator>(AnimatorPath);
         this.Skill = UseSkill;
-        this.Skill += null;// 나중에 고처야할 코드
+        //this.Skill += ;// 나중에 고처야할 코드
         this.OriginalCooltime = OriginalCooltime;
         this.Damage = Damage;
     }
@@ -51,8 +56,17 @@ public class SkillObject
 
     private bool UseSkill()
     {
-        Cooltime = OriginalCooltime;
-        return true;
+        if(Cooltime <= 0)
+        {
+            Cooltime = OriginalCooltime;
+            return true;
+        }
+        return false;
     }
 }
 
+public enum SkillNumber : short
+{
+    Test = 0,
+    Test2 = 1
+}

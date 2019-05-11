@@ -7,6 +7,8 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance { get; private set; }
 
+    #region Values
+
     public Transform Inventories;
     public Transform Equipments;
     public List<Transform> InventorySpaces;
@@ -14,7 +16,20 @@ public class InventoryManager : MonoBehaviour
 
     private List<ItemMove> ItemImages = new List<ItemMove>();
     private List<Image> EquipmentImages = new List<Image>(4) { null, null, null, null };
-    private ItemDatabase itemDatabase;
+    private ItemDatabase ItemDatabaseInstance
+    {
+        get
+        {
+            return ItemDatabase.Instance;
+        }
+    }
+    private StatManager StatManagerInstance
+    {
+        get
+        {
+            return StatManager.Instance;
+        }
+    }
     [SerializeField]
     private Animator animator;
     [SerializeField]
@@ -36,6 +51,8 @@ public class InventoryManager : MonoBehaviour
     [SerializeField]
     private Text CD;
 
+    #endregion
+
     private void Awake()
     {
         Instance = this;
@@ -43,14 +60,12 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
-        itemDatabase = ItemDatabase.Instance;
-
-        AddItem(itemDatabase.Equipments[0]);
-        AddItem(itemDatabase.Equipments[1]);
-        AddItem(itemDatabase.Equipments[1]);
-        AddItem(itemDatabase.Equipments[2]);
-        AddItem(itemDatabase.Equipments[2]);
-        AddItem(itemDatabase.Equipments[2]);
+        AddItem(ItemDatabaseInstance.Equipments[0]);
+        AddItem(ItemDatabaseInstance.Equipments[1]);
+        AddItem(ItemDatabaseInstance.Equipments[1]);
+        AddItem(ItemDatabaseInstance.Equipments[2]);
+        AddItem(ItemDatabaseInstance.Equipments[2]);
+        AddItem(ItemDatabaseInstance.Equipments[2]);
     }
 
     public void OpenInventory()
@@ -167,10 +182,19 @@ public class InventoryManager : MonoBehaviour
                     image.transform.position = position.position;
                 }
 
+                StatManagerInstance.ApplyStats();
+                ApplyStatWindow();
+
                 return true;
             }
+
+            ApplyStatWindow();
+
             return false;
         }
+
+        ApplyStatWindow();
+
         return false;
     }
 
@@ -187,5 +211,17 @@ public class InventoryManager : MonoBehaviour
         SP.text = $"SP : { statManager.SpeedStat * statManager.StatperSpeed + (EquipmentImages[1] ? EquipmentImages[1].GetComponent<ItemMove>().Item.Speed : 0)+ 1 /*기본*/ }";
         CP.text = $"CP : { statManager.CriticalPercent * statManager.StatperCriticalPercent + 0 /*기본*/ }";
         CD.text = $"CD : { statManager.CriticalDamage * statManager.StatperCriticalDamage + 1.5f  /*기본*/ }";
+    }
+
+    public Stat GetAllEquipmentStatSum()
+    {
+        Stat stat = new Stat("HP", 0);
+
+        foreach(Image image in EquipmentImages)
+        {
+            if(image != null) stat += image.GetComponent<ItemMove>().Item.Stats;
+        }
+
+        return stat;
     }
 }

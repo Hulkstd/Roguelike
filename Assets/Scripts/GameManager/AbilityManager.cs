@@ -78,12 +78,23 @@ public class AbilityManager : MonoBehaviour
     public MatchGameObjectAndList FromToList;
     public string FilePath;
     public int CurrentPageNum;
+    public Stat AbilityStat;
 
     private SelectedNode[] SelectedNodes;
     [SerializeField]
     private Transform[] AbilityButtonGroup;
     [SerializeField]
     private Transform[] PageTransforms;
+    [SerializeField]
+    private Text RemainingStat;
+
+    private StatManager StatManagerInstance
+    {
+        get
+        {
+            return StatManager.Instance;
+        }
+    }
 
     #endregion
 
@@ -104,11 +115,16 @@ public class AbilityManager : MonoBehaviour
         LoadPage(1);
     }
 
+    void Update()
+    {
+        RemainingStat.text = StatManagerInstance.RemainingStats.ToString();
+    }
+
     #endregion
 
     #region Functions
 
-    #region Save and Load Node
+    #region Save and Load
 
     public void SaveSelectedNode()
     {
@@ -118,6 +134,16 @@ public class AbilityManager : MonoBehaviour
     public SelectedNode LoadSelectedNode()
     {
         return BinaryDeserialize(FilePath + CurrentPageNum.ToString() + ".dll");
+    }
+
+    public void SaveAbilityStat()
+    {
+        BinarySerialize(AbilityStat);
+    }
+
+    public Stat LoadAbilityStat()
+    {
+        return BinaryDeserialize();
     }
 
     #endregion
@@ -283,10 +309,18 @@ public class AbilityManager : MonoBehaviour
             }
         });
 
-        if(flag)
+        SelectedNodes[CurrentPageNum].NodeNameList.ForEach((item) =>
+        {
+            if (item == to.name)
+            {
+                flag = false;
+            }
+        });
+
+        if (flag)
         {
             SelectedNodes[CurrentPageNum].NodeNameList.Add(to.name);
-            //if(fromitem != null && SelectedNodes[CurrentPageNum].NodeNameList.Contains(fromitem.name)) SelectedNodes[CurrentPageNum].NodeNameList.Remove(fromitem.name);
+            AbilityStat += to.gameObject.GetComponent<AbilityInfoStorage>().AbilityInfo.Stats;
             to.gameObject.GetComponent<Button>().image.color = Color.white;
             to.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
             if(GetFromTo(CurrentPageNum).GetValue(fromitem, to) != null)
@@ -341,6 +375,25 @@ public class AbilityManager : MonoBehaviour
         fileStream.Close();
 
         return node;
+    }
+
+    private void BinarySerialize(Stat AbilityStat)
+    {
+        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        FileStream fileStream = new FileStream(Application.dataPath + "djqlfflxltmxpt.dll", FileMode.Create);
+        binaryFormatter.Serialize(fileStream, AbilityStat);
+        fileStream.Close();
+    }
+
+    private Stat BinaryDeserialize()
+    {
+        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        FileStream fileStream = new FileStream(Application.dataPath + "djqlfflxltmxpt.dll", FileMode.Open);
+
+        Stat stat = (Stat)binaryFormatter.Deserialize(fileStream);
+        fileStream.Close();
+
+        return stat;
     }
 
     #endregion

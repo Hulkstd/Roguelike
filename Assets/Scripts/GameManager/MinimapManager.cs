@@ -16,15 +16,18 @@ public class MinimapManager : MonoBehaviour
 
     #region Variable
 
-    #region static Field
-    #endregion
-
     #region public Field
     #endregion
 
     #region private Field
 
-    private CreateMap CreateMapInstance;
+    private CreateMap CreateMapInstance
+    {
+        get
+        {
+            return CreateMap.Instance;
+        }
+    }
     private Transform[,] Graphs;
     private int Floor;
 
@@ -46,6 +49,7 @@ public class MinimapManager : MonoBehaviour
     private Animator OpenAnimator;
 
     #endregion
+
     #endregion
 
     #region StartSetting
@@ -57,7 +61,6 @@ public class MinimapManager : MonoBehaviour
 
     void Start()
     {
-        CreateMapInstance = CreateMap.Instance;
         CreateMapInstance.MakeMap();
     }
 
