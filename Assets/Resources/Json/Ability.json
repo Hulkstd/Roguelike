@@ -6,15 +6,106 @@
       { "HP": 5 },
       { "MP": 10 }
     ],
-    "AbilityImage": "/Image/Abilities/Test.png"
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 0
   },
   {
     "AbilityName": "Healthy Body",
-    "AbilityDescription": "Be healthy.",
+    "AbilityDescription": "New Super-Humanity, It transcends physical ability.",
+    "Stats": [
+      { "HP": 25 },
+      { "MP": 5 },
+      { "Power": 2 },
+      { "Speed": 5 } // 1당 0.1씩 상승해서
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 1
+  },
+  {
+    "AbilityName": "Essence Recycling",
+    "AbilityDescription": "An essence is used more efficiently.",
+    "Stats": [
+      { "MP": 1 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 1
+  },
+  {
+    "AbilityName": "Focus",
+    "AbilityDescription": "Read the essence flow to see the target's weakness.",
+    "Stats": [
+      { "CriticalPercent": 5 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 2
+  },
+  {
+    "AbilityName": "Strengthening Essence",
+    "AbilityDescription": "The essence is used more strongly.",
+    "Stats": [
+      { "MP": 2 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 1
+  },
+  {
+    "AbilityName": "Amplification",
+    "AbilityDescription": "Having destructive force by concentrating essence",
+    "Stats": [
+      { "CriticalDamage": 5 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 2
+  },
+  {
+    "AbilityName": "Promote Metabolism",
+    "AbilityDescription": "Improve reflexes.",
+    "Stats": [
+      { "Speed": 1 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 2
+  },
+  {
+    "AbilityName": "Adrenaline Secretion",
+    "AbilityDescription": "Increases adrenaline secretion.",
+    "Stats": [
+      { "Power": 1 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 2
+  },
+  {
+    "AbilityName": "Neural Complex",
+    "AbilityDescription": "Evolve to take some of the animal senses.",
+    "Stats": [
+      { "CriticalPercent": 5 },
+      { "CriticalDamage": 5 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 3
+  },
+  {
+    "AbilityName": "Tough Soul",
+    "AbilityDescription": "Instead of strengthening the body, some of the body's essences are lost.",
     "Stats": [
       { "HP": 10 },
-      { "Power": 5 }
+      { "MP": -2},
+      { "Power": 2 }
     ],
-    "AbilityImage":  "/Image/Abilities/Test.png"
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 4
+  },
+  {
+    "AbilityName": "Spirit Flow",
+    "AbilityDescription": "Instead of strengthening your essence with your mental strength, lose some of physical abilities.",
+    "Stats": [
+      { "HP": -5},
+      { "MP": 5 },
+      { "Power": -1 },
+      { "CriticalPercent": 5 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 4
   }
 ]
