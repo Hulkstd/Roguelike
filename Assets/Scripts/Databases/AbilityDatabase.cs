@@ -30,13 +30,15 @@ public class AbilityInfo
     public string AbilityDescription;
     public List<Stat> Stats;
     public Sprite AbilityImage;
+    public int RequireAbilityStat;
 
-    public AbilityInfo(string AbilityName, string AbilityDescription, List<Stat> Stats, string AbilityImage)
+    public AbilityInfo(string AbilityName, string AbilityDescription, List<Stat> Stats, string AbilityImage, int RequireAbilityStat)
     {
         this.AbilityName = AbilityName;
         this.AbilityDescription = AbilityDescription;
         this.Stats = Stats;
         this.AbilityImage = Resources.Load<Sprite>(AbilityImage);
+        this.RequireAbilityStat = RequireAbilityStat;
     }
 
     public int TryGetStat(StatType Stat)

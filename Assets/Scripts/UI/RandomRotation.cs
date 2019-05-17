@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class RandomRotation : MonoBehaviour
 {
+    public Vector2 MinMaxTime;
+    public Vector2 DelayTimeRange;
+
     void Start()
     {
-        StartCoroutine(RandomRo());
+        StartCoroutine(Rotator());
     }
 
-    IEnumerator RandomRo()
+    IEnumerator Rotator()
     {
         Quaternion quaternion;
         float Time;
@@ -19,7 +22,7 @@ public class RandomRotation : MonoBehaviour
             quaternion = Random.rotation;
             quaternion.x = 0;
             quaternion.y = 0;
-            Time = Random.Range(0, 0.1f);
+            Time = Random.Range(MinMaxTime.x, MinMaxTime.y);
 
             while(true)
             {
@@ -30,6 +33,8 @@ public class RandomRotation : MonoBehaviour
 
                 yield return null;
             }
+
+            yield return new WaitForSeconds(Random.Range(DelayTimeRange.x, DelayTimeRange.y));
         }
     }
 }
