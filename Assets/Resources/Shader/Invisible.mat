@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: aaaa
+  m_Name: Invisible
   m_Shader: {fileID: -6465566751694194690, guid: 38cbd23e87b64d745980dd8f39d4b3bb,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
