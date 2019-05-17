@@ -380,7 +380,7 @@ public class AbilityManager : MonoBehaviour
     private void BinarySerialize(Stat AbilityStat)
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
-        FileStream fileStream = new FileStream(Application.dataPath + "djqlfflxltmxpt.dll", FileMode.Create);
+        FileStream fileStream = new FileStream(Application.dataPath + "/djqlfflxltmxpt.dll", FileMode.Create);
         binaryFormatter.Serialize(fileStream, AbilityStat);
         fileStream.Close();
     }
@@ -388,7 +388,7 @@ public class AbilityManager : MonoBehaviour
     private Stat BinaryDeserialize()
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
-        FileStream fileStream = new FileStream(Application.dataPath + "djqlfflxltmxpt.dll", FileMode.Open);
+        FileStream fileStream = new FileStream(Application.dataPath + "/djqlfflxltmxpt.dll", FileMode.Open);
 
         Stat stat = (Stat)binaryFormatter.Deserialize(fileStream);
         fileStream.Close();

@@ -7,6 +7,15 @@ public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger Instance { get; private set; }
 
+    #region Start Setting
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
+    #endregion
+
     #region Variables
     #endregion
 

@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class TestCode : MonoBehaviour
 {
-    void Start()
+    public Vector2 MinMaxValue = new Vector2(-0.5f, 2.5f);
+    public Material thisMaterial;
+
+    private float time; 
+
+    private void Start()
     {
-        using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter("Assets\\test.txt"))
-        {
-            float angle = 20;
-            for (int i = 0; i < 20; i++)
-            {
-                float x = Mathf.Cos(Mathf.Deg2Rad * angle) * 250;
-                float y = Mathf.Sin(Mathf.Deg2Rad * angle) * 250;
-
-                Debug.Log(x + " " + y);
-                streamWriter.WriteLine(x + " " + y);
-
-                angle += (360 / 20);
-            }
-        }
+        thisMaterial = GetComponent<Renderer>().material;
+        time = 0;
     }
 
-    
+    private void Update()
+    {
+        time += Time.deltaTime;
+
+        thisMaterial.SetFloat("Vector1_64E6D321", Mathf.Clamp(MinMaxValue.y * time / 0.3f, MinMaxValue.x, MinMaxValue.y));
+
+        if(MinMaxValue.y * time / 0.3f > MinMaxValue.y)
+        {
+            time = 0;
+        }
+    }
 }

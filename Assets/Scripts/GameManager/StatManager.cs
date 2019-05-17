@@ -102,7 +102,7 @@ public class StatManager : MonoBehaviour
     private void BinarySerialize(int RemainingStat)
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
-        FileStream fileStream = new FileStream(Application.dataPath + "skadmstmxptfid.dll", FileMode.Create);
+        FileStream fileStream = new FileStream(Application.dataPath + "/skadmstmxptfid.dll", FileMode.Create);
         binaryFormatter.Serialize(fileStream, RemainingStat);
         fileStream.Close();
     }
@@ -110,7 +110,7 @@ public class StatManager : MonoBehaviour
     private int BinaryDeserialize()
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
-        FileStream fileStream = new FileStream(Application.dataPath + "skadmstmxptfid.dll", FileMode.Open);
+        FileStream fileStream = new FileStream(Application.dataPath + "/skadmstmxptfid.dll", FileMode.Open);
 
         int stat = (int)binaryFormatter.Deserialize(fileStream);
         fileStream.Close();
