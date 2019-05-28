@@ -11,12 +11,6 @@ public class SceneChanger : MonoBehaviour
 
     void Awake()
     {
-        if (SceneChanger.Instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
         Instance = this;
     }
 
