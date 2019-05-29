@@ -16,7 +16,7 @@
       { "HP": 25 },
       { "MP": 5 },
       { "Power": 2 },
-      { "Speed": 5 } // 1당 0.1씩 상승해서
+      { "Speed": 5 }
     ],
     "AbilityImage": "/Image/Abilities/Test.png",
     "AbilityPoint": 1
@@ -90,7 +90,7 @@
     "AbilityDescription": "Instead of strengthening the body, some of the body's essences are lost.",
     "Stats": [
       { "HP": 10 },
-      { "MP": -2},
+      { "MP": -2 },
       { "Power": 2 }
     ],
     "AbilityImage": "/Image/Abilities/Test.png",
@@ -100,7 +100,19 @@
     "AbilityName": "Spirit Flow",
     "AbilityDescription": "Instead of strengthening your essence with your mental strength, lose some of physical abilities.",
     "Stats": [
-      { "HP": -5},
+      { "HP": -5 },
+      { "MP": 5 },
+      { "Power": -1 },
+      { "CriticalPercent": 5 }
+    ],
+    "AbilityImage": "/Image/Abilities/Test.png",
+    "AbilityPoint": 4
+  },
+  {
+    "AbilityName": "Spirit Flow",
+    "AbilityDescription": "Instead of strengthening your essence with your mental strength, lose some of physical abilities.",
+    "Stats": [
+      { "HP": -5 },
       { "MP": 5 },
       { "Power": -1 },
       { "CriticalPercent": 5 }

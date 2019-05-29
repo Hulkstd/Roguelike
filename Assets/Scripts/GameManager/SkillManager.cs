@@ -35,6 +35,13 @@ public class SkillManager : MonoBehaviour
             return SkillDatabase.Instance;
         }
     }
+    private InventoryManager InventoryManagerInstance
+    {
+        get
+        {
+            return InventoryManager.Instance;
+        }
+    }
 
     void Awake()
     {
@@ -90,5 +97,10 @@ public class SkillManager : MonoBehaviour
     public void UseAttack()
     {
         Attack();
+    }
+
+    public void OpenInventory()
+    {
+        InventoryManagerInstance.OpenInventory();
     }
 }
