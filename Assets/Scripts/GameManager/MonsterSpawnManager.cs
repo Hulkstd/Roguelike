@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GraghType = System.Collections.Generic.List<System.Collections.Generic.List<CreateMap.ListParam>>;
@@ -13,50 +14,48 @@ public class MonsterSpawnManager : MonoBehaviour
 
     public static void SetMonster()
     {
+        Transform Monsters;
+        Transform Monster;
+        Transform IsNotNull;
+        List<GameObject> list = new List<GameObject>();
+
         Gragh = CreateMap.GetGragh();
 
-        Transform Monsters;
-        List<Transform> Childs = new List<Transform>();
-        Transform Resource;
-        Transform Monster;
-
-        for (int i = 0; i < Gragh.Count; ++i)
+        foreach (List<CreateMap.ListParam> List in Gragh)
         {
-            for (int j = 0; j < Gragh[i].Count; ++j)
+            foreach (CreateMap.ListParam ListParam in List)
             {
-                if (Gragh[i][j] != null)
+                if (ListParam != null)
                 {
-                    Monsters = GetMonsters(Gragh[i][j].trans);
+                    Monsters = GetMonsters(ListParam.trans);
 
                     if (Monsters != null)
                     {
-                        for (int k = 0; k < Monsters.childCount; ++k)
-                        {
-                            Childs.Add(Monsters.GetChild(k));
-                        }
+                        for (int i = 0; i < Monsters.childCount; ++i) { list.Add(Monsters.GetChild(i).gameObject); }
 
-                        while (Childs.Count > 0)
+                        while (list.Count > 0)
                         {
-                            Resource = Resources.Load<Transform>(MonsterPath + Childs[0].tag);
+                            if (list[0] != null) {
+                                IsNotNull = Resources.Load<Transform>(MonsterPath + list[0].tag);
+                                if (IsNotNull != null)
+                                {
+                                    Monster = Instantiate(IsNotNull);
+                                    Monster.SetParent(ListParam.trans);
+                                    Monster.position = list[0].transform.position;
+                                    Monster.rotation = list[0].transform.rotation;
+                                    Monster.localScale = list[0].transform.lossyScale;
+                                }
 
-                            if (Resource != null)
-                            {
-                                Monster = Instantiate(Resource);
-                                Monster.SetParent(Monsters);
-                                Monster.position = Childs[0].position;
-                                Monster.localScale = Childs[0].lossyScale;
-                                Monster.rotation = Childs[0].localRotation;
+                                Destroy(list[0]);
                             }
 
-                            Destroy(Childs[0].gameObject);
-
-                            Childs.RemoveAt(0);
-
+                            list.RemoveAt(0);
                         }
                     }
                 }
             }
         }
+
     }
 
 

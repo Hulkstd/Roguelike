@@ -7,10 +7,9 @@ public class CreateMap : MonoBehaviour
 {
     public static CreateMap Instance { get; private set; }
 
-    #region Enums
+    #region EnumsAndClass
     private enum MapCode { Modern = 0, Elite = 1, Shop = 2, HealSpot = 3, Boss = 4 } // 2~4는 하나씩만 1은 2개까지만 맵 구별 방법
     private enum Direction { Stand = 0, Top = 1, Right = 2, Buttom = 3, Left = 4 } // 맵 설치 방향
-    #endregion
 
     public class ListParam : System.IEquatable<ListParam>, System.IComparable<ListParam>
     {
@@ -34,6 +33,8 @@ public class CreateMap : MonoBehaviour
             return i.ToString() + " " + j.ToString() + " " + trans.position + " " + trans.rotation + " " + trans.localScale;
         }
     }
+    
+    #endregion
 
     #region MapCreateSurportValues
     private static GraphType Graph = new GraphType();
@@ -55,9 +56,7 @@ public class CreateMap : MonoBehaviour
     #endregion
 
     #region InputValues
-    [SerializeField]
     private static int StageNum;
-    [SerializeField]
     private static Transform MapCreator;
     #endregion
 
@@ -74,7 +73,7 @@ public class CreateMap : MonoBehaviour
     public static void SetFolder()
     {
         IsRoading = true;
-        MapCreator = GameObject.FindGameObjectWithTag("MapCreator").transform;
+        MapCreator = GameObject.FindWithTag("MapCreator").transform;
         ModernMapsBasic = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Basic");
         ModernMapsLarge = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Modern/Large");
         ShopMaps = Resources.LoadAll<Transform>(@"TileMaps/Stage" + StageNum + "/Shop");
@@ -88,17 +87,6 @@ public class CreateMap : MonoBehaviour
         System.Random rand = new System.Random();
         Random.InitState(rand.Next(int.MinValue, int.MaxValue));
         RoomFloor = StageNum * 9;
-        /*
-        Gragh = new Transform[RoomFloor * 20, RoomFloor * 20];
-
-        for (int i = 0; i < RoomFloor * 6; ++i)
-        {
-            for (int j = 0; j < RoomFloor * 6; ++j)
-            {
-                Gragh[i, j] = null;
-            }
-        }
-        */
 
         for (int i = 0; i < (RoomFloor + 1) * 4 + 1; ++i)
         {
@@ -592,8 +580,6 @@ public class CreateMap : MonoBehaviour
         y = (Graph.Count - 1) / 2;
     }
 
-    #endregion
-
     public static void PrintGragh()
     {
         int Count = 0;
@@ -643,7 +629,7 @@ public class CreateMap : MonoBehaviour
 
     public static Transform[,] GetTransformGragh()
     {
-        int Count = 0;
+        int Count;
 
         Transform[,] CopyGraph = new Transform[(RoomFloor + 1) * 4 + 1, (RoomFloor + 1) * 4 + 1];
 
@@ -676,14 +662,10 @@ public class CreateMap : MonoBehaviour
         return CopyGraph;
     }
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    #endregion
 
     public void MakeMap()
     {
-        StageNum = 1;
         SetFolder();
         SetQueue();
         SetFloor();
@@ -693,21 +675,25 @@ public class CreateMap : MonoBehaviour
         IsRoading = false;
     }
 
+    private void Awake()
+    {
+        StageNum = 1;
+        Instance = this;
+    }
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.R))
         {
-            for (int i = 0; i < MapCreator.childCount; ++i)
+            if (MapCreator)
             {
-                Destroy(MapCreator.GetChild(i).gameObject);
+                for (int i = 0; i < MapCreator.childCount; ++i)
+                {
+                    Destroy(MapCreator.GetChild(i).gameObject);
+                }
             }
 
-            SetFolder();
-            SetQueue();
-            SetFloor();
-            MonsterSpawnManager.SetMonster();
-            PrintGragh();
-            IsRoading = false;
+            MakeMap();
         }
     }
 
