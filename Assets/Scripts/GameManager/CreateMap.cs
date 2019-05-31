@@ -53,6 +53,7 @@ public class CreateMap : MonoBehaviour
     // ----------------------------------------------------------------------------
     public static readonly float MapDistance = 3f;
     public static bool IsRoading;
+    public static int Seed;
     #endregion
 
     #region InputValues
@@ -85,9 +86,10 @@ public class CreateMap : MonoBehaviour
     {
         Graph.Clear();
         System.Random rand = new System.Random();
-        Random.InitState(rand.Next(int.MinValue, int.MaxValue));
+        Seed = rand.Next(int.MinValue, int.MaxValue);
+        Random.InitState(Seed);
         RoomFloor = StageNum * 9;
-
+        
         for (int i = 0; i < (RoomFloor + 1) * 4 + 1; ++i)
         {
             Graph.Add(new List<ListParam>());
@@ -266,7 +268,6 @@ public class CreateMap : MonoBehaviour
                         GraghI += Random.Range(0, 2);
                         GraghJ -= Random.Range(0, 2);
                     }
-                    // i j + 2
                     break;
                 case Direction.Buttom:
                     if (GetInstallMap(direction, IsLarge) == 1)
@@ -287,7 +288,6 @@ public class CreateMap : MonoBehaviour
                         GraghI -= Random.Range(0, 2);
                         GraghJ += Random.Range(0, 2);
                     }
-                    // i + 2 j
                     break;
                 case Direction.Left:
                     if (GetInstallMap(direction, IsLarge) == 1)
@@ -308,7 +308,6 @@ public class CreateMap : MonoBehaviour
                         GraghI -= Random.Range(0, 2);
                         GraghJ += Random.Range(0, 2);
                     }
-                    // i j - 2
                     break;
             }
         }
@@ -317,39 +316,19 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Stand:
-                    if (GetInstallMap(direction, IsLarge) == 1)
-                    {
-                        SetListParam(GraghI, GraghJ, trans);
-                    }
-                    // i j
+                    if (GetInstallMap(direction, IsLarge) == 1) { SetListParam(GraghI, GraghJ, trans); }
                     break;
                 case Direction.Top:
-                    if (GetInstallMap(direction, IsLarge) == 1)
-                    {
-                        SetListParam(--GraghI, GraghJ, trans);
-                    }
-                    // i - 1 j
+                    if (GetInstallMap(direction, IsLarge) == 1) { SetListParam(--GraghI, GraghJ, trans); }
                     break;
                 case Direction.Right:
-                    if (GetInstallMap(direction, IsLarge) == 1)
-                    {
-                        SetListParam(GraghI, ++GraghJ, trans);
-                    }
-                    // i j + 1
+                    if (GetInstallMap(direction, IsLarge) == 1) { SetListParam(GraghI, ++GraghJ, trans); }
                     break;
                 case Direction.Buttom:
-                    if (GetInstallMap(direction, IsLarge) == 1)
-                    {
-                        SetListParam(++GraghI, GraghJ, trans);
-                    }
-                    // i + 1 j
+                    if (GetInstallMap(direction, IsLarge) == 1) { SetListParam(++GraghI, GraghJ, trans); }
                     break;
                 case Direction.Left:
-                    if (GetInstallMap(direction, IsLarge) == 1)
-                    {
-                        SetListParam(GraghI, --GraghJ, trans);
-                    }
-                    // i j + 1
+                    if (GetInstallMap(direction, IsLarge) == 1) { SetListParam(GraghI, --GraghJ, trans); }
                     break;
             }
         }
@@ -446,34 +425,19 @@ public class CreateMap : MonoBehaviour
             switch (direction)
             {
                 case Direction.Stand:
-                    if (GetListParam(GraghI, GraghJ) == null)
-                    {
-                        return 1;
-                    }
+                    if (GetListParam(GraghI, GraghJ) == null) { return 1; }
                     break;
                 case Direction.Top:
-                    if (GetListParam(GraghI - 1, GraghJ) == null)
-                    {
-                        return 1;
-                    }
+                    if (GetListParam(GraghI - 1, GraghJ) == null) { return 1; }
                     break;
                 case Direction.Right:
-                    if (GetListParam(GraghI, GraghJ + 1) == null)
-                    {
-                        return 1;
-                    }
+                    if (GetListParam(GraghI, GraghJ + 1) == null) { return 1; }
                     break;
                 case Direction.Buttom:
-                    if (GetListParam(GraghI + 1, GraghJ) == null)
-                    {
-                        return 1;
-                    }
+                    if (GetListParam(GraghI + 1, GraghJ) == null) { return 1; }
                     break;
                 case Direction.Left:
-                    if (GetListParam(GraghI, GraghJ - 1) == null)
-                    {
-                        return 1;
-                    }
+                    if (GetListParam(GraghI, GraghJ - 1) == null) { return 1; }
                     break;
             }
         }
@@ -582,7 +546,7 @@ public class CreateMap : MonoBehaviour
 
     public static void PrintGragh()
     {
-        int Count = 0;
+        int Count;
 
         int[,] CopyGragh = new int[(RoomFloor + 1) * 4 + 1, (RoomFloor + 1) * 4 + 1];
 
@@ -630,9 +594,7 @@ public class CreateMap : MonoBehaviour
     public static Transform[,] GetTransformGragh()
     {
         int Count;
-
         Transform[,] CopyGraph = new Transform[(RoomFloor + 1) * 4 + 1, (RoomFloor + 1) * 4 + 1];
-
 
         for (int i = 0; i < (RoomFloor + 1) * 4 + 1; ++i)
         {
@@ -680,21 +642,4 @@ public class CreateMap : MonoBehaviour
         StageNum = 1;
         Instance = this;
     }
-
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.R))
-        {
-            if (MapCreator)
-            {
-                for (int i = 0; i < MapCreator.childCount; ++i)
-                {
-                    Destroy(MapCreator.GetChild(i).gameObject);
-                }
-            }
-
-            MakeMap();
-        }
-    }
-
 }

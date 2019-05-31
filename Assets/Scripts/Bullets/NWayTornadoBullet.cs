@@ -2,11 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TornadoBullet : BulletBase
+public class NWayTornadoBullet : BulletBase
 {
-    [SerializeField]
     protected bool IsLeft;
-    protected float AddAngle; // 탄알이 휘는 것처럼 보여주게 더해주는 각도
+    protected int BulletCount;
+    protected float MinAngle;
+    protected float MaxAngle;
+    protected float AddAngle;
+    protected float BulletDistance;
+
+    protected override void AddBullet()
+    {
+        BulletDistance = 360 / BulletCount;
+
+        float Z = MinAngle;
+
+        for (int i = 0; i < BulletCount; ++i)
+        {
+            if (Z > MaxAngle) { Debug.LogError("BulletDistance to long"); return; }
+
+            BulletListParam Bullet = new BulletListParam();
+            Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+            Bullet.Bullet.position = transform.position;
+            Bullet.Bullet.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z + Z);
+            Bullet.LiveTime = LiveTime;
+            Bullets.Add(Bullet);
+
+            Z += BulletDistance;
+        }
+    }
 
     protected override IEnumerator MoveBullets()
     {
@@ -31,23 +55,29 @@ public class TornadoBullet : BulletBase
 
                 yield return new WaitForSeconds(0.0625f);
             }
-
             yield return new WaitForEndOfFrame();
         }
     }
 
     protected override void Awake()
     {
-        IsLeft = Random.Range(0, 2) == 1 ? true : false;
         Bullets = new List<BulletListParam>();
-        Speed = 1f;
-        AddAngle = 10; // add frame
+        IsLeft = Random.Range(0, 2) == 1 ? true : false;
+        MinAngle = -180;
+        MaxAngle = 180;
         LiveTime = 10;
+        Speed = 0.3f;
+        BulletCount = 10;
+        AddAngle = 5;
         PrefabPath = @"BulletPrefab/BasicBullet";
     }
 
-    protected override void Start()
+    protected override void Update()
     {
-        StartCoroutine("MoveBullets");
+        if (Input.GetKey(KeyCode.Space))
+        {
+            AddBullet();
+        }
     }
+
 }

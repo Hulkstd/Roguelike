@@ -7,33 +7,48 @@ public class NWayBullet : BulletBase
     protected int BulletCount;
     protected float MinAngle;
     protected float MaxAngle;
-    protected float AddAngles; // 탄알간의 간격
+    protected float BulletDistance; // 탄알간의 간격
+
+    protected void CreateNWayBullet(float AddAngle)
+    {
+        BulletListParam Bullet = new BulletListParam();
+        Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+        Bullet.Bullet.position = transform.position;
+        Bullet.Bullet.eulerAngles = new Vector3(0, 0, AddAngle);
+        Bullet.LiveTime = LiveTime;
+        Bullets.Add(Bullet);
+    }
 
     protected override void AddBullet()
     {
-        AddAngles = 180 / (BulletCount + 1);
+        float LeftAngle, RightAngle;
 
-        float Z = -90;
+        Debug.Log(transform.eulerAngles);
 
-        for (int i = 0; i < BulletCount; ++i)
+        if (BulletCount % 2 == 1) { CreateNWayBullet(transform.eulerAngles.z); }
+
+        LeftAngle = BulletCount % 2 == 0 ? transform.eulerAngles.z - BulletDistance / 2 : transform.eulerAngles.z - BulletDistance;
+        RightAngle = BulletCount % 2 == 0 ? transform.eulerAngles.z + BulletDistance / 2 : transform.eulerAngles.z + BulletDistance;
+
+        for (int i = 0; i < BulletCount / 2; ++i)
         {
-            Z += AddAngles;
-            BulletListParam Bullet = new BulletListParam();
-            Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
-            Bullet.Bullet.position = transform.position;
-            Bullet.Bullet.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z + Z);
-            Bullet.LiveTime = LiveTime;
-            Bullets.Add(Bullet);
+            CreateNWayBullet(LeftAngle);
+            CreateNWayBullet(RightAngle);
+            LeftAngle -= BulletDistance;
+            RightAngle += BulletDistance;
         }
+
     }
 
     protected override void Awake()
     {
         Bullets = new List<BulletListParam>();
-        MinAngle = -90f;
-        MaxAngle = 90f;
+        BulletDistance = 10f;
+        MinAngle = -90;
+        MaxAngle = 90;
         LiveTime = 10;
-        Speed = 10f;
-        BulletCount = Random.Range(1,10);   // 정할지 안정할지 상의
+        Speed = 0.5f;
+        BulletCount = 9;   // 정할지 안정할지 상의
+        PrefabPath = @"BulletPrefab/BasicBullet";
     }
 }

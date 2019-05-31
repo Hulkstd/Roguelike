@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBase : MonoBehaviour
+// Basic
+public class BulletBase : MonoBehaviour 
 {
     public class BulletListParam
     {
@@ -10,11 +11,11 @@ public class BulletBase : MonoBehaviour
         public float LiveTime;    
     }
 
+    protected Queue<int> queue;
     protected List<BulletListParam> Bullets;
     protected float Speed;
     protected string PrefabPath;
     protected float LiveTime;
-    protected Transform Target;
 
     protected virtual void AddBullet()
     {
@@ -28,35 +29,43 @@ public class BulletBase : MonoBehaviour
 
     protected virtual IEnumerator MoveBullets()
     {
-        while (Bullets.Count > 0)
+        while (true)
         {
-            for (int i = 0; i < Bullets.Count; ++i)
+            while (Bullets.Count > 0)
             {
-                Bullets[i].LiveTime -= 0.25f;
-                if (Bullets[i].LiveTime <= 0)
+                for (int i = 0; i < Bullets.Count; ++i)
                 {
-                    Destroy(Bullets[i].Bullet);
-                    Bullets.RemoveAt(i--);
-                    continue;
+                    Bullets[i].LiveTime -= 0.0625f;
+
+                    if (Bullets[i].LiveTime <= 0)
+                    {
+                        Bullets[i].Bullet.gameObject.SetActive(false);
+                        Bullets.RemoveAt(i--);
+                        continue;
+                    }
+
+                    Bullets[i].Bullet.Translate(new Vector2(0, -Speed), Space.Self);
                 }
 
-                Bullets[i].Bullet.Translate(new Vector2(0, -Speed), Space.Self);
+                yield return new WaitForSeconds(0.0625f);
             }
-
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForEndOfFrame();
         }
     }
 
     protected virtual void Awake()
     {
         Bullets = new List<BulletListParam>();
+        PrefabPath = @"BulletPrefab/BasicBullet";
+        LiveTime = 10;
+        Speed = 0.5f;
     }
-    protected virtual void Start() { }
+    protected virtual void Start() { StartCoroutine("MoveBullets"); }
     protected virtual void Update()
     {
-        if (Bullets.Count == 1)
+        if (Input.GetKey(KeyCode.Space))
         {
-            StartCoroutine("MoveBullets");
+            AddBullet();
         }
     }
     protected virtual void LateUpdate() { }
