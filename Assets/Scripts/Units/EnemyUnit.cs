@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using static GCMannager;
 
 // Name, Strength, fixed Strength, Shiled, Hazard level, Defense (or defensive power), Defensive form, movement speed (or moving velocity), DropItem, Attack Pattern
 [RequireComponent (typeof(Rigidbody2D))]
@@ -71,10 +72,10 @@ public class EnemyUnit : MonoBehaviour
         {
             while(IsinFunction)
             {
-                yield return new WaitForFixedUpdate();
+                yield return CoroWaitForFixedUpdate;
             }
 
-            yield return new WaitForSeconds(2.0f);
+            yield return CoroDict.ContainsKey(2.0f) ? CoroDict[2.0f] : PushData(2.0f, new WaitForSeconds(2.0f));
 
             AttackPatterns[Random.Range(0, AttackPatterns.Length)](transform, Player, ref IsinFunction);
         }

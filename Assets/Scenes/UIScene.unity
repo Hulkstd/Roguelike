@@ -97,7 +97,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6223,7 +6223,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.8220215, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &415226102
 MonoBehaviour:
@@ -23669,7 +23669,120 @@ MonoBehaviour:
     AbilityImage: {fileID: 0}
     RequireAbilityStat: 0
   - AbilityName: Healthy Body
-    AbilityDescription: Be healthy.
+    AbilityDescription: New Super-Humanity, It transcends physical ability.
+    Stats:
+    - HP: 25
+      MP: 0
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    - HP: 0
+      MP: 5
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: 2
+      CriticalPercent: 0
+      CriticalDamage: 0
+    - HP: 0
+      MP: 0
+      Speed: 5
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Essence Recycling
+    AbilityDescription: An essence is used more efficiently.
+    Stats:
+    - HP: 0
+      MP: 1
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Focus
+    AbilityDescription: Read the essence flow to see the target's weakness.
+    Stats:
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: 0
+      CriticalPercent: 5
+      CriticalDamage: 0
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Strengthening Essence
+    AbilityDescription: The essence is used more strongly.
+    Stats:
+    - HP: 0
+      MP: 2
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Amplification
+    AbilityDescription: Having destructive force by concentrating essence
+    Stats:
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 5
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Promote Metabolism
+    AbilityDescription: Improve reflexes.
+    Stats:
+    - HP: 0
+      MP: 0
+      Speed: 1
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Adrenaline Secretion
+    AbilityDescription: Increases adrenaline secretion.
+    Stats:
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: 1
+      CriticalPercent: 0
+      CriticalDamage: 0
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Neural Complex
+    AbilityDescription: Evolve to take some of the animal senses.
+    Stats:
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: 0
+      CriticalPercent: 5
+      CriticalDamage: 0
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 5
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Tough Soul
+    AbilityDescription: Instead of strengthening the body, some of the body's essences
+      are lost.
     Stats:
     - HP: 10
       MP: 0
@@ -23678,10 +23791,46 @@ MonoBehaviour:
       CriticalPercent: 0
       CriticalDamage: 0
     - HP: 0
+      MP: -2
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    - HP: 0
       MP: 0
       Speed: 0
-      Power: 5
+      Power: 2
       CriticalPercent: 0
+      CriticalDamage: 0
+    AbilityImage: {fileID: 0}
+    RequireAbilityStat: 0
+  - AbilityName: Spirit Flow
+    AbilityDescription: Instead of strengthening your essence with your mental strength,
+      lose some of physical abilities.
+    Stats:
+    - HP: -5
+      MP: 0
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    - HP: 0
+      MP: 5
+      Speed: 0
+      Power: 0
+      CriticalPercent: 0
+      CriticalDamage: 0
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: -1
+      CriticalPercent: 0
+      CriticalDamage: 0
+    - HP: 0
+      MP: 0
+      Speed: 0
+      Power: 0
+      CriticalPercent: 5
       CriticalDamage: 0
     AbilityImage: {fileID: 0}
     RequireAbilityStat: 0

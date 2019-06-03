@@ -12,7 +12,8 @@ public class GCMannager : MonoBehaviour
 
     public static Dictionary<FloatPair, float> AtanDict { get; private set; }
     public static Dictionary<float, WaitForSeconds> CoroDict { get; private set; }
-    public static WaitForEndOfFrame CoroWaitForEndFrame { get; set; }
+    public static WaitForEndOfFrame CoroWaitForEndFrame { get; private set; }
+    public static WaitForFixedUpdate CoroWaitForFixedUpdate { get; private set; }
 
     public static float PushData(FloatPair key, float value)
     {
@@ -31,5 +32,6 @@ public class GCMannager : MonoBehaviour
         AtanDict = new Dictionary<FloatPair, float>();
         CoroDict = new Dictionary<float, WaitForSeconds>();
         CoroWaitForEndFrame = new WaitForEndOfFrame();
+        CoroWaitForFixedUpdate = new WaitForFixedUpdate();
     }
 }

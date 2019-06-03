@@ -33,9 +33,15 @@ public class Character : MonoBehaviour
     protected Animation Stand;
     [SerializeField]
     protected List<Animation> Skill;
+    protected StatManager StatManagerInstance;
 
     public static AnimationState State;
     public static bool IsChangeState;
+
+    protected virtual void Start()
+    {
+        StatManagerInstance = StatManager.Instance;
+    }
 
     protected void DoAnimation()
     {
@@ -77,5 +83,16 @@ public class Character : MonoBehaviour
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         // TODO ...
+    }
+
+    protected virtual void Move(Vector3 Force)
+    {
+        Force.Normalize();
+
+        Force *= RunSpeed * 0.5f;
+
+        PlayerRigidbody.AddForce(Force);
+
+        PlayerRigidbody.velocity = Vector2.ClampMagnitude(PlayerRigidbody.velocity, RunSpeed);
     }
 }

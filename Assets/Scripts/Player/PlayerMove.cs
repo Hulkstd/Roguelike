@@ -7,18 +7,24 @@ public class PlayerMove : Character
 
     public static bool IsFight { get; set; }
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+
         Instance = this;
     }
 
     private void Update()
     {
+#if UNITY_ANDROID
         if (JoyStickController.Click)
         {
-            PlayerRigidbody.AddForce(JoyStickController.MoveValue, ForceMode2D.Force);
+            Move(JoyStickController.MoveValue);
         }
-
+#elif UNITY_PC
+        Vector3 MoveVec = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Move(MoveVec);
+#endif
         if (IsChangeState)
         {
             DoAnimation();

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GCMannager;
 
 public class RandomRotation : MonoBehaviour
 {
@@ -34,7 +35,10 @@ public class RandomRotation : MonoBehaviour
                 yield return null;
             }
 
-            yield return new WaitForSeconds(Random.Range(DelayTimeRange.x, DelayTimeRange.y));
+            yield return CoroDict.ContainsKey(Random.Range(DelayTimeRange.x, DelayTimeRange.y)) ? 
+                                              CoroDict[Random.Range(DelayTimeRange.x, DelayTimeRange.y)] : 
+                                              PushData(Random.Range(DelayTimeRange.x, DelayTimeRange.y), 
+                                                       new WaitForSeconds(Random.Range(DelayTimeRange.x, DelayTimeRange.y)));
         }
     }
 }

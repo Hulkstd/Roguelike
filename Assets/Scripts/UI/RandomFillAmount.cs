@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GCMannager;
 
 public class RandomFillAmount : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class RandomFillAmount : MonoBehaviour
                 if (Mathf.Abs(Image.fillAmount - Amount) <= 0.05f)
                     break;
 
-                yield return new WaitForEndOfFrame();
+                yield return CoroWaitForEndFrame;
             }
 
             yield return null;

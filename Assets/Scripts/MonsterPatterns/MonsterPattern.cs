@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using System;
+using static GCMannager;
 
 public class MonsterPattern : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class MonsterPattern : MonoBehaviour
 
                 rb2.AddForce(dir, ForceMode2D.Force);
 
-                yield return new WaitForSeconds(Time.fixedDeltaTime);
+                yield return CoroDict.ContainsKey(Time.fixedDeltaTime) ? CoroDict[Time.fixedDeltaTime] : PushData(Time.fixedDeltaTime, new WaitForSeconds(Time.fixedDeltaTime));
             }
 
             seeker.StartPath(seeker.transform.position, Player.position, (Path newpath) => { path = newpath; });

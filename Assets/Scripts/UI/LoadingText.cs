@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GCMannager;
 
 public class LoadingText : MonoBehaviour
 {
@@ -20,15 +21,15 @@ public class LoadingText : MonoBehaviour
             if(CreateMap.Instance != null)
             {
                 text.text = "Creating Map .";
-                yield return new WaitForSeconds(1.0f);
+                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
 
                 text.text = "Creating Map . .";
-                yield return new WaitForSeconds(1.0f);
+                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
 
                 text.text = "Creating Map . . .";
-                yield return new WaitForSeconds(1.0f);
+                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
 
-                if(CreateMap.IsRoading)
+                if (CreateMap.IsRoading)
                 {
                     break;
                 }
@@ -36,13 +37,13 @@ public class LoadingText : MonoBehaviour
             else
             {
                 text.text = "Loading .";
-                yield return new WaitForSeconds(1.0f);
+                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
 
                 text.text = "Loading . .";
-                yield return new WaitForSeconds(1.0f);
+                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
 
                 text.text = "Loading . . .";
-                yield return new WaitForSeconds(1.0f);
+                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
             }
 
         }
