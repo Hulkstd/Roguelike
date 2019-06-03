@@ -3,45 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using static GCMannager;
 
-public class BulletBase : MonoBehaviour 
+public class NWayWagWagBullet : NWayBullet
 {
-    public class BulletListParam
-    {
-        public Transform Bullet;
-        public float LiveTime;    
-    }
+    bool IsMoveLeft;
 
-    protected Queue<BulletListParam> ReUseBullet;
-    protected List<BulletListParam> Bullets;
-    protected float Speed;
-    protected string PrefabPath;
-    protected float LiveTime;
-    protected Vector3 AngleBuffer;
-    protected Vector2 MoveVectorBuffer;
-
-    protected virtual void AddBullet()
-    {
-        BulletListParam Bullet;
-
-        if (ReUseBullet.Count <= 0)
-        {
-            Bullet = new BulletListParam();
-            Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
-        }
-        else
-        {
-            Bullet = ReUseBullet.Dequeue();
-            Bullet.Bullet.gameObject.SetActive(true);
-        }
-
-        Bullet.Bullet.position = transform.position;
-        AngleBuffer.z = transform.eulerAngles.z;
-        Bullet.Bullet.eulerAngles = AngleBuffer;
-        Bullet.LiveTime = LiveTime;
-        Bullets.Add(Bullet);
-    }
-
-    protected virtual IEnumerator MoveBullets()
+    protected override IEnumerator MoveBullets()
     {
         while (true)
         {
@@ -61,21 +27,18 @@ public class BulletBase : MonoBehaviour
                         Bullets.RemoveAt(i--);
                         continue;
                     }
+                    MoveVectorBuffer.x = IsMoveLeft ? -0.3f : 0.3f;
                     MoveVectorBuffer.y = -Speed;
                     Bullets[i].Bullet.Translate(MoveVectorBuffer, Space.Self);
                 }
+                IsMoveLeft = !IsMoveLeft;
                 yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
             }
             yield return CoroWaitForEndFrame;
         }
     }
 
-    public virtual void ShotBullet()
-    {
-        AddBullet();
-    }
-
-    protected virtual void InItalize(float speed, float second, string path)
+    protected override void InItalize(float speed, float second, string path)
     {
         ReUseBullet = new Queue<BulletListParam>();
         Bullets = new List<BulletListParam>();
@@ -84,20 +47,15 @@ public class BulletBase : MonoBehaviour
         LiveTime = second;
         Speed = speed;
         PrefabPath = path;
+        BulletCount = 25;
+        BulletDistance = 360f / BulletCount;
+        MinAngle = -180;
+        MaxAngle = 180;
     }
 
-    protected virtual void Awake()
+    protected override void Awake()
     {
         InItalize(0.5f, 10, @"BulletPrefab/BasicBullet");
     }
-    protected virtual void Start() { StartCoroutine("MoveBullets"); }
-    protected virtual void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            AddBullet();
-        }
-    }
-    protected virtual void LateUpdate() { }
 
 }

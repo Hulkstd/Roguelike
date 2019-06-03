@@ -20,14 +20,15 @@ public class NWayBullet : BulletBase
         }
         else
         {
-            Bullet = ReUseBullet.Pop();
+            Bullet = ReUseBullet.Dequeue();
             Bullet.Bullet.gameObject.SetActive(true);
         }
 
+        AngleBuffer.z = AddAngle;
+
         Bullet.Bullet.position = transform.position;
-        Bullet.Bullet.eulerAngles = new Vector3(0, 0, AddAngle);
+        Bullet.Bullet.eulerAngles = AngleBuffer;
         Bullet.LiveTime = LiveTime;
-        Bullet.Bullet.parent = transform;
         Bullets.Add(Bullet);
     }
 
@@ -52,16 +53,17 @@ public class NWayBullet : BulletBase
 
     }
 
-    protected override void Awake()
+    protected override void InItalize(float speed, float second, string path)
     {
-        ReUseBullet = new CircleQueue<BulletListParam>();
-        Bullets = new List<BulletListParam>();
+        base.InItalize(speed, second, path);
         BulletDistance = 10f;
         MinAngle = -90;
         MaxAngle = 90;
-        LiveTime = 10;
-        Speed = 0.5f;
-        BulletCount = 9;   // 정할지 안정할지 상의
-        PrefabPath = @"BulletPrefab/BasicBullet";
+        BulletCount = 2;
+    }
+
+    protected override void Awake()
+    {
+        InItalize(0.5f, 10, @"BulletPrefab/BasicBullet");
     }
 }

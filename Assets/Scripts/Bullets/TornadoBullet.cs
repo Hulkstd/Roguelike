@@ -21,16 +21,18 @@ public class TornadoBullet : BulletBase
 
                     if (Bullets[i].LiveTime <= 0)
                     {
-                        ReUseBullet.Push(Bullets[i]);
+                        ReUseBullet.Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
+                        Bullets[i].LiveTime = LiveTime;
                         Bullets[i].Bullet.gameObject.SetActive(false);
                         Bullets.RemoveAt(i--);
                         continue;
                     }
-
-                    Bullets[i].Bullet.eulerAngles = new Vector3(0, 0, Bullets[i].Bullet.eulerAngles.z + (IsLeft ? AddAngle : -AddAngle));
-                    Bullets[i].Bullet.Translate(new Vector2(0, -Speed), Space.Self);
+                    AngleBuffer.z = Bullets[i].Bullet.eulerAngles.z + (IsLeft ? AddAngle : -AddAngle);
+                    MoveVectorBuffer.y = -Speed;
+                    Bullets[i].Bullet.eulerAngles = AngleBuffer;
+                    Bullets[i].Bullet.Translate(MoveVectorBuffer, Space.Self);
                 }
                 yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
             }
@@ -38,15 +40,16 @@ public class TornadoBullet : BulletBase
         }
     }
 
+    protected override void InItalize(float speed, float second, string path)
+    {
+        base.InItalize(speed, second, path);
+        IsLeft = Random.Range(0, 2) == 1 ? true : false;
+        AddAngle = 3;
+    }
+
     protected override void Awake()
     {
-        ReUseBullet = new CircleQueue<BulletListParam>();
-        IsLeft = Random.Range(0, 2) == 1 ? true : false;
-        Bullets = new List<BulletListParam>();
-        Speed = 1f;
-        AddAngle = 10; // add frame
-        LiveTime = 10;
-        PrefabPath = @"BulletPrefab/BasicBullet";
+        InItalize(1, 10, @"BulletPrefab/BasicBullet");
     }
 
     protected override void Start()
