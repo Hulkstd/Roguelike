@@ -1,17 +1,69 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GCMannager;
 
-// Basic
 public class BulletBase : MonoBehaviour 
 {
+
+    public class Node<DataTy>
+    {
+        public DataTy Data;
+        public Node<DataTy> Next;
+
+        public Node(DataTy Data) { this.Data = Data; }
+    }
+
+    public class CircleQueue<DataTy>
+    {
+        private Node<DataTy> front;
+        private Node<DataTy> Back;
+        public int Count { get; private set; }
+
+        public CircleQueue()
+        {
+            front = null;
+            Back = null;
+            Count = 0;
+        }
+
+        public void Push(DataTy Data)
+        {
+            if (Back == null)
+            {
+                Back = new Node<DataTy>(Data);
+                front = Back;
+                Back.Next = front;
+                front.Next = Back;
+            }
+            else
+            {
+                Back.Next = new Node<DataTy>(Data);
+                Back = Back.Next;
+                Back.Next = front;
+            }
+            Count++;
+        }
+
+        public DataTy Pop()
+        {
+            DataTy Data = front.Data;
+            if (front.Next == null) { front = null; }
+            else { front = front.Next; }
+            Count--;
+            return Data;
+        }
+
+        public DataTy Peek() { return front.Data; }
+    }
+
     public class BulletListParam
     {
         public Transform Bullet;
         public float LiveTime;    
     }
 
-    protected Queue<int> queue;
+    protected CircleQueue<BulletListParam> ReUseBullet;
     protected List<BulletListParam> Bullets;
     protected float Speed;
     protected string PrefabPath;
@@ -19,11 +71,23 @@ public class BulletBase : MonoBehaviour
 
     protected virtual void AddBullet()
     {
-        BulletListParam Bullet = new BulletListParam();
-        Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+        BulletListParam Bullet;
+
+        if (ReUseBullet.Count == 0)
+        {
+            Bullet = new BulletListParam();
+            Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+        }
+        else
+        {
+            Bullet = ReUseBullet.Pop();
+            Bullet.Bullet.gameObject.SetActive(true);
+        }
+
         Bullet.Bullet.position = transform.position;
         Bullet.Bullet.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
         Bullet.LiveTime = LiveTime;
+        Bullet.Bullet.parent = transform;
         Bullets.Add(Bullet);
     }
 
@@ -39,6 +103,9 @@ public class BulletBase : MonoBehaviour
 
                     if (Bullets[i].LiveTime <= 0)
                     {
+                        ReUseBullet.Push(Bullets[i]);
+                        Bullets[i].Bullet.position = transform.position;
+                        Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].Bullet.gameObject.SetActive(false);
                         Bullets.RemoveAt(i--);
                         continue;
@@ -46,15 +113,15 @@ public class BulletBase : MonoBehaviour
 
                     Bullets[i].Bullet.Translate(new Vector2(0, -Speed), Space.Self);
                 }
-
-                yield return new WaitForSeconds(0.0625f);
+                yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
             }
-            yield return new WaitForEndOfFrame();
+            yield return CoroWaitForEndFrame;
         }
     }
 
     protected virtual void Awake()
     {
+        ReUseBullet = new CircleQueue<BulletListParam>();
         Bullets = new List<BulletListParam>();
         PrefabPath = @"BulletPrefab/BasicBullet";
         LiveTime = 10;

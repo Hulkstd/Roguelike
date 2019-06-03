@@ -11,11 +11,23 @@ public class NWayBullet : BulletBase
 
     protected void CreateNWayBullet(float AddAngle)
     {
-        BulletListParam Bullet = new BulletListParam();
-        Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+        BulletListParam Bullet;
+
+        if (ReUseBullet.Count == 0)
+        {
+            Bullet = new BulletListParam();
+            Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+        }
+        else
+        {
+            Bullet = ReUseBullet.Pop();
+            Bullet.Bullet.gameObject.SetActive(true);
+        }
+
         Bullet.Bullet.position = transform.position;
         Bullet.Bullet.eulerAngles = new Vector3(0, 0, AddAngle);
         Bullet.LiveTime = LiveTime;
+        Bullet.Bullet.parent = transform;
         Bullets.Add(Bullet);
     }
 
@@ -42,6 +54,7 @@ public class NWayBullet : BulletBase
 
     protected override void Awake()
     {
+        ReUseBullet = new CircleQueue<BulletListParam>();
         Bullets = new List<BulletListParam>();
         BulletDistance = 10f;
         MinAngle = -90;
