@@ -14,16 +14,14 @@ public class NWayTornadoBullet : BulletBase
 
     protected override void AddBullet()
     {
-        BulletDistance = 360 / BulletCount;
+        BulletDistance = 360f / BulletCount;
 
-        float Z = MinAngle;
+        float add_z = MinAngle;
+
+        BulletListParam Bullet;
 
         for (int i = 0; i < BulletCount; ++i)
         {
-            if (Z > MaxAngle) { Debug.LogError("BulletDistance to long"); return; }
-
-            BulletListParam Bullet;
-
             if (ReUseBullet.Count == 0)
             {
                 Bullet = new BulletListParam();
@@ -31,17 +29,18 @@ public class NWayTornadoBullet : BulletBase
             }
             else
             {
-                Bullet = ReUseBullet.Pop();
+                Bullet = ReUseBullet.Dequeue();
                 Bullet.Bullet.gameObject.SetActive(true);
             }
 
+            AngleBuffer.z = transform.eulerAngles.z + add_z;
+
             Bullet.Bullet.position = transform.position;
-            Bullet.Bullet.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z + Z);
+            Bullet.Bullet.eulerAngles = AngleBuffer;
             Bullet.LiveTime = LiveTime;
-            Bullet.Bullet.parent = transform;
             Bullets.Add(Bullet);
 
-            Z += BulletDistance;
+            add_z += BulletDistance;
         }
     }
 
@@ -57,7 +56,7 @@ public class NWayTornadoBullet : BulletBase
 
                     if (Bullets[i].LiveTime <= 0)
                     {
-                        ReUseBullet.Push(Bullets[i]);
+                        ReUseBullet.Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].Bullet.gameObject.SetActive(false);
@@ -65,8 +64,11 @@ public class NWayTornadoBullet : BulletBase
                         continue;
                     }
 
-                    Bullets[i].Bullet.eulerAngles = new Vector3(0, 0, Bullets[i].Bullet.eulerAngles.z + (IsLeft ? AddAngle : -AddAngle));
-                    Bullets[i].Bullet.Translate(new Vector2(0, -Speed), Space.Self);
+                    AngleBuffer.z = Bullets[i].Bullet.eulerAngles.z + (IsLeft ? AddAngle : -AddAngle);
+                    MoveVectorBuffer.y = -Speed;
+
+                    Bullets[i].Bullet.eulerAngles = AngleBuffer;
+                    Bullets[i].Bullet.Translate(MoveVectorBuffer, Space.Self);
                 }
 
                 yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
@@ -75,18 +77,19 @@ public class NWayTornadoBullet : BulletBase
         }
     }
 
-    protected override void Awake()
+    protected override void InItalize(float speed, float second, string path)
     {
-        ReUseBullet = new CircleQueue<BulletListParam>();
-        Bullets = new List<BulletListParam>();
-        IsLeft = Random.Range(0, 2) == 1 ? true : false;
+        base.InItalize(speed, second, path);
+        AddAngle = 5;
+        BulletCount = 500;
         MinAngle = -180;
         MaxAngle = 180;
-        LiveTime = 10;
-        Speed = 0.3f;
-        BulletCount = 10;
-        AddAngle = 5;
-        PrefabPath = @"BulletPrefab/BasicBullet";
+        IsLeft = Random.Range(0, 2) == 1 ? true : false;
+    }
+
+    protected override void Awake()
+    {
+        InItalize(0.1f, 4.6f, @"BulletPrefab/BasicBullet");
     }
 
 }

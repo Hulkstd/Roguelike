@@ -18,12 +18,14 @@ public class GCMannager : MonoBehaviour
     public static float PushData(FloatPair key, float value)
     {
         AtanDict.Add(key, value);
+        Debug.Log(AtanDict);
         return value;
     }
 
     public static WaitForSeconds PushData(float key, WaitForSeconds value)
     {
         CoroDict.Add(key, value);
+        Debug.Log(CoroDict);
         return value;
     }
 

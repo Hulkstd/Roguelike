@@ -34,12 +34,21 @@ public class PlayerMove : Character
 
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
-        if (IsFight)
+        if (!IsFight)
         {
             if (collision.CompareTag("Door"))
             {
                 // TODO Move next Map
             }
+            // TOOD else
+        }
+        else
+        {
+            if (collision.CompareTag("Bullet"))
+            {
+                // TODO Decrease HP
+            }
+            // TODO else
         }
     }
 

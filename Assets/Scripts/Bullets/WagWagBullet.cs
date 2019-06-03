@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using static GCMannager;
 
-public class HommingBullet : BulletBase
+public class WagWagBullet : BulletBase
 {
+    bool IsMoveLeft;
+
     protected override IEnumerator MoveBullets()
     {
         while (true)
@@ -15,7 +17,7 @@ public class HommingBullet : BulletBase
                 {
                     Bullets[i].LiveTime -= 0.0625f;
 
-                    if (Bullets[i].LiveTime <= 0 || !Bullets[i].Bullet.gameObject.activeSelf)
+                    if (Bullets[i].LiveTime <= 0)
                     {
                         ReUseBullet.Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
@@ -25,17 +27,11 @@ public class HommingBullet : BulletBase
                         Bullets.RemoveAt(i--);
                         continue;
                     }
-
-                    if (LookAtPlayer.GetMagnitude(Bullets[i].Bullet) <= 4f)
-                    {
-                        LookAtPlayer.LookPlayer(Bullets[i].Bullet);
-                    }
-
+                    MoveVectorBuffer.x = IsMoveLeft ? -0.15f : 0.15f;
                     MoveVectorBuffer.y = -Speed;
-
                     Bullets[i].Bullet.Translate(MoveVectorBuffer, Space.Self);
                 }
-
+                IsMoveLeft = !IsMoveLeft;
                 yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
             }
             yield return CoroWaitForEndFrame;
@@ -44,7 +40,7 @@ public class HommingBullet : BulletBase
 
     protected override void Awake()
     {
-        InItalize(0.1f, 10, @"BulletPrefab/BasicBullet");
+        InItalize(0.5f, 10, @"BulletPrefab/BasicBullet");
     }
 
 }
