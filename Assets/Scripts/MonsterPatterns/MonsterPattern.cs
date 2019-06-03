@@ -5,6 +5,7 @@ using Pathfinding;
 using System;
 using static GCMannager;
 
+[RequireComponent(typeof(NWayBullet))]
 public class MonsterPattern : MonoBehaviour
 {
 
@@ -76,7 +77,7 @@ public class MonsterPattern : MonoBehaviour
         enemyUnit.WarningPoint.transform.localScale = new Vector3(Range, Range);
     }
 
-    public virtual void N_WayBullet(Transform Me, Transform Player, ref bool IsinFunction) // 재호 진우
+    public virtual void N_WayBullet(Transform Me, Transform Player, ref bool IsinFunction) // 보성
     {
 
     }
