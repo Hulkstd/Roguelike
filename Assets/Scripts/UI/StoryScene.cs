@@ -117,7 +117,7 @@ public class StoryScene : MonoBehaviour
 
         yield return StartCoroutine(FadeInImage());
 
-        yield return CoroDict.ContainsKey(0.35f) ? CoroDict[0.35f] : PushData(0.35f, new WaitForSeconds(0.35f));
+        yield return CoroDict.ContainsKey(3.00f) ? CoroDict[3.00f] : PushData(3.00f, new WaitForSeconds(3.00f));
 
         yield return StartCoroutine(FadeOutImage());
     }
