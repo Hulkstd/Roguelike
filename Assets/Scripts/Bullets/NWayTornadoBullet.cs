@@ -80,8 +80,8 @@ public class NWayTornadoBullet : BulletBase
     protected override void InItalize(float speed, float second, string path)
     {
         base.InItalize(speed, second, path);
-        AddAngle = 5;
-        BulletCount = 500;
+        AddAngle = 2;
+        BulletCount = 18;
         MinAngle = -180;
         MaxAngle = 180;
         IsLeft = Random.Range(0, 2) == 1 ? true : false;
@@ -89,7 +89,7 @@ public class NWayTornadoBullet : BulletBase
 
     protected override void Awake()
     {
-        InItalize(0.1f, 4.6f, @"BulletPrefab/BasicBullet");
+        InItalize(0.1f, 10, @"BulletPrefab/BasicBullet");
     }
 
 }

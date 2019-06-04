@@ -21,5 +21,9 @@ public class BulletTestChangeRocation : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z - AddValue);
         }
+        if (Input.GetKey(KeyCode.L))
+        {
+            LookAtPlayer.LookPlayer(transform);
+        }
     }
 }
