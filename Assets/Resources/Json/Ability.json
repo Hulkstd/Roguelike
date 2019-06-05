@@ -107,17 +107,5 @@
     ],
     "AbilityImage": "/Image/Abilities/Test.png",
     "AbilityPoint": 4
-  },
-  {
-    "AbilityName": "Spirit Flow",
-    "AbilityDescription": "Instead of strengthening your essence with your mental strength, lose some of physical abilities.",
-    "Stats": [
-      { "HP": -5 },
-      { "MP": 5 },
-      { "Power": -1 },
-      { "CriticalPercent": 5 }
-    ],
-    "AbilityImage": "/Image/Abilities/Test.png",
-    "AbilityPoint": 4
   }
 ]

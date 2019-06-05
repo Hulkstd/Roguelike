@@ -20,6 +20,7 @@ TagManager:
   - MapCreator
   - BasicTransform
   - Door
+  - Bullet
   layers:
   - Default
   - TransparentFX

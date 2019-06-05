@@ -8,6 +8,13 @@ public class Character : MonoBehaviour
 
     public enum AnimationState { Work = 0, Run = 1, Attacking = 2, Attacked = 3, Roll = 4, Skill = 5, Dead = 6, Stand = 7 }
 
+    public int OriginalHP;
+    public int HP;
+    public int Damage;
+    public int RunSpeed;
+    public int RollSpeed;
+    public int AttackSpeed; // 프레임 소모시간 
+
     [SerializeField]
     protected Rigidbody2D PlayerRigidbody;
     [SerializeField]
@@ -17,7 +24,7 @@ public class Character : MonoBehaviour
     [SerializeField]
     protected Animation Run;
     [SerializeField]
-    protected Animation Roll;
+    protected Animation Roll; // 구르기
     [SerializeField]
     protected Animation Attacked;
     [SerializeField]
@@ -26,9 +33,15 @@ public class Character : MonoBehaviour
     protected Animation Stand;
     [SerializeField]
     protected List<Animation> Skill;
+    protected StatManager StatManagerInstance;
 
     public static AnimationState State;
     public static bool IsChangeState;
+
+    protected virtual void Start()
+    {
+        StatManagerInstance = StatManager.Instance;
+    }
 
     protected void DoAnimation()
     {
@@ -51,6 +64,7 @@ public class Character : MonoBehaviour
                 break;
             case AnimationState.Skill:
                 Skill[SkillManager.UseSkillNumber].Play();
+                AttackSpeed = 0;
                 break;
             case AnimationState.Dead:
                 Dead.Play();
@@ -69,5 +83,16 @@ public class Character : MonoBehaviour
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         // TODO ...
+    }
+
+    protected virtual void Move(Vector3 Force)
+    {
+        Force.Normalize();
+
+        Force *= RunSpeed * 0.5f;
+
+        PlayerRigidbody.AddForce(Force);
+
+        PlayerRigidbody.velocity = Vector2.ClampMagnitude(PlayerRigidbody.velocity, RunSpeed);
     }
 }

@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using System;
+using static GCMannager;
 
+[RequireComponent(typeof(NWayBullet))]
 public class MonsterPattern : MonoBehaviour
 {
+    protected ObjectPooling PadPooling;
 
     public virtual void FollowPlayer(Transform Me, Transform Player, ref bool IsinFunction) // 태형
     {
@@ -34,7 +37,7 @@ public class MonsterPattern : MonoBehaviour
 
                 rb2.AddForce(dir, ForceMode2D.Force);
 
-                yield return new WaitForSeconds(Time.fixedDeltaTime);
+                yield return CoroDict.ContainsKey(Time.fixedDeltaTime) ? CoroDict[Time.fixedDeltaTime] : PushData(Time.fixedDeltaTime, new WaitForSeconds(Time.fixedDeltaTime));
             }
 
             seeker.StartPath(seeker.transform.position, Player.position, (Path newpath) => { path = newpath; });
@@ -75,13 +78,68 @@ public class MonsterPattern : MonoBehaviour
         enemyUnit.WarningPoint.transform.localScale = new Vector3(Range, Range);
     }
 
-    public virtual void N_WayBullet(Transform Me, Transform Player, ref bool IsinFunction) // 재호 진우
+    public virtual void N_WayBullet(Transform Me, Transform Player, ref bool IsinFunction) // 보성
     {
 
     }
 
     public virtual void Pad(Transform Me, Transform Player, ref bool IsinFunction) // 진우 태형
     {
+        if(PadPooling == null)
+        {
+            PadPooling = new ObjectPooling(Me.GetComponent<EnemyUnit>().PadPrefabs);
+        }
 
+        StartCoroutine(SpawnPad(Me.GetComponent<EnemyUnit>()));
+        FollowPlayer(Me, Player, ref IsinFunction);
     } 
+
+    private IEnumerator SpawnPad(EnemyUnit enemyUnit)
+    {
+        while(enemyUnit.IsinFunction)
+        {
+            GameObject gameObject = PadPooling.PopObject();
+            gameObject.transform.position = enemyUnit.transform.position;
+
+            StartCoroutine(Disable(gameObject, 5.0f));
+
+            yield return CoroDict.ContainsKey(0.0333f) ? CoroDict[0.0333f] : PushData(0.0333f, new WaitForSeconds(0.0333f));
+        }
+    }
+
+    private IEnumerator Disable(GameObject gameObject, float t)
+    {
+        yield return CoroDict.ContainsKey(t) ? CoroDict[t] : PushData(t, new WaitForSeconds(t));
+
+        gameObject.SetActive(false);
+    }
+}
+
+public class ObjectPooling
+{
+    private GameObject OriginalPrefabs;
+    private Queue<GameObject> Objects;
+
+    public ObjectPooling(GameObject Prefabs)
+    {
+        OriginalPrefabs = Prefabs;
+    }
+
+    public GameObject PopObject()
+    {
+        if (Objects.Count == 0 || Objects.Peek().activeSelf)
+        {
+            GameObject returnobject = MonoBehaviour.Instantiate(OriginalPrefabs) as GameObject;
+            Objects.Enqueue(returnobject);
+
+            return returnobject;
+        }
+        else
+        {
+            GameObject returnvalue = Objects.Peek();
+            Objects.Enqueue(Objects.Dequeue());
+
+            return returnvalue;
+        }
+    }
 }

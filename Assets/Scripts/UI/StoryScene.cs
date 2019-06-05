@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using static GCMannager;
 
 public class StoryScene : MonoBehaviour
 {
@@ -116,7 +117,7 @@ public class StoryScene : MonoBehaviour
 
         yield return StartCoroutine(FadeInImage());
 
-        yield return new WaitForSeconds(3.5f);
+        yield return CoroDict.ContainsKey(3.00f) ? CoroDict[3.00f] : PushData(3.00f, new WaitForSeconds(3.00f));
 
         yield return StartCoroutine(FadeOutImage());
     }
@@ -129,7 +130,7 @@ public class StoryScene : MonoBehaviour
         {
             i++;
             Alpha.alpha = Mathf.Lerp(1, 0, i / 25);
-            yield return new WaitForSeconds(0.04f);
+            yield return CoroDict.ContainsKey(0.04f) ? CoroDict[0.04f] : PushData(0.04f, new WaitForSeconds(0.04f)); 
         }
 
         yield return null;
@@ -143,7 +144,7 @@ public class StoryScene : MonoBehaviour
         {
             i++;
             Alpha.alpha = Mathf.Lerp(0, 1, i / 25);
-            yield return new WaitForSeconds(0.04f);
+            yield return CoroDict.ContainsKey(0.04f) ? CoroDict[0.04f] : PushData(0.04f, new WaitForSeconds(0.04f));
         }
 
         yield return null;
@@ -157,7 +158,7 @@ public class StoryScene : MonoBehaviour
 
         while(true)
         {
-            yield return new WaitForSeconds(0.02f);
+            yield return CoroDict.ContainsKey(0.02f) ? CoroDict[0.02f] : PushData(0.02f, new WaitForSeconds(0.02f));
             i++;
             processProfile.GetSetting<Bloom>().color.value = Color.Lerp(From, To, i / 25);
 
