@@ -45,6 +45,8 @@ public class NWayBullet : BulletBase
 
         for (int i = 0; i < BulletCount / 2; ++i)
         {
+            Debug.Log("LeftAngle = " + LeftAngle);
+            Debug.Log("RightAngled = " + RightAngle);
             CreateNWayBullet(LeftAngle);
             CreateNWayBullet(RightAngle);
             LeftAngle -= BulletDistance;
@@ -56,10 +58,10 @@ public class NWayBullet : BulletBase
     protected override void InItalize(float speed, float second, string path)
     {
         base.InItalize(speed, second, path);
-        BulletDistance = 10f;
         MinAngle = -90;
         MaxAngle = 90;
-        BulletCount = 2;
+        BulletCount = 15;
+        BulletDistance = 180f / BulletCount < 15 ? 180f / BulletCount : 15;
     }
 
     protected override void Awake()

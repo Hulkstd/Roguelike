@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Package/PostProcessing.meta
+guid: 617d5b16661ff734fb594055371b7e00
+=======
 guid: 3e74c2e6ce1897e4fb3192854dfb1fd6
+>>>>>>> ce7e4863cb45fb92d20a0aa66d7d2fb5103c73f3:Assets/Package/PostProcessing.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

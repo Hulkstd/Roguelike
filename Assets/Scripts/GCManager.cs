@@ -9,7 +9,7 @@ public class GCManager : MonoBehaviour
         public float x;
         public float y;
     }
-
+    
     public static Dictionary<FloatPair, float> AtanDict { get; private set; }
     public static Dictionary<float, WaitForSeconds> CoroDict { get; private set; }
     public static WaitForEndOfFrame CoroWaitForEndFrame { get; private set; }
@@ -18,14 +18,12 @@ public class GCManager : MonoBehaviour
     public static float PushData(FloatPair key, float value)
     {
         AtanDict.Add(key, value);
-        Debug.Log(AtanDict);
         return value;
     }
 
     public static WaitForSeconds PushData(float key, WaitForSeconds value)
     {
         CoroDict.Add(key, value);
-        Debug.Log(CoroDict);
         return value;
     }
 
