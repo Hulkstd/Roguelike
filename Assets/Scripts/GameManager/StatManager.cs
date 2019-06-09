@@ -65,11 +65,8 @@ public class StatManager : MonoBehaviour
         {
             RemainingStats = 0;
         }
-    }
 
-    private void Update()
-    {
-        ApplyStats();
+        InvokeRepeating("ApplyStats", 0.0f, 0.0666666f);
     }
 
     public void ApplyStats()
@@ -97,6 +94,11 @@ public class StatManager : MonoBehaviour
         statManager.CriticalDamage += stat.CriticalDamage;
 
         return statManager;
+    }
+
+    public void AddRemainingStat(int value)
+    {
+        remainingStats += value;
     }
 
     private void BinarySerialize(int RemainingStat)

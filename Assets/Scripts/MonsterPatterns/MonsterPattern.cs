@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using System;
-using static GCMannager;
+using static GCManager;
 
 [RequireComponent(typeof(NWayBullet))]
 public class MonsterPattern : MonoBehaviour

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class Character : MonoBehaviour
 {
     public static Character Instance { get; protected set; }
@@ -33,15 +35,16 @@ public class Character : MonoBehaviour
     protected Animation Stand;
     [SerializeField]
     protected List<Animation> Skill;
-    protected StatManager StatManagerInstance;
+    protected StatManager StatManagerInstance
+    {
+        get
+        {
+            return StatManager.Instance;
+        }
+    }
 
     public static AnimationState State;
     public static bool IsChangeState;
-
-    protected virtual void Start()
-    {
-        StatManagerInstance = StatManager.Instance;
-    }
 
     protected void DoAnimation()
     {
@@ -89,9 +92,9 @@ public class Character : MonoBehaviour
     {
         Force.Normalize();
 
-        Force *= RunSpeed * 0.5f;
+        Force *= 100;
 
-        PlayerRigidbody.AddForce(Force);
+        PlayerRigidbody.AddForce(Force, ForceMode2D.Force);
 
         PlayerRigidbody.velocity = Vector2.ClampMagnitude(PlayerRigidbody.velocity, RunSpeed);
     }

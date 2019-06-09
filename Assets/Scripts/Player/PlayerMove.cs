@@ -7,10 +7,8 @@ public class PlayerMove : Character
 
     public static bool IsFight { get; set; }
 
-    protected override void Start()
+    protected void Start()
     {
-        base.Start();
-
         Instance = this;
     }
 
@@ -21,7 +19,7 @@ public class PlayerMove : Character
         {
             Move(JoyStickController.MoveValue);
         }
-#elif UNITY_PC
+#elif UNITY_STANDALONE_WIN
         Vector3 MoveVec = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         Move(MoveVec);
 #endif
@@ -29,7 +27,6 @@ public class PlayerMove : Character
         {
             DoAnimation();
         }
-
     }
 
     protected override void OnTriggerEnter2D(Collider2D collision)

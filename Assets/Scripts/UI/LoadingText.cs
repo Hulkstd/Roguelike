@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static GCMannager;
+using static GCManager;
 
 public class LoadingText : MonoBehaviour
 {
@@ -21,13 +21,13 @@ public class LoadingText : MonoBehaviour
             if(CreateMap.Instance != null)
             {
                 text.text = "Creating Map .";
-                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
+                yield return CoroDict.ContainsKey(0.5f) ? CoroDict[0.5f] : PushData(0.5f, new WaitForSeconds(0.5f));
 
                 text.text = "Creating Map . .";
-                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
+                yield return CoroDict.ContainsKey(0.5f) ? CoroDict[0.5f] : PushData(0.5f, new WaitForSeconds(0.5f));
 
                 text.text = "Creating Map . . .";
-                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
+                yield return CoroDict.ContainsKey(0.5f) ? CoroDict[0.5f] : PushData(0.5f, new WaitForSeconds(0.5f));
 
                 if (CreateMap.IsRoading)
                 {
@@ -37,13 +37,13 @@ public class LoadingText : MonoBehaviour
             else
             {
                 text.text = "Loading .";
-                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
+                yield return CoroDict.ContainsKey(0.5f) ? CoroDict[0.5f] : PushData(0.5f, new WaitForSeconds(0.5f));
 
                 text.text = "Loading . .";
-                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
+                yield return CoroDict.ContainsKey(0.5f) ? CoroDict[0.5f] : PushData(0.5f, new WaitForSeconds(0.5f));
 
                 text.text = "Loading . . .";
-                yield return CoroDict.ContainsKey(1.0f) ? CoroDict[1.0f] : PushData(1.0f, new WaitForSeconds(1.0f));
+                yield return CoroDict.ContainsKey(0.5f) ? CoroDict[0.5f] : PushData(0.5f, new WaitForSeconds(0.5f));
             }
 
         }

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static GCMannager;
+using static GCManager;
 
 public class NWayWagWagBullet : NWayBullet
 {
