@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/UIScene.unity
-    guid: fc0a771de9d4b834f89ae7adcad4a74b
+    path: Assets/Scenes/MainMenu.unity
+    guid: b6b35f10d9c08644883712e853233591
   - enabled: 1
     path: Assets/Scenes/StageSelectScene.unity
     guid: e1638864445bbb3439e311fc4948cdd5
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameManagerScene/TestScene.unity
     guid: 7c032d3aa588340448b59462ae81aba8
+  - enabled: 1
+    path: Assets/Scenes/UIScene.unity
+    guid: fc0a771de9d4b834f89ae7adcad4a74b
   m_configObjects: {}

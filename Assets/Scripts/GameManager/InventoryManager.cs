@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[AddComponentMenu("GameManager/InventoryManager")]
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager Instance { get; private set; }

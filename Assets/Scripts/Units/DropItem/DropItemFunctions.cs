@@ -5,10 +5,10 @@ using static GCManager;
 
 public class DropItemFunctions : MonoBehaviour
 {
+    public static DropItemFunctions Instance;
     public static GameObject SkillPointPrefab = Resources.Load("aaa") as GameObject;
     public static GameObject EssencePrefab = Resources.Load("aaa") as GameObject;
     public static GameObject[] ArtifactPrefab = Resources.LoadAll<GameObject>("aaa");
-    public static DropItemFunctions Instance;
 
     void Awake()
     {

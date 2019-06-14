@@ -35,10 +35,11 @@ public class RandomRotation : MonoBehaviour
                 yield return null;
             }
 
-            yield return CoroDict.ContainsKey(Random.Range(DelayTimeRange.x, DelayTimeRange.y)) ? 
-                                              CoroDict[Random.Range(DelayTimeRange.x, DelayTimeRange.y)] : 
-                                              PushData(Random.Range(DelayTimeRange.x, DelayTimeRange.y), 
-                                                       new WaitForSeconds(Random.Range(DelayTimeRange.x, DelayTimeRange.y)));
+            float randomValue = Random.Range(DelayTimeRange.x, DelayTimeRange.y);
+
+            yield return CoroDict.ContainsKey(randomValue) ? 
+                                              CoroDict[randomValue] : 
+                                              PushData(randomValue, new WaitForSeconds(randomValue));
         }
     }
 }

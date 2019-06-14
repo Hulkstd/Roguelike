@@ -2,6 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
+[AddComponentMenu("GameManager/StatManager")]
 public class StatManager : MonoBehaviour
 {
     public static StatManager Instance { get; private set; }

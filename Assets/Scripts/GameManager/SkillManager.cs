@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[AddComponentMenu("GameManager/SkillManager")]
 public class SkillManager : MonoBehaviour
 {
     public static SkillManager Instance { get; private set; }

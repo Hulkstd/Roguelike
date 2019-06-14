@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using GraghType = System.Collections.Generic.List<System.Collections.Generic.List<CreateMap.ListParam>>;
 
+[AddComponentMenu("GameManager/MinimapManager")]
 public class MinimapManager : MonoBehaviour
 {
     public static MinimapManager Instance { get; private set; }

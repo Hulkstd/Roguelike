@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GraphType = System.Collections.Generic.List<System.Collections.Generic.List<CreateMap.ListParam>>;
 
+[AddComponentMenu("GameManager/CreateMap")]
 public class CreateMap : MonoBehaviour
 {
     public static CreateMap Instance { get; private set; }

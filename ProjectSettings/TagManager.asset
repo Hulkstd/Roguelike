@@ -21,6 +21,7 @@ TagManager:
   - BasicTransform
   - Door
   - Bullet
+  - Title
   layers:
   - Default
   - TransparentFX

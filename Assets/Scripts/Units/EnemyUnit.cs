@@ -32,7 +32,7 @@ public class EnemyUnit : MonoBehaviour
     public DropItemFunc DropItems;
     public AttackPattern[] AttackPatterns;
     public DeathDelegate DeathEvent;
-    public PlayerMove Player; // 나중에 움직이는 스크립트로 바꿔.
+    public PlayerMove Player;
     public bool IsinFunction;
 
     private Coroutine RandomPatternCo;
@@ -53,7 +53,7 @@ public class EnemyUnit : MonoBehaviour
     {
         RandomPatternCo = StartCoroutine(RandomPattern());
         DeathEvent += OnDeath;
-
+        
         int tmp;
         int OneHandDamage, TwoHandDamage;
 
