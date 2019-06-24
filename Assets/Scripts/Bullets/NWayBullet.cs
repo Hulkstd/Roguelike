@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static BulletPulling;
 
 public class NWayBullet : BulletBase
 {
@@ -11,25 +12,24 @@ public class NWayBullet : BulletBase
 
     protected void CreateNWayBullet(float AddAngle)
     {
-        BulletListParam Bullet;
+        BulletListParam bullet;
 
-        if (ReUseBullet.Count == 0)
+        if (GetQueue(Type).Count <= 0)
         {
-            Bullet = new BulletListParam();
-            Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+            bullet = new BulletListParam();
+            bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
         }
         else
         {
-            Bullet = ReUseBullet.Dequeue();
-            Bullet.Bullet.gameObject.SetActive(true);
+            bullet = GetQueue(Type).Dequeue();
+            bullet.Bullet.gameObject.SetActive(true);
         }
-
         AngleBuffer.z = AddAngle;
 
-        Bullet.Bullet.position = transform.position;
-        Bullet.Bullet.eulerAngles = AngleBuffer;
-        Bullet.LiveTime = LiveTime;
-        Bullets.Add(Bullet);
+        bullet.Bullet.position = transform.position;
+        bullet.Bullet.eulerAngles = AngleBuffer;
+        bullet.LiveTime = LiveTime;
+        Bullets.Add(bullet);
     }
 
     protected override void AddBullet()
@@ -66,6 +66,6 @@ public class NWayBullet : BulletBase
 
     protected override void Awake()
     {
-        InItalize(0.5f, 10, @"BulletPrefab/BasicBullet");
+        InItalize(0.5f, 10, @"BasicBullet");
     }
 }

@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
+using static GCMannager;
+using static BulletPulling;
+=======
 using static GCManager;
+>>>>>>> 61b0e28845b7207d23953a2a3d27874deca20d2e
 
 public class HommingBullet : BulletBase
 {
-
-    private static Vector3 AddAngle;
-    private static float Angle;
-    private static float bulletAngle;
+    protected static Vector3 AddAngle;
+    protected static float Angle;
+    protected static bool isAdd;
 
     protected override IEnumerator MoveBullets()
     {
-        StartCoroutine("Homming");
         while (true)
         {
             while (Bullets.Count > 0)
@@ -23,7 +26,7 @@ public class HommingBullet : BulletBase
 
                     if (Bullets[i].LiveTime <= 0 || !Bullets[i].Bullet.gameObject.activeSelf)
                     {
-                        ReUseBullet.Enqueue(Bullets[i]);
+                        GetQueue(Type).Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].LiveTime = LiveTime;
@@ -34,6 +37,16 @@ public class HommingBullet : BulletBase
 
                     MoveVectorBuffer.y = -Speed;
 
+                    Angle = LookAtPlayer.GetAngle(Bullets[i].Bullet);
+                    Angle -= Bullets[i].Bullet.eulerAngles.z;
+
+                    while (Angle < 0) { Angle += 360; }
+                    while (Angle >= 360) { Angle -= 360; }
+
+                    AddAngle.z = ((Angle / 10 > 3) ? 3 : (Angle / 10));
+                    isAdd = (Angle <= 180 ? true : false);
+
+                    Bullets[i].Bullet.eulerAngles += isAdd ? AddAngle : -AddAngle;
                     Bullets[i].Bullet.Translate(MoveVectorBuffer, Space.Self);
                 }
 
@@ -43,40 +56,20 @@ public class HommingBullet : BulletBase
         }
     }
 
-    protected virtual IEnumerator Homming()
+    protected override void InItalize(float speed, float second, string path)
     {
-        while (true)
-        {
-            while (Bullets.Count > 0)
-            {
-                for (int i = 0; i < Bullets.Count; ++i)
-                {
-                    if (LookAtPlayer.GetMagnitude(Bullets[i].Bullet) <= 4)
-                    {
-                        bulletAngle = Bullets[i].Bullet.eulerAngles.z;
-                        Angle = LookAtPlayer.GetAngle(Bullets[i].Bullet);
-                        Debug.Log(Angle);
-                        Debug.Log(Bullets[i].Bullet.eulerAngles);
-                        Angle = Angle < 0 ? Angle + 360 : Angle >= 360 ? Angle - 360 : Angle;
-                        if (Angle - bulletAngle < bulletAngle ? bulletAngle - Angle < AddAngle.z : Angle - bulletAngle < AddAngle.z)                         
-                        {
-                            LookAtPlayer.LookPlayer(Bullets[i].Bullet);
-                        }
-                        else
-                        {
-                            Bullets[i].Bullet.eulerAngles += Angle - bulletAngle < bulletAngle ? -AddAngle : AddAngle;
-                        }
-                    }
-                }
-                yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
-            }
-            yield return CoroWaitForEndFrame;
-        }
+        base.InItalize(speed, second, path);
+        AddAngle = Vector3.zero;
     }
 
     protected override void Awake()
     {
-        InItalize(0.1f, 10, @"BulletPrefab/BasicBullet");
-        AddAngle = new Vector3(0, 0, 10f);
+        InItalize(0.1f, 5, @"BasicBullet");
     }
+
+    protected override void Start()
+    {
+        base.Start();
+    }
+
 }
