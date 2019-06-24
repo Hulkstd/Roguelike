@@ -25,10 +25,11 @@ public class SkillDatabase : MonoBehaviour
 [System.Serializable]
 public class SkillObject
 {
-    public SkillObject(string SkillName, string SkillImagePath, string AnimatorPath, string SkillFuncName, float OriginalCooltime, int Damage)
+    public SkillObject(string SkillName, string SkillImagePath, string SkillAudioPath, string AnimatorPath, string SkillFuncName, float OriginalCooltime, int Damage)
     {
         this.SkillName = SkillName;
         this.SkillImage = Resources.Load<Sprite>(SkillImagePath);
+        this.SkillAudio = Resources.Load<AudioClip>(SkillAudioPath);
         this.Animator = Resources.Load<Animator>(AnimatorPath);
         this.Skill = UseSkill;
         //this.Skill += ;// 나중에 고처야할 코드
@@ -38,6 +39,7 @@ public class SkillObject
 
     public string SkillName;
     public Sprite SkillImage;
+    public AudioClip SkillAudio;
     public Animator Animator;
     public SkillManager.SkillFunc Skill;
     public float OriginalCooltime;

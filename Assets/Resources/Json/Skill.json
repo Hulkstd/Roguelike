@@ -2,6 +2,7 @@
   {
     "SkillName": "Test",
     "SkillImage": null,
+    "SkillAudio": null,
     "Animator": null,
     "Skill": null,
     "OriginalCooltime": 5,
@@ -10,6 +11,7 @@
   {
     "SkillName": "Test2",
     "SkillImage": null,
+    "SkillAudio": null,
     "Animator": null,
     "Skill": null,
     "OriginalCooltime": 2,

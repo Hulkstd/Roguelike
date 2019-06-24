@@ -35,9 +35,9 @@ public class EnemyUnit : MonoBehaviour
     public PlayerMove Player;
     public bool IsinFunction;
 
-    private Coroutine RandomPatternCo;
-    private int OneHandMinDamage = 500, TwoHandMinDamage = 500;
-    private Dictionary<DefensiveForm, int> GetDamage = new Dictionary<DefensiveForm, int>()
+    protected Coroutine RandomPatternCo;
+    protected int OneHandMinDamage = 500, TwoHandMinDamage = 500;
+    protected Dictionary<DefensiveForm, int> GetDamage = new Dictionary<DefensiveForm, int>()
     {
         { DefensiveForm.Shield , 100100 },
         { DefensiveForm.Racing_Armor, 200025 },
@@ -49,7 +49,7 @@ public class EnemyUnit : MonoBehaviour
         { DefensiveForm.Giant, 150150 },
     };
 
-    void Start()
+    protected virtual void Start()
     {
         RandomPatternCo = StartCoroutine(RandomPattern());
         DeathEvent += OnDeath;
@@ -87,7 +87,7 @@ public class EnemyUnit : MonoBehaviour
         }
     }
 
-    public void DamagedByUnit(Collider collider)
+    public virtual void DamagedByUnit(Collider collider)
     {
         BaseWeapon baseWeapon = collider.GetComponent<BaseWeapon>();
 
@@ -117,7 +117,7 @@ public class EnemyUnit : MonoBehaviour
         HP -= Mathf.Clamp(Damage, 1, FixedStrength);
     }
 
-    public void OnDeath()
+    public virtual void OnDeath()
     {
         StopCoroutine(RandomPatternCo);
         gameObject.SetActive(false);

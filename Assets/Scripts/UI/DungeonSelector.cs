@@ -1,9 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using System;
 
 public class DungeonSelector : MonoBehaviour, IPointerClickHandler
 {
@@ -15,10 +15,14 @@ public class DungeonSelector : MonoBehaviour, IPointerClickHandler
     public Vector2 pivot;
 
     private GameObject DungeonUI;
-
-    public void OnPointerClick(PointerEventData eventData)
+    private List<float> SizeValues;
+    private Vector3 offset = new Vector3(2, -0.8f, 0);
+    private MoveCamera MoveCameraInstance
     {
-
+        get
+        {
+            return MoveCamera.Instance;
+        }
     }
 
     void Start()
@@ -26,7 +30,16 @@ public class DungeonSelector : MonoBehaviour, IPointerClickHandler
         Initialize();
     }
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (MoveCameraInstance.MainCamera.orthographicSize == 5)
+        {
+            StartCoroutine(MoveCameraInstance.Move_Camera(1.5f, transform.position + offset, true));
+        }
+    }
+
     private void Initialize()
     {
+
     }
 }
