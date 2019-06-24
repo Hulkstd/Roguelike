@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using static GCMannager;
+using static BulletPulling;
 
 public class NWayTornadoBullet : BulletBase
 {
@@ -18,27 +19,27 @@ public class NWayTornadoBullet : BulletBase
 
         float add_z = MinAngle;
 
-        BulletListParam Bullet;
+        BulletListParam bullet;
 
         for (int i = 0; i < BulletCount; ++i)
         {
-            if (ReUseBullet.Count == 0)
+            if (BasicBullets.Count <= 0)
             {
-                Bullet = new BulletListParam();
-                Bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+                bullet = new BulletListParam();
+                bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
             }
             else
             {
-                Bullet = ReUseBullet.Dequeue();
-                Bullet.Bullet.gameObject.SetActive(true);
+                bullet = BasicBullets.Dequeue();
+                bullet.Bullet.gameObject.SetActive(true);
             }
 
             AngleBuffer.z = transform.eulerAngles.z + add_z;
 
-            Bullet.Bullet.position = transform.position;
-            Bullet.Bullet.eulerAngles = AngleBuffer;
-            Bullet.LiveTime = LiveTime;
-            Bullets.Add(Bullet);
+            bullet.Bullet.position = transform.position;
+            bullet.Bullet.eulerAngles = AngleBuffer;
+            bullet.LiveTime = LiveTime;
+            Bullets.Add(bullet);
 
             add_z += BulletDistance;
         }
@@ -56,7 +57,7 @@ public class NWayTornadoBullet : BulletBase
 
                     if (Bullets[i].LiveTime <= 0)
                     {
-                        ReUseBullet.Enqueue(Bullets[i]);
+                        GetQueue(Type).Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].Bullet.gameObject.SetActive(false);
@@ -80,7 +81,7 @@ public class NWayTornadoBullet : BulletBase
     protected override void InItalize(float speed, float second, string path)
     {
         base.InItalize(speed, second, path);
-        AddAngle = 2;
+        AddAngle = 5;
         BulletCount = 18;
         MinAngle = -180;
         MaxAngle = 180;
@@ -89,7 +90,7 @@ public class NWayTornadoBullet : BulletBase
 
     protected override void Awake()
     {
-        InItalize(0.1f, 10, @"BulletPrefab/BasicBullet");
+        InItalize(1f, 5, @"BasicBullet");
     }
 
 }

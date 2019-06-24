@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using static GCMannager;
+using static BulletPulling;
 
 public class NWayWagWagBullet : NWayBullet
 {
@@ -19,7 +20,7 @@ public class NWayWagWagBullet : NWayBullet
 
                     if (Bullets[i].LiveTime <= 0)
                     {
-                        ReUseBullet.Enqueue(Bullets[i]);
+                        GetQueue(Type).Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].LiveTime = LiveTime;
@@ -40,13 +41,9 @@ public class NWayWagWagBullet : NWayBullet
 
     protected override void InItalize(float speed, float second, string path)
     {
-        ReUseBullet = new Queue<BulletListParam>();
-        Bullets = new List<BulletListParam>();
+        base.InItalize(speed, second, path);
         AngleBuffer = new Vector3(0, 0, 0);
         MoveVectorBuffer = new Vector2(0, 0);
-        LiveTime = second;
-        Speed = speed;
-        PrefabPath = path;
         BulletCount = 25;
         BulletDistance = 360f / BulletCount;
         MinAngle = -180;
@@ -55,7 +52,7 @@ public class NWayWagWagBullet : NWayBullet
 
     protected override void Awake()
     {
-        InItalize(0.5f, 10, @"BulletPrefab/BasicBullet");
+        InItalize(0.5f, 10, @"BasicBullet");
     }
 
 }

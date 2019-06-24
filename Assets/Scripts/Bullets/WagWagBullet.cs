@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using static GCMannager;
+using static BulletPulling;
 
 public class WagWagBullet : BulletBase
 {
@@ -19,7 +20,7 @@ public class WagWagBullet : BulletBase
 
                     if (Bullets[i].LiveTime <= 0)
                     {
-                        ReUseBullet.Enqueue(Bullets[i]);
+                        GetQueue(Type).Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].LiveTime = LiveTime;
@@ -40,7 +41,7 @@ public class WagWagBullet : BulletBase
 
     protected override void Awake()
     {
-        InItalize(0.5f, 10, @"BulletPrefab/BasicBullet");
+        InItalize(0.5f, 10, @"BasicBullet");
     }
 
 }

@@ -5,14 +5,14 @@ using static GCMannager;
 
 public class LookAtPlayer : MonoBehaviour
 {
-    private static FloatPair buffer;
+    private static FloatPair Buffer;
     public static Transform Player { get; private set; }
     private static float ArcAngle;
     private static Vector3 Angle;
 
     public static void LookPlayer(Transform Obj)
     {
-        Angle.z = GetAngle(Obj); 
+        Angle.z = GetAngle(Obj);
         Obj.eulerAngles = Angle;
     }
 
@@ -23,17 +23,19 @@ public class LookAtPlayer : MonoBehaviour
         return distance_x * distance_x + distance_y * distance_y;
     }
 
-    public static float GetAngle(Transform Obj)
+    public static float GetAngle(Transform obj)
     {
-        buffer.x = Obj.position.x - Player.position.x;
-        buffer.y = Obj.position.y - Player.position.y;
-        ArcAngle = AtanDict.ContainsKey(buffer) ? AtanDict[buffer] : PushData(buffer, Mathf.Atan2(buffer.x, buffer.y));
-        return -ArcAngle * Mathf.Rad2Deg;
+        Buffer.x = obj.position.x - Player.position.x;
+        Buffer.y = obj.position.y - Player.position.y;
+        ArcAngle = AtanDict.ContainsKey(Buffer) ? AtanDict[Buffer] : PushData(Buffer, Mathf.Atan2(Buffer.y, Buffer.x));
+        ArcAngle *= Mathf.Rad2Deg;
+        ArcAngle -= 90;
+        return ArcAngle;
     }
 
     private void Awake()
     {
-        buffer = new FloatPair();
+        Buffer = new FloatPair();
         Angle = new Vector3(0, 0, 0);
     }
 

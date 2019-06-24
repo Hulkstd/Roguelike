@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using static GCMannager;
+using static BulletPulling;
 
 public class TornadoBullet : BulletBase
 {
@@ -21,7 +22,7 @@ public class TornadoBullet : BulletBase
 
                     if (Bullets[i].LiveTime <= 0)
                     {
-                        ReUseBullet.Enqueue(Bullets[i]);
+                        GetQueue(Type).Enqueue(Bullets[i]);
                         Bullets[i].Bullet.position = transform.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].LiveTime = LiveTime;
@@ -49,7 +50,7 @@ public class TornadoBullet : BulletBase
 
     protected override void Awake()
     {
-        InItalize(1, 10, @"BulletPrefab/BasicBullet");
+        InItalize(1, 10, @"BasicBullet");
     }
 
     protected override void Start()
