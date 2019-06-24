@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using static GCMannager;
 using static BulletPulling;
+=======
+using static GCManager;
+>>>>>>> 61b0e28845b7207d23953a2a3d27874deca20d2e
 
 public class HommingBullet : BulletBase
 {

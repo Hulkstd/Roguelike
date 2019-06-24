@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
 
+[AddComponentMenu("GameManager/AbilityManager")]
 public class AbilityManager : MonoBehaviour
 {
     public static AbilityManager Instance { get; private set; }

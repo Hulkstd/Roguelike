@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GCMannager : MonoBehaviour
+public class GCManager : MonoBehaviour
 {
     public struct FloatPair
     {

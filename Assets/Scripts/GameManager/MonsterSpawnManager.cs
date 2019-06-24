@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GraghType = System.Collections.Generic.List<System.Collections.Generic.List<CreateMap.ListParam>>;
 
+[AddComponentMenu("GameManager/MonsterSpawnManager")]
 public class MonsterSpawnManager : MonoBehaviour
 {
     public static MonsterSpawnManager Instance { get; private set; }

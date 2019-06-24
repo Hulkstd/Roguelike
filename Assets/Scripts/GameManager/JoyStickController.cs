@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
+[AddComponentMenu("GameManager/JoyStickController")]
 public class JoyStickController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public static JoyStickController Instance { get; private set; }

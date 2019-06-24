@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[AddComponentMenu("GameManager/HitpointAndManapoint")]
 public class HitpointAndManapoint : MonoBehaviour
 {
     public static HitpointAndManapoint Instance { get; private set; }

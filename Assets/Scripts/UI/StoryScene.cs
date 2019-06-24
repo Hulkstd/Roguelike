@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
-using static GCMannager;
+using static GCManager;
 
 public class StoryScene : MonoBehaviour
 {

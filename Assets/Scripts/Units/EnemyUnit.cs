@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-using static GCMannager;
-using System;
+using static GCManager;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 // Name, Strength, fixed Strength, Shiled, Hazard level, Defense (or defensive power), Defensive form, movement speed (or moving velocity), DropItem, Attack Pattern
 [RequireComponent (typeof(Rigidbody2D))]
 [RequireComponent (typeof(Seeker))]
-public class EnemyUnit : MonoBehaviour
+public class EnemyUnit : MonoBehaviour 
 {
     public delegate void DropItemFunc();
     public delegate void AttackPattern(Transform Me, Transform Player, ref bool IsinFunction);
+    public delegate void DeathDelegate();
 
     public string Name;
-    public int Strength;
+    public int HP;
     public int FixedStrength;
     public int Shield;
     public int HazardLevel;
@@ -27,9 +29,10 @@ public class EnemyUnit : MonoBehaviour
     public GameObject WarningPoint;
     public GameObject PadPrefabs;
     public DefensiveForm[] Forms;
-    public DropItemFunc[] DropItems;
+    public DropItemFunc DropItems;
     public AttackPattern[] AttackPatterns;
-    public Transform Player; // 나중에 움직이는 스크립트로 바꿔.
+    public DeathDelegate DeathEvent;
+    public PlayerMove Player;
     public bool IsinFunction;
 
     private Coroutine RandomPatternCo;
@@ -49,7 +52,8 @@ public class EnemyUnit : MonoBehaviour
     void Start()
     {
         RandomPatternCo = StartCoroutine(RandomPattern());
-
+        DeathEvent += OnDeath;
+        
         int tmp;
         int OneHandDamage, TwoHandDamage;
 
@@ -79,7 +83,7 @@ public class EnemyUnit : MonoBehaviour
 
             yield return CoroDict.ContainsKey(2.0f) ? CoroDict[2.0f] : PushData(2.0f, new WaitForSeconds(2.0f));
 
-            AttackPatterns[UnityEngine.Random.Range(0, AttackPatterns.Length)](transform, Player, ref IsinFunction);
+            AttackPatterns[Random.Range(0, AttackPatterns.Length)](transform, Player.transform, ref IsinFunction);
         }
     }
 
@@ -106,11 +110,17 @@ public class EnemyUnit : MonoBehaviour
                     Damage = baseWeapon.EquipData.TryGetStat(StatType.Power);
 
                     Damage = Damage * TwoHandMinDamage / 100;
-                }
+                } 
                 break;
         }
 
-        Strength -= Mathf.Clamp(Damage, 1, FixedStrength);
+        HP -= Mathf.Clamp(Damage, 1, FixedStrength);
+    }
+
+    public void OnDeath()
+    {
+        StopCoroutine(RandomPatternCo);
+        gameObject.SetActive(false);
     }
 }
 
@@ -125,5 +135,16 @@ public enum DefensiveForm : short
     Machine = 6,
     Weak = 7,
     Giant = 8,
+    None = -1
+}
+
+[System.Serializable]
+public enum DropItemType : short
+{
+    SkillPoint = 1,
+    Essence = 2,
+    FireArtifact = 3,
+    IceArtifact = 4,
+    StoneArtifact = 5,
     None = -1
 }
