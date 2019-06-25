@@ -1,31 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-using static GCMannager;
-using static BulletPulling;
-=======
 using static GCManager;
->>>>>>> 61b0e28845b7207d23953a2a3d27874deca20d2e
+using static BulletPulling;
 
-public class BulletBase : MonoBehaviour 
+public class BulletBase
 {
-    protected List<BulletListParam> Bullets;
-    protected float Speed;
-    protected string PrefabPath;
-    protected float LiveTime;
-    protected Vector3 AngleBuffer;
-    protected Vector2 MoveVectorBuffer;
-    protected QueueType Type;
+    protected static Transform Unit;
+    protected static List<BulletListParam> Bullets;
+    protected static float Speed;
+    protected static string PrefabPath;
+    protected static float LiveTime;
+    protected static Vector3 AngleBuffer;
+    protected static Vector2 MoveVectorBuffer;
+    protected static QueueType Type;
 
-    protected virtual void AddBullet()
+    private static void AddBullet()
     {
         BulletListParam bullet;
 
         if (GetQueue(Type).Count <= 0)
         {
             bullet = new BulletListParam();
-            bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+            bullet.Bullet = MonoBehaviour.Instantiate(Resources.Load<Transform>(PrefabPath));
         }
         else
         {
@@ -33,14 +30,14 @@ public class BulletBase : MonoBehaviour
             bullet.Bullet.gameObject.SetActive(true);
         }
 
-        bullet.Bullet.position = transform.position;
-        AngleBuffer.z = transform.eulerAngles.z;
+        bullet.Bullet.position = Unit.position;
+        AngleBuffer.z = Unit.eulerAngles.z;
         bullet.Bullet.eulerAngles = AngleBuffer;
         bullet.LiveTime = LiveTime;
         Bullets.Add(bullet);
     }
     
-    protected virtual IEnumerator MoveBullets()
+    private static IEnumerator MoveBullets()
     {
         while (true)
         {
@@ -53,8 +50,8 @@ public class BulletBase : MonoBehaviour
                     if (Bullets[i].LiveTime <= 0)
                     {
                         GetQueue(Type).Enqueue(Bullets[i]);
-                        Bullets[i].Bullet.position = transform.position;
-                        Bullets[i].Bullet.eulerAngles = transform.eulerAngles;
+                        Bullets[i].Bullet.position = Unit.position;
+                        Bullets[i].Bullet.eulerAngles = Unit.eulerAngles;
                         Bullets[i].LiveTime = LiveTime;
                         Bullets[i].Bullet.gameObject.SetActive(false);
                         Bullets.RemoveAt(i--);
@@ -69,13 +66,19 @@ public class BulletBase : MonoBehaviour
         }
     }
 
-    public virtual void ShotBullet()
+    public static void StartCoroutine()
+    {
+        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+    }
+
+    public static void ShotBullet()
     {
         AddBullet();
     }
 
-    protected virtual void InItalize(float speed, float second, string path)
+    public static void InItalize(float speed, float second, string path, Transform transform)
     {
+        Unit = transform;
         Bullets = new List<BulletListParam>();
         Type = GetQueueType(path);
         AngleBuffer = new Vector3(0, 0, 0);
@@ -84,19 +87,5 @@ public class BulletBase : MonoBehaviour
         Speed = speed;
         PrefabPath = @"BulletPrefab/" + path;
     }
-
-    protected virtual void Awake()
-    {
-        InItalize(0.5f, 10, @"BasicBullet");
-    }
-    protected virtual void Start() { StartCoroutine("MoveBullets"); }
-    protected virtual void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            AddBullet();
-        }
-    }
-    protected virtual void LateUpdate() { }
 
 }
