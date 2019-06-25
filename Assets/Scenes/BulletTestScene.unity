@@ -395,7 +395,6 @@ GameObject:
   - component: {fileID: 1741428353}
   - component: {fileID: 1741428355}
   - component: {fileID: 1741428354}
-  - component: {fileID: 1741428352}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -403,18 +402,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1741428352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741428351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e801f40b298cf54a952b035c67ce6da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1741428353
 Transform:
   m_ObjectHideFlags: 0

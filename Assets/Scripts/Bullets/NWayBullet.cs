@@ -1,23 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GCManager;
 using static BulletPulling;
 
-public class NWayBullet : BulletBase
+public class NWayBullet
 {
-    protected int BulletCount;
-    protected float MinAngle;
-    protected float MaxAngle;
-    protected float BulletDistance; // 탄알간의 간격
+    private static Transform Unit;
+    private static List<BulletListParam> Bullets;
+    private static float Speed;
+    private static string PrefabPath;
+    private static float LiveTime;
+    private static Vector3 AngleBuffer;
+    private static Vector2 MoveVectorBuffer;
+    private static QueueType Type;
+    private static int BulletCount;
+    private static float MinAngle;
+    private static float MaxAngle;
+    private static float BulletDistance; // 탄알간의 간격
 
-    protected void CreateNWayBullet(float AddAngle)
+    private static void CreateNWayBullet(float AddAngle)
     {
         BulletListParam bullet;
 
         if (GetQueue(Type).Count <= 0)
         {
             bullet = new BulletListParam();
-            bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+            bullet.Bullet = MonoBehaviour.Instantiate(Resources.Load<Transform>(PrefabPath));
         }
         else
         {
@@ -26,22 +35,20 @@ public class NWayBullet : BulletBase
         }
         AngleBuffer.z = AddAngle;
 
-        bullet.Bullet.position = transform.position;
+        bullet.Bullet.position = Unit.position;
         bullet.Bullet.eulerAngles = AngleBuffer;
         bullet.LiveTime = LiveTime;
         Bullets.Add(bullet);
     }
 
-    protected override void AddBullet()
+    private static void AddBullet()
     {
         float LeftAngle, RightAngle;
 
-        Debug.Log(transform.eulerAngles);
+        if (BulletCount % 2 == 1) { CreateNWayBullet(Unit.eulerAngles.z); }
 
-        if (BulletCount % 2 == 1) { CreateNWayBullet(transform.eulerAngles.z); }
-
-        LeftAngle = BulletCount % 2 == 0 ? transform.eulerAngles.z - BulletDistance / 2 : transform.eulerAngles.z - BulletDistance;
-        RightAngle = BulletCount % 2 == 0 ? transform.eulerAngles.z + BulletDistance / 2 : transform.eulerAngles.z + BulletDistance;
+        LeftAngle = BulletCount % 2 == 0 ? Unit.eulerAngles.z - BulletDistance / 2 : Unit.eulerAngles.z - BulletDistance;
+        RightAngle = BulletCount % 2 == 0 ? Unit.eulerAngles.z + BulletDistance / 2 : Unit.eulerAngles.z + BulletDistance;
 
         for (int i = 0; i < BulletCount / 2; ++i)
         {
@@ -55,17 +62,59 @@ public class NWayBullet : BulletBase
 
     }
 
-    protected override void InItalize(float speed, float second, string path)
+    private static IEnumerator MoveBullets()
     {
-        base.InItalize(speed, second, path);
+        while (true)
+        {
+            while (Bullets.Count > 0)
+            {
+                for (int i = 0; i < Bullets.Count; ++i)
+                {
+                    Bullets[i].LiveTime -= 0.0625f;
+
+                    if (Bullets[i].LiveTime <= 0)
+                    {
+                        GetQueue(Type).Enqueue(Bullets[i]);
+                        Bullets[i].Bullet.position = Unit.position;
+                        Bullets[i].Bullet.eulerAngles = Unit.eulerAngles;
+                        Bullets[i].LiveTime = LiveTime;
+                        Bullets[i].Bullet.gameObject.SetActive(false);
+                        Bullets.RemoveAt(i--);
+                        continue;
+                    }
+                    MoveVectorBuffer.y = -Speed;
+                    Bullets[i].Bullet.Translate(MoveVectorBuffer, Space.Self);
+                }
+                yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
+            }
+            yield return CoroWaitForEndFrame;
+        }
+    }
+
+    public static void StartCoroutine()
+    {
+        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+    }
+
+    public static void ShotBullet()
+    {
+        AddBullet();
+    }
+
+    public static void InItalize(float speed, float second, string path, Transform transform)
+    {
+        Unit = transform;
+        Bullets = new List<BulletListParam>();
+        Type = GetQueueType(path);
+        AngleBuffer = new Vector3(0, 0, 0);
+        MoveVectorBuffer = new Vector2(0, 0);
+        LiveTime = second;
+        Speed = speed;
+        PrefabPath = @"BulletPrefab/" + path;
         MinAngle = -90;
         MaxAngle = 90;
         BulletCount = 15;
         BulletDistance = 180f / BulletCount < 15 ? 180f / BulletCount : 15;
     }
 
-    protected override void Awake()
-    {
-        InItalize(0.5f, 10, @"BasicBullet");
-    }
 }

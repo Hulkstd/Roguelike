@@ -1,23 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-using static GCMannager;
-using static BulletPulling;
-=======
 using static GCManager;
->>>>>>> 61b0e28845b7207d23953a2a3d27874deca20d2e
+using static BulletPulling;
 
-public class NWayTornadoBullet : BulletBase
+public class NWayTornadoBullet
 {
-    protected bool IsLeft;
-    protected int BulletCount;
-    protected float MinAngle;
-    protected float MaxAngle;
-    protected float AddAngle;
-    protected float BulletDistance;
+    protected static Transform Unit;
+    protected static List<BulletListParam> Bullets;
+    protected static float Speed;
+    protected static string PrefabPath;
+    protected static float LiveTime;
+    protected static Vector3 AngleBuffer;
+    protected static Vector2 MoveVectorBuffer;
+    protected static QueueType Type;
+    protected static bool IsLeft;
+    protected static int BulletCount;
+    protected static float MinAngle;
+    protected static float MaxAngle;
+    protected static float AddAngle;
+    protected static float BulletDistance;
 
-    protected override void AddBullet()
+    private static void AddBullet()
     {
         BulletDistance = 360f / BulletCount;
 
@@ -30,7 +34,7 @@ public class NWayTornadoBullet : BulletBase
             if (BasicBullets.Count <= 0)
             {
                 bullet = new BulletListParam();
-                bullet.Bullet = Instantiate(Resources.Load<Transform>(PrefabPath));
+                bullet.Bullet = MonoBehaviour.Instantiate(Resources.Load<Transform>(PrefabPath));
             }
             else
             {
@@ -38,9 +42,9 @@ public class NWayTornadoBullet : BulletBase
                 bullet.Bullet.gameObject.SetActive(true);
             }
 
-            AngleBuffer.z = transform.eulerAngles.z + add_z;
+            AngleBuffer.z = Unit.eulerAngles.z + add_z;
 
-            bullet.Bullet.position = transform.position;
+            bullet.Bullet.position = Unit.position;
             bullet.Bullet.eulerAngles = AngleBuffer;
             bullet.LiveTime = LiveTime;
             Bullets.Add(bullet);
@@ -49,7 +53,7 @@ public class NWayTornadoBullet : BulletBase
         }
     }
 
-    protected override IEnumerator MoveBullets()
+    private static IEnumerator MoveBullets()
     {
         while (true)
         {
@@ -62,7 +66,7 @@ public class NWayTornadoBullet : BulletBase
                     if (Bullets[i].LiveTime <= 0)
                     {
                         GetQueue(Type).Enqueue(Bullets[i]);
-                        Bullets[i].Bullet.position = transform.position;
+                        Bullets[i].Bullet.position = Unit.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].Bullet.gameObject.SetActive(false);
                         Bullets.RemoveAt(i--);
@@ -82,19 +86,31 @@ public class NWayTornadoBullet : BulletBase
         }
     }
 
-    protected override void InItalize(float speed, float second, string path)
+    public static void StartCoroutine()
     {
-        base.InItalize(speed, second, path);
+        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+    }
+
+    public static void ShotBullet()
+    {
+        AddBullet();
+    }
+
+    public static void InItalize(float speed, float second, string path, Transform transform)
+    {
+        Unit = transform;
+        Bullets = new List<BulletListParam>();
+        Type = GetQueueType(path);
+        AngleBuffer = new Vector3(0, 0, 0);
+        MoveVectorBuffer = new Vector2(0, 0);
+        LiveTime = second;
+        Speed = speed;
+        PrefabPath = @"BulletPrefab/" + path;
         AddAngle = 5;
         BulletCount = 18;
         MinAngle = -180;
         MaxAngle = 180;
         IsLeft = Random.Range(0, 2) == 1 ? true : false;
-    }
-
-    protected override void Awake()
-    {
-        InItalize(1f, 5, @"BasicBullet");
     }
 
 }

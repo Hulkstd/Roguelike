@@ -1,20 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-using static GCMannager;
-using static BulletPulling;
-=======
 using static GCManager;
->>>>>>> 61b0e28845b7207d23953a2a3d27874deca20d2e
+using static BulletPulling;
 
-public class TornadoBullet : BulletBase
+public class TornadoBullet
 {
-    [SerializeField]
-    protected bool IsLeft;
-    protected float AddAngle; // 탄알이 휘는 것처럼 보여주게 더해주는 각도
+    protected static Transform Unit;
+    protected static List<BulletListParam> Bullets;
+    protected static float Speed;
+    protected static string PrefabPath;
+    protected static float LiveTime;
+    protected static Vector3 AngleBuffer;
+    protected static Vector2 MoveVectorBuffer;
+    protected static QueueType Type;
+    protected static bool IsLeft;
+    protected static float AddAngle; // 탄알이 휘는 것처럼 보여주게 더해주는 각도
 
-    protected override IEnumerator MoveBullets()
+    private static void AddBullet()
+    {
+        BulletListParam bullet;
+
+        if (GetQueue(Type).Count <= 0)
+        {
+            bullet = new BulletListParam();
+            bullet.Bullet = MonoBehaviour.Instantiate(Resources.Load<Transform>(PrefabPath));
+        }
+        else
+        {
+            bullet = GetQueue(Type).Dequeue();
+            bullet.Bullet.gameObject.SetActive(true);
+        }
+
+        bullet.Bullet.position = Unit.position;
+        AngleBuffer.z = Unit.eulerAngles.z;
+        bullet.Bullet.eulerAngles = AngleBuffer;
+        bullet.LiveTime = LiveTime;
+        Bullets.Add(bullet);
+    }
+
+    private static IEnumerator MoveBullets()
     {
         while (true)
         {
@@ -27,7 +52,7 @@ public class TornadoBullet : BulletBase
                     if (Bullets[i].LiveTime <= 0)
                     {
                         GetQueue(Type).Enqueue(Bullets[i]);
-                        Bullets[i].Bullet.position = transform.position;
+                        Bullets[i].Bullet.position = Unit.position;
                         Bullets[i].Bullet.rotation = Quaternion.identity;
                         Bullets[i].LiveTime = LiveTime;
                         Bullets[i].Bullet.gameObject.SetActive(false);
@@ -45,20 +70,28 @@ public class TornadoBullet : BulletBase
         }
     }
 
-    protected override void InItalize(float speed, float second, string path)
+    public static void StartCoroutine()
     {
-        base.InItalize(speed, second, path);
+        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+    }
+
+    public static void ShotBullet()
+    {
+        AddBullet();
+    }
+
+    public static void InItalize(float speed, float second, string path, Transform transform)
+    {
+        Unit = transform;
+        Bullets = new List<BulletListParam>();
+        Type = GetQueueType(path);
+        AngleBuffer = new Vector3(0, 0, 0);
+        MoveVectorBuffer = new Vector2(0, 0);
+        LiveTime = second;
+        Speed = speed;
+        PrefabPath = @"BulletPrefab/" + path;
         IsLeft = Random.Range(0, 2) == 1 ? true : false;
         AddAngle = 3;
     }
 
-    protected override void Awake()
-    {
-        InItalize(1, 10, @"BasicBullet");
-    }
-
-    protected override void Start()
-    {
-        StartCoroutine("MoveBullets");
-    }
 }
