@@ -92,7 +92,22 @@ public static class MonsterPattern
 
     public static void N_WayBullet(Transform Me, Transform Player, ref bool IsinFunction) // 보성
     {
+        IsinFunction = true;
+        StaticClassCoroutineManager.Instance.Perform(ShotBullet(Me));
+    }
 
+    private static IEnumerator ShotBullet(Transform Me)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            NWayBullet.InItalize(0.1f, 4, Me.GetComponent<EnemyUnit>().BulletPrefPath, Me);
+            NWayBullet.ShotBullet();
+            NWayBullet.StartCoroutine();
+
+            yield return CoroDict.ContainsKey(0.5f) ? CoroDict[0.5f] : PushData(0.5f, new WaitForSeconds(0.5f));
+        }
+
+        Me.GetComponent<EnemyUnit>().IsinFunction = false;
     }
 
     public static void Pad(Transform Me, Transform Player, ref bool IsinFunction) // 진우 태형

@@ -14,6 +14,7 @@ public class HommingBullet
     protected static Vector3 AngleBuffer;
     protected static Vector2 MoveVectorBuffer;
     protected static QueueType Type;
+    protected static bool CoroutineFlag = false;
     protected static Vector3 AddAngle;
     protected static float Angle;
     protected static bool isAdd;
@@ -42,6 +43,7 @@ public class HommingBullet
 
     private static IEnumerator MoveBullets()
     {
+        CoroutineFlag = true;
         while (true)
         {
             while (Bullets.Count > 0)
@@ -84,7 +86,10 @@ public class HommingBullet
 
     public static void StartCoroutine()
     {
-        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        if (!CoroutineFlag)
+        {
+            StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        }
     }
 
     public static void ShotBullet()
@@ -92,7 +97,7 @@ public class HommingBullet
         AddBullet();
     }
 
-    protected static void InItalize(float speed, float second, string path, Transform transform)
+    public static void InItalize(float speed, float second, string path, Transform transform)
     {
         Unit = transform;
         Bullets = new List<BulletListParam>();

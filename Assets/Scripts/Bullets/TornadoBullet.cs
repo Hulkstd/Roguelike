@@ -14,6 +14,7 @@ public class TornadoBullet
     protected static Vector3 AngleBuffer;
     protected static Vector2 MoveVectorBuffer;
     protected static QueueType Type;
+    protected static bool CoroutineFlag = false;
     protected static bool IsLeft;
     protected static float AddAngle; // 탄알이 휘는 것처럼 보여주게 더해주는 각도
 
@@ -43,6 +44,7 @@ public class TornadoBullet
     {
         while (true)
         {
+            CoroutineFlag = true;
             while (Bullets.Count > 0)
             {
                 for (int i = 0; i < Bullets.Count; ++i)
@@ -72,7 +74,10 @@ public class TornadoBullet
 
     public static void StartCoroutine()
     {
-        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        if (!CoroutineFlag)
+        {
+            StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        }
     }
 
     public static void ShotBullet()

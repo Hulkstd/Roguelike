@@ -14,6 +14,7 @@ public class NWayBullet
     private static Vector3 AngleBuffer;
     private static Vector2 MoveVectorBuffer;
     private static QueueType Type;
+    private static bool CoroutineFlag = false;
     private static int BulletCount;
     private static float MinAngle;
     private static float MaxAngle;
@@ -59,11 +60,11 @@ public class NWayBullet
             LeftAngle -= BulletDistance;
             RightAngle += BulletDistance;
         }
-
     }
 
     private static IEnumerator MoveBullets()
     {
+        CoroutineFlag = true;
         while (true)
         {
             while (Bullets.Count > 0)
@@ -87,13 +88,17 @@ public class NWayBullet
                 }
                 yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
             }
+            CoroutineFlag = false;
             yield return CoroWaitForEndFrame;
         }
     }
 
     public static void StartCoroutine()
     {
-        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        if (!CoroutineFlag)
+        {
+            StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        }
     }
 
     public static void ShotBullet()
@@ -104,17 +109,17 @@ public class NWayBullet
     public static void InItalize(float speed, float second, string path, Transform transform)
     {
         Unit = transform;
-        Bullets = new List<BulletListParam>();
+        if(Bullets == null) Bullets = new List<BulletListParam>();
         Type = GetQueueType(path);
         AngleBuffer = new Vector3(0, 0, 0);
         MoveVectorBuffer = new Vector2(0, 0);
         LiveTime = second;
         Speed = speed;
         PrefabPath = @"BulletPrefab/" + path;
-        MinAngle = -90;
-        MaxAngle = 90;
+        MinAngle = -180;
+        MaxAngle = 180;
         BulletCount = 15;
-        BulletDistance = 180f / BulletCount < 15 ? 180f / BulletCount : 15;
+        BulletDistance = 360f / BulletCount < 30 ? 360f / BulletCount : 30;
     }
 
 }

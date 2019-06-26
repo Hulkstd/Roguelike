@@ -6,14 +6,15 @@ using static BulletPulling;
 
 public class BulletBase
 {
-    protected static Transform Unit;
-    protected static List<BulletListParam> Bullets;
-    protected static float Speed;
-    protected static string PrefabPath;
-    protected static float LiveTime;
-    protected static Vector3 AngleBuffer;
-    protected static Vector2 MoveVectorBuffer;
-    protected static QueueType Type;
+    private static Transform Unit;
+    private static List<BulletListParam> Bullets;
+    private static float Speed;
+    private static string PrefabPath;
+    private static float LiveTime;
+    private static bool CoroutineFlag = false;
+    private static Vector3 AngleBuffer;
+    private static Vector2 MoveVectorBuffer;
+    private static QueueType Type;
 
     private static void AddBullet()
     {
@@ -41,6 +42,7 @@ public class BulletBase
     {
         while (true)
         {
+            CoroutineFlag = true;
             while (Bullets.Count > 0)
             {
                 for (int i = 0; i < Bullets.Count; ++i)
@@ -62,13 +64,17 @@ public class BulletBase
                 }
                 yield return CoroDict.ContainsKey(0.0625f) ? CoroDict[0.0625f] : PushData(0.0625f, new WaitForSeconds(0.0625f));
             }
+            CoroutineFlag = false;
             yield return CoroWaitForEndFrame;
         }
     }
 
     public static void StartCoroutine()
     {
-        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        if (!CoroutineFlag)
+        {
+            StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        }
     }
 
     public static void ShotBullet()

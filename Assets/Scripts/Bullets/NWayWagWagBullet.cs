@@ -15,6 +15,7 @@ public class NWayWagWagBullet
     protected static Vector3 AngleBuffer;
     protected static Vector2 MoveVectorBuffer;
     protected static QueueType Type;
+    protected static bool CoroutineFlag = false;
     protected static bool IsLeft;
     protected static int BulletCount;
     protected static float MinAngle;
@@ -70,6 +71,7 @@ public class NWayWagWagBullet
     {
         while (true)
         {
+            CoroutineFlag = true;
             while (Bullets.Count > 0)
             {
                 for (int i = 0; i < Bullets.Count; ++i)
@@ -99,7 +101,10 @@ public class NWayWagWagBullet
 
     public static void StartCoroutine()
     {
-        StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        if (!CoroutineFlag)
+        {
+            StaticClassCoroutineManager.Instance.Perform(MoveBullets());
+        }
     }
 
     public static void ShotBullet()

@@ -26,6 +26,7 @@ public class EnemyUnit : MonoBehaviour
     public float JumpSpeed;
     public float DashSpeed;
     public float PlayerRange = 2.0f;
+    public string BulletPrefPath = "BasicBullet";
     public GameObject WarningPoint;
     public GameObject PadPrefabs;
     public DefensiveForm[] Forms;
