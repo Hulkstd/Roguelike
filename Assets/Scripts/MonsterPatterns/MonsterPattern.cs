@@ -50,15 +50,56 @@ public static class MonsterPattern
         seeker.GetComponent<EnemyUnit>().IsinFunction = false;
     }
 
-    public static void JumpToPlayer(Transform Me, Transform Player, ref bool IsinFunction) // 재호
+    public static void JumpToPlayer(Transform Me, Transform Player, ref bool IsinFunction) // 재호 -> 태형
     {
+        IsinFunction = true;
 
+        StaticClassCoroutineManager.Instance.Perform(JumpScript(Me, Player));
     }
 
-    public static void DashToPlayer(Transform Me, Transform Player, ref bool IsinFunction) // 재호 
+    private static IEnumerator JumpScript(Transform Me, Transform Player)
     {
+        Vector3 dest = Player.position;
+        Vector3 up = new Vector3(Mathf.Abs(dest.y), Mathf.Abs(dest.x));
+        int i = 0;
+        float height = 0;
 
+        for( ; i < 60; i++ )
+        {
+            Me.position = Vector3.Lerp(Me.position, dest, i * 0.01666f);
+
+            if(i != 0)
+            {
+                Me.position -= up * height;
+                height = Mathf.Sin(UtilityClass.Remap(i, 0, 59, -Mathf.PI, 0));
+                Me.position += up * height;
+            }
+
+            yield return CoroWaitForFixedUpdate;
+        }
+
+        Me.GetComponent<EnemyUnit>().IsinFunction = false;
+    }
+
+    public static void DashToPlayer(Transform Me, Transform Player, ref bool IsinFunction) // 재호 -> 태형
+    {
+        IsinFunction = true;
+
+        StaticClassCoroutineManager.Instance.Perform(DashScript(Me, Player));
     } 
+
+    private static IEnumerator DashScript(Transform Me, Transform Player)
+    {
+        Vector3 dest = Player.position;
+        int i = 0;
+
+        for (; i < 60; i++)
+        {
+            Me.position = Vector3.Lerp(Me.position, dest, i * 0.01666f);
+
+            yield return CoroWaitForFixedUpdate;
+        }
+    }
 
     public static void RangeOnPlayer(Transform Me, Transform Player, ref bool IsinFunction) // 태형 
     {

@@ -53,7 +53,7 @@ public static class DropItemFunctions
         while(true)
         {
             gameObject.transform.position = Vector2.Lerp(pos, vec, g * 0.03333f);
-            gameObject.transform.position = new Vector3(gameObject.transform.position.x, pos.y + Mathf.Sin(Remap(g, 0, 31, 0, Mathf.PI)) * height, 0);
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, pos.y + Mathf.Sin(UtilityClass.Remap(g, 0, 31, 0, Mathf.PI)) * height, 0);
             g++;
 
             if(g * 0.03333f >= 1)
@@ -63,10 +63,5 @@ public static class DropItemFunctions
 
             yield return CoroDict.ContainsKey(0.02f) ? CoroDict[0.02f] : PushData(0.02f, new WaitForSeconds(0.02f));
         }
-    }
-
-    private static float Remap(float value, float minValue, float maxValue, float minResult, float maxResult)
-    {
-        return minResult + (value - minValue) * (maxResult - minResult) / (maxValue - minValue);
     }
 }

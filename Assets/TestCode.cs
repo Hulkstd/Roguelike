@@ -8,8 +8,8 @@ public class TestCode : EnemyUnit
     {
         AttackPatterns = new AttackPattern[4];
 
-        AttackPatterns[0] = MonsterPattern.N_WayBullet;
-        AttackPatterns[1] = MonsterPattern.Pad;
+        AttackPatterns[0] = MonsterPattern.JumpToPlayer;
+        AttackPatterns[1] = MonsterPattern.DashToPlayer;
         AttackPatterns[2] = MonsterPattern.RangeOnMyself;
         AttackPatterns[3] = MonsterPattern.RangeOnPlayer;
     }

@@ -14,18 +14,13 @@ public class PurseMaterial : MonoBehaviour
 
     private void Update()
     {
-        material.SetFloat("Vector1_64E6D321", Remap(ref value, 0, 30, -6.5f, 23.0f));
+        material.SetFloat("Vector1_64E6D321", UtilityClass.Remap(value, 0, 30, -6.5f, 23.0f));
         value++;
 
         if(value == 30)
         {
             value = 0; 
         }
-    }
-
-    private float Remap(ref int value, int minValue, int maxValue, float minResult, float maxResult)
-    {
-        return minResult + (value - minValue) * (maxValue - minValue) / (maxResult - minResult);
     }
 
     public void SetOrigin(Vector2 pos)
