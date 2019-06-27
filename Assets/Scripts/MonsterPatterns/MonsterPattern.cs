@@ -59,8 +59,13 @@ public static class MonsterPattern
 
     private static IEnumerator JumpScript(Transform Me, Transform Player)
     {
-        Vector3 dest = Player.position;
-        Vector3 up = new Vector3(Mathf.Abs(dest.y), Mathf.Abs(dest.x));
+        Vector3 vector = Player.position - Me.position;
+        Vector3 clampDistance = Vector3.ClampMagnitude(vector, 10.0f);
+        Vector3 dest = Me.position + clampDistance;
+        Vector3 up = Quaternion.AngleAxis(-90, Vector3.back) * clampDistance;
+        up.y = Mathf.Abs(up.y);
+
+        Debug.Log(vector + " " + clampDistance + " " + dest + " " + up);
         int i = 0;
         float height = 0;
 
@@ -90,7 +95,9 @@ public static class MonsterPattern
 
     private static IEnumerator DashScript(Transform Me, Transform Player)
     {
-        Vector3 dest = Player.position;
+        Vector3 vector = Player.position - Me.position;
+        Vector3 clampDistance = Vector3.ClampMagnitude(vector, 10.0f);
+        Vector3 dest = Me.position + clampDistance;
         int i = 0;
 
         for (; i < 60; i++)
@@ -109,9 +116,11 @@ public static class MonsterPattern
 
         Vector3 ShootPosition = Player.transform.position;
 
+        enemyUnit.WarningPoint.SetActive(true);
         enemyUnit.WarningPoint.transform.position = Player.position;
-        enemyUnit.WarningPoint.GetComponent<PurseMaterial>().SetOrigin(Player.position);
-        enemyUnit.WarningPoint.transform.localScale = new Vector3(enemyUnit.PlayerRange, enemyUnit.PlayerRange);
+        enemyUnit.WarningPoint.transform.localScale = Vector3.one * enemyUnit.PlayerRange;
+
+        StaticClassCoroutineManager.Instance.Perform(enemyUnit.RangeOnPlayerCoroutine());
 
         IsinFunction = false;
     } 
@@ -123,10 +132,13 @@ public static class MonsterPattern
         EnemyUnit enemyUnit = Me.GetComponent<EnemyUnit>();
 
         float Range = (Me.position - Player.position).magnitude;
+        Range /= 3.38f;
 
+        enemyUnit.WarningPoint.SetActive(true);
         enemyUnit.WarningPoint.transform.position = Me.transform.position;
-        enemyUnit.WarningPoint.GetComponent<PurseMaterial>().SetOrigin(Me.position);
-        enemyUnit.WarningPoint.transform.localScale = new Vector3(Range, Range);
+        enemyUnit.WarningPoint.transform.localScale = Vector3.one * Range;
+
+        StaticClassCoroutineManager.Instance.Perform(enemyUnit.RangeOnMySelfCoroutine());
 
         IsinFunction = false;
     }
@@ -172,17 +184,10 @@ public static class MonsterPattern
             gameObject.transform.position = enemyUnit.transform.position;
             gameObject.SetActive(true);
 
-            StaticClassCoroutineManager.Instance.Perform(Disable(gameObject, 10.0f));
+            StaticClassCoroutineManager.Instance.Perform(UtilityClass.Disable(gameObject, 10.0f));
 
             yield return CoroDict.ContainsKey(0.0333f) ? CoroDict[0.0333f] : PushData(0.0333f, new WaitForSeconds(0.0333f));
         }
-    }
-
-    private static IEnumerator Disable(GameObject gameObject, float t)
-    {
-        yield return CoroDict.ContainsKey(t) ? CoroDict[t] : PushData(t, new WaitForSeconds(t));
-
-        gameObject.SetActive(false);
     }
 }
 

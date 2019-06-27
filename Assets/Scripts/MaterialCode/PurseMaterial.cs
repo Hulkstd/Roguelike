@@ -14,17 +14,13 @@ public class PurseMaterial : MonoBehaviour
 
     private void Update()
     {
-        material.SetFloat("Vector1_64E6D321", UtilityClass.Remap(value, 0, 30, -6.5f, 23.0f));
+        material.SetFloat("Vector1_64E6D321", UtilityClass.Remap(value, 0, 30 * transform.lossyScale.x, -6.5f, 23.0f * transform.lossyScale.x));
+        material.SetVector("Vector2_34ECAC6E", transform.position);
         value++;
 
-        if(value == 30)
+        if(value >= 30 * transform.lossyScale.x)
         {
             value = 0; 
         }
-    }
-
-    public void SetOrigin(Vector2 pos)
-    {
-        material.SetVector("Vector2_34ECAC6E", pos);
     }
 }

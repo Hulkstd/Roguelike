@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static GCManager;
 
 public class TestCode : EnemyUnit
 {
@@ -16,7 +17,7 @@ public class TestCode : EnemyUnit
 
     private void DropItem()
     {
-
+        
     }
 
     private void Update()
@@ -37,5 +38,19 @@ public class TestCode : EnemyUnit
         {
             AttackPatterns[3](transform, Player.transform, ref IsinFunction);
         }
+    }
+
+    public override IEnumerator RangeOnMySelfCoroutine()
+    {
+        yield return CoroDict.ContainsKey(10.0f) ? CoroDict[10.0f] : PushData(10.0f, new WaitForSeconds(10.0f));
+
+        WarningPoint.SetActive(false);
+    }
+
+    public override IEnumerator RangeOnPlayerCoroutine()
+    {
+        yield return CoroDict.ContainsKey(2.0f) ? CoroDict[2.0f] : PushData(2.0f, new WaitForSeconds(2.0f));
+
+        WarningPoint.SetActive(false);
     }
 }

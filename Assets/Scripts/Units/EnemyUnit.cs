@@ -25,7 +25,7 @@ public class EnemyUnit : MonoBehaviour
     public float MovementSpeed;
     public float JumpSpeed;
     public float DashSpeed;
-    public float PlayerRange = 2.0f;
+    public float PlayerRange = 1.2f;
     public string BulletPrefPath = "BasicBullet";
     public GameObject WarningPoint;
     public GameObject PadPrefabs;
@@ -122,6 +122,15 @@ public class EnemyUnit : MonoBehaviour
     {
         StopCoroutine(RandomPatternCo);
         gameObject.SetActive(false);
+    }
+
+    public virtual IEnumerator RangeOnMySelfCoroutine()
+    {
+        yield return null;
+    }
+    public virtual IEnumerator RangeOnPlayerCoroutine()
+    {
+        yield return null;
     }
 }
 

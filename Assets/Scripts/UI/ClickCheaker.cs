@@ -7,6 +7,13 @@ public class ClickCheaker : MonoBehaviour
     //protected bool letPlay = true;
     public ParticleSystem followingparticle;
 
+    private ObjectPooling Particles;
+
+    void Start()
+    {
+        Particles = new ObjectPooling(followingparticle.gameObject);
+    }
+
     public void Update()
     {
         Camera camera = GetComponent<Camera>();
@@ -14,12 +21,13 @@ public class ClickCheaker : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            followingparticle = Particles.PopObject().GetComponent<ParticleSystem>();
+            followingparticle.gameObject.SetActive(true);
+
             followingparticle.transform.position = newPosition - Vector3.forward * newPosition.z;
             followingparticle.Play();
-        }
-        else
-        {
-            followingparticle.Stop();
+
+            StartCoroutine(UtilityClass.Disable(followingparticle.gameObject, 1.0f));
         }
     }
 }
