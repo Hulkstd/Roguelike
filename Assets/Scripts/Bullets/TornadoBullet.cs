@@ -4,19 +4,19 @@ using UnityEngine;
 using static GCManager;
 using static BulletPulling;
 
-public class TornadoBullet
+public static class TornadoBullet
 {
-    protected static Transform Unit;
-    protected static List<BulletListParam> Bullets;
-    protected static float Speed;
-    protected static string PrefabPath;
-    protected static float LiveTime;
-    protected static Vector3 AngleBuffer;
-    protected static Vector2 MoveVectorBuffer;
-    protected static QueueType Type;
-    protected static bool CoroutineFlag = false;
-    protected static bool IsLeft;
-    protected static float AddAngle; // 탄알이 휘는 것처럼 보여주게 더해주는 각도
+    private static Transform Unit;
+    private static List<BulletListParam> Bullets;
+    private static float Speed;
+    private static string PrefabPath;
+    private static float LiveTime;
+    private static Vector3 AngleBuffer;
+    private static Vector2 MoveVectorBuffer;
+    private static QueueType Type;
+    private static bool CoroutineFlag = false;
+    private static bool IsLeft;
+    private static float AddAngle; // 탄알이 휘는 것처럼 보여주게 더해주는 각도
 
     private static void AddBullet()
     {

@@ -4,23 +4,23 @@ using UnityEngine;
 using static GCManager;
 using static BulletPulling;
 
-public class NWayTornadoBullet
+public static class NWayTornadoBullet
 {
-    protected static Transform Unit;
-    protected static List<BulletListParam> Bullets;
-    protected static float Speed;
-    protected static string PrefabPath;
-    protected static float LiveTime;
-    protected static Vector3 AngleBuffer;
-    protected static Vector2 MoveVectorBuffer;
-    protected static QueueType Type;
-    protected static bool CoroutineFlag = false;
-    protected static bool IsLeft;
-    protected static int BulletCount;
-    protected static float MinAngle;
-    protected static float MaxAngle;
-    protected static float AddAngle;
-    protected static float BulletDistance;
+    private static Transform Unit;
+    private static List<BulletListParam> Bullets;
+    private static float Speed;
+    private static string PrefabPath;
+    private static float LiveTime;
+    private static Vector3 AngleBuffer;
+    private static Vector2 MoveVectorBuffer;
+    private static QueueType Type;
+    private static bool CoroutineFlag = false;
+    private static bool IsLeft;
+    private static int BulletCount;
+    private static float MinAngle;
+    private static float MaxAngle;
+    private static float AddAngle;
+    private static float BulletDistance;
 
     private static void AddBullet()
     {
@@ -32,14 +32,14 @@ public class NWayTornadoBullet
 
         for (int i = 0; i < BulletCount; ++i)
         {
-            if (BasicBullets.Count <= 0)
+            if (GetQueue(Type).Count <= 0)
             {
                 bullet = new BulletListParam();
                 bullet.Bullet = MonoBehaviour.Instantiate(Resources.Load<Transform>(PrefabPath));
             }
             else
             {
-                bullet = BasicBullets.Dequeue();
+                bullet = GetQueue(Type).Dequeue();
                 bullet.Bullet.gameObject.SetActive(true);
             }
 

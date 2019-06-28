@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletPulling : MonoBehaviour
+public static class BulletPulling
 {
 
     public class BulletListParam
@@ -16,17 +18,13 @@ public class BulletPulling : MonoBehaviour
         Basic = 0
     }
 
-    public static Queue<BulletListParam> BasicBullets { get; set; }
+    private static List<int> test = new List<int>();
+    public static Dictionary<QueueType, Queue<BulletListParam>> BulletDict = Enum.GetValues(typeof(QueueType)).OfType<QueueType>()
+                                                                            .ToDictionary<QueueType, QueueType, Queue<BulletListParam>>(x => x, x => new Queue<BulletListParam>());
 
     public static Queue<BulletListParam> GetQueue(QueueType type)
     {
-        switch (type)
-        {
-            case QueueType.Basic: return BasicBullets;
-        }
-
-        Debug.LogError("path error");
-        return null;
+        return BulletDict[type];
     }
 
     public static QueueType GetQueueType(string path)
@@ -39,10 +37,4 @@ public class BulletPulling : MonoBehaviour
         Debug.LogError("path error");
         return QueueType.Basic;
     }
-
-    private void Awake()
-    {
-        BasicBullets = new Queue<BulletListParam>();
-    }
-
 }

@@ -4,18 +4,18 @@ using UnityEngine;
 using static GCManager;
 using static BulletPulling;
 
-public class WagWagBullet
+public static class WagWagBullet
 {
-    protected static Transform Unit;
-    protected static List<BulletListParam> Bullets;
-    protected static float Speed;
-    protected static string PrefabPath;
-    protected static float LiveTime;
-    protected static Vector3 AngleBuffer;
-    protected static Vector2 MoveVectorBuffer;
-    protected static QueueType Type;
-    protected static bool CoroutineFlag = false;
-    protected static bool IsMoveLeft;
+    private static Transform Unit;
+    private static List<BulletListParam> Bullets;
+    private static float Speed;
+    private static string PrefabPath;
+    private static float LiveTime;
+    private static Vector3 AngleBuffer;
+    private static Vector2 MoveVectorBuffer;
+    private static QueueType Type;
+    private static bool CoroutineFlag = false;
+    private static bool IsMoveLeft;
 
     private static void AddBullet()
     {

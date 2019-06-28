@@ -4,7 +4,7 @@ using UnityEngine;
 using static GCManager;
 using static BulletPulling;
 
-public class BulletBase
+public static class BulletBase
 {
     private static Transform Unit;
     private static List<BulletListParam> Bullets;

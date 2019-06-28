@@ -3,27 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using static GCManager;
 
-public class LookAtPlayer : MonoBehaviour
+public static class LookAtPlayer
 {
-    private static FloatPair Buffer;
-    public static Transform Player { get; private set; }
+    private static FloatPair Buffer = new FloatPair();
     private static float ArcAngle;
-    private static Vector3 Angle;
+    private static Vector3 Angle = Vector2.zero;
 
-    public static void LookPlayer(Transform Obj)
+    public static void LookPlayer(Transform Obj, Transform Player)
     {
-        Angle.z = GetAngle(Obj);
+        Angle.z = GetAngle(Obj, Player);
         Obj.eulerAngles = Angle;
     }
 
-    public static float GetMagnitude(Transform Obj)
+    public static float GetMagnitude(Transform Obj, Transform Player)
     {
         float distance_x = Obj.position.x - Player.position.x;
         float distance_y = Obj.position.y - Player.position.y;
         return distance_x * distance_x + distance_y * distance_y;
     }
 
-    public static float GetAngle(Transform obj)
+    public static float GetAngle(Transform obj, Transform Player)
     {
         Buffer.x = obj.position.x - Player.position.x;
         Buffer.y = obj.position.y - Player.position.y;
@@ -32,16 +31,4 @@ public class LookAtPlayer : MonoBehaviour
         ArcAngle -= 90;
         return ArcAngle;
     }
-
-    private void Awake()
-    {
-        Buffer = new FloatPair();
-        Angle = new Vector3(0, 0, 0);
-    }
-
-    private void Start()
-    {
-        Player = GameObject.FindWithTag("Player").transform;
-    }
-
 }

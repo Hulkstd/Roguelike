@@ -4,20 +4,21 @@ using UnityEngine;
 using static GCManager;
 using static BulletPulling;
 
-public class HommingBullet
+public static class HommingBullet
 {
-    protected static Transform Unit;
-    protected static List<BulletListParam> Bullets;
-    protected static float Speed;
-    protected static string PrefabPath;
-    protected static float LiveTime;
-    protected static Vector3 AngleBuffer;
-    protected static Vector2 MoveVectorBuffer;
-    protected static QueueType Type;
-    protected static bool CoroutineFlag = false;
-    protected static Vector3 AddAngle;
-    protected static float Angle;
-    protected static bool isAdd;
+    private static Transform Unit;
+    private static Transform Player;
+    private static List<BulletListParam> Bullets;
+    private static float Speed;
+    private static string PrefabPath;
+    private static float LiveTime;
+    private static Vector3 AngleBuffer;
+    private static Vector2 MoveVectorBuffer;
+    private static QueueType Type;
+    private static bool CoroutineFlag = false;
+    private static Vector3 AddAngle;
+    private static float Angle;
+    private static bool isAdd;
 
     private static void AddBullet()
     {
@@ -65,7 +66,7 @@ public class HommingBullet
 
                     MoveVectorBuffer.y = -Speed;
 
-                    Angle = LookAtPlayer.GetAngle(Bullets[i].Bullet);
+                    Angle = LookAtPlayer.GetAngle(Bullets[i].Bullet, Player);
                     Angle -= Bullets[i].Bullet.eulerAngles.z;
 
                     while (Angle < 0) { Angle += 360; }
@@ -100,6 +101,7 @@ public class HommingBullet
     public static void InItalize(float speed, float second, string path, Transform transform)
     {
         Unit = transform;
+        Player = TransformDictionary.ContainsKey("Player") ? TransformDictionary["Player"] : PushData("Player", GameObject.FindGameObjectWithTag("Player").transform);
         Bullets = new List<BulletListParam>();
         Type = GetQueueType(path);
         AngleBuffer = new Vector3(0, 0, 0);

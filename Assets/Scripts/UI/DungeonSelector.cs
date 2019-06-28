@@ -34,7 +34,7 @@ public class DungeonSelector : MonoBehaviour, IPointerClickHandler
     {
         if (MoveCameraInstance.MainCamera.orthographicSize == 5)
         {
-            StartCoroutine(MoveCameraInstance.Move_Camera(1.5f, transform.position + offset, true));
+            StartCoroutine(MoveCameraInstance.Move_Camera(1.5f, transform.position + offset, true, 1));
         }
     }
 

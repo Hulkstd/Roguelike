@@ -4,7 +4,7 @@ using UnityEngine;
 using static GCManager;
 using static BulletPulling;
 
-public class NWayBullet
+public static class NWayBullet
 {
     private static Transform Unit;
     private static List<BulletListParam> Bullets;

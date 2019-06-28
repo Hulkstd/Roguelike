@@ -23,7 +23,6 @@ public class BulletTestChangeRocation : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.L))
         {
-            LookAtPlayer.LookPlayer(transform);
         }
     }
 }
