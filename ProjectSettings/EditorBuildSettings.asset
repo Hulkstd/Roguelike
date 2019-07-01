@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UIScene.unity
     guid: fc0a771de9d4b834f89ae7adcad4a74b
+  - enabled: 1
+    path: Assets/Scenes/Dungeon/Insect.unity
+    guid: b38c5e297d332b3489e1823f02530f97
+  - enabled: 1
+    path: Assets/Scenes/Dungeon/Frozen.unity
+    guid: 22c4560e461672d438e5a2e927b6d356
+  - enabled: 1
+    path: Assets/Scenes/Dungeon/Stone.unity
+    guid: 37691e3196011014896ab0aaf26ccf99
   m_configObjects: {}

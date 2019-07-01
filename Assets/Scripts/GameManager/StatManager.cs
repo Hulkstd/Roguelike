@@ -58,7 +58,7 @@ public class StatManager : MonoBehaviour
 
     private void Start()
     {
-        if (System.IO.File.Exists(Application.dataPath + "skadmstmxptfid.dll"))
+        if (System.IO.File.Exists(Application.dataPath + "/skadmstmxptfid.dll"))
         {
             remainingStats = BinaryDeserialize();
         }

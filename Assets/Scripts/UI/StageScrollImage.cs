@@ -55,6 +55,8 @@ public class StageScrollImage : MonoBehaviour
 
     public List<GameObject> ContentsList;
 
+    public Button.ButtonClickedEvent ButtonsEvents;
+
     public Button NextButton;
 
     public Button PreviousButton;
@@ -63,11 +65,19 @@ public class StageScrollImage : MonoBehaviour
 
     private Coroutine action;
 
+    private Sprite[] DungeonImages;
+
+    private string[] Titles;
+
+    private string[] Descriptions;
+
+    private string[] Infos;
+
     #endregion
 
     #region Initiate
 
-    protected virtual void InitiateContents()
+    public virtual void InitiateContents()
     {
         if(ContentCount < ContentsList.Count)
         {
@@ -85,13 +95,15 @@ public class StageScrollImage : MonoBehaviour
                 {
                     if (ContentPrefab == null)
                     {
-                        GameObject obj = new GameObject("content", typeof(Image));
+                        GameObject obj = new GameObject("content", typeof(Image), typeof(Button));
                         RectTransform rectTransform = obj.GetComponent<RectTransform>();
                         
                         rectTransform.SetParent(Contents.transform);
                         rectTransform.localScale = Vector3.one;
                         rectTransform.localPosition = CalculatePosition(i);
                         rectTransform.sizeDelta = CalculateSize(i);
+
+                        obj.GetComponent<Button>().onClick = ButtonsEvents;
 
                         ContentsList.Add(obj);
                     }
@@ -104,6 +116,8 @@ public class StageScrollImage : MonoBehaviour
                         rectTransform.localPosition = CalculatePosition(i);
                         rectTransform.sizeDelta = CalculateSize(i);
 
+                        obj.GetComponent<Button>().onClick = ButtonsEvents;
+
                         ContentsList.Add(obj);
                     }
                 }
@@ -113,12 +127,14 @@ public class StageScrollImage : MonoBehaviour
 
                     rectTransform.localPosition = CalculatePosition(i);
                     rectTransform.sizeDelta = CalculateSize(i);
+
+                    rectTransform.GetComponent<Button>().onClick = ButtonsEvents;
                 }
             }
         }
     }
 
-    protected virtual void InitiateButton()
+    public virtual void InitiateButton()
     {
         if (NextButton == null)
         {
@@ -300,7 +316,7 @@ public class StageScrollImage : MonoBehaviour
 
     public void NextContent()
     {
-        if (action == null && CurrentContent + 1 <= ContentCount) 
+        if (action == null && CurrentContent + 1 < ContentCount) 
             action = StartCoroutine(MoveContents(CurrentContent + 1));
     }
 
@@ -308,6 +324,11 @@ public class StageScrollImage : MonoBehaviour
     {
         if (action == null && CurrentContent - 1 >= 0) 
             action = StartCoroutine(MoveContents(CurrentContent - 1));
+    }
+
+    public void ShowDungeonInfo()
+    {
+        DungeonInfoCanvas.Instance.MoveToDungeonInfo(DungeonImages[CurrentContent], Titles[CurrentContent], Descriptions[CurrentContent], Infos[CurrentContent]);
     }
 
     #endregion
@@ -345,6 +366,7 @@ public class StageScrollImage : MonoBehaviour
         }
 
         action = null;
+        ButtonActiveSet();
     }
 
     private IEnumerator Destroy(GameObject obj)
@@ -352,6 +374,25 @@ public class StageScrollImage : MonoBehaviour
         yield return CoroWaitForEndFrame;
 
         DestroyImmediate(obj);
+    }
+
+    public void ButtonActiveSet()
+    {
+        for(int i = 0; i < ContentsList.Count; i++)
+        {
+            ContentsList[i].GetComponent<Button>().interactable = (CurrentContent == i);
+        }
+    }
+
+    public void SetValues(Sprite[] DungeonImages,string[] Titles, string[] Descriptions, string[] Infos)
+    {
+        this.DungeonImages = DungeonImages;
+        this.Titles = Titles;
+        this.Descriptions = Descriptions;
+        this.Infos = Infos;
+
+        ContentCount = Titles == null ? 0 : Titles.Length;
+        OnValidate();
     }
 
     private void OnValidate()
@@ -384,5 +425,6 @@ public class StageScrollImage : MonoBehaviour
 
         InitiateContents();
         InitiateButton();
+        ButtonActiveSet();
     }
 }

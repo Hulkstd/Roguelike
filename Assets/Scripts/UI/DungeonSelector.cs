@@ -9,6 +9,10 @@ public class DungeonSelector : MonoBehaviour, IPointerClickHandler
 {
     public string DungeonName;
     public string DungeonDescription;
+    public Sprite[] DungeonImages;
+    public string[] Titles;
+    public string[] Descriptions;
+    public string[] Infos;
     public Sprite DungeonSprite;
 
     public Transform LetterBox;
@@ -34,7 +38,7 @@ public class DungeonSelector : MonoBehaviour, IPointerClickHandler
     {
         if (MoveCameraInstance.MainCamera.orthographicSize == 5)
         {
-            StartCoroutine(MoveCameraInstance.Move_Camera(1.5f, transform.position + offset, true, 1));
+            StartCoroutine(MoveCameraInstance.Move_Camera(1.5f, transform.position + offset, true, 1, DungeonName, DungeonImages, Titles, Descriptions, Infos));
         }
     }
 

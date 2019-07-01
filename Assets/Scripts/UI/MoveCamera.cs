@@ -11,6 +11,8 @@ public class MoveCamera : MonoBehaviour
     public Camera MainCamera;
     public GraphicRaycaster InfoBox;
     public CanvasGroup InfoBoxAlpha;
+    public StageScrollImage StageScrollImage;
+    public DungeonListCanvas DungeonListCanvas;
 
     void Awake()
     {
@@ -19,15 +21,20 @@ public class MoveCamera : MonoBehaviour
 
     public void MoveBack()
     {
-        StartCoroutine(Move_Camera(5, Vector3.zero, false, 0));
+        StartCoroutine(Move_Camera(5, Vector3.zero, false, 0, null, null, null, null, null));
     }
 
-    public IEnumerator Move_Camera(float Size, Vector3 position, bool InfoboxState, float to)
+    public IEnumerator Move_Camera(float Size, Vector3 position, bool InfoboxState, float to, string Title, Sprite[] DungeonImages, string[] Titles, string[] Descriptions, string[] Infos)
     {
         int i = 1;
         float originalSize = MainCamera.orthographicSize;
         Vector3 originalPosition = MainCamera.transform.position;
         position.z = -10;
+        StageScrollImage.CurrentContent = 0;
+        StageScrollImage.InitiateContents();
+        StageScrollImage.ButtonActiveSet();
+        StageScrollImage.SetValues(DungeonImages, Titles, Descriptions, Infos);
+        DungeonListCanvas.SetTitle(Title);
 
         InfoBox.enabled = InfoboxState;
 

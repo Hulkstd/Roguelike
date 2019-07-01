@@ -54,7 +54,7 @@ public class SceneChanger : MonoBehaviour
     public void SceneChangeWithLoadingScene(string SceneName, string DungeonName)
     {
         this.DungeonName = DungeonName;
-        StartCoroutine(ChangeScene(SceneName));
+        StartCoroutine(ChangeSceneWithLoadingScene(SceneName.Split(' ')[0]));
     }
 
     public void SceneChange(string SceneName)
@@ -105,6 +105,9 @@ public class SceneChanger : MonoBehaviour
         yield return StartCoroutine(FadeOut());
 
         SceneManager.LoadScene("Loading");
+
+        yield return CoroDict.ContainsKey(0.01f) ? CoroDict[0.01f] : PushData(0.01f, new WaitForSeconds(0.01f));
+
         GameObject.FindGameObjectWithTag("Title").GetComponent<Text>().text = DungeonName + "Area";
 
         AsyncOperation async = SceneManager.LoadSceneAsync(SceneName);
@@ -118,7 +121,6 @@ public class SceneChanger : MonoBehaviour
 
             return false;
         });
-
         yield return StartCoroutine(FadeIn());
 
         yield return null;
