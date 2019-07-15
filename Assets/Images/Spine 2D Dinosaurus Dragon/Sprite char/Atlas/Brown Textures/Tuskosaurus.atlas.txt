@@ -1,0 +1,3650 @@
+
+Tuskosaurus.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Brown Textures-Aggression1_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_20
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_34
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_09
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_10
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-DamageFront_0
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-DamageFront_6
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_34
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_40
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_34
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_0
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_00
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_17
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Land_14
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_30
+  rotate: false
+  xy: 1196, 730
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_01
+  rotate: false
+  xy: 231, 870
+  size: 232, 153
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_02
+  rotate: false
+  xy: 953, 1185
+  size: 241, 153
+  orig: 352, 317
+  offset: 11, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_03
+  rotate: false
+  xy: 953, 1030
+  size: 241, 153
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_04
+  rotate: false
+  xy: 471, 735
+  size: 236, 153
+  orig: 352, 317
+  offset: 14, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_05
+  rotate: false
+  xy: 731, 142
+  size: 235, 153
+  orig: 352, 317
+  offset: 15, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_06
+  rotate: false
+  xy: 1812, 1738
+  size: 234, 153
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_07
+  rotate: false
+  xy: 228, 1190
+  size: 228, 164
+  orig: 352, 317
+  offset: 23, 44
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_08
+  rotate: false
+  xy: 465, 426
+  size: 240, 152
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_09
+  rotate: false
+  xy: 1198, 576
+  size: 236, 152
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_10
+  rotate: false
+  xy: 1706, 730
+  size: 223, 164
+  orig: 352, 317
+  offset: 31, 44
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_11
+  rotate: false
+  xy: 1808, 1893
+  size: 238, 153
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_12
+  rotate: false
+  xy: 1310, 1210
+  size: 231, 160
+  orig: 352, 317
+  offset: 23, 48
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_14
+  rotate: false
+  xy: 1807, 1430
+  size: 239, 151
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_15
+  rotate: false
+  xy: 968, 142
+  size: 234, 156
+  orig: 352, 317
+  offset: 17, 50
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_17
+  rotate: false
+  xy: 953, 876
+  size: 241, 152
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_18
+  rotate: false
+  xy: 707, 451
+  size: 240, 152
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_19
+  rotate: false
+  xy: 1678, 356
+  size: 232, 153
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_07
+  rotate: false
+  xy: 1196, 428
+  size: 238, 146
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_08
+  rotate: false
+  xy: 1545, 1093
+  size: 240, 146
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_09
+  rotate: false
+  xy: 953, 730
+  size: 241, 144
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_10
+  rotate: false
+  xy: 967, 1492
+  size: 243, 144
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_11
+  rotate: false
+  xy: 708, 900
+  size: 243, 144
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_12
+  rotate: false
+  xy: 953, 584
+  size: 243, 144
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_16
+  rotate: false
+  xy: 2, 235
+  size: 220, 172
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_17
+  rotate: false
+  xy: 2, 956
+  size: 227, 178
+  orig: 352, 317
+  offset: 26, 51
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_18
+  rotate: false
+  xy: 2, 1136
+  size: 224, 182
+  orig: 352, 317
+  offset: 29, 48
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_19
+  rotate: false
+  xy: 2, 1320
+  size: 221, 186
+  orig: 352, 317
+  offset: 31, 46
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_20
+  rotate: false
+  xy: 2, 1703
+  size: 219, 192
+  orig: 352, 317
+  offset: 34, 41
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_21
+  rotate: false
+  xy: 2, 1508
+  size: 218, 193
+  orig: 352, 317
+  offset: 36, 39
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_22
+  rotate: false
+  xy: 2, 586
+  size: 219, 182
+  orig: 352, 317
+  offset: 35, 48
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_23
+  rotate: false
+  xy: 2, 770
+  size: 218, 184
+  orig: 352, 317
+  offset: 37, 45
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_24
+  rotate: false
+  xy: 2, 409
+  size: 220, 175
+  orig: 352, 317
+  offset: 34, 51
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_25
+  rotate: false
+  xy: 2, 66
+  size: 219, 167
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_27
+  rotate: false
+  xy: 1204, 142
+  size: 229, 156
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_07
+  rotate: false
+  xy: 224, 297
+  size: 231, 161
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_13
+  rotate: false
+  xy: 1912, 462
+  size: 132, 158
+  orig: 352, 317
+  offset: 115, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_14
+  rotate: false
+  xy: 1709, 896
+  size: 181, 195
+  orig: 352, 317
+  offset: 77, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_02
+  rotate: false
+  xy: 1054, 1887
+  size: 251, 159
+  orig: 352, 317
+  offset: 15, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_03
+  rotate: false
+  xy: 798, 1891
+  size: 254, 155
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_04
+  rotate: false
+  xy: 2, 1897
+  size: 265, 149
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_05
+  rotate: false
+  xy: 269, 1902
+  size: 265, 144
+  orig: 352, 317
+  offset: 11, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_06
+  rotate: false
+  xy: 536, 1900
+  size: 260, 146
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_07
+  rotate: false
+  xy: 1307, 1894
+  size: 250, 152
+  orig: 352, 317
+  offset: 14, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_02
+  rotate: false
+  xy: 1906, 33
+  size: 140, 173
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_03
+  rotate: false
+  xy: 514, 2
+  size: 142, 196
+  orig: 352, 317
+  offset: 67, 66
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_04
+  rotate: false
+  xy: 369, 2
+  size: 143, 196
+  orig: 352, 317
+  offset: 66, 66
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_05
+  rotate: false
+  xy: 223, 2
+  size: 144, 196
+  orig: 352, 317
+  offset: 64, 66
+  index: -1
+Tuskosaurus-Brown Textures-DamageFront_2
+  rotate: false
+  xy: 1412, 730
+  size: 164, 167
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_02
+  rotate: false
+  xy: 1196, 1104
+  size: 112, 234
+  orig: 352, 317
+  offset: 116, 3
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_09
+  rotate: false
+  xy: 1310, 1107
+  size: 233, 101
+  orig: 352, 317
+  offset: 31, 78
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_10
+  rotate: false
+  xy: 480, 200
+  size: 249, 95
+  orig: 352, 317
+  offset: 18, 41
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_11
+  rotate: false
+  xy: 269, 1815
+  size: 255, 85
+  orig: 352, 317
+  offset: 13, 43
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_12
+  rotate: false
+  xy: 1307, 1703
+  size: 252, 91
+  orig: 352, 317
+  offset: 16, 43
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_13
+  rotate: false
+  xy: 222, 771
+  size: 247, 97
+  orig: 352, 317
+  offset: 20, 45
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_14
+  rotate: false
+  xy: 1307, 1796
+  size: 249, 96
+  orig: 352, 317
+  offset: 18, 42
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_08
+  rotate: false
+  xy: 1561, 1677
+  size: 246, 117
+  orig: 352, 317
+  offset: 92, 58
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_09
+  rotate: false
+  xy: 526, 1803
+  size: 254, 95
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_10
+  rotate: false
+  xy: 782, 1796
+  size: 254, 93
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_11
+  rotate: false
+  xy: 1038, 1793
+  size: 254, 92
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_12
+  rotate: false
+  xy: 224, 200
+  size: 254, 95
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_13
+  rotate: false
+  xy: 1558, 1796
+  size: 252, 95
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_14
+  rotate: false
+  xy: 1307, 1606
+  size: 252, 95
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_15
+  rotate: false
+  xy: 1307, 1509
+  size: 252, 95
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Brown Textures-Fall_03
+  rotate: false
+  xy: 1892, 911
+  size: 152, 215
+  orig: 352, 317
+  offset: 88, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_04
+  rotate: false
+  xy: 1196, 885
+  size: 149, 217
+  orig: 352, 317
+  offset: 91, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_05
+  rotate: false
+  xy: 1436, 511
+  size: 149, 217
+  orig: 352, 317
+  offset: 92, 97
+  index: -1
+Tuskosaurus-Brown Textures-Fall_06
+  rotate: false
+  xy: 1587, 511
+  size: 148, 217
+  orig: 352, 317
+  offset: 94, 97
+  index: -1
+Tuskosaurus-Brown Textures-Fall_08
+  rotate: false
+  xy: 1347, 899
+  size: 175, 206
+  orig: 352, 317
+  offset: 67, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_09
+  rotate: false
+  xy: 1737, 520
+  size: 173, 208
+  orig: 352, 317
+  offset: 68, 96
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_05
+  rotate: false
+  xy: 1912, 289
+  size: 126, 171
+  orig: 352, 317
+  offset: 92, 58
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_06
+  rotate: false
+  xy: 1578, 730
+  size: 126, 167
+  orig: 352, 317
+  offset: 92, 60
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_01
+  rotate: false
+  xy: 1435, 2
+  size: 151, 204
+  orig: 352, 317
+  offset: 94, 61
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_16
+  rotate: false
+  xy: 1091, 3
+  size: 214, 137
+  orig: 352, 317
+  offset: 33, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_17
+  rotate: false
+  xy: 1347, 1372
+  size: 212, 135
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_05
+  rotate: false
+  xy: 1578, 1241
+  size: 224, 152
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_09
+  rotate: false
+  xy: 1436, 361
+  size: 240, 148
+  orig: 352, 317
+  offset: 8, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_33
+  rotate: false
+  xy: 1804, 1128
+  size: 240, 148
+  orig: 352, 317
+  offset: 8, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_34
+  rotate: false
+  xy: 709, 749
+  size: 242, 149
+  orig: 352, 317
+  offset: 7, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_35
+  rotate: false
+  xy: 1561, 1395
+  size: 241, 149
+  orig: 352, 317
+  offset: 9, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_20
+  rotate: false
+  xy: 1677, 208
+  size: 233, 146
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_30
+  rotate: false
+  xy: 1809, 1583
+  size: 237, 153
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_3
+  rotate: false
+  xy: 658, 2
+  size: 228, 138
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_03
+  rotate: false
+  xy: 658, 2
+  size: 228, 138
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_07
+  rotate: false
+  xy: 1588, 2
+  size: 148, 204
+  orig: 352, 317
+  offset: 97, 61
+  index: -1
+Tuskosaurus-Brown Textures-Jump_08
+  rotate: false
+  xy: 1738, 5
+  size: 166, 201
+  orig: 352, 317
+  offset: 79, 59
+  index: -1
+Tuskosaurus-Brown Textures-Land_01
+  rotate: false
+  xy: 1524, 899
+  size: 183, 192
+  orig: 352, 317
+  offset: 58, 81
+  index: -1
+Tuskosaurus-Brown Textures-Land_03
+  rotate: false
+  xy: 231, 1025
+  size: 229, 163
+  orig: 352, 317
+  offset: 17, 60
+  index: -1
+Tuskosaurus-Brown Textures-Land_04
+  rotate: false
+  xy: 225, 1356
+  size: 240, 158
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Brown Textures-Land_05
+  rotate: false
+  xy: 949, 300
+  size: 241, 151
+  orig: 352, 317
+  offset: 6, 56
+  index: -1
+Tuskosaurus-Brown Textures-Roll_05
+  rotate: false
+  xy: 1207, 1362
+  size: 100, 128
+  orig: 352, 317
+  offset: 114, 44
+  index: -1
+Tuskosaurus-Brown Textures-Roll_06
+  rotate: false
+  xy: 1307, 8
+  size: 109, 132
+  orig: 352, 317
+  offset: 112, 40
+  index: -1
+Tuskosaurus-Brown Textures-Roll_07
+  rotate: false
+  xy: 1931, 796
+  size: 115, 113
+  orig: 352, 317
+  offset: 114, 54
+  index: -1
+Tuskosaurus-Brown Textures-Roll_09
+  rotate: false
+  xy: 1912, 622
+  size: 134, 106
+  orig: 352, 317
+  offset: 95, 69
+  index: -1
+Tuskosaurus-Brown Textures-Roll_11
+  rotate: false
+  xy: 1214, 1669
+  size: 89, 122
+  orig: 352, 317
+  offset: 137, 69
+  index: -1
+Tuskosaurus-Brown Textures-Run_00
+  rotate: false
+  xy: 949, 453
+  size: 245, 129
+  orig: 352, 317
+  offset: 8, 82
+  index: -1
+Tuskosaurus-Brown Textures-Run_12
+  rotate: false
+  xy: 949, 453
+  size: 245, 129
+  orig: 352, 317
+  offset: 8, 82
+  index: -1
+Tuskosaurus-Brown Textures-Run_01
+  rotate: false
+  xy: 457, 297
+  size: 246, 127
+  orig: 352, 317
+  offset: 8, 81
+  index: -1
+Tuskosaurus-Brown Textures-Run_02
+  rotate: false
+  xy: 1561, 1546
+  size: 244, 129
+  orig: 352, 317
+  offset: 11, 76
+  index: -1
+Tuskosaurus-Brown Textures-Run_04
+  rotate: false
+  xy: 709, 605
+  size: 242, 142
+  orig: 352, 317
+  offset: 13, 61
+  index: -1
+Tuskosaurus-Brown Textures-Run_05
+  rotate: false
+  xy: 721, 1651
+  size: 245, 143
+  orig: 352, 317
+  offset: 10, 63
+  index: -1
+Tuskosaurus-Brown Textures-Run_06
+  rotate: false
+  xy: 223, 1671
+  size: 247, 142
+  orig: 352, 317
+  offset: 7, 67
+  index: -1
+Tuskosaurus-Brown Textures-Run_07
+  rotate: false
+  xy: 472, 1662
+  size: 247, 139
+  orig: 352, 317
+  offset: 7, 70
+  index: -1
+Tuskosaurus-Brown Textures-Run_08
+  rotate: false
+  xy: 467, 1355
+  size: 246, 150
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Brown Textures-Run_09
+  rotate: false
+  xy: 962, 1340
+  size: 243, 150
+  orig: 352, 317
+  offset: 11, 57
+  index: -1
+Tuskosaurus-Brown Textures-Run_10
+  rotate: false
+  xy: 720, 1497
+  size: 245, 152
+  orig: 352, 317
+  offset: 9, 57
+  index: -1
+Tuskosaurus-Brown Textures-Run_11
+  rotate: false
+  xy: 706, 1201
+  size: 245, 139
+  orig: 352, 317
+  offset: 8, 71
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_02
+  rotate: false
+  xy: 1192, 300
+  size: 207, 126
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_03
+  rotate: false
+  xy: 888, 2
+  size: 201, 138
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_11
+  rotate: false
+  xy: 465, 890
+  size: 241, 153
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_12
+  rotate: false
+  xy: 1559, 1893
+  size: 247, 153
+  orig: 352, 317
+  offset: 3, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_13
+  rotate: false
+  xy: 462, 1045
+  size: 243, 153
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_14
+  rotate: false
+  xy: 223, 616
+  size: 240, 153
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_15
+  rotate: false
+  xy: 707, 297
+  size: 240, 152
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_16
+  rotate: false
+  xy: 1435, 208
+  size: 240, 151
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_17
+  rotate: false
+  xy: 1804, 1278
+  size: 241, 150
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_19
+  rotate: false
+  xy: 224, 460
+  size: 239, 154
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_20
+  rotate: false
+  xy: 707, 1046
+  size: 244, 153
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_21
+  rotate: false
+  xy: 715, 1342
+  size: 245, 153
+  orig: 352, 317
+  offset: 7, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_22
+  rotate: false
+  xy: 458, 1200
+  size: 246, 153
+  orig: 352, 317
+  offset: 6, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_23
+  rotate: false
+  xy: 222, 1516
+  size: 247, 153
+  orig: 352, 317
+  offset: 6, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_24
+  rotate: false
+  xy: 471, 1507
+  size: 247, 153
+  orig: 352, 317
+  offset: 7, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_25
+  rotate: false
+  xy: 968, 1638
+  size: 244, 153
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_26
+  rotate: false
+  xy: 465, 580
+  size: 240, 153
+  orig: 352, 317
+  offset: 14, 56
+  index: -1
+
+Tuskosaurus2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Brown Textures-Aggression1_13
+  rotate: false
+  xy: 2, 1887
+  size: 231, 159
+  orig: 352, 317
+  offset: 23, 48
+  index: -1
+Tuskosaurus-Brown Textures-Aggression1_16
+  rotate: false
+  xy: 712, 1456
+  size: 236, 151
+  orig: 352, 317
+  offset: 15, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_01
+  rotate: false
+  xy: 412, 460
+  size: 218, 152
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_03
+  rotate: false
+  xy: 406, 308
+  size: 226, 150
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_04
+  rotate: false
+  xy: 444, 829
+  size: 230, 149
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_05
+  rotate: false
+  xy: 400, 157
+  size: 233, 149
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_06
+  rotate: false
+  xy: 950, 1449
+  size: 236, 147
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_13
+  rotate: false
+  xy: 235, 1891
+  size: 235, 155
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_14
+  rotate: false
+  xy: 2, 1559
+  size: 222, 164
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_15
+  rotate: false
+  xy: 1539, 204
+  size: 210, 171
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_26
+  rotate: false
+  xy: 2, 1395
+  size: 222, 162
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_28
+  rotate: false
+  xy: 1674, 1592
+  size: 234, 149
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_29
+  rotate: false
+  xy: 235, 1740
+  size: 235, 149
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_30
+  rotate: false
+  xy: 1634, 1138
+  size: 232, 150
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_01
+  rotate: false
+  xy: 632, 460
+  size: 200, 154
+  orig: 352, 317
+  offset: 53, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_02
+  rotate: false
+  xy: 1868, 1128
+  size: 175, 156
+  orig: 352, 317
+  offset: 76, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_08
+  rotate: false
+  xy: 2, 1725
+  size: 228, 160
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_07
+  rotate: false
+  xy: 1865, 964
+  size: 181, 162
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_01
+  rotate: false
+  xy: 463, 1288
+  size: 229, 157
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack3_08
+  rotate: false
+  xy: 399, 2
+  size: 231, 153
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_02
+  rotate: false
+  xy: 1834, 7
+  size: 161, 195
+  orig: 352, 317
+  offset: 54, 58
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_08
+  rotate: false
+  xy: 1350, 194
+  size: 187, 187
+  orig: 352, 317
+  offset: 41, 57
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_02
+  rotate: false
+  xy: 676, 840
+  size: 215, 168
+  orig: 352, 317
+  offset: 44, 58
+  index: -1
+Tuskosaurus-Brown Textures-Fall_00
+  rotate: false
+  xy: 724, 629
+  size: 157, 209
+  orig: 352, 317
+  offset: 79, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_14
+  rotate: false
+  xy: 724, 629
+  size: 157, 209
+  orig: 352, 317
+  offset: 79, 96
+  index: -1
+Tuskosaurus-Brown Textures-Land_00
+  rotate: false
+  xy: 724, 629
+  size: 157, 209
+  orig: 352, 317
+  offset: 79, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_01
+  rotate: false
+  xy: 567, 616
+  size: 155, 211
+  orig: 352, 317
+  offset: 82, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_02
+  rotate: false
+  xy: 412, 614
+  size: 153, 213
+  orig: 352, 317
+  offset: 85, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_07
+  rotate: false
+  xy: 2, 220
+  size: 161, 213
+  orig: 352, 317
+  offset: 81, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_10
+  rotate: false
+  xy: 2, 647
+  size: 171, 207
+  orig: 352, 317
+  offset: 69, 97
+  index: -1
+Tuskosaurus-Brown Textures-Fall_11
+  rotate: false
+  xy: 2, 435
+  size: 165, 210
+  orig: 352, 317
+  offset: 74, 96
+  index: -1
+Tuskosaurus-Brown Textures-Fall_12
+  rotate: false
+  xy: 2, 7
+  size: 160, 211
+  orig: 352, 317
+  offset: 78, 96
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_08
+  rotate: false
+  xy: 1915, 1894
+  size: 129, 152
+  orig: 352, 317
+  offset: 92, 75
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_02
+  rotate: false
+  xy: 1034, 157
+  size: 162, 199
+  orig: 352, 317
+  offset: 83, 64
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_05
+  rotate: false
+  xy: 1198, 157
+  size: 150, 199
+  orig: 352, 317
+  offset: 95, 59
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_06
+  rotate: false
+  xy: 1553, 2
+  size: 142, 200
+  orig: 352, 317
+  offset: 103, 57
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_08
+  rotate: false
+  xy: 1910, 1692
+  size: 136, 200
+  orig: 352, 317
+  offset: 108, 58
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_09
+  rotate: false
+  xy: 1697, 2
+  size: 135, 200
+  orig: 352, 317
+  offset: 109, 59
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_10
+  rotate: false
+  xy: 1910, 1490
+  size: 136, 200
+  orig: 352, 317
+  offset: 108, 60
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_13
+  rotate: false
+  xy: 1902, 1286
+  size: 144, 202
+  orig: 352, 317
+  offset: 101, 63
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_06
+  rotate: false
+  xy: 634, 308
+  size: 222, 150
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_08
+  rotate: false
+  xy: 463, 1136
+  size: 229, 150
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_09
+  rotate: false
+  xy: 1125, 843
+  size: 231, 150
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_10
+  rotate: false
+  xy: 929, 998
+  size: 232, 150
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_11
+  rotate: false
+  xy: 1178, 1292
+  size: 233, 149
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_12
+  rotate: false
+  xy: 226, 1285
+  size: 235, 149
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_13
+  rotate: false
+  xy: 1188, 1443
+  size: 236, 149
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_14
+  rotate: false
+  xy: 1675, 1898
+  size: 238, 148
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_15
+  rotate: false
+  xy: 954, 1747
+  size: 239, 147
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_16
+  rotate: false
+  xy: 712, 1609
+  size: 239, 147
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_17
+  rotate: false
+  xy: 953, 1598
+  size: 239, 147
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_18
+  rotate: false
+  xy: 1194, 1594
+  size: 239, 147
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_19
+  rotate: false
+  xy: 1435, 1594
+  size: 237, 147
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_20
+  rotate: false
+  xy: 232, 1591
+  size: 236, 147
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_21
+  rotate: false
+  xy: 175, 525
+  size: 235, 147
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_22
+  rotate: false
+  xy: 470, 1447
+  size: 234, 147
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_23
+  rotate: false
+  xy: 1358, 837
+  size: 231, 147
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_24
+  rotate: false
+  xy: 893, 694
+  size: 230, 148
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_25
+  rotate: false
+  xy: 635, 157
+  size: 229, 149
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_03
+  rotate: false
+  xy: 1314, 383
+  size: 229, 151
+  orig: 352, 317
+  offset: 23, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_04
+  rotate: false
+  xy: 1413, 1290
+  size: 233, 150
+  orig: 352, 317
+  offset: 19, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_05
+  rotate: false
+  xy: 1426, 1442
+  size: 236, 150
+  orig: 352, 317
+  offset: 15, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_06
+  rotate: false
+  xy: 953, 1896
+  size: 238, 150
+  orig: 352, 317
+  offset: 12, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_07
+  rotate: false
+  xy: 1193, 1897
+  size: 239, 149
+  orig: 352, 317
+  offset: 10, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_08
+  rotate: false
+  xy: 1434, 1898
+  size: 239, 148
+  orig: 352, 317
+  offset: 9, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_10
+  rotate: false
+  xy: 472, 1745
+  size: 238, 147
+  orig: 352, 317
+  offset: 9, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_11
+  rotate: false
+  xy: 211, 1136
+  size: 236, 147
+  orig: 352, 317
+  offset: 10, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_12
+  rotate: false
+  xy: 694, 1155
+  size: 233, 145
+  orig: 352, 317
+  offset: 12, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_13
+  rotate: false
+  xy: 1116, 546
+  size: 230, 144
+  orig: 352, 317
+  offset: 15, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_26
+  rotate: false
+  xy: 1751, 204
+  size: 227, 152
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_28
+  rotate: false
+  xy: 1084, 391
+  size: 228, 153
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_29
+  rotate: false
+  xy: 1545, 377
+  size: 229, 152
+  orig: 352, 317
+  offset: 16, 51
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_30
+  rotate: false
+  xy: 632, 2
+  size: 230, 153
+  orig: 352, 317
+  offset: 16, 51
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_31
+  rotate: false
+  xy: 1163, 995
+  size: 232, 147
+  orig: 352, 317
+  offset: 14, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_32
+  rotate: false
+  xy: 472, 1596
+  size: 238, 147
+  orig: 352, 317
+  offset: 10, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_36
+  rotate: false
+  xy: 712, 1896
+  size: 239, 150
+  orig: 352, 317
+  offset: 12, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_37
+  rotate: false
+  xy: 1664, 1440
+  size: 236, 150
+  orig: 352, 317
+  offset: 16, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_38
+  rotate: false
+  xy: 1348, 536
+  size: 230, 151
+  orig: 352, 317
+  offset: 23, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_01
+  rotate: false
+  xy: 1824, 809
+  size: 222, 153
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_02
+  rotate: false
+  xy: 1095, 2
+  size: 228, 153
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_03
+  rotate: false
+  xy: 165, 221
+  size: 233, 153
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_04
+  rotate: false
+  xy: 226, 1436
+  size: 235, 153
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_05
+  rotate: false
+  xy: 1434, 1743
+  size: 236, 153
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_06
+  rotate: false
+  xy: 1672, 1743
+  size: 236, 153
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_07
+  rotate: false
+  xy: 706, 1302
+  size: 234, 152
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_08
+  rotate: false
+  xy: 893, 844
+  size: 230, 152
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_09
+  rotate: false
+  xy: 1397, 986
+  size: 232, 151
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_10
+  rotate: false
+  xy: 1591, 834
+  size: 231, 150
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_11
+  rotate: false
+  xy: 1125, 692
+  size: 231, 149
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_12
+  rotate: false
+  xy: 1580, 531
+  size: 230, 148
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_17
+  rotate: false
+  xy: 1776, 358
+  size: 229, 146
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_18
+  rotate: false
+  xy: 1812, 506
+  size: 230, 146
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_19
+  rotate: false
+  xy: 1358, 689
+  size: 231, 146
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_21
+  rotate: false
+  xy: 929, 1150
+  size: 233, 146
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_22
+  rotate: false
+  xy: 1164, 1144
+  size: 233, 146
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_23
+  rotate: false
+  xy: 169, 376
+  size: 235, 147
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_24
+  rotate: false
+  xy: 1648, 1290
+  size: 233, 148
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_25
+  rotate: false
+  xy: 1399, 1139
+  size: 233, 149
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_27
+  rotate: false
+  xy: 1591, 681
+  size: 231, 151
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_28
+  rotate: false
+  xy: 206, 982
+  size: 236, 152
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_29
+  rotate: false
+  xy: 1195, 1743
+  size: 237, 152
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_31
+  rotate: false
+  xy: 164, 2
+  size: 233, 153
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_32
+  rotate: false
+  xy: 1325, 2
+  size: 226, 153
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_5
+  rotate: false
+  xy: 2, 1036
+  size: 202, 178
+  orig: 352, 317
+  offset: 43, 66
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_6
+  rotate: false
+  xy: 866, 157
+  size: 166, 199
+  orig: 352, 317
+  offset: 79, 64
+  index: -1
+Tuskosaurus-Brown Textures-Jump_06
+  rotate: false
+  xy: 866, 157
+  size: 166, 199
+  orig: 352, 317
+  offset: 79, 64
+  index: -1
+Tuskosaurus-Brown Textures-Jump_05
+  rotate: false
+  xy: 2, 856
+  size: 202, 178
+  orig: 352, 317
+  offset: 43, 66
+  index: -1
+Tuskosaurus-Brown Textures-Jump_09
+  rotate: false
+  xy: 2, 1216
+  size: 207, 177
+  orig: 352, 317
+  offset: 46, 58
+  index: -1
+Tuskosaurus-Brown Textures-Land_06
+  rotate: false
+  xy: 694, 1010
+  size: 233, 143
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Brown Textures-Land_11
+  rotate: false
+  xy: 883, 546
+  size: 231, 146
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Run_03
+  rotate: false
+  xy: 712, 1758
+  size: 240, 136
+  orig: 352, 317
+  offset: 15, 66
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_09
+  rotate: false
+  xy: 858, 386
+  size: 224, 158
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_10
+  rotate: false
+  xy: 444, 980
+  size: 230, 154
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_18
+  rotate: false
+  xy: 472, 1894
+  size: 238, 152
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_27
+  rotate: false
+  xy: 175, 674
+  size: 235, 153
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_28
+  rotate: false
+  xy: 864, 2
+  size: 229, 153
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_29
+  rotate: false
+  xy: 1824, 654
+  size: 222, 153
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Brown Textures-Walk_04
+  rotate: false
+  xy: 1631, 986
+  size: 232, 150
+  orig: 352, 317
+  offset: 20, 58
+  index: -1
+Tuskosaurus-Brown Textures-Walk_05
+  rotate: false
+  xy: 206, 829
+  size: 236, 151
+  orig: 352, 317
+  offset: 16, 58
+  index: -1
+Tuskosaurus-Brown Textures-Walk_06
+  rotate: false
+  xy: 942, 1298
+  size: 234, 149
+  orig: 352, 317
+  offset: 17, 62
+  index: -1
+
+Tuskosaurus3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Brown Textures-Aggression2_02
+  rotate: false
+  xy: 414, 26
+  size: 222, 152
+  orig: 352, 317
+  offset: 33, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_31
+  rotate: false
+  xy: 1317, 472
+  size: 228, 151
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Brown Textures-Aggression2_32
+  rotate: false
+  xy: 638, 25
+  size: 223, 152
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_03
+  rotate: false
+  xy: 1871, 736
+  size: 141, 158
+  orig: 352, 317
+  offset: 105, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_04
+  rotate: false
+  xy: 1733, 607
+  size: 123, 159
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_05
+  rotate: false
+  xy: 1710, 123
+  size: 122, 160
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_12
+  rotate: false
+  xy: 1731, 446
+  size: 123, 159
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_01
+  rotate: false
+  xy: 984, 1084
+  size: 206, 148
+  orig: 352, 317
+  offset: 51, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_06
+  rotate: false
+  xy: 1885, 1201
+  size: 139, 149
+  orig: 352, 317
+  offset: 116, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_09
+  rotate: false
+  xy: 2, 33
+  size: 184, 156
+  orig: 352, 317
+  offset: 120, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_10
+  rotate: false
+  xy: 1856, 427
+  size: 181, 153
+  orig: 352, 317
+  offset: 121, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_11
+  rotate: false
+  xy: 1134, 628
+  size: 184, 152
+  orig: 352, 317
+  offset: 121, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_12
+  rotate: false
+  xy: 1872, 896
+  size: 138, 152
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_16
+  rotate: false
+  xy: 863, 18
+  size: 213, 152
+  orig: 352, 317
+  offset: 42, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_05
+  rotate: false
+  xy: 1332, 163
+  size: 188, 154
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_06
+  rotate: false
+  xy: 1522, 158
+  size: 186, 154
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_07
+  rotate: false
+  xy: 1121, 319
+  size: 186, 153
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_08
+  rotate: false
+  xy: 1538, 314
+  size: 184, 153
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_09
+  rotate: false
+  xy: 1549, 623
+  size: 182, 152
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_10
+  rotate: false
+  xy: 1858, 582
+  size: 181, 152
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_11
+  rotate: false
+  xy: 1134, 474
+  size: 181, 152
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_12
+  rotate: false
+  xy: 1547, 469
+  size: 182, 152
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_13
+  rotate: false
+  xy: 1853, 272
+  size: 184, 153
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_14
+  rotate: false
+  xy: 2, 191
+  size: 186, 153
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_15
+  rotate: false
+  xy: 1521, 2
+  size: 187, 154
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_03
+  rotate: false
+  xy: 1928, 1501
+  size: 118, 160
+  orig: 352, 317
+  offset: 110, 83
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_04
+  rotate: false
+  xy: 432, 1394
+  size: 149, 144
+  orig: 352, 317
+  offset: 86, 108
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_05
+  rotate: false
+  xy: 214, 1542
+  size: 163, 133
+  orig: 352, 317
+  offset: 67, 117
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_06
+  rotate: false
+  xy: 730, 1673
+  size: 183, 128
+  orig: 352, 317
+  offset: 58, 108
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_07
+  rotate: false
+  xy: 1188, 1922
+  size: 203, 122
+  orig: 352, 317
+  offset: 47, 99
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_08
+  rotate: false
+  xy: 509, 1929
+  size: 221, 115
+  orig: 352, 317
+  offset: 37, 90
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_00
+  rotate: false
+  xy: 1751, 924
+  size: 119, 153
+  orig: 352, 317
+  offset: 94, 77
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_14
+  rotate: false
+  xy: 1751, 924
+  size: 119, 153
+  orig: 352, 317
+  offset: 94, 77
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_01
+  rotate: false
+  xy: 2, 1111
+  size: 120, 149
+  orig: 352, 317
+  offset: 94, 81
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_02
+  rotate: false
+  xy: 1747, 768
+  size: 122, 154
+  orig: 352, 317
+  offset: 93, 76
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_07
+  rotate: false
+  xy: 1724, 285
+  size: 127, 159
+  orig: 352, 317
+  offset: 92, 67
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_09
+  rotate: false
+  xy: 551, 943
+  size: 126, 150
+  orig: 352, 317
+  offset: 92, 78
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_10
+  rotate: false
+  xy: 425, 1244
+  size: 124, 148
+  orig: 352, 317
+  offset: 93, 81
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_11
+  rotate: false
+  xy: 1908, 1352
+  size: 123, 147
+  orig: 352, 317
+  offset: 93, 83
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_12
+  rotate: false
+  xy: 1881, 1050
+  size: 122, 149
+  orig: 352, 317
+  offset: 93, 81
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_13
+  rotate: false
+  xy: 2, 957
+  size: 119, 152
+  orig: 352, 317
+  offset: 94, 78
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_03
+  rotate: false
+  xy: 1078, 12
+  size: 219, 152
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_04
+  rotate: false
+  xy: 1299, 9
+  size: 220, 152
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_07
+  rotate: false
+  xy: 1523, 777
+  size: 222, 150
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_08
+  rotate: false
+  xy: 2, 804
+  size: 222, 149
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_09
+  rotate: false
+  xy: 326, 945
+  size: 223, 148
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_10
+  rotate: false
+  xy: 530, 1095
+  size: 222, 147
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_11
+  rotate: false
+  xy: 1208, 1232
+  size: 221, 146
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_12
+  rotate: false
+  xy: 551, 1244
+  size: 220, 144
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_13
+  rotate: false
+  xy: 1462, 1377
+  size: 218, 143
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_14
+  rotate: false
+  xy: 786, 1386
+  size: 217, 141
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_15
+  rotate: false
+  xy: 796, 1529
+  size: 216, 139
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_18
+  rotate: false
+  xy: 379, 1540
+  size: 211, 133
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_19
+  rotate: false
+  xy: 2, 1556
+  size: 210, 131
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_20
+  rotate: false
+  xy: 1540, 1664
+  size: 208, 129
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_00
+  rotate: false
+  xy: 1540, 1664
+  size: 208, 129
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_20
+  rotate: false
+  xy: 1540, 1664
+  size: 208, 129
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_00
+  rotate: false
+  xy: 1540, 1664
+  size: 208, 129
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_06
+  rotate: false
+  xy: 224, 489
+  size: 225, 151
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_07
+  rotate: false
+  xy: 210, 336
+  size: 228, 151
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_26
+  rotate: false
+  xy: 226, 794
+  size: 228, 149
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_27
+  rotate: false
+  xy: 224, 642
+  size: 226, 150
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_28
+  rotate: false
+  xy: 676, 638
+  size: 225, 150
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_29
+  rotate: false
+  xy: 452, 639
+  size: 222, 151
+  orig: 352, 317
+  offset: 33, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_01
+  rotate: false
+  xy: 2, 499
+  size: 220, 151
+  orig: 352, 317
+  offset: 34, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_02
+  rotate: false
+  xy: 676, 485
+  size: 225, 151
+  orig: 352, 317
+  offset: 28, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_14
+  rotate: false
+  xy: 677, 790
+  size: 227, 149
+  orig: 352, 317
+  offset: 17, 53
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_15
+  rotate: false
+  xy: 440, 333
+  size: 225, 151
+  orig: 352, 317
+  offset: 18, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_16
+  rotate: false
+  xy: 667, 332
+  size: 225, 151
+  orig: 352, 317
+  offset: 18, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_17
+  rotate: false
+  xy: 894, 325
+  size: 225, 151
+  orig: 352, 317
+  offset: 18, 48
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_20
+  rotate: false
+  xy: 1309, 319
+  size: 227, 151
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_21
+  rotate: false
+  xy: 190, 183
+  size: 226, 151
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_22
+  rotate: false
+  xy: 418, 180
+  size: 226, 151
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_23
+  rotate: false
+  xy: 646, 179
+  size: 226, 151
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_24
+  rotate: false
+  xy: 874, 172
+  size: 227, 151
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_25
+  rotate: false
+  xy: 1103, 166
+  size: 227, 151
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_39
+  rotate: false
+  xy: 451, 486
+  size: 223, 151
+  orig: 352, 317
+  offset: 31, 58
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_13
+  rotate: false
+  xy: 754, 1091
+  size: 228, 147
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_14
+  rotate: false
+  xy: 1192, 1083
+  size: 227, 147
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_15
+  rotate: false
+  xy: 1421, 1080
+  size: 227, 147
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_16
+  rotate: false
+  xy: 1431, 1229
+  size: 228, 146
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_26
+  rotate: false
+  xy: 903, 630
+  size: 229, 150
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_1
+  rotate: false
+  xy: 1661, 1228
+  size: 222, 146
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_01
+  rotate: false
+  xy: 1661, 1228
+  size: 222, 146
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_2
+  rotate: false
+  xy: 1014, 1525
+  size: 226, 139
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_02
+  rotate: false
+  xy: 1014, 1525
+  size: 226, 139
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_4
+  rotate: false
+  xy: 1682, 1376
+  size: 224, 143
+  orig: 352, 317
+  offset: 22, 51
+  index: -1
+Tuskosaurus-Brown Textures-Jump_04
+  rotate: false
+  xy: 1682, 1376
+  size: 224, 143
+  orig: 352, 317
+  offset: 22, 51
+  index: -1
+Tuskosaurus-Brown Textures-Jump_11
+  rotate: false
+  xy: 1650, 1079
+  size: 229, 147
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_12
+  rotate: false
+  xy: 773, 1240
+  size: 229, 144
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_13
+  rotate: false
+  xy: 1471, 1522
+  size: 228, 140
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_14
+  rotate: false
+  xy: 1701, 1521
+  size: 225, 140
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_15
+  rotate: false
+  xy: 202, 1253
+  size: 221, 143
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_16
+  rotate: false
+  xy: 456, 792
+  size: 219, 149
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Land_07
+  rotate: false
+  xy: 1005, 1381
+  size: 224, 142
+  orig: 352, 317
+  offset: 22, 52
+  index: -1
+Tuskosaurus-Brown Textures-Land_08
+  rotate: false
+  xy: 1242, 1524
+  size: 227, 139
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Land_09
+  rotate: false
+  xy: 203, 1398
+  size: 227, 140
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Brown Textures-Land_10
+  rotate: false
+  xy: 1231, 1380
+  size: 229, 142
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Brown Textures-Land_12
+  rotate: false
+  xy: 1320, 625
+  size: 227, 150
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Brown Textures-Roll_00
+  rotate: false
+  xy: 856, 1928
+  size: 114, 116
+  orig: 352, 317
+  offset: 121, 61
+  index: -1
+Tuskosaurus-Brown Textures-Roll_01
+  rotate: false
+  xy: 2, 1956
+  size: 122, 88
+  orig: 352, 317
+  offset: 125, 63
+  index: -1
+Tuskosaurus-Brown Textures-Roll_02
+  rotate: false
+  xy: 253, 1941
+  size: 129, 103
+  orig: 352, 317
+  offset: 123, 57
+  index: -1
+Tuskosaurus-Brown Textures-Roll_03
+  rotate: false
+  xy: 384, 1932
+  size: 123, 112
+  orig: 352, 317
+  offset: 115, 62
+  index: -1
+Tuskosaurus-Brown Textures-Roll_04
+  rotate: false
+  xy: 1088, 1925
+  size: 98, 119
+  orig: 352, 317
+  offset: 118, 58
+  index: -1
+Tuskosaurus-Brown Textures-Roll_08
+  rotate: false
+  xy: 126, 1947
+  size: 125, 97
+  orig: 352, 317
+  offset: 102, 66
+  index: -1
+Tuskosaurus-Brown Textures-Roll_10
+  rotate: false
+  xy: 732, 1929
+  size: 122, 115
+  orig: 352, 317
+  offset: 108, 66
+  index: -1
+Tuskosaurus-Brown Textures-Roll_12
+  rotate: false
+  xy: 2, 1695
+  size: 104, 134
+  orig: 352, 317
+  offset: 134, 57
+  index: -1
+Tuskosaurus-Brown Textures-Roll_13
+  rotate: false
+  xy: 2, 1831
+  size: 112, 123
+  orig: 352, 317
+  offset: 125, 60
+  index: -1
+Tuskosaurus-Brown Textures-Roll_14
+  rotate: false
+  xy: 972, 1928
+  size: 114, 116
+  orig: 352, 317
+  offset: 121, 61
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_01
+  rotate: false
+  xy: 915, 1670
+  size: 207, 128
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_03
+  rotate: false
+  xy: 1765, 1794
+  size: 206, 126
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_04
+  rotate: false
+  xy: 1350, 1795
+  size: 206, 125
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_05
+  rotate: false
+  xy: 527, 1804
+  size: 206, 123
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_06
+  rotate: false
+  xy: 1393, 1922
+  size: 204, 122
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_07
+  rotate: false
+  xy: 1599, 1922
+  size: 204, 122
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_08
+  rotate: false
+  xy: 1805, 1922
+  size: 205, 122
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_09
+  rotate: false
+  xy: 116, 1817
+  size: 204, 122
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_10
+  rotate: false
+  xy: 322, 1805
+  size: 203, 122
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_11
+  rotate: false
+  xy: 735, 1803
+  size: 203, 123
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_12
+  rotate: false
+  xy: 940, 1800
+  size: 203, 123
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_13
+  rotate: false
+  xy: 1145, 1796
+  size: 203, 124
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_14
+  rotate: false
+  xy: 1558, 1795
+  size: 205, 125
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_15
+  rotate: false
+  xy: 108, 1689
+  size: 205, 126
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_16
+  rotate: false
+  xy: 315, 1677
+  size: 205, 126
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_17
+  rotate: false
+  xy: 522, 1675
+  size: 206, 127
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_18
+  rotate: false
+  xy: 1124, 1666
+  size: 206, 128
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Sleep_19
+  rotate: false
+  xy: 1332, 1665
+  size: 206, 128
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_01
+  rotate: false
+  xy: 1750, 1663
+  size: 203, 129
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_02
+  rotate: false
+  xy: 592, 1537
+  size: 202, 134
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_04
+  rotate: false
+  xy: 2, 1411
+  size: 199, 143
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_05
+  rotate: false
+  xy: 2, 1262
+  size: 198, 147
+  orig: 352, 317
+  offset: 42, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_06
+  rotate: false
+  xy: 906, 782
+  size: 196, 150
+  orig: 352, 317
+  offset: 43, 56
+  index: -1
+Tuskosaurus-Brown Textures-Walk_00
+  rotate: false
+  xy: 1104, 782
+  size: 214, 149
+  orig: 352, 317
+  offset: 40, 60
+  index: -1
+Tuskosaurus-Brown Textures-Walk_01
+  rotate: false
+  xy: 2, 652
+  size: 220, 150
+  orig: 352, 317
+  offset: 34, 58
+  index: -1
+Tuskosaurus-Brown Textures-Walk_02
+  rotate: false
+  xy: 188, 30
+  size: 224, 151
+  orig: 352, 317
+  offset: 29, 57
+  index: -1
+Tuskosaurus-Brown Textures-Walk_03
+  rotate: false
+  xy: 679, 941
+  size: 229, 148
+  orig: 352, 317
+  offset: 24, 58
+  index: -1
+Tuskosaurus-Brown Textures-Walk_07
+  rotate: false
+  xy: 903, 478
+  size: 229, 150
+  orig: 352, 317
+  offset: 22, 63
+  index: -1
+Tuskosaurus-Brown Textures-Walk_11
+  rotate: false
+  xy: 910, 934
+  size: 203, 148
+  orig: 352, 317
+  offset: 46, 64
+  index: -1
+Tuskosaurus-Brown Textures-Walk_12
+  rotate: false
+  xy: 1320, 778
+  size: 201, 150
+  orig: 352, 317
+  offset: 48, 61
+  index: -1
+Tuskosaurus-Brown Textures-Walk_13
+  rotate: false
+  xy: 123, 955
+  size: 201, 148
+  orig: 352, 317
+  offset: 48, 61
+  index: -1
+Tuskosaurus-Brown Textures-Walk_14
+  rotate: false
+  xy: 124, 1105
+  size: 201, 146
+  orig: 352, 317
+  offset: 48, 62
+  index: -1
+Tuskosaurus-Brown Textures-Walk_15
+  rotate: false
+  xy: 583, 1390
+  size: 201, 145
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Brown Textures-Walk_16
+  rotate: false
+  xy: 1004, 1234
+  size: 202, 145
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Brown Textures-Walk_17
+  rotate: false
+  xy: 327, 1096
+  size: 201, 146
+  orig: 352, 317
+  offset: 50, 63
+  index: -1
+Tuskosaurus-Brown Textures-Walk_18
+  rotate: false
+  xy: 1115, 933
+  size: 203, 148
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Brown Textures-Walk_19
+  rotate: false
+  xy: 2, 346
+  size: 206, 151
+  orig: 352, 317
+  offset: 46, 61
+  index: -1
+Tuskosaurus-Brown Textures-Walk_21
+  rotate: false
+  xy: 1834, 119
+  size: 211, 151
+  orig: 352, 317
+  offset: 42, 61
+  index: -1
+Tuskosaurus-Brown Textures-Walk_22
+  rotate: false
+  xy: 1320, 930
+  size: 213, 148
+  orig: 352, 317
+  offset: 41, 63
+  index: -1
+Tuskosaurus-Brown Textures-Walk_23
+  rotate: false
+  xy: 1535, 929
+  size: 214, 148
+  orig: 352, 317
+  offset: 40, 61
+  index: -1
+
+Tuskosaurus4.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Brown Textures-Aggression2_33
+  rotate: false
+  xy: 1749, 1738
+  size: 217, 153
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_00
+  rotate: false
+  xy: 171, 293
+  size: 213, 153
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_16
+  rotate: false
+  xy: 171, 293
+  size: 213, 153
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_00
+  rotate: false
+  xy: 171, 293
+  size: 213, 153
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_17
+  rotate: false
+  xy: 171, 293
+  size: 213, 153
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_06
+  rotate: false
+  xy: 1172, 1403
+  size: 141, 161
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_09
+  rotate: false
+  xy: 784, 1399
+  size: 190, 161
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_10
+  rotate: false
+  xy: 1897, 1575
+  size: 119, 161
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_11
+  rotate: false
+  xy: 605, 796
+  size: 121, 161
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_14
+  rotate: false
+  xy: 183, 932
+  size: 215, 155
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack1_15
+  rotate: false
+  xy: 193, 1244
+  size: 216, 153
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_02
+  rotate: false
+  xy: 171, 448
+  size: 196, 168
+  orig: 352, 317
+  offset: 61, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_03
+  rotate: false
+  xy: 2, 1169
+  size: 184, 187
+  orig: 352, 317
+  offset: 74, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_04
+  rotate: false
+  xy: 2, 188
+  size: 165, 185
+  orig: 352, 317
+  offset: 93, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_05
+  rotate: false
+  xy: 385, 109
+  size: 145, 169
+  orig: 352, 317
+  offset: 112, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_08
+  rotate: false
+  xy: 1144, 1057
+  size: 183, 160
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_13
+  rotate: false
+  xy: 1656, 1233
+  size: 148, 184
+  orig: 352, 317
+  offset: 110, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack2_15
+  rotate: false
+  xy: 395, 640
+  size: 201, 159
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_00
+  rotate: false
+  xy: 637, 1157
+  size: 142, 170
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_09
+  rotate: false
+  xy: 637, 1157
+  size: 142, 170
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_01
+  rotate: false
+  xy: 532, 106
+  size: 140, 172
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_03
+  rotate: false
+  xy: 1806, 1244
+  size: 140, 173
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_04
+  rotate: false
+  xy: 598, 622
+  size: 139, 172
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_05
+  rotate: false
+  xy: 1630, 682
+  size: 138, 172
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_06
+  rotate: false
+  xy: 1172, 1566
+  size: 135, 171
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_07
+  rotate: false
+  xy: 1770, 684
+  size: 135, 170
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Attack4_08
+  rotate: false
+  xy: 1489, 684
+  size: 139, 170
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Brown Textures-Confused_00
+  rotate: false
+  xy: 976, 1423
+  size: 194, 156
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_20
+  rotate: false
+  xy: 976, 1423
+  size: 194, 156
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_01
+  rotate: false
+  xy: 1508, 1419
+  size: 193, 155
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_02
+  rotate: false
+  xy: 781, 1085
+  size: 192, 155
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_03
+  rotate: false
+  xy: 975, 899
+  size: 191, 155
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_04
+  rotate: false
+  xy: 1703, 1419
+  size: 190, 155
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_16
+  rotate: false
+  xy: 1707, 1576
+  size: 188, 155
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_17
+  rotate: false
+  xy: 377, 483
+  size: 190, 155
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_18
+  rotate: false
+  xy: 781, 928
+  size: 192, 155
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-Confused_19
+  rotate: false
+  xy: 781, 1242
+  size: 193, 155
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_01
+  rotate: false
+  xy: 2, 1543
+  size: 202, 172
+  orig: 352, 317
+  offset: 42, 59
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_06
+  rotate: false
+  xy: 1817, 1049
+  size: 145, 193
+  orig: 352, 317
+  offset: 62, 67
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_07
+  rotate: false
+  xy: 1818, 856
+  size: 153, 191
+  orig: 352, 317
+  offset: 54, 70
+  index: -1
+Tuskosaurus-Brown Textures-DamageBack_09
+  rotate: false
+  xy: 161, 618
+  size: 214, 155
+  orig: 352, 317
+  offset: 39, 58
+  index: -1
+Tuskosaurus-Brown Textures-DamageFront_1
+  rotate: false
+  xy: 400, 801
+  size: 203, 156
+  orig: 352, 317
+  offset: 31, 66
+  index: -1
+Tuskosaurus-Brown Textures-DamageFront_3
+  rotate: false
+  xy: 1315, 1422
+  size: 191, 156
+  orig: 352, 317
+  offset: 35, 70
+  index: -1
+Tuskosaurus-Brown Textures-DamageFront_4
+  rotate: false
+  xy: 411, 1114
+  size: 208, 157
+  orig: 352, 317
+  offset: 30, 63
+  index: -1
+Tuskosaurus-Brown Textures-DamageFront_5
+  rotate: false
+  xy: 178, 775
+  size: 215, 155
+  orig: 352, 317
+  offset: 36, 57
+  index: -1
+Tuskosaurus-Brown Textures-DieBack_01
+  rotate: false
+  xy: 1309, 1580
+  size: 197, 155
+  orig: 352, 317
+  offset: 46, 70
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_01
+  rotate: false
+  xy: 1310, 1737
+  size: 218, 155
+  orig: 352, 317
+  offset: 41, 57
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_03
+  rotate: false
+  xy: 2, 1717
+  size: 203, 175
+  orig: 352, 317
+  offset: 49, 60
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_04
+  rotate: false
+  xy: 2, 1358
+  size: 189, 183
+  orig: 352, 317
+  offset: 58, 59
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_05
+  rotate: false
+  xy: 2, 977
+  size: 179, 190
+  orig: 352, 317
+  offset: 70, 55
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_06
+  rotate: false
+  xy: 784, 1562
+  size: 186, 176
+  orig: 352, 317
+  offset: 78, 60
+  index: -1
+Tuskosaurus-Brown Textures-DieFront_07
+  rotate: false
+  xy: 972, 1581
+  size: 198, 156
+  orig: 352, 317
+  offset: 85, 62
+  index: -1
+Tuskosaurus-Brown Textures-Fall_13
+  rotate: false
+  xy: 2, 571
+  size: 157, 209
+  orig: 352, 317
+  offset: 80, 96
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_03
+  rotate: false
+  xy: 1770, 521
+  size: 123, 161
+  orig: 352, 317
+  offset: 93, 69
+  index: -1
+Tuskosaurus-Brown Textures-FlyBack_04
+  rotate: false
+  xy: 1907, 686
+  size: 125, 168
+  orig: 352, 317
+  offset: 92, 62
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_00
+  rotate: false
+  xy: 1329, 1043
+  size: 155, 192
+  orig: 352, 317
+  offset: 61, 67
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_14
+  rotate: false
+  xy: 1329, 1043
+  size: 155, 192
+  orig: 352, 317
+  offset: 61, 67
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_01
+  rotate: false
+  xy: 621, 965
+  size: 158, 190
+  orig: 352, 317
+  offset: 59, 70
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_02
+  rotate: false
+  xy: 1327, 853
+  size: 160, 188
+  orig: 352, 317
+  offset: 57, 72
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_03
+  rotate: false
+  xy: 1486, 1046
+  size: 162, 188
+  orig: 352, 317
+  offset: 55, 74
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_04
+  rotate: false
+  xy: 1652, 859
+  size: 164, 186
+  orig: 352, 317
+  offset: 54, 76
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_05
+  rotate: false
+  xy: 2, 2
+  size: 165, 184
+  orig: 352, 317
+  offset: 53, 79
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_06
+  rotate: false
+  xy: 1147, 1219
+  size: 166, 182
+  orig: 352, 317
+  offset: 52, 81
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_07
+  rotate: false
+  xy: 1486, 1236
+  size: 168, 181
+  orig: 352, 317
+  offset: 50, 82
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_08
+  rotate: false
+  xy: 976, 1240
+  size: 169, 181
+  orig: 352, 317
+  offset: 49, 81
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_09
+  rotate: false
+  xy: 1315, 1237
+  size: 169, 183
+  orig: 352, 317
+  offset: 49, 79
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_10
+  rotate: false
+  xy: 975, 1056
+  size: 167, 182
+  orig: 352, 317
+  offset: 51, 79
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_11
+  rotate: false
+  xy: 1650, 1047
+  size: 165, 184
+  orig: 352, 317
+  offset: 53, 76
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_12
+  rotate: false
+  xy: 1489, 856
+  size: 161, 188
+  orig: 352, 317
+  offset: 56, 72
+  index: -1
+Tuskosaurus-Brown Textures-FlyFront_13
+  rotate: false
+  xy: 1168, 865
+  size: 157, 190
+  orig: 352, 317
+  offset: 59, 69
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_00
+  rotate: false
+  xy: 637, 1533
+  size: 145, 203
+  orig: 352, 317
+  offset: 100, 63
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_14
+  rotate: false
+  xy: 637, 1533
+  size: 145, 203
+  orig: 352, 317
+  offset: 100, 63
+  index: -1
+Tuskosaurus-Brown Textures-Jump2_7
+  rotate: false
+  xy: 637, 1533
+  size: 145, 203
+  orig: 352, 317
+  offset: 100, 63
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_03
+  rotate: false
+  xy: 2, 782
+  size: 174, 193
+  orig: 352, 317
+  offset: 71, 69
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_04
+  rotate: false
+  xy: 2, 375
+  size: 167, 194
+  orig: 352, 317
+  offset: 78, 66
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_07
+  rotate: false
+  xy: 527, 280
+  size: 138, 201
+  orig: 352, 317
+  offset: 106, 57
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_11
+  rotate: false
+  xy: 386, 280
+  size: 139, 201
+  orig: 352, 317
+  offset: 106, 61
+  index: -1
+Tuskosaurus-Brown Textures-FlyUp_12
+  rotate: false
+  xy: 637, 1329
+  size: 142, 202
+  orig: 352, 317
+  offset: 103, 62
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_01
+  rotate: false
+  xy: 188, 1089
+  size: 216, 153
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_02
+  rotate: false
+  xy: 1089, 1739
+  size: 219, 153
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Brown Textures-GotoSleep_05
+  rotate: false
+  xy: 644, 1740
+  size: 221, 152
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_01
+  rotate: false
+  xy: 418, 1583
+  size: 217, 153
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_02
+  rotate: false
+  xy: 1578, 1893
+  size: 218, 153
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_03
+  rotate: false
+  xy: 867, 1740
+  size: 220, 152
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_04
+  rotate: false
+  xy: 912, 1894
+  size: 221, 152
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_30
+  rotate: false
+  xy: 1135, 1894
+  size: 220, 152
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_31
+  rotate: false
+  xy: 1357, 1894
+  size: 219, 152
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_32
+  rotate: false
+  xy: 418, 1428
+  size: 217, 153
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle1_33
+  rotate: false
+  xy: 169, 138
+  size: 214, 153
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_18
+  rotate: false
+  xy: 459, 1894
+  size: 225, 152
+  orig: 352, 317
+  offset: 18, 48
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_19
+  rotate: false
+  xy: 231, 1894
+  size: 226, 152
+  orig: 352, 317
+  offset: 18, 48
+  index: -1
+Tuskosaurus-Brown Textures-Idle2_27
+  rotate: false
+  xy: 2, 1894
+  size: 227, 152
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Brown Textures-Idle3_33
+  rotate: false
+  xy: 418, 1273
+  size: 217, 153
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Brown Textures-Jump_10
+  rotate: false
+  xy: 686, 1894
+  size: 224, 152
+  orig: 352, 317
+  offset: 31, 55
+  index: -1
+Tuskosaurus-Brown Textures-Land_02
+  rotate: false
+  xy: 207, 1723
+  size: 209, 169
+  orig: 352, 317
+  offset: 35, 70
+  index: -1
+Tuskosaurus-Brown Textures-Land_13
+  rotate: false
+  xy: 1798, 1893
+  size: 218, 153
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_07
+  rotate: false
+  xy: 1508, 1576
+  size: 197, 155
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Brown Textures-WakeUp_08
+  rotate: false
+  xy: 206, 1557
+  size: 210, 158
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Brown Textures-Walk_08
+  rotate: false
+  xy: 418, 1738
+  size: 224, 154
+  orig: 352, 317
+  offset: 26, 60
+  index: -1
+Tuskosaurus-Brown Textures-Walk_09
+  rotate: false
+  xy: 1530, 1733
+  size: 217, 158
+  orig: 352, 317
+  offset: 32, 57
+  index: -1
+Tuskosaurus-Brown Textures-Walk_10
+  rotate: false
+  xy: 206, 1399
+  size: 210, 156
+  orig: 352, 317
+  offset: 39, 58
+  index: -1
+Tuskosaurus-Brown Textures-Walk_20
+  rotate: false
+  xy: 406, 959
+  size: 208, 153
+  orig: 352, 317
+  offset: 44, 61
+  index: -1

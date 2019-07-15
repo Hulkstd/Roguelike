@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: ecb06cfe5060227408c271a241f8192c
+timeCreated: 1553968141
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wherewolfWhite_biteTop
+    21300002: wherewolfWhite_fangTrail
+    21300004: wherewolfWhite_biteBottom
+    21300006: wherewolfWhite_footB
+    21300008: wherewolfWhite_lowerLegB
+    21300010: wherewolfWhite_kneeB
+    21300012: wherewolfWhite_upperLegB
+    21300014: wherewolfWhite_tail
+    21300016: wherewolfWhite_handB
+    21300018: wherewolfWhite_lowerArmB
+    21300020: wherewolfWhite_upperArmB
+    21300022: wherewolfWhite_torso
+    21300024: wherewolfWhite_lowerTorso
+    21300026: wherewolfWhite_upperArmF
+    21300028: wherewolfWhite_pupils
+    21300030: wherewolfWhite_eyes
+    21300032: wherewolfWhite_upperLegF
+    21300034: wherewolfWhite_headTop
+    21300036: wherewolfWhite_kneeF
+    21300038: wherewolfWhite_lowerArmF
+    21300040: wherewolfWhite_headBack
+    21300042: wherewolfWhite_lips
+    21300044: wherewolfWhite_jaw
+    21300046: wherewolfWhite_lowerLegF
+    21300048: wherewolfWhite_footF
+    21300050: wherewolfWhite_handFront
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wherewolfWhite_biteTop
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 874
+        width: 267
+        height: 135
+      alignment: 9
+      pivot: {x: 0.09, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_fangTrail
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 961
+        width: 491
+        height: 55
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_biteBottom
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 864
+        width: 199
+        height: 108
+      alignment: 9
+      pivot: {x: 0.8, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_footB
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 864
+        width: 86
+        height: 59
+      alignment: 9
+      pivot: {x: 0.85, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_lowerLegB
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 864
+        width: 99
+        height: 35
+      alignment: 9
+      pivot: {x: 0.85, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_kneeB
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 870
+        width: 70
+        height: 32
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_upperLegB
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 854
+        width: 147
+        height: 81
+      alignment: 9
+      pivot: {x: 0.85, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_tail
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 596
+        width: 199
+        height: 227
+      alignment: 9
+      pivot: {x: 0.75, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_handB
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 710
+        width: 108
+        height: 78
+      alignment: 9
+      pivot: {x: 0.85, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_lowerArmB
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 670
+        width: 209
+        height: 102
+      alignment: 9
+      pivot: {x: 0.8, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_upperArmB
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 669
+        width: 220
+        height: 150
+      alignment: 9
+      pivot: {x: 0.85, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_torso
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 183
+        width: 348
+        height: 367
+      alignment: 9
+      pivot: {x: 0.89, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_lowerTorso
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 491
+        width: 202
+        height: 170
+      alignment: 9
+      pivot: {x: 0.15, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_upperArmF
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 376
+        width: 156
+        height: 229
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_pupils
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 427
+        width: 55
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_eyes
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 427
+        width: 80
+        height: 30
+      alignment: 9
+      pivot: {x: 0.35, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_upperLegF
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 320
+        width: 84
+        height: 153
+      alignment: 9
+      pivot: {x: 0.45, y: 0.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_headTop
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 190
+        width: 199
+        height: 217
+      alignment: 9
+      pivot: {x: 0.9, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_kneeF
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 231
+        width: 34
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_lowerArmF
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 136
+        width: 107
+        height: 218
+      alignment: 9
+      pivot: {x: 0.45, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_headBack
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 22
+        width: 208
+        height: 150
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_lips
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 127
+        width: 82
+        height: 56
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_jaw
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 31
+        width: 152
+        height: 159
+      alignment: 9
+      pivot: {x: 0.6, y: 0.95}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_lowerLegF
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 112
+        width: 35
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_footF
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 11
+        width: 60
+        height: 90
+      alignment: 9
+      pivot: {x: 0.6, y: 0.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wherewolfWhite_handFront
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 9
+        width: 81
+        height: 112
+      alignment: 9
+      pivot: {x: 0.55, y: 0.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

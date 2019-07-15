@@ -1,0 +1,3650 @@
+
+Tuskosaurus-Yellow.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Yellow-Aggression1_01
+  rotate: false
+  xy: 231, 851
+  size: 232, 152
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_02
+  rotate: false
+  xy: 478, 695
+  size: 241, 154
+  orig: 352, 317
+  offset: 11, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_03
+  rotate: false
+  xy: 224, 439
+  size: 241, 156
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_04
+  rotate: false
+  xy: 706, 1204
+  size: 236, 157
+  orig: 352, 317
+  offset: 14, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_07
+  rotate: false
+  xy: 225, 1348
+  size: 228, 168
+  orig: 352, 317
+  offset: 23, 44
+  index: -1
+Tuskosaurus-Yellow-Aggression1_08
+  rotate: false
+  xy: 448, 1005
+  size: 240, 153
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_09
+  rotate: false
+  xy: 465, 851
+  size: 236, 152
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_10
+  rotate: false
+  xy: 228, 1179
+  size: 223, 167
+  orig: 352, 317
+  offset: 31, 44
+  index: -1
+Tuskosaurus-Yellow-Aggression1_11
+  rotate: false
+  xy: 1808, 1890
+  size: 238, 156
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_12
+  rotate: false
+  xy: 462, 110
+  size: 231, 163
+  orig: 352, 317
+  offset: 23, 48
+  index: -1
+Tuskosaurus-Yellow-Aggression1_14
+  rotate: false
+  xy: 940, 902
+  size: 239, 155
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_15
+  rotate: false
+  xy: 224, 275
+  size: 234, 162
+  orig: 352, 317
+  offset: 17, 50
+  index: -1
+Tuskosaurus-Yellow-Aggression1_17
+  rotate: false
+  xy: 1155, 437
+  size: 241, 154
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_18
+  rotate: false
+  xy: 1793, 141
+  size: 240, 153
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_06
+  rotate: false
+  xy: 951, 750
+  size: 236, 150
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_07
+  rotate: false
+  xy: 1310, 1576
+  size: 238, 151
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_08
+  rotate: false
+  xy: 768, 1656
+  size: 240, 151
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_09
+  rotate: false
+  xy: 1793, 438
+  size: 241, 151
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_10
+  rotate: false
+  xy: 1549, 821
+  size: 243, 151
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_11
+  rotate: false
+  xy: 1794, 743
+  size: 243, 151
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_12
+  rotate: false
+  xy: 1549, 668
+  size: 243, 151
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_13
+  rotate: false
+  xy: 703, 909
+  size: 235, 159
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_16
+  rotate: false
+  xy: 2, 219
+  size: 220, 172
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_17
+  rotate: false
+  xy: 2, 940
+  size: 227, 178
+  orig: 352, 317
+  offset: 26, 51
+  index: -1
+Tuskosaurus-Yellow-Aggression2_18
+  rotate: false
+  xy: 2, 1120
+  size: 224, 182
+  orig: 352, 317
+  offset: 29, 48
+  index: -1
+Tuskosaurus-Yellow-Aggression2_19
+  rotate: false
+  xy: 2, 1304
+  size: 221, 186
+  orig: 352, 317
+  offset: 31, 46
+  index: -1
+Tuskosaurus-Yellow-Aggression2_20
+  rotate: false
+  xy: 2, 1687
+  size: 219, 192
+  orig: 352, 317
+  offset: 34, 41
+  index: -1
+Tuskosaurus-Yellow-Aggression2_21
+  rotate: false
+  xy: 2, 1492
+  size: 218, 193
+  orig: 352, 317
+  offset: 36, 39
+  index: -1
+Tuskosaurus-Yellow-Aggression2_22
+  rotate: false
+  xy: 2, 570
+  size: 219, 182
+  orig: 352, 317
+  offset: 35, 48
+  index: -1
+Tuskosaurus-Yellow-Aggression2_23
+  rotate: false
+  xy: 2, 754
+  size: 218, 184
+  orig: 352, 317
+  offset: 37, 45
+  index: -1
+Tuskosaurus-Yellow-Aggression2_24
+  rotate: false
+  xy: 2, 393
+  size: 220, 175
+  orig: 352, 317
+  offset: 34, 51
+  index: -1
+Tuskosaurus-Yellow-Attack1_05
+  rotate: false
+  xy: 1186, 1184
+  size: 122, 159
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_10
+  rotate: false
+  xy: 1189, 856
+  size: 119, 162
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_12
+  rotate: false
+  xy: 1185, 1020
+  size: 123, 162
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_16
+  rotate: false
+  xy: 715, 421
+  size: 213, 149
+  orig: 352, 317
+  offset: 42, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_02
+  rotate: false
+  xy: 2, 1881
+  size: 251, 165
+  orig: 352, 317
+  offset: 15, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_03
+  rotate: false
+  xy: 1051, 1898
+  size: 254, 148
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_04
+  rotate: false
+  xy: 784, 1905
+  size: 265, 141
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_05
+  rotate: false
+  xy: 255, 1895
+  size: 265, 151
+  orig: 352, 317
+  offset: 11, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_06
+  rotate: false
+  xy: 522, 1895
+  size: 260, 151
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_07
+  rotate: false
+  xy: 1307, 1897
+  size: 250, 149
+  orig: 352, 317
+  offset: 14, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_03
+  rotate: false
+  xy: 1395, 295
+  size: 191, 140
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-DamageBack_01
+  rotate: false
+  xy: 951, 572
+  size: 202, 176
+  orig: 352, 317
+  offset: 42, 59
+  index: -1
+Tuskosaurus-Yellow-DamageFront_1
+  rotate: false
+  xy: 1588, 210
+  size: 203, 141
+  orig: 352, 317
+  offset: 31, 66
+  index: -1
+Tuskosaurus-Yellow-DieBack_10
+  rotate: false
+  xy: 455, 1283
+  size: 249, 77
+  orig: 352, 317
+  offset: 18, 59
+  index: -1
+Tuskosaurus-Yellow-DieBack_11
+  rotate: false
+  xy: 255, 1817
+  size: 255, 76
+  orig: 352, 317
+  offset: 13, 52
+  index: -1
+Tuskosaurus-Yellow-DieBack_12
+  rotate: false
+  xy: 1550, 1811
+  size: 252, 76
+  orig: 352, 317
+  offset: 16, 58
+  index: -1
+Tuskosaurus-Yellow-DieBack_13
+  rotate: false
+  xy: 1798, 1516
+  size: 247, 78
+  orig: 352, 317
+  offset: 20, 64
+  index: -1
+Tuskosaurus-Yellow-DieBack_14
+  rotate: false
+  xy: 1797, 1436
+  size: 249, 78
+  orig: 352, 317
+  offset: 18, 60
+  index: -1
+Tuskosaurus-Yellow-DieFront_01
+  rotate: false
+  xy: 695, 110
+  size: 218, 163
+  orig: 352, 317
+  offset: 41, 57
+  index: -1
+Tuskosaurus-Yellow-DieFront_02
+  rotate: false
+  xy: 231, 1005
+  size: 215, 172
+  orig: 352, 317
+  offset: 44, 58
+  index: -1
+Tuskosaurus-Yellow-DieFront_03
+  rotate: false
+  xy: 1588, 353
+  size: 203, 175
+  orig: 352, 317
+  offset: 49, 60
+  index: -1
+Tuskosaurus-Yellow-DieFront_04
+  rotate: false
+  xy: 1151, 110
+  size: 189, 183
+  orig: 352, 317
+  offset: 58, 59
+  index: -1
+Tuskosaurus-Yellow-DieFront_08
+  rotate: false
+  xy: 453, 1160
+  size: 246, 121
+  orig: 352, 317
+  offset: 92, 58
+  index: -1
+Tuskosaurus-Yellow-DieFront_09
+  rotate: false
+  xy: 512, 1807
+  size: 254, 86
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Yellow-DieFront_10
+  rotate: false
+  xy: 784, 1809
+  size: 254, 94
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Yellow-DieFront_11
+  rotate: false
+  xy: 222, 754
+  size: 254, 95
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Yellow-DieFront_12
+  rotate: false
+  xy: 1040, 1808
+  size: 254, 88
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Yellow-DieFront_13
+  rotate: false
+  xy: 1296, 1813
+  size: 252, 82
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Yellow-DieFront_14
+  rotate: false
+  xy: 1296, 1729
+  size: 252, 82
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Yellow-DieFront_15
+  rotate: false
+  xy: 1550, 1727
+  size: 252, 82
+  orig: 352, 317
+  offset: 98, 54
+  index: -1
+Tuskosaurus-Yellow-Fall_02
+  rotate: false
+  xy: 156, 4
+  size: 153, 213
+  orig: 352, 317
+  offset: 85, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_03
+  rotate: false
+  xy: 2, 2
+  size: 152, 215
+  orig: 352, 317
+  offset: 88, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_04
+  rotate: false
+  xy: 311, 56
+  size: 149, 217
+  orig: 352, 317
+  offset: 91, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_05
+  rotate: false
+  xy: 1398, 531
+  size: 149, 217
+  orig: 352, 317
+  offset: 92, 97
+  index: -1
+Tuskosaurus-Yellow-Fall_08
+  rotate: false
+  xy: 1513, 2
+  size: 175, 206
+  orig: 352, 317
+  offset: 67, 96
+  index: -1
+Tuskosaurus-Yellow-FlyBack_01
+  rotate: false
+  xy: 1188, 1373
+  size: 120, 125
+  orig: 352, 317
+  offset: 94, 81
+  index: -1
+Tuskosaurus-Yellow-FlyFront_09
+  rotate: false
+  xy: 1342, 110
+  size: 169, 183
+  orig: 352, 317
+  offset: 49, 79
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_03
+  rotate: false
+  xy: 699, 275
+  size: 219, 144
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_03
+  rotate: false
+  xy: 930, 421
+  size: 220, 149
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_08
+  rotate: false
+  xy: 920, 275
+  size: 229, 144
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_14
+  rotate: false
+  xy: 1310, 1436
+  size: 238, 138
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_15
+  rotate: false
+  xy: 1690, 2
+  size: 239, 137
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_19
+  rotate: false
+  xy: 1310, 893
+  size: 237, 134
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Idle2_06
+  rotate: false
+  xy: 1310, 1296
+  size: 238, 138
+  orig: 352, 317
+  offset: 12, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_09
+  rotate: false
+  xy: 701, 1070
+  size: 240, 132
+  orig: 352, 317
+  offset: 8, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_10
+  rotate: false
+  xy: 1310, 1164
+  size: 238, 130
+  orig: 352, 317
+  offset: 9, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_32
+  rotate: false
+  xy: 1310, 1029
+  size: 238, 133
+  orig: 352, 317
+  offset: 10, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_33
+  rotate: false
+  xy: 704, 1363
+  size: 240, 136
+  orig: 352, 317
+  offset: 8, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_34
+  rotate: false
+  xy: 1804, 1596
+  size: 242, 138
+  orig: 352, 317
+  offset: 7, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_35
+  rotate: false
+  xy: 1152, 295
+  size: 241, 140
+  orig: 352, 317
+  offset: 9, 58
+  index: -1
+Tuskosaurus-Yellow-Idle3_16
+  rotate: false
+  xy: 721, 695
+  size: 228, 124
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_29
+  rotate: false
+  xy: 1310, 750
+  size: 237, 141
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_30
+  rotate: false
+  xy: 460, 275
+  size: 237, 144
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Yellow-Land_03
+  rotate: false
+  xy: 915, 110
+  size: 229, 163
+  orig: 352, 317
+  offset: 17, 60
+  index: -1
+Tuskosaurus-Yellow-Land_04
+  rotate: false
+  xy: 1010, 1654
+  size: 240, 152
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Yellow-Land_05
+  rotate: false
+  xy: 1793, 296
+  size: 241, 140
+  orig: 352, 317
+  offset: 6, 56
+  index: -1
+Tuskosaurus-Yellow-Land_09
+  rotate: false
+  xy: 716, 572
+  size: 227, 121
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Roll_01
+  rotate: false
+  xy: 1398, 441
+  size: 120, 88
+  orig: 352, 317
+  offset: 125, 63
+  index: -1
+Tuskosaurus-Yellow-Roll_06
+  rotate: false
+  xy: 1198, 1545
+  size: 110, 107
+  orig: 352, 317
+  offset: 111, 65
+  index: -1
+Tuskosaurus-Yellow-Roll_09
+  rotate: false
+  xy: 1310, 2
+  size: 110, 106
+  orig: 352, 317
+  offset: 119, 69
+  index: -1
+Tuskosaurus-Yellow-Roll_10
+  rotate: false
+  xy: 1931, 18
+  size: 102, 121
+  orig: 352, 317
+  offset: 128, 66
+  index: -1
+Tuskosaurus-Yellow-Roll_13
+  rotate: false
+  xy: 1189, 754
+  size: 116, 100
+  orig: 352, 317
+  offset: 125, 60
+  index: -1
+Tuskosaurus-Yellow-Run_00
+  rotate: false
+  xy: 1797, 1311
+  size: 245, 123
+  orig: 352, 317
+  offset: 8, 82
+  index: -1
+Tuskosaurus-Yellow-Run_12
+  rotate: false
+  xy: 1797, 1311
+  size: 245, 123
+  orig: 352, 317
+  offset: 8, 82
+  index: -1
+Tuskosaurus-Yellow-Run_01
+  rotate: false
+  xy: 468, 572
+  size: 246, 121
+  orig: 352, 317
+  offset: 8, 81
+  index: -1
+Tuskosaurus-Yellow-Run_02
+  rotate: false
+  xy: 1797, 1050
+  size: 244, 123
+  orig: 352, 317
+  offset: 11, 76
+  index: -1
+Tuskosaurus-Yellow-Run_03
+  rotate: false
+  xy: 943, 1059
+  size: 240, 130
+  orig: 352, 317
+  offset: 15, 66
+  index: -1
+Tuskosaurus-Yellow-Run_04
+  rotate: false
+  xy: 1549, 530
+  size: 242, 136
+  orig: 352, 317
+  offset: 13, 61
+  index: -1
+Tuskosaurus-Yellow-Run_05
+  rotate: false
+  xy: 1550, 1433
+  size: 245, 138
+  orig: 352, 317
+  offset: 10, 63
+  index: -1
+Tuskosaurus-Yellow-Run_06
+  rotate: false
+  xy: 223, 1679
+  size: 247, 136
+  orig: 352, 317
+  offset: 7, 67
+  index: -1
+Tuskosaurus-Yellow-Run_07
+  rotate: false
+  xy: 472, 1670
+  size: 247, 135
+  orig: 352, 317
+  offset: 7, 70
+  index: -1
+Tuskosaurus-Yellow-Run_08
+  rotate: false
+  xy: 467, 421
+  size: 246, 149
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Yellow-Run_09
+  rotate: false
+  xy: 1794, 591
+  size: 243, 150
+  orig: 352, 317
+  offset: 11, 57
+  index: -1
+Tuskosaurus-Yellow-Run_10
+  rotate: false
+  xy: 1550, 1282
+  size: 245, 149
+  orig: 352, 317
+  offset: 9, 57
+  index: -1
+Tuskosaurus-Yellow-Run_11
+  rotate: false
+  xy: 1797, 1175
+  size: 245, 134
+  orig: 352, 317
+  offset: 8, 71
+  index: -1
+Tuskosaurus-Yellow-Sleep_07
+  rotate: false
+  xy: 462, 2
+  size: 211, 106
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_08
+  rotate: false
+  xy: 675, 2
+  size: 211, 106
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_11
+  rotate: false
+  xy: 888, 2
+  size: 209, 106
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_12
+  rotate: false
+  xy: 1099, 2
+  size: 209, 106
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_11
+  rotate: false
+  xy: 222, 1518
+  size: 241, 159
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_12
+  rotate: false
+  xy: 1559, 1889
+  size: 247, 157
+  orig: 352, 317
+  offset: 3, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_13
+  rotate: false
+  xy: 223, 597
+  size: 243, 155
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_14
+  rotate: false
+  xy: 714, 1501
+  size: 240, 153
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_15
+  rotate: false
+  xy: 956, 1500
+  size: 240, 152
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_16
+  rotate: false
+  xy: 946, 1345
+  size: 240, 153
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_17
+  rotate: false
+  xy: 1155, 593
+  size: 241, 155
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_18
+  rotate: false
+  xy: 1808, 1736
+  size: 238, 152
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_20
+  rotate: false
+  xy: 1550, 974
+  size: 244, 152
+  orig: 352, 317
+  offset: 8, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_21
+  rotate: false
+  xy: 1550, 1128
+  size: 245, 152
+  orig: 352, 317
+  offset: 7, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_22
+  rotate: false
+  xy: 1550, 1573
+  size: 246, 152
+  orig: 352, 317
+  offset: 6, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_23
+  rotate: false
+  xy: 465, 1516
+  size: 247, 152
+  orig: 352, 317
+  offset: 6, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_24
+  rotate: false
+  xy: 455, 1362
+  size: 247, 152
+  orig: 352, 317
+  offset: 7, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_25
+  rotate: false
+  xy: 1796, 896
+  size: 244, 152
+  orig: 352, 317
+  offset: 10, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_26
+  rotate: false
+  xy: 944, 1191
+  size: 240, 152
+  orig: 352, 317
+  offset: 14, 56
+  index: -1
+
+Tuskosaurus-Yellow2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Yellow-Aggression1_05
+  rotate: false
+  xy: 2, 1888
+  size: 235, 158
+  orig: 352, 317
+  offset: 15, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_06
+  rotate: false
+  xy: 239, 1889
+  size: 234, 157
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_13
+  rotate: false
+  xy: 2, 1395
+  size: 231, 161
+  orig: 352, 317
+  offset: 23, 48
+  index: -1
+Tuskosaurus-Yellow-Aggression1_16
+  rotate: false
+  xy: 475, 1891
+  size: 236, 155
+  orig: 352, 317
+  offset: 15, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_19
+  rotate: false
+  xy: 466, 1596
+  size: 232, 152
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_01
+  rotate: false
+  xy: 490, 1079
+  size: 218, 151
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_02
+  rotate: false
+  xy: 710, 1441
+  size: 222, 151
+  orig: 352, 317
+  offset: 33, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_03
+  rotate: false
+  xy: 1394, 53
+  size: 226, 151
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_04
+  rotate: false
+  xy: 1169, 603
+  size: 230, 151
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_05
+  rotate: false
+  xy: 1664, 1895
+  size: 233, 151
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_14
+  rotate: false
+  xy: 2, 899
+  size: 222, 164
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_15
+  rotate: false
+  xy: 495, 349
+  size: 210, 171
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_25
+  rotate: false
+  xy: 2, 730
+  size: 219, 167
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_26
+  rotate: false
+  xy: 2, 1065
+  size: 222, 165
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_27
+  rotate: false
+  xy: 2, 1558
+  size: 229, 162
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_28
+  rotate: false
+  xy: 713, 1890
+  size: 234, 156
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_29
+  rotate: false
+  xy: 1190, 1894
+  size: 235, 152
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_30
+  rotate: false
+  xy: 700, 1594
+  size: 232, 152
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_31
+  rotate: false
+  xy: 1169, 756
+  size: 228, 152
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_00
+  rotate: false
+  xy: 495, 802
+  size: 213, 151
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_16
+  rotate: false
+  xy: 495, 802
+  size: 213, 151
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_00
+  rotate: false
+  xy: 495, 802
+  size: 213, 151
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_17
+  rotate: false
+  xy: 495, 802
+  size: 213, 151
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_07
+  rotate: false
+  xy: 233, 1593
+  size: 231, 155
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_08
+  rotate: false
+  xy: 1169, 910
+  size: 228, 155
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_09
+  rotate: false
+  xy: 1852, 2
+  size: 190, 158
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_03
+  rotate: false
+  xy: 521, 160
+  size: 184, 187
+  orig: 352, 317
+  offset: 74, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_05
+  rotate: false
+  xy: 1899, 1877
+  size: 145, 169
+  orig: 352, 317
+  offset: 112, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_07
+  rotate: false
+  xy: 1863, 162
+  size: 181, 162
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_08
+  rotate: false
+  xy: 1863, 594
+  size: 183, 160
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_14
+  rotate: false
+  xy: 175, 146
+  size: 181, 195
+  orig: 352, 317
+  offset: 77, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_01
+  rotate: false
+  xy: 2, 1722
+  size: 229, 164
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_08
+  rotate: false
+  xy: 934, 576
+  size: 231, 150
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Yellow-Attack4_03
+  rotate: false
+  xy: 234, 1232
+  size: 140, 161
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_05
+  rotate: false
+  xy: 223, 730
+  size: 138, 167
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Confused_05
+  rotate: false
+  xy: 520, 662
+  size: 188, 138
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_09
+  rotate: false
+  xy: 1863, 460
+  size: 182, 132
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_12
+  rotate: false
+  xy: 1863, 326
+  size: 182, 132
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_16
+  rotate: false
+  xy: 520, 522
+  size: 188, 138
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Yellow-DamageBack_02
+  rotate: false
+  xy: 358, 146
+  size: 161, 195
+  orig: 352, 317
+  offset: 54, 58
+  index: -1
+Tuskosaurus-Yellow-DamageBack_03
+  rotate: false
+  xy: 381, 1395
+  size: 142, 196
+  orig: 352, 317
+  offset: 67, 66
+  index: -1
+Tuskosaurus-Yellow-DamageBack_05
+  rotate: false
+  xy: 235, 1395
+  size: 144, 196
+  orig: 352, 317
+  offset: 64, 66
+  index: -1
+Tuskosaurus-Yellow-DamageBack_06
+  rotate: false
+  xy: 1899, 1682
+  size: 145, 193
+  orig: 352, 317
+  offset: 62, 67
+  index: -1
+Tuskosaurus-Yellow-DamageBack_07
+  rotate: false
+  xy: 365, 554
+  size: 153, 191
+  orig: 352, 317
+  offset: 54, 70
+  index: -1
+Tuskosaurus-Yellow-DamageBack_09
+  rotate: false
+  xy: 376, 1232
+  size: 214, 161
+  orig: 352, 317
+  offset: 39, 58
+  index: -1
+Tuskosaurus-Yellow-DieBack_02
+  rotate: false
+  xy: 226, 994
+  size: 112, 236
+  orig: 352, 317
+  offset: 116, 3
+  index: -1
+Tuskosaurus-Yellow-DieBack_09
+  rotate: false
+  xy: 949, 1794
+  size: 239, 101
+  orig: 352, 317
+  offset: 25, 78
+  index: -1
+Tuskosaurus-Yellow-DieFront_05
+  rotate: false
+  xy: 1867, 832
+  size: 179, 190
+  orig: 352, 317
+  offset: 70, 55
+  index: -1
+Tuskosaurus-Yellow-Fall_00
+  rotate: false
+  xy: 177, 343
+  size: 157, 209
+  orig: 352, 317
+  offset: 79, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_14
+  rotate: false
+  xy: 177, 343
+  size: 157, 209
+  orig: 352, 317
+  offset: 79, 96
+  index: -1
+Tuskosaurus-Yellow-Land_00
+  rotate: false
+  xy: 177, 343
+  size: 157, 209
+  orig: 352, 317
+  offset: 79, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_06
+  rotate: false
+  xy: 340, 1013
+  size: 148, 217
+  orig: 352, 317
+  offset: 94, 97
+  index: -1
+Tuskosaurus-Yellow-Fall_09
+  rotate: false
+  xy: 2, 344
+  size: 173, 208
+  orig: 352, 317
+  offset: 68, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_10
+  rotate: false
+  xy: 2, 135
+  size: 171, 207
+  orig: 352, 317
+  offset: 69, 97
+  index: -1
+Tuskosaurus-Yellow-Fall_12
+  rotate: false
+  xy: 1886, 1212
+  size: 160, 211
+  orig: 352, 317
+  offset: 78, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_13
+  rotate: false
+  xy: 336, 343
+  size: 157, 209
+  orig: 352, 317
+  offset: 80, 96
+  index: -1
+Tuskosaurus-Yellow-FlyBack_04
+  rotate: false
+  xy: 363, 860
+  size: 125, 151
+  orig: 352, 317
+  offset: 92, 62
+  index: -1
+Tuskosaurus-Yellow-FlyFront_04
+  rotate: false
+  xy: 1882, 1024
+  size: 164, 186
+  orig: 352, 317
+  offset: 54, 76
+  index: -1
+Tuskosaurus-Yellow-FlyUp_01
+  rotate: false
+  xy: 1895, 1425
+  size: 151, 181
+  orig: 352, 317
+  offset: 94, 61
+  index: -1
+Tuskosaurus-Yellow-FlyUp_05
+  rotate: false
+  xy: 213, 554
+  size: 150, 174
+  orig: 352, 317
+  offset: 95, 59
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_06
+  rotate: false
+  xy: 710, 1301
+  size: 222, 138
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_07
+  rotate: false
+  xy: 710, 1162
+  size: 222, 137
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_08
+  rotate: false
+  xy: 710, 1026
+  size: 222, 134
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_10
+  rotate: false
+  xy: 710, 894
+  size: 222, 130
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_13
+  rotate: false
+  xy: 490, 955
+  size: 218, 122
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_06
+  rotate: false
+  xy: 707, 146
+  size: 225, 146
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_09
+  rotate: false
+  xy: 934, 431
+  size: 231, 143
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_10
+  rotate: false
+  xy: 1399, 899
+  size: 232, 142
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_11
+  rotate: false
+  xy: 1407, 1043
+  size: 233, 141
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_12
+  rotate: false
+  xy: 1190, 1752
+  size: 235, 140
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_13
+  rotate: false
+  xy: 475, 1750
+  size: 236, 139
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_16
+  rotate: false
+  xy: 949, 1656
+  size: 239, 136
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_17
+  rotate: false
+  xy: 1427, 1614
+  size: 239, 135
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_18
+  rotate: false
+  xy: 934, 1519
+  size: 239, 135
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_20
+  rotate: false
+  xy: 1657, 1472
+  size: 236, 134
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_21
+  rotate: false
+  xy: 1190, 1616
+  size: 235, 134
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_22
+  rotate: false
+  xy: 1171, 1067
+  size: 234, 135
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_23
+  rotate: false
+  xy: 1398, 338
+  size: 231, 136
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_24
+  rotate: false
+  xy: 1631, 329
+  size: 230, 137
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_25
+  rotate: false
+  xy: 1668, 1608
+  size: 229, 139
+  orig: 352, 317
+  offset: 27, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_28
+  rotate: false
+  xy: 941, 2
+  size: 225, 143
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_29
+  rotate: false
+  xy: 710, 747
+  size: 222, 145
+  orig: 352, 317
+  offset: 33, 56
+  index: -1
+Tuskosaurus-Yellow-Idle2_03
+  rotate: false
+  xy: 1668, 1749
+  size: 229, 144
+  orig: 352, 317
+  offset: 23, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_04
+  rotate: false
+  xy: 475, 2
+  size: 233, 142
+  orig: 352, 317
+  offset: 19, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_05
+  rotate: false
+  xy: 934, 1377
+  size: 236, 140
+  orig: 352, 317
+  offset: 15, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_07
+  rotate: false
+  xy: 1175, 1478
+  size: 239, 136
+  orig: 352, 317
+  offset: 10, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_08
+  rotate: false
+  xy: 1416, 1478
+  size: 239, 134
+  orig: 352, 317
+  offset: 9, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_11
+  rotate: false
+  xy: 1172, 1349
+  size: 236, 127
+  orig: 352, 317
+  offset: 10, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_12
+  rotate: false
+  xy: 934, 982
+  size: 233, 125
+  orig: 352, 317
+  offset: 12, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_13
+  rotate: false
+  xy: 1631, 204
+  size: 230, 123
+  orig: 352, 317
+  offset: 15, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_29
+  rotate: false
+  xy: 1401, 476
+  size: 229, 134
+  orig: 352, 317
+  offset: 16, 51
+  index: -1
+Tuskosaurus-Yellow-Idle2_31
+  rotate: false
+  xy: 1399, 765
+  size: 232, 132
+  orig: 352, 317
+  offset: 14, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_36
+  rotate: false
+  xy: 1427, 1751
+  size: 239, 142
+  orig: 352, 317
+  offset: 12, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_37
+  rotate: false
+  xy: 1410, 1332
+  size: 236, 144
+  orig: 352, 317
+  offset: 16, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_38
+  rotate: false
+  xy: 934, 147
+  size: 230, 145
+  orig: 352, 317
+  offset: 23, 58
+  index: -1
+Tuskosaurus-Yellow-Idle3_01
+  rotate: false
+  xy: 710, 596
+  size: 222, 149
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_02
+  rotate: false
+  xy: 1622, 55
+  size: 228, 147
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_03
+  rotate: false
+  xy: 1647, 1182
+  size: 233, 146
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_04
+  rotate: false
+  xy: 1410, 1186
+  size: 235, 144
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_05
+  rotate: false
+  xy: 237, 2
+  size: 236, 142
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_06
+  rotate: false
+  xy: 1648, 1330
+  size: 236, 140
+  orig: 352, 317
+  offset: 16, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_07
+  rotate: false
+  xy: 239, 1750
+  size: 234, 137
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_08
+  rotate: false
+  xy: 933, 294
+  size: 230, 135
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_09
+  rotate: false
+  xy: 1633, 756
+  size: 232, 132
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_10
+  rotate: false
+  xy: 1398, 206
+  size: 231, 130
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_17
+  rotate: false
+  xy: 1167, 320
+  size: 229, 125
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_20
+  rotate: false
+  xy: 934, 855
+  size: 233, 125
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_21
+  rotate: false
+  xy: 934, 728
+  size: 233, 125
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_23
+  rotate: false
+  xy: 934, 1109
+  size: 235, 126
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_25
+  rotate: false
+  xy: 2, 2
+  size: 233, 131
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_26
+  rotate: false
+  xy: 1632, 468
+  size: 229, 134
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_28
+  rotate: false
+  xy: 934, 1237
+  size: 236, 138
+  orig: 352, 317
+  offset: 17, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_31
+  rotate: false
+  xy: 1642, 1034
+  size: 233, 146
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Yellow-Jump2_1
+  rotate: false
+  xy: 710, 455
+  size: 222, 139
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_01
+  rotate: false
+  xy: 710, 455
+  size: 222, 139
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_09
+  rotate: false
+  xy: 1166, 147
+  size: 207, 171
+  orig: 352, 317
+  offset: 46, 58
+  index: -1
+Tuskosaurus-Yellow-Jump_10
+  rotate: false
+  xy: 707, 294
+  size: 224, 159
+  orig: 352, 317
+  offset: 31, 55
+  index: -1
+Tuskosaurus-Yellow-Jump_11
+  rotate: false
+  xy: 1167, 447
+  size: 229, 154
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_12
+  rotate: false
+  xy: 1632, 604
+  size: 229, 150
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Yellow-Land_01
+  rotate: false
+  xy: 525, 1400
+  size: 183, 192
+  orig: 352, 317
+  offset: 58, 81
+  index: -1
+Tuskosaurus-Yellow-Land_02
+  rotate: false
+  xy: 2, 554
+  size: 209, 174
+  orig: 352, 317
+  offset: 35, 70
+  index: -1
+Tuskosaurus-Yellow-Roll_07
+  rotate: false
+  xy: 363, 761
+  size: 122, 97
+  orig: 352, 317
+  offset: 107, 70
+  index: -1
+Tuskosaurus-Yellow-Roll_12
+  rotate: false
+  xy: 592, 1282
+  size: 104, 116
+  orig: 352, 317
+  offset: 134, 57
+  index: -1
+Tuskosaurus-Yellow-WakeUp_10
+  rotate: false
+  xy: 2, 1232
+  size: 230, 161
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_19
+  rotate: false
+  xy: 949, 1897
+  size: 239, 149
+  orig: 352, 317
+  offset: 12, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_27
+  rotate: false
+  xy: 1427, 1895
+  size: 235, 151
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_28
+  rotate: false
+  xy: 1401, 612
+  size: 229, 151
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Yellow-Walk_03
+  rotate: false
+  xy: 710, 2
+  size: 229, 142
+  orig: 352, 317
+  offset: 24, 58
+  index: -1
+Tuskosaurus-Yellow-Walk_04
+  rotate: false
+  xy: 1633, 890
+  size: 232, 142
+  orig: 352, 317
+  offset: 20, 58
+  index: -1
+Tuskosaurus-Yellow-Walk_05
+  rotate: false
+  xy: 1172, 1204
+  size: 236, 143
+  orig: 352, 317
+  offset: 16, 58
+  index: -1
+Tuskosaurus-Yellow-Walk_06
+  rotate: false
+  xy: 713, 1748
+  size: 234, 140
+  orig: 352, 317
+  offset: 17, 62
+  index: -1
+Tuskosaurus-Yellow-Walk_08
+  rotate: false
+  xy: 1168, 2
+  size: 224, 143
+  orig: 352, 317
+  offset: 26, 60
+  index: -1
+
+Tuskosaurus-Yellow3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Yellow-Aggression1_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression1_20
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_34
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Attack3_09
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-DamageBack_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-DamageBack_10
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-DamageFront_0
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-DamageFront_6
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-DieBack_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-DieFront_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_34
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Idle2_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Idle2_40
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_34
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Jump2_0
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_00
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_17
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Land_14
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_30
+  rotate: false
+  xy: 880, 827
+  size: 214, 151
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_32
+  rotate: false
+  xy: 1593, 968
+  size: 223, 152
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Yellow-Aggression2_33
+  rotate: false
+  xy: 1331, 817
+  size: 217, 151
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_14
+  rotate: false
+  xy: 221, 663
+  size: 215, 155
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_15
+  rotate: false
+  xy: 662, 907
+  size: 216, 151
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_01
+  rotate: false
+  xy: 1508, 413
+  size: 206, 145
+  orig: 352, 317
+  offset: 51, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_04
+  rotate: false
+  xy: 489, 4
+  size: 165, 185
+  orig: 352, 317
+  offset: 93, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_09
+  rotate: false
+  xy: 1862, 1735
+  size: 184, 156
+  orig: 352, 317
+  offset: 120, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_10
+  rotate: false
+  xy: 1863, 1893
+  size: 181, 153
+  orig: 352, 317
+  offset: 121, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_12
+  rotate: false
+  xy: 1150, 255
+  size: 138, 152
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_13
+  rotate: false
+  xy: 489, 191
+  size: 148, 184
+  orig: 352, 317
+  offset: 110, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_00
+  rotate: false
+  xy: 1851, 1400
+  size: 194, 144
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_20
+  rotate: false
+  xy: 1851, 1400
+  size: 194, 144
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-DamageBack_04
+  rotate: false
+  xy: 1289, 11
+  size: 143, 196
+  orig: 352, 317
+  offset: 66, 66
+  index: -1
+Tuskosaurus-Yellow-DamageBack_08
+  rotate: false
+  xy: 1858, 1546
+  size: 187, 187
+  orig: 352, 317
+  offset: 41, 57
+  index: -1
+Tuskosaurus-Yellow-DamageFront_4
+  rotate: false
+  xy: 866, 349
+  size: 208, 145
+  orig: 352, 317
+  offset: 30, 63
+  index: -1
+Tuskosaurus-Yellow-DamageFront_5
+  rotate: false
+  xy: 2, 664
+  size: 215, 151
+  orig: 352, 317
+  offset: 36, 57
+  index: -1
+Tuskosaurus-Yellow-DieBack_08
+  rotate: false
+  xy: 645, 308
+  size: 208, 115
+  orig: 352, 317
+  offset: 50, 90
+  index: -1
+Tuskosaurus-Yellow-Fall_01
+  rotate: false
+  xy: 165, 8
+  size: 155, 211
+  orig: 352, 317
+  offset: 82, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_07
+  rotate: false
+  xy: 2, 6
+  size: 161, 213
+  orig: 352, 317
+  offset: 81, 96
+  index: -1
+Tuskosaurus-Yellow-Fall_11
+  rotate: false
+  xy: 322, 88
+  size: 165, 210
+  orig: 352, 317
+  offset: 74, 96
+  index: -1
+Tuskosaurus-Yellow-FlyBack_02
+  rotate: false
+  xy: 1924, 312
+  size: 122, 132
+  orig: 352, 317
+  offset: 93, 76
+  index: -1
+Tuskosaurus-Yellow-FlyBack_06
+  rotate: false
+  xy: 950, 193
+  size: 126, 154
+  orig: 352, 317
+  offset: 92, 60
+  index: -1
+Tuskosaurus-Yellow-FlyFront_00
+  rotate: false
+  xy: 1434, 15
+  size: 155, 192
+  orig: 352, 317
+  offset: 61, 67
+  index: -1
+Tuskosaurus-Yellow-FlyFront_14
+  rotate: false
+  xy: 1434, 15
+  size: 155, 192
+  orig: 352, 317
+  offset: 61, 67
+  index: -1
+Tuskosaurus-Yellow-FlyFront_01
+  rotate: false
+  xy: 1591, 2
+  size: 158, 190
+  orig: 352, 317
+  offset: 59, 70
+  index: -1
+Tuskosaurus-Yellow-FlyFront_03
+  rotate: false
+  xy: 823, 3
+  size: 162, 188
+  orig: 352, 317
+  offset: 55, 74
+  index: -1
+Tuskosaurus-Yellow-FlyFront_05
+  rotate: false
+  xy: 656, 5
+  size: 165, 184
+  orig: 352, 317
+  offset: 53, 79
+  index: -1
+Tuskosaurus-Yellow-FlyFront_12
+  rotate: false
+  xy: 987, 3
+  size: 161, 188
+  orig: 352, 317
+  offset: 56, 72
+  index: -1
+Tuskosaurus-Yellow-FlyUp_08
+  rotate: false
+  xy: 1150, 78
+  size: 137, 175
+  orig: 352, 317
+  offset: 108, 58
+  index: -1
+Tuskosaurus-Yellow-FlyUp_11
+  rotate: false
+  xy: 1907, 133
+  size: 139, 177
+  orig: 352, 317
+  offset: 106, 61
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_01
+  rotate: false
+  xy: 443, 816
+  size: 216, 149
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_02
+  rotate: false
+  xy: 890, 980
+  size: 219, 147
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_04
+  rotate: false
+  xy: 447, 1087
+  size: 220, 143
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_05
+  rotate: false
+  xy: 2, 1113
+  size: 221, 140
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_09
+  rotate: false
+  xy: 2, 1255
+  size: 223, 132
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_11
+  rotate: false
+  xy: 451, 1232
+  size: 221, 127
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_12
+  rotate: false
+  xy: 896, 1129
+  size: 220, 125
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_14
+  rotate: false
+  xy: 443, 967
+  size: 217, 118
+  orig: 352, 317
+  offset: 31, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_15
+  rotate: false
+  xy: 221, 820
+  size: 216, 114
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_16
+  rotate: false
+  xy: 2, 549
+  size: 215, 113
+  orig: 352, 317
+  offset: 33, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_17
+  rotate: false
+  xy: 877, 714
+  size: 214, 111
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_18
+  rotate: false
+  xy: 654, 643
+  size: 214, 110
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_19
+  rotate: false
+  xy: 219, 552
+  size: 213, 109
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Yellow-GotoSleep_20
+  rotate: false
+  xy: 219, 442
+  size: 212, 108
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_00
+  rotate: false
+  xy: 219, 442
+  size: 212, 108
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_20
+  rotate: false
+  xy: 219, 442
+  size: 212, 108
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_00
+  rotate: false
+  xy: 219, 442
+  size: 212, 108
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_01
+  rotate: false
+  xy: 1550, 816
+  size: 217, 150
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_02
+  rotate: false
+  xy: 1339, 970
+  size: 218, 149
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_04
+  rotate: false
+  xy: 1825, 989
+  size: 221, 147
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_05
+  rotate: false
+  xy: 1141, 1225
+  size: 224, 147
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_07
+  rotate: false
+  xy: 466, 1639
+  size: 228, 145
+  orig: 352, 317
+  offset: 29, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_26
+  rotate: false
+  xy: 234, 1519
+  size: 228, 140
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_27
+  rotate: false
+  xy: 1153, 1503
+  size: 226, 141
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_30
+  rotate: false
+  xy: 674, 1212
+  size: 220, 146
+  orig: 352, 317
+  offset: 35, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_31
+  rotate: false
+  xy: 1118, 1075
+  size: 219, 148
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_32
+  rotate: false
+  xy: 224, 936
+  size: 217, 149
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Idle1_33
+  rotate: false
+  xy: 661, 755
+  size: 214, 150
+  orig: 352, 317
+  offset: 40, 56
+  index: -1
+Tuskosaurus-Yellow-Idle2_01
+  rotate: false
+  xy: 225, 1087
+  size: 220, 147
+  orig: 352, 317
+  offset: 34, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_02
+  rotate: false
+  xy: 460, 1361
+  size: 225, 145
+  orig: 352, 317
+  offset: 28, 58
+  index: -1
+Tuskosaurus-Yellow-Idle2_14
+  rotate: false
+  xy: 1164, 1646
+  size: 227, 126
+  orig: 352, 317
+  offset: 17, 53
+  index: -1
+Tuskosaurus-Yellow-Idle2_15
+  rotate: false
+  xy: 919, 1385
+  size: 225, 129
+  orig: 352, 317
+  offset: 18, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_16
+  rotate: false
+  xy: 1146, 1374
+  size: 225, 127
+  orig: 352, 317
+  offset: 18, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_17
+  rotate: false
+  xy: 914, 1256
+  size: 225, 127
+  orig: 352, 317
+  offset: 18, 48
+  index: -1
+Tuskosaurus-Yellow-Idle2_18
+  rotate: false
+  xy: 687, 1360
+  size: 225, 128
+  orig: 352, 317
+  offset: 18, 48
+  index: -1
+Tuskosaurus-Yellow-Idle2_19
+  rotate: false
+  xy: 1381, 1401
+  size: 226, 130
+  orig: 352, 317
+  offset: 18, 48
+  index: -1
+Tuskosaurus-Yellow-Idle2_20
+  rotate: false
+  xy: 1171, 1774
+  size: 227, 130
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_21
+  rotate: false
+  xy: 1609, 1394
+  size: 226, 129
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_22
+  rotate: false
+  xy: 464, 1508
+  size: 226, 129
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_23
+  rotate: false
+  xy: 232, 1389
+  size: 226, 128
+  orig: 352, 317
+  offset: 17, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_24
+  rotate: false
+  xy: 935, 1666
+  size: 227, 129
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_25
+  rotate: false
+  xy: 1400, 1658
+  size: 227, 130
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_26
+  rotate: false
+  xy: 1629, 1649
+  size: 227, 130
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_27
+  rotate: false
+  xy: 1403, 1790
+  size: 227, 131
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_28
+  rotate: false
+  xy: 2, 1517
+  size: 228, 133
+  orig: 352, 317
+  offset: 16, 49
+  index: -1
+Tuskosaurus-Yellow-Idle2_30
+  rotate: false
+  xy: 2, 1652
+  size: 230, 136
+  orig: 352, 317
+  offset: 16, 51
+  index: -1
+Tuskosaurus-Yellow-Idle2_39
+  rotate: false
+  xy: 1818, 840
+  size: 223, 147
+  orig: 352, 317
+  offset: 31, 58
+  index: -1
+Tuskosaurus-Yellow-Idle3_11
+  rotate: false
+  xy: 237, 1789
+  size: 231, 128
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_12
+  rotate: false
+  xy: 234, 1661
+  size: 230, 126
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_13
+  rotate: false
+  xy: 1403, 1923
+  size: 228, 123
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_14
+  rotate: false
+  xy: 1622, 1525
+  size: 227, 122
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_15
+  rotate: false
+  xy: 1393, 1533
+  size: 227, 123
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_18
+  rotate: false
+  xy: 940, 1921
+  size: 230, 125
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_19
+  rotate: false
+  xy: 2, 1790
+  size: 231, 126
+  orig: 352, 317
+  offset: 22, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_22
+  rotate: false
+  xy: 472, 1920
+  size: 233, 126
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_24
+  rotate: false
+  xy: 2, 1918
+  size: 233, 128
+  orig: 352, 317
+  offset: 18, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_27
+  rotate: false
+  xy: 707, 1910
+  size: 231, 136
+  orig: 352, 317
+  offset: 21, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_32
+  rotate: false
+  xy: 925, 1516
+  size: 226, 148
+  orig: 352, 317
+  offset: 28, 56
+  index: -1
+Tuskosaurus-Yellow-Idle3_33
+  rotate: false
+  xy: 1769, 688
+  size: 217, 150
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Jump2_2
+  rotate: false
+  xy: 2, 1389
+  size: 226, 126
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_02
+  rotate: false
+  xy: 2, 1389
+  size: 226, 126
+  orig: 352, 317
+  offset: 23, 56
+  index: -1
+Tuskosaurus-Yellow-Jump2_3
+  rotate: false
+  xy: 1633, 1924
+  size: 228, 122
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_03
+  rotate: false
+  xy: 1633, 1924
+  size: 228, 122
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Jump2_4
+  rotate: false
+  xy: 1599, 1122
+  size: 224, 123
+  orig: 352, 317
+  offset: 22, 51
+  index: -1
+Tuskosaurus-Yellow-Jump_04
+  rotate: false
+  xy: 1599, 1122
+  size: 224, 123
+  orig: 352, 317
+  offset: 22, 51
+  index: -1
+Tuskosaurus-Yellow-Jump2_5
+  rotate: false
+  xy: 1703, 194
+  size: 202, 156
+  orig: 352, 317
+  offset: 43, 66
+  index: -1
+Tuskosaurus-Yellow-Jump_13
+  rotate: false
+  xy: 705, 1761
+  size: 228, 147
+  orig: 352, 317
+  offset: 26, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_14
+  rotate: false
+  xy: 692, 1490
+  size: 225, 147
+  orig: 352, 317
+  offset: 30, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_15
+  rotate: false
+  xy: 1825, 1138
+  size: 221, 148
+  orig: 352, 317
+  offset: 34, 56
+  index: -1
+Tuskosaurus-Yellow-Jump_16
+  rotate: false
+  xy: 669, 1060
+  size: 219, 150
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Land_06
+  rotate: false
+  xy: 237, 1919
+  size: 233, 127
+  orig: 352, 317
+  offset: 13, 56
+  index: -1
+Tuskosaurus-Yellow-Land_07
+  rotate: false
+  xy: 1367, 1121
+  size: 224, 123
+  orig: 352, 317
+  offset: 22, 52
+  index: -1
+Tuskosaurus-Yellow-Land_08
+  rotate: false
+  xy: 696, 1639
+  size: 227, 120
+  orig: 352, 317
+  offset: 20, 56
+  index: -1
+Tuskosaurus-Yellow-Land_10
+  rotate: false
+  xy: 940, 1797
+  size: 229, 122
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Land_11
+  rotate: false
+  xy: 472, 1786
+  size: 231, 132
+  orig: 352, 317
+  offset: 19, 56
+  index: -1
+Tuskosaurus-Yellow-Land_12
+  rotate: false
+  xy: 1633, 1781
+  size: 227, 141
+  orig: 352, 317
+  offset: 25, 56
+  index: -1
+Tuskosaurus-Yellow-Land_13
+  rotate: false
+  xy: 1111, 924
+  size: 218, 149
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Roll_03
+  rotate: false
+  xy: 1943, 446
+  size: 100, 116
+  orig: 352, 317
+  offset: 115, 58
+  index: -1
+Tuskosaurus-Yellow-Roll_04
+  rotate: false
+  xy: 1951, 564
+  size: 91, 122
+  orig: 352, 317
+  offset: 118, 55
+  index: -1
+Tuskosaurus-Yellow-Roll_05
+  rotate: false
+  xy: 639, 191
+  size: 100, 115
+  orig: 352, 317
+  offset: 114, 57
+  index: -1
+Tuskosaurus-Yellow-Roll_11
+  rotate: false
+  xy: 1950, 11
+  size: 89, 120
+  orig: 352, 317
+  offset: 137, 69
+  index: -1
+Tuskosaurus-Yellow-Sleep_01
+  rotate: false
+  xy: 2, 439
+  size: 212, 108
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_02
+  rotate: false
+  xy: 1312, 708
+  size: 212, 107
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_03
+  rotate: false
+  xy: 1093, 667
+  size: 212, 107
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_04
+  rotate: false
+  xy: 870, 605
+  size: 212, 107
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_05
+  rotate: false
+  xy: 653, 534
+  size: 212, 107
+  orig: 352, 317
+  offset: 36, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_06
+  rotate: false
+  xy: 1084, 558
+  size: 211, 107
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_09
+  rotate: false
+  xy: 1520, 560
+  size: 210, 105
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_10
+  rotate: false
+  xy: 1297, 491
+  size: 209, 105
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_13
+  rotate: false
+  xy: 1732, 470
+  size: 209, 107
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_14
+  rotate: false
+  xy: 2, 330
+  size: 210, 107
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_15
+  rotate: false
+  xy: 2, 221
+  size: 210, 107
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_16
+  rotate: false
+  xy: 1739, 579
+  size: 210, 107
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_17
+  rotate: false
+  xy: 867, 496
+  size: 211, 107
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_18
+  rotate: false
+  xy: 653, 425
+  size: 211, 107
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-Sleep_19
+  rotate: false
+  xy: 1307, 598
+  size: 211, 108
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_01
+  rotate: false
+  xy: 1837, 1288
+  size: 209, 110
+  orig: 352, 317
+  offset: 37, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_02
+  rotate: false
+  xy: 741, 193
+  size: 207, 113
+  orig: 352, 317
+  offset: 38, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_03
+  rotate: false
+  xy: 1716, 352
+  size: 206, 116
+  orig: 352, 317
+  offset: 39, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_07
+  rotate: false
+  xy: 1751, 2
+  size: 197, 129
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_08
+  rotate: false
+  xy: 216, 300
+  size: 210, 140
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_09
+  rotate: false
+  xy: 1373, 1246
+  size: 224, 153
+  orig: 352, 317
+  offset: 24, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_29
+  rotate: false
+  xy: 227, 1236
+  size: 222, 151
+  orig: 352, 317
+  offset: 32, 56
+  index: -1
+Tuskosaurus-Yellow-Walk_00
+  rotate: false
+  xy: 438, 667
+  size: 214, 147
+  orig: 352, 317
+  offset: 40, 60
+  index: -1
+Tuskosaurus-Yellow-Walk_01
+  rotate: false
+  xy: 2, 964
+  size: 220, 147
+  orig: 352, 317
+  offset: 34, 58
+  index: -1
+Tuskosaurus-Yellow-Walk_02
+  rotate: false
+  xy: 1599, 1247
+  size: 224, 145
+  orig: 352, 317
+  offset: 29, 57
+  index: -1
+Tuskosaurus-Yellow-Walk_07
+  rotate: false
+  xy: 1172, 1906
+  size: 229, 140
+  orig: 352, 317
+  offset: 22, 63
+  index: -1
+Tuskosaurus-Yellow-Walk_09
+  rotate: false
+  xy: 2, 817
+  size: 217, 145
+  orig: 352, 317
+  offset: 32, 57
+  index: -1
+Tuskosaurus-Yellow-Walk_10
+  rotate: false
+  xy: 433, 377
+  size: 210, 142
+  orig: 352, 317
+  offset: 39, 58
+  index: -1
+Tuskosaurus-Yellow-Walk_11
+  rotate: false
+  xy: 1290, 209
+  size: 203, 134
+  orig: 352, 317
+  offset: 46, 64
+  index: -1
+Tuskosaurus-Yellow-Walk_18
+  rotate: false
+  xy: 1498, 272
+  size: 203, 139
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Yellow-Walk_19
+  rotate: false
+  xy: 1290, 345
+  size: 206, 144
+  orig: 352, 317
+  offset: 46, 61
+  index: -1
+Tuskosaurus-Yellow-Walk_20
+  rotate: false
+  xy: 1080, 409
+  size: 208, 147
+  orig: 352, 317
+  offset: 44, 61
+  index: -1
+Tuskosaurus-Yellow-Walk_21
+  rotate: false
+  xy: 1526, 667
+  size: 211, 147
+  orig: 352, 317
+  offset: 42, 61
+  index: -1
+Tuskosaurus-Yellow-Walk_22
+  rotate: false
+  xy: 438, 521
+  size: 213, 144
+  orig: 352, 317
+  offset: 41, 63
+  index: -1
+Tuskosaurus-Yellow-Walk_23
+  rotate: false
+  xy: 1096, 776
+  size: 214, 146
+  orig: 352, 317
+  offset: 40, 61
+  index: -1
+
+Tuskosaurus-Yellow4.png
+size: 1536,1536
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Tuskosaurus-Yellow-Attack1_01
+  rotate: false
+  xy: 807, 1380
+  size: 200, 152
+  orig: 352, 317
+  offset: 53, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_02
+  rotate: false
+  xy: 857, 658
+  size: 175, 155
+  orig: 352, 317
+  offset: 76, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_03
+  rotate: false
+  xy: 1231, 792
+  size: 141, 158
+  orig: 352, 317
+  offset: 105, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_04
+  rotate: false
+  xy: 1411, 1373
+  size: 123, 159
+  orig: 352, 317
+  offset: 119, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_06
+  rotate: false
+  xy: 1393, 715
+  size: 141, 156
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_11
+  rotate: false
+  xy: 733, 359
+  size: 121, 164
+  orig: 352, 317
+  offset: 118, 56
+  index: -1
+Tuskosaurus-Yellow-Attack1_13
+  rotate: false
+  xy: 1253, 195
+  size: 132, 159
+  orig: 352, 317
+  offset: 115, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_02
+  rotate: false
+  xy: 2, 1364
+  size: 196, 168
+  orig: 352, 317
+  offset: 61, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_06
+  rotate: false
+  xy: 855, 204
+  size: 139, 149
+  orig: 352, 317
+  offset: 116, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_11
+  rotate: false
+  xy: 671, 661
+  size: 184, 152
+  orig: 352, 317
+  offset: 121, 56
+  index: -1
+Tuskosaurus-Yellow-Attack2_15
+  rotate: false
+  xy: 200, 1373
+  size: 201, 159
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-Attack4_00
+  rotate: false
+  xy: 1061, 940
+  size: 142, 173
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_09
+  rotate: false
+  xy: 1061, 940
+  size: 142, 173
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_01
+  rotate: false
+  xy: 1394, 1058
+  size: 140, 169
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_02
+  rotate: false
+  xy: 856, 355
+  size: 140, 164
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_04
+  rotate: false
+  xy: 998, 355
+  size: 139, 164
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_06
+  rotate: false
+  xy: 996, 183
+  size: 135, 170
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_07
+  rotate: false
+  xy: 1139, 356
+  size: 135, 172
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Attack4_08
+  rotate: false
+  xy: 481, 463
+  size: 139, 173
+  orig: 352, 317
+  offset: 85, 60
+  index: -1
+Tuskosaurus-Yellow-Confused_01
+  rotate: false
+  xy: 811, 1235
+  size: 193, 143
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_02
+  rotate: false
+  xy: 791, 1092
+  size: 192, 141
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_04
+  rotate: false
+  xy: 348, 818
+  size: 190, 139
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_06
+  rotate: false
+  xy: 732, 815
+  size: 186, 136
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_07
+  rotate: false
+  xy: 857, 521
+  size: 186, 135
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_08
+  rotate: false
+  xy: 671, 525
+  size: 184, 134
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_10
+  rotate: false
+  xy: 1048, 807
+  size: 181, 131
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_11
+  rotate: false
+  xy: 1034, 674
+  size: 181, 131
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_13
+  rotate: false
+  xy: 1208, 1123
+  size: 184, 134
+  orig: 352, 317
+  offset: 58, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_14
+  rotate: false
+  xy: 1006, 1115
+  size: 186, 135
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_15
+  rotate: false
+  xy: 759, 953
+  size: 187, 137
+  orig: 352, 317
+  offset: 57, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_17
+  rotate: false
+  xy: 540, 815
+  size: 190, 140
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_18
+  rotate: false
+  xy: 372, 959
+  size: 192, 141
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-Confused_19
+  rotate: false
+  xy: 596, 1095
+  size: 193, 143
+  orig: 352, 317
+  offset: 56, 56
+  index: -1
+Tuskosaurus-Yellow-DamageFront_2
+  rotate: false
+  xy: 1045, 530
+  size: 164, 142
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Yellow-DamageFront_3
+  rotate: false
+  xy: 566, 957
+  size: 191, 136
+  orig: 352, 317
+  offset: 35, 70
+  index: -1
+Tuskosaurus-Yellow-DieBack_01
+  rotate: false
+  xy: 1009, 1377
+  size: 197, 155
+  orig: 352, 317
+  offset: 46, 70
+  index: -1
+Tuskosaurus-Yellow-DieBack_03
+  rotate: false
+  xy: 1133, 186
+  size: 118, 167
+  orig: 352, 317
+  offset: 110, 83
+  index: -1
+Tuskosaurus-Yellow-DieBack_04
+  rotate: false
+  xy: 305, 116
+  size: 134, 148
+  orig: 352, 317
+  offset: 101, 108
+  index: -1
+Tuskosaurus-Yellow-DieBack_05
+  rotate: false
+  xy: 572, 143
+  size: 139, 134
+  orig: 352, 317
+  offset: 91, 117
+  index: -1
+Tuskosaurus-Yellow-DieBack_06
+  rotate: false
+  xy: 1217, 662
+  size: 159, 128
+  orig: 352, 317
+  offset: 82, 108
+  index: -1
+Tuskosaurus-Yellow-DieBack_07
+  rotate: false
+  xy: 1211, 538
+  size: 180, 122
+  orig: 352, 317
+  offset: 70, 99
+  index: -1
+Tuskosaurus-Yellow-DieFront_06
+  rotate: false
+  xy: 2, 1186
+  size: 186, 176
+  orig: 352, 317
+  offset: 78, 60
+  index: -1
+Tuskosaurus-Yellow-DieFront_07
+  rotate: false
+  xy: 607, 1376
+  size: 198, 156
+  orig: 352, 317
+  offset: 85, 62
+  index: -1
+Tuskosaurus-Yellow-FlyBack_00
+  rotate: false
+  xy: 1088, 53
+  size: 119, 128
+  orig: 352, 317
+  offset: 94, 77
+  index: -1
+Tuskosaurus-Yellow-FlyBack_14
+  rotate: false
+  xy: 1088, 53
+  size: 119, 128
+  orig: 352, 317
+  offset: 94, 77
+  index: -1
+Tuskosaurus-Yellow-FlyBack_03
+  rotate: false
+  xy: 1411, 1229
+  size: 123, 142
+  orig: 352, 317
+  offset: 93, 69
+  index: -1
+Tuskosaurus-Yellow-FlyBack_05
+  rotate: false
+  xy: 1276, 378
+  size: 126, 157
+  orig: 352, 317
+  offset: 92, 58
+  index: -1
+Tuskosaurus-Yellow-FlyBack_07
+  rotate: false
+  xy: 1404, 387
+  size: 127, 148
+  orig: 352, 317
+  offset: 92, 67
+  index: -1
+Tuskosaurus-Yellow-FlyBack_08
+  rotate: false
+  xy: 441, 124
+  size: 129, 143
+  orig: 352, 317
+  offset: 92, 75
+  index: -1
+Tuskosaurus-Yellow-FlyBack_09
+  rotate: false
+  xy: 920, 815
+  size: 126, 136
+  orig: 352, 317
+  offset: 92, 78
+  index: -1
+Tuskosaurus-Yellow-FlyBack_10
+  rotate: false
+  xy: 713, 129
+  size: 124, 130
+  orig: 352, 317
+  offset: 93, 81
+  index: -1
+Tuskosaurus-Yellow-FlyBack_11
+  rotate: false
+  xy: 839, 76
+  size: 123, 126
+  orig: 352, 317
+  offset: 93, 83
+  index: -1
+Tuskosaurus-Yellow-FlyBack_12
+  rotate: false
+  xy: 964, 56
+  size: 122, 125
+  orig: 352, 317
+  offset: 93, 81
+  index: -1
+Tuskosaurus-Yellow-FlyBack_13
+  rotate: false
+  xy: 1209, 57
+  size: 119, 127
+  orig: 352, 317
+  offset: 94, 78
+  index: -1
+Tuskosaurus-Yellow-FlyFront_02
+  rotate: false
+  xy: 2, 260
+  size: 160, 188
+  orig: 352, 317
+  offset: 57, 72
+  index: -1
+Tuskosaurus-Yellow-FlyFront_06
+  rotate: false
+  xy: 171, 634
+  size: 166, 182
+  orig: 352, 317
+  offset: 52, 81
+  index: -1
+Tuskosaurus-Yellow-FlyFront_07
+  rotate: false
+  xy: 2, 820
+  size: 168, 181
+  orig: 352, 317
+  offset: 50, 82
+  index: -1
+Tuskosaurus-Yellow-FlyFront_08
+  rotate: false
+  xy: 2, 1003
+  size: 169, 181
+  orig: 352, 317
+  offset: 49, 81
+  index: -1
+Tuskosaurus-Yellow-FlyFront_10
+  rotate: false
+  xy: 2, 636
+  size: 167, 182
+  orig: 352, 317
+  offset: 51, 79
+  index: -1
+Tuskosaurus-Yellow-FlyFront_11
+  rotate: false
+  xy: 2, 450
+  size: 165, 184
+  orig: 352, 317
+  offset: 53, 76
+  index: -1
+Tuskosaurus-Yellow-FlyFront_13
+  rotate: false
+  xy: 2, 68
+  size: 157, 190
+  orig: 352, 317
+  offset: 59, 69
+  index: -1
+Tuskosaurus-Yellow-FlyUp_00
+  rotate: false
+  xy: 164, 266
+  size: 145, 182
+  orig: 352, 317
+  offset: 100, 63
+  index: -1
+Tuskosaurus-Yellow-FlyUp_14
+  rotate: false
+  xy: 164, 266
+  size: 145, 182
+  orig: 352, 317
+  offset: 100, 63
+  index: -1
+Tuskosaurus-Yellow-Jump2_7
+  rotate: false
+  xy: 164, 266
+  size: 145, 182
+  orig: 352, 317
+  offset: 100, 63
+  index: -1
+Tuskosaurus-Yellow-FlyUp_02
+  rotate: false
+  xy: 507, 638
+  size: 162, 175
+  orig: 352, 317
+  offset: 83, 64
+  index: -1
+Tuskosaurus-Yellow-FlyUp_03
+  rotate: false
+  xy: 172, 818
+  size: 174, 168
+  orig: 352, 317
+  offset: 71, 69
+  index: -1
+Tuskosaurus-Yellow-FlyUp_04
+  rotate: false
+  xy: 1205, 952
+  size: 167, 169
+  orig: 352, 317
+  offset: 78, 66
+  index: -1
+Tuskosaurus-Yellow-FlyUp_06
+  rotate: false
+  xy: 337, 456
+  size: 142, 176
+  orig: 352, 317
+  offset: 103, 57
+  index: -1
+Tuskosaurus-Yellow-FlyUp_07
+  rotate: false
+  xy: 1393, 537
+  size: 139, 176
+  orig: 352, 317
+  offset: 106, 57
+  index: -1
+Tuskosaurus-Yellow-FlyUp_09
+  rotate: false
+  xy: 457, 279
+  size: 136, 175
+  orig: 352, 317
+  offset: 109, 59
+  index: -1
+Tuskosaurus-Yellow-FlyUp_10
+  rotate: false
+  xy: 595, 286
+  size: 136, 175
+  orig: 352, 317
+  offset: 108, 60
+  index: -1
+Tuskosaurus-Yellow-FlyUp_12
+  rotate: false
+  xy: 161, 79
+  size: 142, 179
+  orig: 352, 317
+  offset: 103, 62
+  index: -1
+Tuskosaurus-Yellow-FlyUp_13
+  rotate: false
+  xy: 311, 269
+  size: 144, 181
+  orig: 352, 317
+  offset: 101, 63
+  index: -1
+Tuskosaurus-Yellow-Jump2_6
+  rotate: false
+  xy: 339, 638
+  size: 166, 178
+  orig: 352, 317
+  offset: 79, 64
+  index: -1
+Tuskosaurus-Yellow-Jump_06
+  rotate: false
+  xy: 339, 638
+  size: 166, 178
+  orig: 352, 317
+  offset: 79, 64
+  index: -1
+Tuskosaurus-Yellow-Jump_05
+  rotate: false
+  xy: 403, 1376
+  size: 202, 156
+  orig: 352, 317
+  offset: 43, 66
+  index: -1
+Tuskosaurus-Yellow-Jump_07
+  rotate: false
+  xy: 1374, 873
+  size: 148, 183
+  orig: 352, 317
+  offset: 97, 61
+  index: -1
+Tuskosaurus-Yellow-Jump_08
+  rotate: false
+  xy: 169, 452
+  size: 166, 180
+  orig: 352, 317
+  offset: 79, 59
+  index: -1
+Tuskosaurus-Yellow-Roll_00
+  rotate: false
+  xy: 733, 261
+  size: 120, 96
+  orig: 352, 317
+  offset: 121, 61
+  index: -1
+Tuskosaurus-Yellow-Roll_02
+  rotate: false
+  xy: 948, 953
+  size: 111, 103
+  orig: 352, 317
+  offset: 123, 57
+  index: -1
+Tuskosaurus-Yellow-Roll_08
+  rotate: false
+  xy: 1330, 96
+  size: 118, 97
+  orig: 352, 317
+  offset: 109, 66
+  index: -1
+Tuskosaurus-Yellow-Roll_14
+  rotate: false
+  xy: 305, 18
+  size: 120, 96
+  orig: 352, 317
+  offset: 121, 61
+  index: -1
+Tuskosaurus-Yellow-WakeUp_04
+  rotate: false
+  xy: 200, 1251
+  size: 202, 120
+  orig: 352, 317
+  offset: 41, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_05
+  rotate: false
+  xy: 1006, 1252
+  size: 200, 123
+  orig: 352, 317
+  offset: 42, 56
+  index: -1
+Tuskosaurus-Yellow-WakeUp_06
+  rotate: false
+  xy: 173, 988
+  size: 197, 126
+  orig: 352, 317
+  offset: 43, 56
+  index: -1
+Tuskosaurus-Yellow-Walk_12
+  rotate: false
+  xy: 1208, 1396
+  size: 201, 136
+  orig: 352, 317
+  offset: 48, 61
+  index: -1
+Tuskosaurus-Yellow-Walk_13
+  rotate: false
+  xy: 1208, 1259
+  size: 201, 135
+  orig: 352, 317
+  offset: 48, 61
+  index: -1
+Tuskosaurus-Yellow-Walk_14
+  rotate: false
+  xy: 608, 1240
+  size: 201, 134
+  orig: 352, 317
+  offset: 48, 62
+  index: -1
+Tuskosaurus-Yellow-Walk_15
+  rotate: false
+  xy: 190, 1116
+  size: 201, 133
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Yellow-Walk_16
+  rotate: false
+  xy: 404, 1240
+  size: 202, 134
+  orig: 352, 317
+  offset: 49, 63
+  index: -1
+Tuskosaurus-Yellow-Walk_17
+  rotate: false
+  xy: 393, 1102
+  size: 201, 136
+  orig: 352, 317
+  offset: 50, 63
+  index: -1

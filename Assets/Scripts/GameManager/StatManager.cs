@@ -92,7 +92,7 @@ public class StatManager : MonoBehaviour
         statManager.PowerStat += stat.Power;
         statManager.SpeedStat += stat.Speed;
         statManager.CriticalPercent += stat.CriticalPercent;
-        statManager.CriticalDamage += stat.CriticalDamage;
+        statManager.CriticalDamage += stat.CriticalDamage;  
 
         return statManager;
     }
