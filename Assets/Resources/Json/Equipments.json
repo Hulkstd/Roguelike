@@ -1,21 +1,21 @@
-  [
+[
   {
-    "EquipName" : "Test",
-    "EquipDescription" : "TestWeapon",
-    "EquipImagePath" : "Image/HP",
-    "EquipRating" : "Common",
-    "EquipType" : "Weapon",
-    "Artifact" : -1,
+    "EquipName": "Test",
+    "EquipDescription": "TestWeapon",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Common",
+    "EquipType": "Weapon",
+    "Artifact": -1,
     "Type": 1,
     "Weight": 2.5,
     "AttackSpeed": 1.2,
-    "Speed" : 0,
+    "Speed": 0,
     "Stats": [
       {
-        "HP" :  50
+        "HP": 50
       },
       {
-        "Power" : 10
+        "Power": 10
       }
     ]
   },
@@ -35,7 +35,7 @@
         "HP": 50
       },
       {
-        "Speed": 10 
+        "Speed": 10
       },
       {
         "MP": 2
@@ -62,6 +62,49 @@
       },
       {
         "CriticalDamage": 10
+      }
+    ]
+  },
+  {
+    "EquipName": "Carbyne Sword",
+    "EquipDescription": "The hardest substance in the world, very hard but very heavy sword.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Common",
+    "EquipType": "Weapon",
+    "Artifact": -1,
+    "Type": 1,
+    "Weight": 2.5,
+    "AttackSpeed": 1.2,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 10
+      },
+      {
+        "Power": 6
+      }
+    ]
+  },
+  {
+    "EquipName": "Carbon Nanotube Suit",
+    "EquipDescription": "A suit made using carbon nanotubes, light and relatively hard, making it convenient.",
+    "EquipImagePath": "Image/MP",
+    "EquipRating": "common",
+    "EquipType": "Suit",
+    "Artifact": 0,
+    "Type": 0,
+    "Weight": 0,
+    "AttackSpeed": 0,
+    "Speed": 1.2,
+    "Stats": [
+      {
+        "HP": 10
+      },
+      {
+        "Speed": 3
+      },
+      {
+        "MP": 4
       }
     ]
   }
