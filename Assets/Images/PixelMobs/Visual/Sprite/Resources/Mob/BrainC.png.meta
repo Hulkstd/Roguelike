@@ -1,29 +1,54 @@
 fileFormatVersion: 2
 guid: e9dd76a44064a2a4182543bb3707e784
-timeCreated: 1451620088
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Brain_0
-    21300002: Brain_1
-    21300004: Brain_2
-    21300006: Brain_3
-    21300008: Brain_4
-    21300010: Brain_5
-    21300012: Brain_6
-    21300014: Brain_7
-    21300016: Brain_8
-    21300018: Brain_9
-    21300020: Brain_10
-    21300022: Brain_11
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Brain_0
+  - first:
+      213: 21300002
+    second: Brain_1
+  - first:
+      213: 21300004
+    second: Brain_2
+  - first:
+      213: 21300006
+    second: Brain_3
+  - first:
+      213: 21300008
+    second: Brain_4
+  - first:
+      213: 21300010
+    second: Brain_5
+  - first:
+      213: 21300012
+    second: Brain_6
+  - first:
+      213: 21300014
+    second: Brain_7
+  - first:
+      213: 21300016
+    second: Brain_8
+  - first:
+      213: 21300018
+    second: Brain_9
+  - first:
+      213: 21300020
+    second: Brain_10
+  - first:
+      213: 21300022
+    second: Brain_11
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -32,37 +57,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Brain_0
+    - serializedVersion: 2
+      name: Brain_0
       rect:
         serializedVersion: 2
         x: 0
@@ -73,7 +120,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b96ec7f6cbded947b9e03f93d8f93c6
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_1
       rect:
         serializedVersion: 2
         x: 16
@@ -84,7 +141,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f654d49b6bc7b40bede84613e3fbec
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_2
       rect:
         serializedVersion: 2
         x: 32
@@ -95,7 +162,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc09a045f2456d64da10bba5e369519a
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_3
       rect:
         serializedVersion: 2
         x: 48
@@ -106,7 +183,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2017151d2b43a4d8cb07d0e059e4b1
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_4
       rect:
         serializedVersion: 2
         x: 64
@@ -117,7 +204,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0ded07ecf3cee499dc0eae5886eea5
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_5
       rect:
         serializedVersion: 2
         x: 80
@@ -128,7 +225,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac14b9acdda8d334b9c77e355d002116
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_6
       rect:
         serializedVersion: 2
         x: 96
@@ -139,7 +246,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2477702cfe0e6846baf90a22ba743ee
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_7
       rect:
         serializedVersion: 2
         x: 112
@@ -150,7 +267,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdf4c5e92d0f1c45b6bf5ebfbf9f05b
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_8
       rect:
         serializedVersion: 2
         x: 128
@@ -161,7 +288,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_9
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bfeef001a11e2488732a7a063ff537
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_9
       rect:
         serializedVersion: 2
         x: 144
@@ -172,7 +309,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_10
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11399bdf062f3134fb6899a2a8a69934
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_10
       rect:
         serializedVersion: 2
         x: 160
@@ -183,7 +330,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Brain_11
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce771effaa0b6844af18ac08a3581a9
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brain_11
       rect:
         serializedVersion: 2
         x: 176
@@ -194,8 +351,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d776442dfec1c3147833286cc4316183
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

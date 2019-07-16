@@ -1,25 +1,42 @@
 fileFormatVersion: 2
 guid: 3f9eb088dc7a7c54c88b3835bcd1757f
-timeCreated: 1451620078
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Sentry_0
-    21300002: Sentry_1
-    21300004: Sentry_2
-    21300006: Sentry_3
-    21300008: Sentry_4
-    21300010: Sentry_5
-    21300012: Sentry_6
-    21300014: Sentry_7
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Sentry_0
+  - first:
+      213: 21300002
+    second: Sentry_1
+  - first:
+      213: 21300004
+    second: Sentry_2
+  - first:
+      213: 21300006
+    second: Sentry_3
+  - first:
+      213: 21300008
+    second: Sentry_4
+  - first:
+      213: 21300010
+    second: Sentry_5
+  - first:
+      213: 21300012
+    second: Sentry_6
+  - first:
+      213: 21300014
+    second: Sentry_7
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -28,37 +45,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Sentry_0
+    - serializedVersion: 2
+      name: Sentry_0
       rect:
         serializedVersion: 2
         x: 0
@@ -69,7 +108,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sentry_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477a74638fae1104aa8f7bd2f7c8df96
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentry_1
       rect:
         serializedVersion: 2
         x: 16
@@ -80,7 +129,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sentry_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6e98a77968cae4d8584cc1852e3595
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentry_2
       rect:
         serializedVersion: 2
         x: 32
@@ -91,7 +150,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sentry_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818e1864cb641be43a20600b870c2404
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentry_3
       rect:
         serializedVersion: 2
         x: 48
@@ -102,7 +171,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sentry_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f747ff09178d4a4ab271eafea0bcaaa
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentry_4
       rect:
         serializedVersion: 2
         x: 64
@@ -113,7 +192,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sentry_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f448b36c3c511cc488e032a4ed175ed0
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentry_5
       rect:
         serializedVersion: 2
         x: 80
@@ -124,7 +213,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sentry_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7a399ffcbb359478eb8efbe424517d
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentry_6
       rect:
         serializedVersion: 2
         x: 96
@@ -135,7 +234,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Sentry_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdf561209998314395dcded7541c832
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sentry_7
       rect:
         serializedVersion: 2
         x: 112
@@ -146,8 +255,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ea09edf9a7120449245c6383232af3
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

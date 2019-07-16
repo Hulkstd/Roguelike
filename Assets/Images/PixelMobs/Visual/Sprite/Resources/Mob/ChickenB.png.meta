@@ -1,26 +1,45 @@
 fileFormatVersion: 2
 guid: 31ce87929f339224a82e9333faedcab7
-timeCreated: 1451620077
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Chicken_0
-    21300002: Chicken_1
-    21300004: Chicken_2
-    21300006: Chicken_3
-    21300008: Chicken_4
-    21300010: Chicken_5
-    21300012: Chicken_6
-    21300014: Chicken_7
-    21300016: Chicken_8
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Chicken_0
+  - first:
+      213: 21300002
+    second: Chicken_1
+  - first:
+      213: 21300004
+    second: Chicken_2
+  - first:
+      213: 21300006
+    second: Chicken_3
+  - first:
+      213: 21300008
+    second: Chicken_4
+  - first:
+      213: 21300010
+    second: Chicken_5
+  - first:
+      213: 21300012
+    second: Chicken_6
+  - first:
+      213: 21300014
+    second: Chicken_7
+  - first:
+      213: 21300016
+    second: Chicken_8
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -29,37 +48,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Chicken_0
+    - serializedVersion: 2
+      name: Chicken_0
       rect:
         serializedVersion: 2
         x: 0
@@ -70,7 +111,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249cfa9e2d3368b41bd19216e93effbf
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_1
       rect:
         serializedVersion: 2
         x: 16
@@ -81,7 +132,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674f54c2d21209146a2661c7a91c02ab
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_2
       rect:
         serializedVersion: 2
         x: 32
@@ -92,7 +153,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a586032f31d0e440807c73c45287f1c
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_3
       rect:
         serializedVersion: 2
         x: 48
@@ -103,7 +174,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2486155bee4dd9d4e9d19c3eb4a78641
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_4
       rect:
         serializedVersion: 2
         x: 64
@@ -114,7 +195,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802868a55546aba4d8313fd0cef075e6
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_5
       rect:
         serializedVersion: 2
         x: 80
@@ -125,7 +216,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d0eb2168572134d9b4b8b2349766d2
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_6
       rect:
         serializedVersion: 2
         x: 96
@@ -136,7 +237,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33203f9d4f636c4fa81422d54edc5dc
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_7
       rect:
         serializedVersion: 2
         x: 112
@@ -147,7 +258,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chicken_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f6d9cd5d67468418ef96f0964bc044
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken_8
       rect:
         serializedVersion: 2
         x: 128
@@ -158,8 +279,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b396e51d8be59844a2ff26fe270191a
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

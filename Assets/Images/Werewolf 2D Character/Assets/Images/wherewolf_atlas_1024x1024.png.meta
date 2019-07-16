@@ -1,38 +1,93 @@
 fileFormatVersion: 2
 guid: c9a7a6d52fc0306478d4fc1da23faf6c
-timeCreated: 1553967342
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: wherewolf_foot_B
-    21300002: wherewolf_lowerLeg_B
-    21300004: wherewolf_knee_B
-    21300006: wherewolf_upperLeg_B
-    21300008: wherewolf_tail
-    21300010: wherewolf_hand_B
-    21300012: wherewolf_lowerArm_B
-    21300014: wherewolf_upperArm_B
-    21300016: wherewolf_torso
-    21300018: wherewolf_torso_back
-    21300020: wherewolf_upperArm_F
-    21300022: wherewolf_eyes
-    21300024: wherewolf_redEye
-    21300026: wherewolf_upperLeg_F
-    21300028: wherewolf_head_top
-    21300030: wherewolf_knee_F
-    21300032: wherewolf_lowerArm_F
-    21300034: wherewolf_head_back
-    21300036: wherewolf_upperLips
-    21300038: wherewolf_jaws
-    21300040: wherewolf_lowerLeg_F
-    21300042: wherewolf_foot_F
-    21300044: wherewolf_hand_F
-    21300046: wherewolf_atlas_1024x1024_24
-    21300048: wherewolf_atlas_1024x1024_25
-    21300050: wherewolf_biteLower
-    21300052: wherewolf_biteUpper
-    21300054: wherewolf_clawAttack
-  serializedVersion: 4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: wherewolf_foot_B
+  - first:
+      213: 21300002
+    second: wherewolf_lowerLeg_B
+  - first:
+      213: 21300004
+    second: wherewolf_knee_B
+  - first:
+      213: 21300006
+    second: wherewolf_upperLeg_B
+  - first:
+      213: 21300008
+    second: wherewolf_tail
+  - first:
+      213: 21300010
+    second: wherewolf_hand_B
+  - first:
+      213: 21300012
+    second: wherewolf_lowerArm_B
+  - first:
+      213: 21300014
+    second: wherewolf_upperArm_B
+  - first:
+      213: 21300016
+    second: wherewolf_torso
+  - first:
+      213: 21300018
+    second: wherewolf_torso_back
+  - first:
+      213: 21300020
+    second: wherewolf_upperArm_F
+  - first:
+      213: 21300022
+    second: wherewolf_eyes
+  - first:
+      213: 21300024
+    second: wherewolf_redEye
+  - first:
+      213: 21300026
+    second: wherewolf_upperLeg_F
+  - first:
+      213: 21300028
+    second: wherewolf_head_top
+  - first:
+      213: 21300030
+    second: wherewolf_knee_F
+  - first:
+      213: 21300032
+    second: wherewolf_lowerArm_F
+  - first:
+      213: 21300034
+    second: wherewolf_head_back
+  - first:
+      213: 21300036
+    second: wherewolf_upperLips
+  - first:
+      213: 21300038
+    second: wherewolf_jaws
+  - first:
+      213: 21300040
+    second: wherewolf_lowerLeg_F
+  - first:
+      213: 21300042
+    second: wherewolf_foot_F
+  - first:
+      213: 21300044
+    second: wherewolf_hand_F
+  - first:
+      213: 21300046
+    second: wherewolf_atlas_1024x1024_24
+  - first:
+      213: 21300048
+    second: wherewolf_atlas_1024x1024_25
+  - first:
+      213: 21300050
+    second: wherewolf_biteLower
+  - first:
+      213: 21300052
+    second: wherewolf_biteUpper
+  - first:
+      213: 21300054
+    second: wherewolf_clawAttack
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,6 +95,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -48,6 +105,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -55,10 +114,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -67,49 +129,63 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: WebGL
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,7 +201,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: abd20024723547e4f8b994f22e84112b
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_lowerLeg_B
       rect:
@@ -138,7 +222,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26e8f233fe16dbc4cb621d62b2ba6c62
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_knee_B
       rect:
@@ -151,7 +243,15 @@ TextureImporter:
       pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bb715515a0336e343817af5e5fabe201
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_upperLeg_B
       rect:
@@ -164,7 +264,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2cd6947b0d64a0747904c594cad3ec11
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_tail
       rect:
@@ -177,7 +285,15 @@ TextureImporter:
       pivot: {x: 0.75, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7c05e038c3712174b8828f9fbeb5c9f7
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_hand_B
       rect:
@@ -190,7 +306,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2d780a4e7bee0b54aa0d52f274172b44
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_lowerArm_B
       rect:
@@ -203,7 +327,15 @@ TextureImporter:
       pivot: {x: 0.8, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fa76b2f4adac1824db9d18e03f24a29c
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_upperArm_B
       rect:
@@ -216,7 +348,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a0342c32e22be874e84ffaad536ca011
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_torso
       rect:
@@ -229,7 +369,15 @@ TextureImporter:
       pivot: {x: 0.89, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43a7419f5a5b9804a8792c349d176abb
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_torso_back
       rect:
@@ -242,7 +390,15 @@ TextureImporter:
       pivot: {x: 0.15, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e104322006274bb42b8c3d370f9e30af
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_upperArm_F
       rect:
@@ -255,7 +411,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3073e34c3cf6090449f28a15ac8831db
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_eyes
       rect:
@@ -268,7 +432,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c55ccc3299b45c54a843900bcd3c44d0
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_redEye
       rect:
@@ -281,7 +453,15 @@ TextureImporter:
       pivot: {x: 0.35, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3e957618080f754caec0a72ebef3592
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_upperLeg_F
       rect:
@@ -294,7 +474,15 @@ TextureImporter:
       pivot: {x: 0.45, y: 0.85}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2ef24cf8ec8703043bd7a0bc39c48c87
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_head_top
       rect:
@@ -307,7 +495,15 @@ TextureImporter:
       pivot: {x: 0.9, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27e8ac98ade37724d94ab7484bb66ba1
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_knee_F
       rect:
@@ -320,7 +516,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.9}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 78c69a07ea7b3e94582cf66ef214fbfe
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_lowerArm_F
       rect:
@@ -333,7 +537,15 @@ TextureImporter:
       pivot: {x: 0.45, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fb6fc9112cdb720438eefa5bf421336e
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_head_back
       rect:
@@ -346,7 +558,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: df40f224390f42e40bad3046d3930cff
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_upperLips
       rect:
@@ -359,7 +579,15 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 491667f972ea306499c3681450b17386
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_jaws
       rect:
@@ -372,7 +600,15 @@ TextureImporter:
       pivot: {x: 0.6, y: 0.95}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2e981305852eb3348bdb201121a1707f
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_lowerLeg_F
       rect:
@@ -385,7 +621,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.9}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d8b3049761fdafe4f953d424e58c912f
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_foot_F
       rect:
@@ -398,7 +642,15 @@ TextureImporter:
       pivot: {x: 0.6, y: 0.85}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4c0c782899c57345a0f40ba2f1f8bdb
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_hand_F
       rect:
@@ -411,7 +663,15 @@ TextureImporter:
       pivot: {x: 0.55, y: 0.85}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f3d1a3ecc3111204fb0decf99eeaa013
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_atlas_1024x1024_24
       rect:
@@ -424,7 +684,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d4ca6c41672d9864d9397c91cab94ccd
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_atlas_1024x1024_25
       rect:
@@ -437,7 +705,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2ec5bd5e7a923e94e9915cf77a8b9b25
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_biteLower
       rect:
@@ -450,7 +726,15 @@ TextureImporter:
       pivot: {x: 0.8, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0f7ad8e032b7c564e9d1fa8706a9988d
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_biteUpper
       rect:
@@ -463,7 +747,15 @@ TextureImporter:
       pivot: {x: 0.09, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c041361707d9d5f4a89d7d4cbacce960
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_clawAttack
       rect:
@@ -476,9 +768,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3d31b177c92df2c43a4363e1c4cd033d
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

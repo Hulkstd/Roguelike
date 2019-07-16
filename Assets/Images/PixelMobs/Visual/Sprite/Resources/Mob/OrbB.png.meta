@@ -1,25 +1,42 @@
 fileFormatVersion: 2
 guid: f1354327664fff649b059a6d0f13433b
-timeCreated: 1451620088
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Orb_0
-    21300002: Orb_1
-    21300004: Orb_2
-    21300006: Orb_3
-    21300008: Orb_4
-    21300010: Orb_5
-    21300012: Orb_6
-    21300014: Orb_7
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Orb_0
+  - first:
+      213: 21300002
+    second: Orb_1
+  - first:
+      213: 21300004
+    second: Orb_2
+  - first:
+      213: 21300006
+    second: Orb_3
+  - first:
+      213: 21300008
+    second: Orb_4
+  - first:
+      213: 21300010
+    second: Orb_5
+  - first:
+      213: 21300012
+    second: Orb_6
+  - first:
+      213: 21300014
+    second: Orb_7
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -28,37 +45,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Orb_0
+    - serializedVersion: 2
+      name: Orb_0
       rect:
         serializedVersion: 2
         x: 0
@@ -69,7 +108,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Orb_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e452fdcc6e3c681448d110eb874c6499
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb_1
       rect:
         serializedVersion: 2
         x: 16
@@ -80,7 +129,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Orb_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177c1e98465a2dc49a9e09c2a4c3698a
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb_2
       rect:
         serializedVersion: 2
         x: 32
@@ -91,7 +150,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Orb_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a78569970783eb458fe1903386c8090
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb_3
       rect:
         serializedVersion: 2
         x: 48
@@ -102,7 +171,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Orb_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282cda3ee2a3a4e45928b39ec2efe9e9
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb_4
       rect:
         serializedVersion: 2
         x: 64
@@ -113,7 +192,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Orb_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7ee22fae157964dbdad72ab8ab96c1
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb_5
       rect:
         serializedVersion: 2
         x: 80
@@ -124,7 +213,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Orb_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e0870d3ea7ed74d88b7b34ce8a79c2
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb_6
       rect:
         serializedVersion: 2
         x: 96
@@ -135,7 +234,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Orb_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24486b8ce824f5241905bd2db014be2b
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orb_7
       rect:
         serializedVersion: 2
         x: 112
@@ -146,8 +255,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff707b364f01c684e9367a35bdb0cc9e
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

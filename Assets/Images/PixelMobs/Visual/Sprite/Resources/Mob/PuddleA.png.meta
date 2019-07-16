@@ -1,32 +1,63 @@
 fileFormatVersion: 2
 guid: cd855025da3bd9345a7e3821f729eacd
-timeCreated: 1451665352
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Puddle_0
-    21300002: Puddle_1
-    21300004: Puddle_2
-    21300006: Puddle_3
-    21300008: Puddle_4
-    21300010: Puddle_5
-    21300012: Puddle_6
-    21300014: Puddle_7
-    21300016: Puddle_8
-    21300018: Puddle_9
-    21300020: Puddle_10
-    21300022: Puddle_11
-    21300024: Puddle_12
-    21300026: Puddle_13
-    21300028: Puddle_14
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Puddle_0
+  - first:
+      213: 21300002
+    second: Puddle_1
+  - first:
+      213: 21300004
+    second: Puddle_2
+  - first:
+      213: 21300006
+    second: Puddle_3
+  - first:
+      213: 21300008
+    second: Puddle_4
+  - first:
+      213: 21300010
+    second: Puddle_5
+  - first:
+      213: 21300012
+    second: Puddle_6
+  - first:
+      213: 21300014
+    second: Puddle_7
+  - first:
+      213: 21300016
+    second: Puddle_8
+  - first:
+      213: 21300018
+    second: Puddle_9
+  - first:
+      213: 21300020
+    second: Puddle_10
+  - first:
+      213: 21300022
+    second: Puddle_11
+  - first:
+      213: 21300024
+    second: Puddle_12
+  - first:
+      213: 21300026
+    second: Puddle_13
+  - first:
+      213: 21300028
+    second: Puddle_14
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -35,37 +66,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Puddle_0
+    - serializedVersion: 2
+      name: Puddle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -76,7 +129,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2945d18e2825d249a71fbf3b6f41f4c
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_1
       rect:
         serializedVersion: 2
         x: 16
@@ -87,7 +150,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbfa4a59b8d9bb4eb5b53504f89f255
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_2
       rect:
         serializedVersion: 2
         x: 32
@@ -98,7 +171,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea964fc785a10b4ea11f6dc3d6aa1d7
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_3
       rect:
         serializedVersion: 2
         x: 48
@@ -109,7 +192,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe9d22adbac1024dae56f582567a6d5
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_4
       rect:
         serializedVersion: 2
         x: 64
@@ -120,7 +213,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b250d6782cb3e4aaf0e33ece7ce304
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_5
       rect:
         serializedVersion: 2
         x: 80
@@ -131,7 +234,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b3b9e741188e64c83605b630d4f027
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_6
       rect:
         serializedVersion: 2
         x: 96
@@ -142,7 +255,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29cc590b48826141a5bd6ba8776f031
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_7
       rect:
         serializedVersion: 2
         x: 112
@@ -153,7 +276,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12b38425295f064db5a4d30f6f852c1
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_8
       rect:
         serializedVersion: 2
         x: 128
@@ -164,7 +297,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_9
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd4da4fa87512c4a9bda24d9848f34f
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_9
       rect:
         serializedVersion: 2
         x: 144
@@ -175,7 +318,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_10
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19bb88204b22d954fb9cabe993a9d1ad
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_10
       rect:
         serializedVersion: 2
         x: 160
@@ -186,7 +339,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_11
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b2b704eafc267448deb890d5309ddb
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_11
       rect:
         serializedVersion: 2
         x: 176
@@ -197,7 +360,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_12
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f4da85d471e64489c1e24655224c0b
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_12
       rect:
         serializedVersion: 2
         x: 192
@@ -208,7 +381,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_13
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69df047f3c366174294c354f1d52d340
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_13
       rect:
         serializedVersion: 2
         x: 208
@@ -219,7 +402,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Puddle_14
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f8406bc2721c045a14d851a8d9fb7b
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puddle_14
       rect:
         serializedVersion: 2
         x: 224
@@ -230,8 +423,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b61721bd372f0409ed6ea726fbd6db
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

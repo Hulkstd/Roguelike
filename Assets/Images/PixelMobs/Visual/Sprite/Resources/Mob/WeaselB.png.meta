@@ -1,25 +1,42 @@
 fileFormatVersion: 2
 guid: 50b9dfa0cbaae4f4ca738708430b812a
-timeCreated: 1451620079
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Weasel_0
-    21300002: Weasel_1
-    21300004: Weasel_2
-    21300006: Weasel_3
-    21300008: Weasel_4
-    21300010: Weasel_5
-    21300012: Weasel_6
-    21300014: Weasel_7
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Weasel_0
+  - first:
+      213: 21300002
+    second: Weasel_1
+  - first:
+      213: 21300004
+    second: Weasel_2
+  - first:
+      213: 21300006
+    second: Weasel_3
+  - first:
+      213: 21300008
+    second: Weasel_4
+  - first:
+      213: 21300010
+    second: Weasel_5
+  - first:
+      213: 21300012
+    second: Weasel_6
+  - first:
+      213: 21300014
+    second: Weasel_7
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -28,37 +45,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Weasel_0
+    - serializedVersion: 2
+      name: Weasel_0
       rect:
         serializedVersion: 2
         x: 0
@@ -69,7 +108,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Weasel_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02314eaf45f5c54e9a96e1e7b49e2b7
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weasel_1
       rect:
         serializedVersion: 2
         x: 16
@@ -80,7 +129,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Weasel_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecafce71387185843a173989474be501
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weasel_2
       rect:
         serializedVersion: 2
         x: 32
@@ -91,7 +150,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Weasel_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075295d18cac2db46bc8fe3604220272
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weasel_3
       rect:
         serializedVersion: 2
         x: 48
@@ -102,7 +171,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Weasel_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a6fcb8bf7c67440953044ecf29830f
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weasel_4
       rect:
         serializedVersion: 2
         x: 64
@@ -113,7 +192,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Weasel_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549f1b1ff242dea4087758b739044f0b
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weasel_5
       rect:
         serializedVersion: 2
         x: 80
@@ -124,7 +213,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Weasel_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bf703ffc036194a8f06bb24e5d14c1
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weasel_6
       rect:
         serializedVersion: 2
         x: 96
@@ -135,7 +234,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Weasel_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5484bae198e90b4aa0799dd25df1b5d
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weasel_7
       rect:
         serializedVersion: 2
         x: 112
@@ -146,8 +255,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169390b2268d73a419ea4e1941ddf37c
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

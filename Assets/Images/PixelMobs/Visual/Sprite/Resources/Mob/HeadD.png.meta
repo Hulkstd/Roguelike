@@ -1,26 +1,45 @@
 fileFormatVersion: 2
 guid: 044aec36bb775544da0a94a308093c20
-timeCreated: 1451620075
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Head_0
-    21300002: Head_1
-    21300004: Head_2
-    21300006: Head_3
-    21300008: Head_4
-    21300010: Head_5
-    21300012: Head_6
-    21300014: Head_7
-    21300016: Head_8
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Head_0
+  - first:
+      213: 21300002
+    second: Head_1
+  - first:
+      213: 21300004
+    second: Head_2
+  - first:
+      213: 21300006
+    second: Head_3
+  - first:
+      213: 21300008
+    second: Head_4
+  - first:
+      213: 21300010
+    second: Head_5
+  - first:
+      213: 21300012
+    second: Head_6
+  - first:
+      213: 21300014
+    second: Head_7
+  - first:
+      213: 21300016
+    second: Head_8
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -29,37 +48,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Head_0
+    - serializedVersion: 2
+      name: Head_0
       rect:
         serializedVersion: 2
         x: 0
@@ -70,7 +111,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70103ca966d3f24399731b508b72c42
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_1
       rect:
         serializedVersion: 2
         x: 16
@@ -81,7 +132,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a826466ec8bacb41a2f7fc8c6470ae4
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_2
       rect:
         serializedVersion: 2
         x: 32
@@ -92,7 +153,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5c119c2f3f1054e8e6c9298ded3820
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_3
       rect:
         serializedVersion: 2
         x: 48
@@ -103,7 +174,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8150c6317fd6b4b8b099862c62c79b
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_4
       rect:
         serializedVersion: 2
         x: 64
@@ -114,7 +195,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd16f8e6f543dc40b61428c60059f7e
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_5
       rect:
         serializedVersion: 2
         x: 80
@@ -125,7 +216,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f71f8dae7aae3a4da15b4a5c6b059cf
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_6
       rect:
         serializedVersion: 2
         x: 96
@@ -136,7 +237,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a35e909e93e2aa4ea5d8281c570e18b
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_7
       rect:
         serializedVersion: 2
         x: 112
@@ -147,7 +258,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Head_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f30f83eed58254694375587c5eea7a
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Head_8
       rect:
         serializedVersion: 2
         x: 128
@@ -158,8 +279,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1439386195bc1644f9ca557b62c576c4
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

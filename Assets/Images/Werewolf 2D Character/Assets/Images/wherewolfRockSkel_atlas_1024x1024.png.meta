@@ -1,38 +1,93 @@
 fileFormatVersion: 2
 guid: 3362eb4990c93e94e97269f349442e86
-timeCreated: 1553969180
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: wherewolfRockSkel_foot_B
-    21300002: wherewolfRockSkel_lowerLeg_B
-    21300004: wherewolfRockSkel_knee_B
-    21300006: wherewolfRockSkel_upperLeg_B
-    21300008: wherewolfRockSkel_tail
-    21300010: wherewolfRockSkel_hand_B
-    21300012: wherewolfRockSkel_lowerArm_B
-    21300014: wherewolfRockSkel_upperArm_B
-    21300016: wherewolfRockSkel_torso
-    21300018: wherewolfRockSkel_torso_back
-    21300020: wherewolfRockSkel_upperArm_F
-    21300022: wherewolfRockSkel_eyes
-    21300024: wherewolfRockSkel_redEye
-    21300026: wherewolfRockSkel_upperLeg_F
-    21300028: wherewolfRockSkel_head_top
-    21300030: wherewolfRockSkel_knee_F
-    21300032: wherewolfRockSkel_lowerArm_F
-    21300034: wherewolfRockSkel_head_back
-    21300036: wherewolfRockSkel_Lips
-    21300038: wherewolfRockSkel_jaws
-    21300040: wherewolfRockSkel_lowerLeg_F
-    21300042: wherewolfRockSkel_foot_F
-    21300044: wherewolfRockSkel_hand_F
-    21300046: wherewolf_atlas_1024x1024_24
-    21300048: wherewolf_atlas_1024x1024_25
-    21300050: wherewolfRockSkel_biteLower
-    21300052: wherewolfRockSkel_biteUpper
-    21300054: wherewolfRockSkel_clawAttack
-  serializedVersion: 4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: wherewolfRockSkel_foot_B
+  - first:
+      213: 21300002
+    second: wherewolfRockSkel_lowerLeg_B
+  - first:
+      213: 21300004
+    second: wherewolfRockSkel_knee_B
+  - first:
+      213: 21300006
+    second: wherewolfRockSkel_upperLeg_B
+  - first:
+      213: 21300008
+    second: wherewolfRockSkel_tail
+  - first:
+      213: 21300010
+    second: wherewolfRockSkel_hand_B
+  - first:
+      213: 21300012
+    second: wherewolfRockSkel_lowerArm_B
+  - first:
+      213: 21300014
+    second: wherewolfRockSkel_upperArm_B
+  - first:
+      213: 21300016
+    second: wherewolfRockSkel_torso
+  - first:
+      213: 21300018
+    second: wherewolfRockSkel_torso_back
+  - first:
+      213: 21300020
+    second: wherewolfRockSkel_upperArm_F
+  - first:
+      213: 21300022
+    second: wherewolfRockSkel_eyes
+  - first:
+      213: 21300024
+    second: wherewolfRockSkel_redEye
+  - first:
+      213: 21300026
+    second: wherewolfRockSkel_upperLeg_F
+  - first:
+      213: 21300028
+    second: wherewolfRockSkel_head_top
+  - first:
+      213: 21300030
+    second: wherewolfRockSkel_knee_F
+  - first:
+      213: 21300032
+    second: wherewolfRockSkel_lowerArm_F
+  - first:
+      213: 21300034
+    second: wherewolfRockSkel_head_back
+  - first:
+      213: 21300036
+    second: wherewolfRockSkel_Lips
+  - first:
+      213: 21300038
+    second: wherewolfRockSkel_jaws
+  - first:
+      213: 21300040
+    second: wherewolfRockSkel_lowerLeg_F
+  - first:
+      213: 21300042
+    second: wherewolfRockSkel_foot_F
+  - first:
+      213: 21300044
+    second: wherewolfRockSkel_hand_F
+  - first:
+      213: 21300046
+    second: wherewolf_atlas_1024x1024_24
+  - first:
+      213: 21300048
+    second: wherewolf_atlas_1024x1024_25
+  - first:
+      213: 21300050
+    second: wherewolfRockSkel_biteLower
+  - first:
+      213: 21300052
+    second: wherewolfRockSkel_biteUpper
+  - first:
+      213: 21300054
+    second: wherewolfRockSkel_clawAttack
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,6 +95,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -48,6 +105,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -55,10 +114,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -67,49 +129,63 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: WebGL
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,7 +201,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 432a4169f8dad3c409f47afc1f78511f
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_lowerLeg_B
       rect:
@@ -138,7 +222,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 10623c88669896449a8bc35a840623de
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_knee_B
       rect:
@@ -151,7 +243,15 @@ TextureImporter:
       pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f7957adccaf358f449e7338998639fdd
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_upperLeg_B
       rect:
@@ -164,7 +264,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e601dfb3fc08904b8ea176f0d7e70be
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_tail
       rect:
@@ -177,7 +285,15 @@ TextureImporter:
       pivot: {x: 0.75, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 044eff472e4b4ea4294268a9f5ee5e1e
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_hand_B
       rect:
@@ -190,7 +306,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 618b7f2a4153250448f5b78f47dbe2e5
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_lowerArm_B
       rect:
@@ -203,7 +327,15 @@ TextureImporter:
       pivot: {x: 0.8, y: 0.6}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9b6cc1d985fbd87429d3ff143344d82d
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_upperArm_B
       rect:
@@ -216,7 +348,15 @@ TextureImporter:
       pivot: {x: 0.85, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 072286f2b6609e64faa23ffc55df09f1
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_torso
       rect:
@@ -229,7 +369,15 @@ TextureImporter:
       pivot: {x: 0.89, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4ea325aa6cfa4da4791cda3e82f5c582
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_torso_back
       rect:
@@ -242,7 +390,15 @@ TextureImporter:
       pivot: {x: 0.15, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: da3400029163dd04a858dfbdeaf83c39
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_upperArm_F
       rect:
@@ -255,7 +411,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 858be334e1bba9b4d85c22aee5ce0ad5
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_eyes
       rect:
@@ -268,7 +432,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2364a7227f99d5f41a5ea5f4466a04c3
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_redEye
       rect:
@@ -281,7 +453,15 @@ TextureImporter:
       pivot: {x: 0.35, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8260a75bf23e3f54286e4fa1a2c418e5
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_upperLeg_F
       rect:
@@ -294,7 +474,15 @@ TextureImporter:
       pivot: {x: 0.45, y: 0.85}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 71f37d9d08d7fd048a6c0941244d7eec
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_head_top
       rect:
@@ -307,7 +495,15 @@ TextureImporter:
       pivot: {x: 0.9, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3ba497f8153ff764c8a01b870381b1ee
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_knee_F
       rect:
@@ -320,7 +516,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.9}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 75508ebd8a609944395aa35636fceb7c
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_lowerArm_F
       rect:
@@ -333,7 +537,15 @@ TextureImporter:
       pivot: {x: 0.45, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 50667a631dbdfbe4ba7848df42279c4f
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_head_back
       rect:
@@ -346,7 +558,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ca2a8c926c7cc6a4aa2200c808f4186d
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_Lips
       rect:
@@ -359,7 +579,15 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9cf587cc0fa4044ea6b90fcb16b711d
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_jaws
       rect:
@@ -372,7 +600,15 @@ TextureImporter:
       pivot: {x: 0.6, y: 0.95}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f9c833a6942f23a4ba3fb6c827c4aaf9
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_lowerLeg_F
       rect:
@@ -385,7 +621,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.9}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5a8b5b627e770e748b26b47d41110f9e
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_foot_F
       rect:
@@ -398,7 +642,15 @@ TextureImporter:
       pivot: {x: 0.6, y: 0.85}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 16f4343ce85d20149b2b8925b5dc666f
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_hand_F
       rect:
@@ -411,7 +663,15 @@ TextureImporter:
       pivot: {x: 0.55, y: 0.85}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8043203070603f34783338cee1d5f608
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_atlas_1024x1024_24
       rect:
@@ -424,7 +684,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f7bc1b53621019e43aef09cfd2461da7
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolf_atlas_1024x1024_25
       rect:
@@ -437,7 +705,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b5a2f6f822e36d540abd4cc055f82898
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_biteLower
       rect:
@@ -450,7 +726,15 @@ TextureImporter:
       pivot: {x: 0.8, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6923d20794fee48448c8bc89bbb54090
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_biteUpper
       rect:
@@ -463,7 +747,15 @@ TextureImporter:
       pivot: {x: 0.09, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 69f935c2322b5ed44b4b6ea037b94793
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: wherewolfRockSkel_clawAttack
       rect:
@@ -476,9 +768,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5f0ff904a1736464cb93bbf7d93762b3
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
