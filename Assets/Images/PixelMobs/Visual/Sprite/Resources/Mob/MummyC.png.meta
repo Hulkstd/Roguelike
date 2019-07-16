@@ -1,27 +1,48 @@
 fileFormatVersion: 2
 guid: 5e416b314a10c9842bcb23ba0bd36811
-timeCreated: 1451620080
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Mummy_0
-    21300002: Mummy_1
-    21300004: Mummy_2
-    21300006: Mummy_3
-    21300008: Mummy_4
-    21300010: Mummy_5
-    21300012: Mummy_6
-    21300014: Mummy_7
-    21300016: Mummy_8
-    21300018: Mummy_9
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Mummy_0
+  - first:
+      213: 21300002
+    second: Mummy_1
+  - first:
+      213: 21300004
+    second: Mummy_2
+  - first:
+      213: 21300006
+    second: Mummy_3
+  - first:
+      213: 21300008
+    second: Mummy_4
+  - first:
+      213: 21300010
+    second: Mummy_5
+  - first:
+      213: 21300012
+    second: Mummy_6
+  - first:
+      213: 21300014
+    second: Mummy_7
+  - first:
+      213: 21300016
+    second: Mummy_8
+  - first:
+      213: 21300018
+    second: Mummy_9
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -30,37 +51,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Mummy_0
+    - serializedVersion: 2
+      name: Mummy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +114,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0d8cb6d079a304996976be3e282911
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_1
       rect:
         serializedVersion: 2
         x: 16
@@ -82,7 +135,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8427f61b41a8a2d4d8ed9e40567dcc6d
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_2
       rect:
         serializedVersion: 2
         x: 32
@@ -93,7 +156,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31295e80c041d847af75f584ca8ddc5
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_3
       rect:
         serializedVersion: 2
         x: 48
@@ -104,7 +177,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ffefc239b4bf44dad8dc8ac85efb4e
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_4
       rect:
         serializedVersion: 2
         x: 64
@@ -115,7 +198,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790a6c273feb93a44866b63b0dc38e3d
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_5
       rect:
         serializedVersion: 2
         x: 80
@@ -126,7 +219,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e72a3c7fc4be0347a0895f672d17417
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_6
       rect:
         serializedVersion: 2
         x: 96
@@ -137,7 +240,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd507fe2cc319e42964de401ba7714c
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_7
       rect:
         serializedVersion: 2
         x: 112
@@ -148,7 +261,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2140120126dc10f46919881158b512be
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_8
       rect:
         serializedVersion: 2
         x: 128
@@ -159,7 +282,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Mummy_9
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb62a4bf5fbc904d99368ea82fcab3c
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mummy_9
       rect:
         serializedVersion: 2
         x: 144
@@ -170,8 +303,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a029d627dae26224da9a5bc0097070ae
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,33 +1,66 @@
 fileFormatVersion: 2
 guid: d290b975af8c90b47a03a30f981640cd
-timeCreated: 1451620086
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Eel_0
-    21300002: Eel_1
-    21300004: Eel_2
-    21300006: Eel_3
-    21300008: Eel_4
-    21300010: Eel_5
-    21300012: Eel_6
-    21300014: Eel_7
-    21300016: Eel_8
-    21300018: Eel_9
-    21300020: Eel_10
-    21300022: Eel_11
-    21300024: Eel_12
-    21300026: Eel_13
-    21300028: Eel_14
-    21300030: Eel_15
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Eel_0
+  - first:
+      213: 21300002
+    second: Eel_1
+  - first:
+      213: 21300004
+    second: Eel_2
+  - first:
+      213: 21300006
+    second: Eel_3
+  - first:
+      213: 21300008
+    second: Eel_4
+  - first:
+      213: 21300010
+    second: Eel_5
+  - first:
+      213: 21300012
+    second: Eel_6
+  - first:
+      213: 21300014
+    second: Eel_7
+  - first:
+      213: 21300016
+    second: Eel_8
+  - first:
+      213: 21300018
+    second: Eel_9
+  - first:
+      213: 21300020
+    second: Eel_10
+  - first:
+      213: 21300022
+    second: Eel_11
+  - first:
+      213: 21300024
+    second: Eel_12
+  - first:
+      213: 21300026
+    second: Eel_13
+  - first:
+      213: 21300028
+    second: Eel_14
+  - first:
+      213: 21300030
+    second: Eel_15
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -36,37 +69,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Eel_0
+    - serializedVersion: 2
+      name: Eel_0
       rect:
         serializedVersion: 2
         x: 0
@@ -77,7 +132,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b025b920d402cb4f8823e224a7c13b9
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_1
       rect:
         serializedVersion: 2
         x: 16
@@ -88,7 +153,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0bcf0dc4b9c944bbfce8e8b3120591
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_2
       rect:
         serializedVersion: 2
         x: 32
@@ -99,7 +174,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb88a3a66082f541800efc3f5f538cc
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_3
       rect:
         serializedVersion: 2
         x: 48
@@ -110,7 +195,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8019cdb54b224a24b9be91dd7a22601a
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_4
       rect:
         serializedVersion: 2
         x: 64
@@ -121,7 +216,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefbc70cd0c2744449971cf65edeab61
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_5
       rect:
         serializedVersion: 2
         x: 80
@@ -132,7 +237,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee72ce2bbad6204686d6260f4a0196d
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_6
       rect:
         serializedVersion: 2
         x: 96
@@ -143,7 +258,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40116578c19311d44a3ec37ff4f4cc03
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_7
       rect:
         serializedVersion: 2
         x: 112
@@ -154,7 +279,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a640deef22974c44b8dd6dcef70c58f3
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_8
       rect:
         serializedVersion: 2
         x: 128
@@ -165,7 +300,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_9
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40d676e40f04994ebb3c65723407451
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_9
       rect:
         serializedVersion: 2
         x: 144
@@ -176,7 +321,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_10
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecc58dfca42e1543aba044eb8e89d1a
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_10
       rect:
         serializedVersion: 2
         x: 160
@@ -187,7 +342,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_11
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78684e0a2fb00984e9119cc58d0c92f1
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_11
       rect:
         serializedVersion: 2
         x: 176
@@ -198,7 +363,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_12
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a72f2afac5b2045b145c6f02fded9b
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_12
       rect:
         serializedVersion: 2
         x: 192
@@ -209,7 +384,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_13
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8c0869080e67f4ba7244f2f7391812
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_13
       rect:
         serializedVersion: 2
         x: 208
@@ -220,7 +405,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_14
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6db1fa75a2fcbf4c8f3ee4f92717620
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_14
       rect:
         serializedVersion: 2
         x: 224
@@ -231,7 +426,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Eel_15
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99140e44507f31f45b3d29edc009f59d
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eel_15
       rect:
         serializedVersion: 2
         x: 240
@@ -242,8 +447,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa088cf46ed42e4fada1898b9cd951a
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

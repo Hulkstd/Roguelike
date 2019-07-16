@@ -1,27 +1,48 @@
 fileFormatVersion: 2
 guid: 6d0df163110ae424f909acf887f94f27
-timeCreated: 1451661881
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Chest_0
-    21300002: Chest_1
-    21300004: Chest_2
-    21300006: Chest_3
-    21300008: Chest_4
-    21300010: Chest_5
-    21300012: Chest_6
-    21300014: Chest_7
-    21300016: Chest_8
-    21300018: Chest_9
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Chest_0
+  - first:
+      213: 21300002
+    second: Chest_1
+  - first:
+      213: 21300004
+    second: Chest_2
+  - first:
+      213: 21300006
+    second: Chest_3
+  - first:
+      213: 21300008
+    second: Chest_4
+  - first:
+      213: 21300010
+    second: Chest_5
+  - first:
+      213: 21300012
+    second: Chest_6
+  - first:
+      213: 21300014
+    second: Chest_7
+  - first:
+      213: 21300016
+    second: Chest_8
+  - first:
+      213: 21300018
+    second: Chest_9
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -30,37 +51,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Chest_0
+    - serializedVersion: 2
+      name: Chest_0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +114,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec288d70c8f5f14880160ef6dd6bd0d
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_1
       rect:
         serializedVersion: 2
         x: 16
@@ -82,7 +135,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bb9523ac59811439af97a912ae1c7b
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_2
       rect:
         serializedVersion: 2
         x: 32
@@ -93,7 +156,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac37d7090a880f488aebd80731d6122
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_3
       rect:
         serializedVersion: 2
         x: 48
@@ -104,7 +177,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9717386159e7cfe44ab88a2e501190cd
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_4
       rect:
         serializedVersion: 2
         x: 64
@@ -115,7 +198,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d8b08f3f001d84ea15ad3c9292c7f0
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_5
       rect:
         serializedVersion: 2
         x: 80
@@ -126,7 +219,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe971bb9002549e42b19f3afe2f66aad
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_6
       rect:
         serializedVersion: 2
         x: 96
@@ -137,7 +240,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a4732a336065344b2287ba721e8d81
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_7
       rect:
         serializedVersion: 2
         x: 112
@@ -148,7 +261,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0290fd65d4f19d418ff6a0c6a420ec7
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_8
       rect:
         serializedVersion: 2
         x: 128
@@ -159,7 +282,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Chest_9
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f0a67102739ff4bb48699b1195c55b
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_9
       rect:
         serializedVersion: 2
         x: 144
@@ -170,8 +303,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331b266b8a3fb594c8c24ad19b76ee30
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

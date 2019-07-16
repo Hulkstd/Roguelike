@@ -1,30 +1,57 @@
 fileFormatVersion: 2
 guid: cd4ab5c67dae04a44a6acfad5b859ef8
-timeCreated: 1451620086
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Skull_0
-    21300002: Skull_1
-    21300004: Skull_2
-    21300006: Skull_3
-    21300008: Skull_4
-    21300010: Skull_5
-    21300012: Skull_6
-    21300014: Skull_7
-    21300016: Skull_8
-    21300018: Skull_9
-    21300020: Skull_10
-    21300022: Skull_11
-    21300024: Skull_12
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Skull_0
+  - first:
+      213: 21300002
+    second: Skull_1
+  - first:
+      213: 21300004
+    second: Skull_2
+  - first:
+      213: 21300006
+    second: Skull_3
+  - first:
+      213: 21300008
+    second: Skull_4
+  - first:
+      213: 21300010
+    second: Skull_5
+  - first:
+      213: 21300012
+    second: Skull_6
+  - first:
+      213: 21300014
+    second: Skull_7
+  - first:
+      213: 21300016
+    second: Skull_8
+  - first:
+      213: 21300018
+    second: Skull_9
+  - first:
+      213: 21300020
+    second: Skull_10
+  - first:
+      213: 21300022
+    second: Skull_11
+  - first:
+      213: 21300024
+    second: Skull_12
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -33,37 +60,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Skull_0
+    - serializedVersion: 2
+      name: Skull_0
       rect:
         serializedVersion: 2
         x: 0
@@ -74,7 +123,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455a4a1e67cabf346be6474d0557d1b6
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_1
       rect:
         serializedVersion: 2
         x: 16
@@ -85,7 +144,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1445bca6e85240840bbadcf6dda85314
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_2
       rect:
         serializedVersion: 2
         x: 32
@@ -96,7 +165,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcaef87fc65e65b4890ec56778cd176f
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_3
       rect:
         serializedVersion: 2
         x: 48
@@ -107,7 +186,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a0f02c65aa7894091392a7f3cc89c3
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_4
       rect:
         serializedVersion: 2
         x: 64
@@ -118,7 +207,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27df207db573b1642bf87eff45e6d827
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_5
       rect:
         serializedVersion: 2
         x: 80
@@ -129,7 +228,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725ef5700f8ea554b81e88f8eeeb5d6a
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_6
       rect:
         serializedVersion: 2
         x: 96
@@ -140,7 +249,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a9bfc905569004db609d0abcc497f4
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_7
       rect:
         serializedVersion: 2
         x: 112
@@ -151,7 +270,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a0090485086174792681c616c525a7
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_8
       rect:
         serializedVersion: 2
         x: 128
@@ -162,7 +291,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_9
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10bc09da1290e548b2062399eb29f82
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_9
       rect:
         serializedVersion: 2
         x: 144
@@ -173,7 +312,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_10
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea03eb3bcaa5e204bbbc325eeccab40c
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_10
       rect:
         serializedVersion: 2
         x: 160
@@ -184,7 +333,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_11
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5883405ce125b4388ebda5ab838601
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_11
       rect:
         serializedVersion: 2
         x: 176
@@ -195,7 +354,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Skull_12
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd23f0e5cb3985429b7af98a131956f
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_12
       rect:
         serializedVersion: 2
         x: 192
@@ -206,8 +375,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe13b74dbd109cc4fb2cd230d768fee1
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,24 +1,39 @@
 fileFormatVersion: 2
 guid: 9a714ae802e85df4b8c3ddbd870c4e68
-timeCreated: 1451667486
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Worm_0
-    21300002: Worm_1
-    21300004: Worm_2
-    21300006: Worm_3
-    21300008: Worm_4
-    21300010: Worm_5
-    21300012: Worm_6
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Worm_0
+  - first:
+      213: 21300002
+    second: Worm_1
+  - first:
+      213: 21300004
+    second: Worm_2
+  - first:
+      213: 21300006
+    second: Worm_3
+  - first:
+      213: 21300008
+    second: Worm_4
+  - first:
+      213: 21300010
+    second: Worm_5
+  - first:
+      213: 21300012
+    second: Worm_6
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -27,37 +42,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Worm_0
+    - serializedVersion: 2
+      name: Worm_0
       rect:
         serializedVersion: 2
         x: 0
@@ -68,7 +105,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Worm_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2687310950e43a4f95027f5b61f0ef4
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm_1
       rect:
         serializedVersion: 2
         x: 16
@@ -79,7 +126,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Worm_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e2dff50acbb1f43b836251aaaa17b6
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm_2
       rect:
         serializedVersion: 2
         x: 32
@@ -90,7 +147,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Worm_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b58d80672dfe6d409513a4fcf47ca0a
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm_3
       rect:
         serializedVersion: 2
         x: 48
@@ -101,7 +168,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Worm_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c8e03f43af2244fa854535d2e0ed04
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm_4
       rect:
         serializedVersion: 2
         x: 64
@@ -112,7 +189,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Worm_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e8981ba31fec2449ae59ba836a50f1
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm_5
       rect:
         serializedVersion: 2
         x: 80
@@ -123,7 +210,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Worm_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcae6282664e9341b9d53345dd939e7
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Worm_6
       rect:
         serializedVersion: 2
         x: 96
@@ -134,8 +231,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b10aa1458e8eda49948644b5959bd88
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

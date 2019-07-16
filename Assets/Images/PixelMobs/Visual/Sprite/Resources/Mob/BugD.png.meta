@@ -1,32 +1,63 @@
 fileFormatVersion: 2
 guid: a5943828c0169cf4e996c0070702ab88
-timeCreated: 1451620083
-licenseType: Store
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Bug_0
-    21300002: Bug_1
-    21300004: Bug_2
-    21300006: Bug_3
-    21300008: Bug_4
-    21300010: Bug_5
-    21300012: Bug_6
-    21300014: Bug_7
-    21300016: Bug_8
-    21300018: Bug_9
-    21300020: Bug_10
-    21300022: Bug_11
-    21300024: Bug_12
-    21300026: Bug_13
-    21300028: Bug_14
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Bug_0
+  - first:
+      213: 21300002
+    second: Bug_1
+  - first:
+      213: 21300004
+    second: Bug_2
+  - first:
+      213: 21300006
+    second: Bug_3
+  - first:
+      213: 21300008
+    second: Bug_4
+  - first:
+      213: 21300010
+    second: Bug_5
+  - first:
+      213: 21300012
+    second: Bug_6
+  - first:
+      213: 21300014
+    second: Bug_7
+  - first:
+      213: 21300016
+    second: Bug_8
+  - first:
+      213: 21300018
+    second: Bug_9
+  - first:
+      213: 21300020
+    second: Bug_10
+  - first:
+      213: 21300022
+    second: Bug_11
+  - first:
+      213: 21300024
+    second: Bug_12
+  - first:
+      213: 21300026
+    second: Bug_13
+  - first:
+      213: 21300028
+    second: Bug_14
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -35,37 +66,59 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Bug_0
+    - serializedVersion: 2
+      name: Bug_0
       rect:
         serializedVersion: 2
         x: 0
@@ -76,7 +129,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_1
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30b3976326dcd1498a3a3831ea940b0
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_1
       rect:
         serializedVersion: 2
         x: 16
@@ -87,7 +150,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_2
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6448669fe792fd64190ff01d85ae824e
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_2
       rect:
         serializedVersion: 2
         x: 32
@@ -98,7 +171,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_3
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559713e059eaf9d4a91808032bdab0d6
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_3
       rect:
         serializedVersion: 2
         x: 48
@@ -109,7 +192,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_4
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832d57809869f364f83aa99bccc68c4d
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_4
       rect:
         serializedVersion: 2
         x: 64
@@ -120,7 +213,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_5
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ccb4617362bb9145b1f3ca2bcd944a6
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_5
       rect:
         serializedVersion: 2
         x: 80
@@ -131,7 +234,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_6
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31444f4bfe100a74c827c0d41ca59517
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_6
       rect:
         serializedVersion: 2
         x: 96
@@ -142,7 +255,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_7
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d6e1d32cfe29f488e5d1fe6395308a
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_7
       rect:
         serializedVersion: 2
         x: 112
@@ -153,7 +276,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_8
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a2a425984f87745b4052e5ceeee063
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_8
       rect:
         serializedVersion: 2
         x: 128
@@ -164,7 +297,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_9
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ab056e760d23e4fae67be4df50597c
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_9
       rect:
         serializedVersion: 2
         x: 144
@@ -175,7 +318,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_10
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f242b37bfd116f349ae1c56b805fcdbd
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_10
       rect:
         serializedVersion: 2
         x: 160
@@ -186,7 +339,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_11
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f340628a67d49ea4085a7ceff9740d7a
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_11
       rect:
         serializedVersion: 2
         x: 176
@@ -197,7 +360,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_12
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8aa588db63a14f4182c17725e6abc49
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_12
       rect:
         serializedVersion: 2
         x: 192
@@ -208,7 +381,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_13
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c817c22328253aa47967ef2ecfc96f9d
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_13
       rect:
         serializedVersion: 2
         x: 208
@@ -219,7 +402,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Bug_14
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f98ef60c75d0044790eeb1cbf917c7d
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bug_14
       rect:
         serializedVersion: 2
         x: 224
@@ -230,8 +423,28 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be83d948fb3406b4ea402c91910a1a02
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
