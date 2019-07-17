@@ -23,6 +23,8 @@ TagManager:
   - Bullet
   - Title
   - TouchEffect
+  - Fire
+  - Frog
   layers:
   - Default
   - TransparentFX

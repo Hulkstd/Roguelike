@@ -1,9 +1,45 @@
 fileFormatVersion: 2
-guid: ed6c344dc33d7924d8697e708f558052
+guid: 141799b59df004f4194da11bf55b7d52
 TextureImporter:
-  fileIDToRecycleName: {}
+  internalIDToNameTable:
+  - first:
+      213: -5246830101043233431
+    second: spritesheet_spider_idle_0
+  - first:
+      213: -5132285559898011209
+    second: spritesheet_spider_idle_1
+  - first:
+      213: 4057354813631925804
+    second: spritesheet_spider_idle_2
+  - first:
+      213: -1639259266178247487
+    second: spritesheet_spider_idle_3
+  - first:
+      213: -2409655732108226285
+    second: spritesheet_spider_idle_4
+  - first:
+      213: -531764234300771573
+    second: spritesheet_spider_idle_5
+  - first:
+      213: 794289774123913201
+    second: spritesheet_spider_idle_6
+  - first:
+      213: 6415064372334529086
+    second: spritesheet_spider_idle_7
+  - first:
+      213: 7715093097340393455
+    second: spritesheet_spider_idle_8
+  - first:
+      213: -6409387151235130408
+    second: spritesheet_spider_idle_9
+  - first:
+      213: 842875110096517996
+    second: spritesheet_spider_idle_10
+  - first:
+      213: -127556434992870406
+    second: spritesheet_spider_idle_11
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,7 +76,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,17 +105,282 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2204
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dfa792723e2254c86b9e995d286bc2
+      internalID: -5246830101043233431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_1
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 2204
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354a1bde785abe74293f27d0f47455ad
+      internalID: -5132285559898011209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_2
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 2204
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c75e5465454964babc645d573ce044
+      internalID: 4057354813631925804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_3
+      rect:
+        serializedVersion: 2
+        x: 8475
+        y: 2204
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af89e50b3926ec4cbc819d7238755f1
+      internalID: -1639259266178247487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1102
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b12bbc77811b743843e81c88a058f0
+      internalID: -2409655732108226285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 1102
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35baa02f495660447b4fc6f731b23799
+      internalID: -531764234300771573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_6
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 1102
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7170131abc5a527478a0ca40b55f3431
+      internalID: 794289774123913201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_7
+      rect:
+        serializedVersion: 2
+        x: 8475
+        y: 1102
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac0d94dd92f57442bf6cdab16abfc32
+      internalID: 6415064372334529086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b5e71cd763a9e4e92ba8af5626cca1
+      internalID: 7715093097340393455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_9
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 0
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1232bbe49185b704c97f3aa1d3c8f7c7
+      internalID: -6409387151235130408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_10
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 0
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fb918c016cda743b1fe935f184274c
+      internalID: 842875110096517996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_spider_idle_11
+      rect:
+        serializedVersion: 2
+        x: 8475
+        y: 0
+        width: 2825
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac3c22b818881f4d831b1708f1a0e99
+      internalID: -127556434992870406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: ebcc51fcb1cb6e849958181a1b110df4
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
