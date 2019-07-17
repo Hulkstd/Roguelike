@@ -74,14 +74,14 @@
     "Artifact": -1,
     "Type": 1,
     "Weight": 2.5,
-    "AttackSpeed": 1.2,
+    "AttackSpeed": 1,
     "Speed": 0,
     "Stats": [
       {
         "HP": 10
       },
       {
-        "Power": 6
+        "Power": 2
       }
     ]
   },
@@ -89,7 +89,7 @@
     "EquipName": "Carbon Nanotube Suit",
     "EquipDescription": "A suit made using carbon nanotubes, light and relatively hard, making it convenient.",
     "EquipImagePath": "Image/MP",
-    "EquipRating": "common",
+    "EquipRating": "Common",
     "EquipType": "Suit",
     "Artifact": 0,
     "Type": 0,
@@ -101,10 +101,225 @@
         "HP": 10
       },
       {
-        "Speed": 3
+        "Speed": 1
+      },
+      {
+        "MP": 2
+      }
+    ]
+  },
+  {
+    "EquipName": "Crystal Pendant",
+    "EquipDescription": "It's weak, but it gives you some control over the Essence.",
+    "EquipImagePath": null,
+    "EquipRating": "Common",
+    "EquipType": "Accessories",
+    "Artifact": 0,
+    "Type": 0,
+    "Weight": 0,
+    "AttackSpeed": 0,
+    "Speed": 0,
+    "Stats": [
+      {
+        "MP": 4
+      }
+    ]
+  },
+  {
+    "EquipName": "Shape Sword",
+    "EquipDescription": "Sword that gnaws at the essence of its master.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Rare",
+    "EquipType": "Weapon",
+    "Artifact": -1,
+    "Type": 2,
+    "Weight": 4,
+    "AttackSpeed": 0.6,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": -10
+      },
+      {
+        "Power": 6
+      }
+    ]
+  },
+  {
+    "EquipName": "Quick Suit",
+    "EquipDescription": "It is made of light material, making the essence of the user stable.",
+    "EquipImagePath": "Image/MP",
+    "EquipRating": "Rare",
+    "EquipType": "Suit",
+    "Artifact": 0,
+    "Type": 0,
+    "Weight": 0,
+    "AttackSpeed": 0,
+    "Speed": 1.2,
+    "Stats": [
+      {
+        "HP": 5
+      },
+      {
+        "Speed": 4
+      },
+      {
+        "MP": 6
+      }
+    ]
+  },
+  {
+    "EquipName": "Mountain Axe",
+    "EquipDescription": "After the terrain became more rugged, it was made of sharper materials.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Rare",
+    "EquipType": "Weapon",
+    "Artifact": -1,
+    "Type": 1,
+    "Weight": 4,
+    "AttackSpeed": 1.2,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 10
+      },
+      {
+        "Power": 7
+      }
+    ]
+  },
+  {
+    "EquipName": "Viking Axe",
+    "EquipDescription": "It is the most efficient shape-shifting carbine axe.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Unique",
+    "EquipType": "Weapon",
+    "Artifact": -1,
+    "Type": 2,
+    "Weight": 8,
+    "AttackSpeed": 0.8,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 20
+      },
+      {
+        "Power": 14
+      }
+    ]
+  },
+  {
+    "EquipName": "A Burning Sword",
+    "EquipDescription": "It is the most efficient shape-shifting carbine axe.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "common",
+    "EquipType": "Weapon",
+    "Artifact": 1,
+    "Type": 1,
+    "Weight": 6,
+    "AttackSpeed": 1,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 10
+      },
+      {
+        "Power": 4
       },
       {
         "MP": 4
+      }
+    ]
+  },
+  {
+    "EquipName": "A Burning Axe",
+    "EquipDescription": "It is the most efficient shape-shifting carbine axe.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "common",
+    "EquipType": "Weapon",
+    "Artifact": 1,
+    "Type": 1,
+    "Weight": 5,
+    "AttackSpeed": 1.2,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 20
+      },
+      {
+        "Power": 10
+      }
+    ]
+  },
+  {
+    "EquipName": "Hell Sword",
+    "EquipDescription": "It is a sword that causes great damage to users unfamiliar with the nature of fire.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Rare",
+    "EquipType": "Weapon",
+    "Artifact": 1,
+    "Type": 2,
+    "Weight": 8,
+    "AttackSpeed": 0.6,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 15
+      },
+      {
+        "Power": 6
+      },
+      {
+        "MP": 6
+      }
+    ]
+  },
+  {
+    "EquipName": "A Burning Axe",
+    "EquipDescription": "It is the most efficient shape-shifting carbine axe.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Rare",
+    "EquipType": "Weapon",
+    "Artifact": 1,
+    "Type": 2,
+    "Weight": 7,
+    "AttackSpeed": 0.8,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 30
+      },
+      {
+        "Power": 14
+      }
+    ]
+  },
+  {
+    "EquipName": "Solar Sword",
+    "EquipDescription": "a sword that appears to have used part of the sun as a material, Stabilize the Essence of the user.",
+    "EquipImagePath": "Image/HP",
+    "EquipRating": "Unique",
+    "EquipType": "Weapon",
+    "Artifact": 1,
+    "Type": 2,
+    "Weight": 12,
+    "AttackSpeed": 1,
+    "Speed": 0,
+    "Stats": [
+      {
+        "HP": 30
+      },
+      {
+        "Power": 16
+      },
+      {
+        "MP": 16
+      },
+      {
+        "CriticalPercent": 10
+      },
+      {
+        "CriticalDamage": 10
       }
     ]
   }

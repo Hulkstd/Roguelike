@@ -11,9 +11,10 @@ public class MouseTracer : MonoBehaviour
     { 
         initialZPos = followingCube.transform.position.y; 
     }
-
+    
     void Update () 
     {
+        
         Camera camera = GetComponent<Camera>();
         Vector3 newPosition = camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
         //followingCube.transform.position = new Vector3(newPosition.x, followingCube.transform.position.y, 0f);
