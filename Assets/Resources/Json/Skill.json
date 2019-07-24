@@ -16,5 +16,167 @@
     "Skill": null,
     "OriginalCooltime": 2,
     "Damage": 5
+  },
+  {
+    "SkillName": "FireBall",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 10,
+    "Damage": 5
+  },
+  {
+    "SkillName": "FireSword",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 30,
+    "Damage": 10
+  },
+  {
+    "SkillName": "FireBird",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 60,
+    "Damage": 5
+  },
+  {
+    "SkillName": "Celsius_1,538",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 400,
+    "Damage": 50
+  },
+  {
+    "SkillName": "CuttingMachine",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 200,
+    "Damage": 0
+  },
+  {
+    "SkillName": "FireBase",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 100,
+    "Damage": 1
+  },
+  {
+    "SkillName": "IceLance",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 10,
+    "Damage": 5
+  },
+  {
+    "SkillName": "Blizzard",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 120,
+    "Damage": 0
+  },
+  {
+    "SkillName": "Celsius_-269",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 240,
+    "Damage": 50
+  },
+  {
+    "SkillName": "SwanLake",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 300,
+    "Damage": 0
+  },
+  {
+    "SkillName": "TheTipOfTheIceberg",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 100,
+    "Damage": 100
+  },
+  {
+    "SkillName": "Tackle",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 300,
+    "Damage": 0
+  },
+  {
+    "SkillName": "StoneShot",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 10,
+    "Damage": 5
+  },
+  {
+    "SkillName": "StoneShower",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 50,
+    "Damage": 2
+  },
+  {
+    "SkillName": "Huddle",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 500,
+    "Damage": 0
+  },
+  {
+    "SkillName": "TheHeydayOfFossils",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 500,
+    "Damage": 2
+  },
+  {
+    "SkillName": "LandCollapse",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 100,
+    "Damage": 0.1
+  },
+  {
+    "SkillName": "GenerateSword",
+    "SkillImage": null,
+    "SkillAudio": null,
+    "Animator": null,
+    "Skill": null,
+    "OriginalCooltime": 180,
+    "Damage": 0
   }
 ]
