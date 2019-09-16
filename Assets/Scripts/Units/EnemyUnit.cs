@@ -18,9 +18,8 @@ public class EnemyUnit : MonoBehaviour
     public string Name;
     public int HP;
     public int FixedStrength;
-    public int Shield;
+    public int Shield;  
     public int HazardLevel;
-    public int DefensivePower;
     public int NWayBulletCount;
     public float MovementSpeed;
     public float JumpSpeed;

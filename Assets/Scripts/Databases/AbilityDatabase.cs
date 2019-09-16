@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
-using System.ComponentModel;
 
 public class AbilityDatabase : MonoBehaviour
 {
@@ -58,5 +57,14 @@ public enum AbilityName : int
 {
     Test = 0,
     HealthyBody = 1,
+    Essence_Recycling = 2,
+    Focus = 3,
+    Strengthening_Essence = 4,
+    Amolification = 5,
+    Promote_Metabolism = 6,
+    Adrenaline_Secretion = 7,
+    Neural_Complex = 8,
+    Tough_Soul = 9,
+    Spirit_Flow = 10,
     None = -1
 }
